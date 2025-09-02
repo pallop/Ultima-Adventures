@@ -39,8 +39,13 @@ namespace Server.Misc
             string cachedTranslation;
             if (m_TranslationCache.TryGetValue(text, out cachedTranslation))
             {
+                if (MyServerSettings.TranslationVerbose())
+                    Console.WriteLine("Translation Cache HIT: \"{0}\" -> \"{1}\"", text, cachedTranslation);
                 return cachedTranslation;
             }
+
+            if (MyServerSettings.TranslationVerbose())
+                Console.WriteLine("Translation Cache MISS: \"{0}\". Requesting from service...", text);
 
             try
             {
@@ -67,7 +72,6 @@ namespace Server.Misc
                     var result = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
                     string translatedText = result["translatedText"];
 
-                    // Only cache non-empty strings to avoid polluting the cache.
                     if (!string.IsNullOrWhiteSpace(text))
                     {
                         m_TranslationCache.TryAdd(text, translatedText);
@@ -76,12 +80,14 @@ namespace Server.Misc
                 }
                 else
                 {
+                    if (MyServerSettings.TranslationVerbose())
+                        Console.WriteLine("LibreTranslate request FAILED with status {0}: {1}", response.StatusCode, response.ReasonPhrase);
                     return text; // Return original text on error
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("LibreTranslate request failed: " + e.Message);
+                Console.WriteLine("LibreTranslate request EXCEPTION for text \"{0}\": {1}", text, e.Message);
                 return text;
             }
         }

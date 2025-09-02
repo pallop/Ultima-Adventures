@@ -915,5 +915,12 @@ namespace Server.Misc
 			// LEAVE BLANK IF NO KEY IS REQUIRED
 			return "";
 		}
+
+		public static bool TranslationVerbose()
+		{
+			// ENABLES OR DISABLES DETAILED TRANSLATION LOGGING IN THE CONSOLE
+			// USEFUL FOR DEBUGGING, CAN BE SPAMMY
+			return true;
+		}
 	}
 }
