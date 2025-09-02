@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
+using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 
 namespace Server.Misc
@@ -9,18 +11,39 @@ namespace Server.Misc
     public class Translator
     {
         private static readonly HttpClient client = new HttpClient();
+        internal static readonly ConcurrentDictionary<string, string> m_TranslationCache = new ConcurrentDictionary<string, string>();
+        private static readonly Regex m_HtmlRegex = new Regex(@">(?<text>[^<]*)<", RegexOptions.Compiled);
 
         private static string Translate(string text, string source, string target)
         {
             if (string.IsNullOrEmpty(text))
                 return text;
 
+            // If the text contains HTML, parse it. Otherwise, translate the whole thing.
+            if (text.Contains("<") && text.Contains(">"))
+            {
+                // Use a MatchEvaluator to replace only the text content between tags.
+                return m_HtmlRegex.Replace(text, (match) =>
+                {
+                    string originalText = match.Groups["text"].Value;
+                    // We must still translate the text content, which uses the main Translate method.
+                    // This creates a recursive call, but the inner call will not contain HTML tags,
+                    // so it will use the direct translation path.
+                    string translatedText = Translate(originalText, source, target);
+                    return ">" + translatedText + "<";
+                });
+            }
+
+            // --- Direct Translation Logic (for non-HTML or for text segments from HTML) ---
+
+            string cachedTranslation;
+            if (m_TranslationCache.TryGetValue(text, out cachedTranslation))
+            {
+                return cachedTranslation;
+            }
+
             try
             {
-                // NOTE: This is a blocking call. In a real-world application, this should be handled asynchronously
-                // to avoid blocking the server thread. However, due to the existing synchronous nature of the codebase,
-                // we are using .Result here as a compromise to avoid a major refactoring.
-                // A better solution would be to make the entire call stack asynchronous.
                 var apiKey = MyServerSettings.TranslationApiKey();
 
                 object data;
@@ -42,7 +65,14 @@ namespace Server.Misc
                 {
                     var responseString = response.Content.ReadAsStringAsync().Result;
                     var result = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
-                    return result["translatedText"];
+                    string translatedText = result["translatedText"];
+
+                    // Only cache non-empty strings to avoid polluting the cache.
+                    if (!string.IsNullOrWhiteSpace(text))
+                    {
+                        m_TranslationCache.TryAdd(text, translatedText);
+                    }
+                    return translatedText;
                 }
                 else
                 {
@@ -52,7 +82,6 @@ namespace Server.Misc
             catch (Exception e)
             {
                 Console.WriteLine("LibreTranslate request failed: " + e.Message);
-                // In case of any exception, just return the original text.
                 return text;
             }
         }

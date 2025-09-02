@@ -7,7 +7,7 @@ namespace Server.Misc
 {
     public static class Cliloc
     {
-        private static readonly Dictionary<int, string> m_Entries;
+        internal static readonly Dictionary<int, string> m_Entries;
 
         static Cliloc()
         {
