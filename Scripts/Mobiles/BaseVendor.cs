@@ -984,7 +984,7 @@ namespace Server.Mobiles
 			if ( !CheckVendorAccess( from ) )
 			{
 				//Say( 501522 ); // I shall not treat with scum like thee!
-				this.Say( "I have no business with you." );
+				this.Say( Server.Translation.TranslateToSpanish("I have no business with you.") );
 				return;
 			}
 
@@ -1296,7 +1296,7 @@ namespace Server.Mobiles
 				}
 				else
 				{
-					Say( true, "You have nothing I would be interested in." );
+					Say( true, Server.Translation.TranslateToSpanish("You have nothing I would be interested in.") );
 				}
 			}
 		}
@@ -2507,18 +2507,18 @@ namespace Server.Mobiles
 				if ( buyer.AccessLevel >= AccessLevel.GameMaster )
 					SayTo( buyer, true, "I would not presume to charge thee anything.  Here are the goods you requested." );
 				else if ( fromBank )
-					SayTo( buyer, true, "The total of thy purchase is {0} gold, which has been withdrawn from your bank account.  My thanks for the patronage.", totalCost );
+					SayTo( buyer, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold, which has been withdrawn from your bank account.  My thanks for the patronage.", totalCost)) );
 				else
-					SayTo( buyer, true, "The total of thy purchase is {0} gold.  My thanks for the patronage.", totalCost );
+					SayTo( buyer, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold.  My thanks for the patronage.", totalCost)) );
 			}
 			else
 			{
 				if ( buyer.AccessLevel >= AccessLevel.GameMaster )
 					SayTo( buyer, true, "I would not presume to charge thee anything.  Unfortunately, I could not sell you all the goods you requested." );
 				else if ( fromBank )
-					SayTo( buyer, true, "The total of thy purchase is {0} gold, which has been withdrawn from your bank account.  My thanks for the patronage.  Unfortunately, I could not sell you all the goods you requested.", totalCost );
+					SayTo( buyer, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold, which has been withdrawn from your bank account.  My thanks for the patronage.  Unfortunately, I could not sell you all the goods you requested.", totalCost)) );
 				else
-					SayTo( buyer, true, "The total of thy purchase is {0} gold.  My thanks for the patronage.  Unfortunately, I could not sell you all the goods you requested.", totalCost );
+					SayTo( buyer, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold.  My thanks for the patronage.  Unfortunately, I could not sell you all the goods you requested.", totalCost)) );
 			}
 
 			return true;
@@ -2586,7 +2586,7 @@ namespace Server.Mobiles
 
 			if ( Sold > MaxSell )
 			{
-				SayTo( seller, true, "You may only sell {0} items at a time!", MaxSell );
+				SayTo( seller, true, Server.Translation.TranslateToSpanish(String.Format("You may only sell {0} items at a time!", MaxSell)) );
 				return false;
 			}
 			else if ( Sold == 0 )

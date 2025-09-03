@@ -10738,6 +10738,9 @@ namespace Server
 
 		public void PublicOverheadMessage( MessageType type, int hue, bool ascii, string text, bool noLineOfSight )
 		{
+			if (Translation.TranslateToSpanish != null)
+				text = Translation.TranslateToSpanish(text);
+
 			if( m_Map != null )
 			{
 				Packet p = null;
