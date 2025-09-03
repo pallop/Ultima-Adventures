@@ -847,8 +847,6 @@ namespace Server.Mobiles
 		private static ArrayList m_List = new ArrayList( 10 );
 		public override void OnSpeech( SpeechEventArgs e )
 		{
-			if (Translation.TranslateToEnglish != null)
-				e.Speech = Translation.TranslateToEnglish(e.Speech);
 			Mobile pc = e.Mobile;
 			if ( base.HandlesOnSpeech( pc ) )
 				base.OnSpeech( e );

@@ -37,12 +37,18 @@ namespace Server.Misc
             {
                 try
                 {
+                    string speech = args.Speech;
+                    if (Server.Translation.TranslateToEnglish != null)
+                    {
+                        speech = Server.Translation.TranslateToEnglish(speech);
+                    }
+
                     if ((Server.Misc.Worlds.GetRegionName( args.Mobile.Map, args.Mobile.Location )).Length > 0)
-                        Console.WriteLine("" + args.Mobile.Name + " (" + Server.Misc.Worlds.GetRegionName( args.Mobile.Map, args.Mobile.Location ) + "): " + args.Speech + "");
+                        Console.WriteLine("" + args.Mobile.Name + " (" + Server.Misc.Worlds.GetRegionName( args.Mobile.Map, args.Mobile.Location ) + "): " + speech + "");
                     else
-                        Console.WriteLine("" + args.Mobile.Name + ": " + args.Speech + "");
+                        Console.WriteLine("" + args.Mobile.Name + ": " + speech + "");
                 }
-                catch (Exception e) { }
+                catch (Exception) { }
             }
         }
         public static void ConsoleListen(Object stateInfo)
