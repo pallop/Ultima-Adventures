@@ -4323,11 +4323,11 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			// This hook is for logging player speech to the console.
 			// The overhead text for other players remains the original Spanish.
 			bool fromCache;
-			string translated = Translator.Translate(speechToUse, out fromCache);
+			string translated = Server.Misc.Translator.Translate(text, out fromCache);
 			if (!fromCache)
 			{
 				// Only log if it's a new translation to avoid spam.
-				Console.WriteLine(String.Format("{0} says: {1} ({2})", this.Name, speechToUse, translated));
+				Console.WriteLine(String.Format("{0} says: {1} ({2})", this.Name, text, translated));
 			}
 			// =================== TRANSLATION HOOK END =====================
 
@@ -4362,7 +4362,7 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 			}
 			else
 			{
-				base.DoSpeech( speechToUse, keywords, type, hue );
+				base.DoSpeech( text, keywords, type, hue );
 			}
 		}
 

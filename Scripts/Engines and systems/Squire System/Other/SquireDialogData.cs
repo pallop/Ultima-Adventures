@@ -648,516 +648,516 @@ namespace Server.Mobiles
                 "No parece que pueda localizar mis ganzúas..."
             }},
             { SquireDialogTree.LockpickTooFar, new List<string> {
-                "I can't, {master_nickname}, lockpicking takes a delicate touch, I need to be closer.",
-                "*Is frustrated they aren't closer to the lock to pick it.*",
-                "I need to be right next to a lock to pick it.",
-                "I cannot pick a lock that far away, {master_nickname}.",
-                "{master_nickname}, that is too far away for me to attempt to pick it.",
-                "I can't pick that lock this far away."
+                "No puedo, {master_nickname}, forzar cerraduras requiere un toque delicado, necesito estar más cerca.",
+                "*Se frustra por no estar más cerca de la cerradura para forzarla.*",
+                "Necesito estar justo al lado de una cerradura para forzarla.",
+                "No puedo forzar una cerradura tan lejos, {master_nickname}.",
+                "{master_nickname}, eso está demasiado lejos para que intente forzarla.",
+                "No puedo forzar esa cerradura desde tan lejos."
             }},
             { SquireDialogTree.NotLocked, new List<string> {
-                "I can't, {master_nickname}, this isn't locked.",
-                "*Puts their lockpicks away, there is no job to be done here.*",
-                "This isn't locked.",
-                "I cannot pick a lock that isn't actually locked, {master_nickname}.",
-                "{master_nickname}, this isn't locked.",
-                "This doesn't appear to be locked."
+                "No puedo, {master_nickname}, esto no está cerrado con llave.",
+                "*Guarda sus ganzúas, no hay trabajo que hacer aquí.*",
+                "Esto no está cerrado con llave.",
+                "No puedo forzar una cerradura que no está realmente cerrada, {master_nickname}.",
+                "{master_nickname}, esto no está cerrado con llave.",
+                "Esto no parece estar cerrado con llave."
             }},
             { SquireDialogTree.CannotUnlock, new List<string> {
-                "I can't, {master_nickname}, I cannot unlock this.",
-                "*Cannot unlock this.*",
-                "I see no way in which I can unlock this.",
-                "I cannot pick this lock, {master_nickname}.",
-                "{master_nickname}, I cannot unlock this.",
-                "I can't unlock this!"
+                "No puedo, {master_nickname}, no puedo desbloquear esto.",
+                "*No puede desbloquear esto.*",
+                "No veo ninguna forma en la que pueda desbloquear esto.",
+                "No puedo forzar esta cerradura, {master_nickname}.",
+                "{master_nickname}, no puedo desbloquear esto.",
+                "¡No puedo desbloquear esto!"
             }},
             { SquireDialogTree.BrokenLockpick, new List<string> {
-                "I'm sorry, {master_nickname}, my lockpick broke.",
-                "*The lockpick breaks in their hand.*",
-                "My lockpick seems to have broken.",
-                "I broke my lockpick, {master_nickname}.",
-                "{master_nickname}, I broke a lockpick.",
-                "I broke a lockpick!"
+                "Lo siento, {master_nickname}, se me rompió la ganzúa.",
+                "*La ganzúa se rompe en su mano.*",
+                "Mi ganzúa parece haberse roto.",
+                "Rompí mi ganzúa, {master_nickname}.",
+                "{master_nickname}, rompí una ganzúa.",
+                "¡Rompí una ganzúa!"
             }},
             { SquireDialogTree.AbnormalLock, new List<string> {
-                "I'm sorry, {master_nickname}, I do not think this can be unlocked by normal means.",
-                "*Is perplexed by this lock.*",
-                "This cannot be unlocked by normal means.",
-                "This is a strange lock, {master_nickname}.",
-                "{master_nickname}, I do not believe this lock can be picked by normal means.",
-                "This doesn't look like it can be unlocked by normal means!"
+                "Lo siento, {master_nickname}, no creo que esto se pueda desbloquear por medios normales.",
+                "*Está perplejo por esta cerradura.*",
+                "Esto no se puede desbloquear por medios normales.",
+                "Esta es una cerradura extraña, {master_nickname}.",
+                "{master_nickname}, no creo que esta cerradura se pueda forzar por medios normales.",
+                "¡Esto no parece que se pueda desbloquear por medios normales!"
             }},
             { SquireDialogTree.HardLock, new List<string> {
-                "I'm sorry, {master_nickname}, I'm not skilled enough to unlock this.",
-                "*Admits defeat to this lock.*",
-                "This lock seems tougher than the others I've seen.",
-                "I don't think I can unlock this right now, {master_nickname}.",
-                "{master_nickname}, I think I need to train a bit more before we try this one.",
-                "I don't see how this lock can be manipulated."
+                "Lo siento, {master_nickname}, no soy lo suficientemente hábil para desbloquear esto.",
+                "*Admite la derrota ante esta cerradura.*",
+                "Esta cerradura parece más dura que las otras que he visto.",
+                "No creo que pueda desbloquear esto ahora mismo, {master_nickname}.",
+                "{master_nickname}, creo que necesito entrenar un poco más antes de intentar con esta.",
+                "No veo cómo se puede manipular esta cerradura."
             }},
             { SquireDialogTree.UnsuccessfulLockpick, new List<string> {
-                "I'm sorry, {master_nickname}, let me try picking that again.",
-                "*Was unable to pick the lock.*",
-                "I couldn't pick this lock.",
-                "I wasn't successful in picking this lock, {master_nickname}.",
-                "{master_nickname}, I failed to pick this lock.",
-                "I was unable to pick this lock."
+                "Lo siento, {master_nickname}, déjame intentar forzarla de nuevo.",
+                "*No pudo forzar la cerradura.*",
+                "No pude forzar esta cerradura.",
+                "No tuve éxito en forzar esta cerradura, {master_nickname}.",
+                "{master_nickname}, fallé al forzar esta cerradura.",
+                "No pude forzar esta cerradura."
             }},
             { SquireDialogTree.SuccessfulLockpick, new List<string> {
-                "I've done it, {master_nickname}, the lock has been picked!",
-                "*Was able to pick the lock.*",
-                "Have at the contents, {master_nickname}!",
-                "I was successful in picking this lock, {master_nickname}!",
-                "{master_nickname}, I've successfully picked the lock!",
-                "The lock has yielded to my skill!"
+                "¡Lo he hecho, {master_nickname}, la cerradura ha sido forzada!",
+                "*Pudo forzar la cerradura.*",
+                "¡A por el contenido, {master_nickname}!",
+                "¡Tuve éxito en forzar esta cerradura, {master_nickname}!",
+                "¡{master_nickname}, he forzado la cerradura con éxito!",
+                "¡La cerradura ha cedido a mi habilidad!"
             }},
             { SquireDialogTree.HandsAreFull, new List<string> {
-                "I can't, {master_nickname}, my hands are full.",
-                "*Hands are a little too full.*",
-                "I need to empty my hands, {master_nickname}!",
-                "I've got my hands a little full here, {master_nickname}!",
-                "{master_nickname}, I need to the items in my hands away first.",
-                "My hands are a little full to steal."
+                "No puedo, {master_nickname}, tengo las manos ocupadas.",
+                "*Las manos están un poco demasiado ocupadas.*",
+                "¡Necesito vaciar mis manos, {master_nickname}!",
+                "¡Tengo las manos un poco ocupadas aquí, {master_nickname}!",
+                "{master_nickname}, primero necesito guardar los objetos que tengo en las manos.",
+                "Mis manos están un poco ocupadas para robar."
             }},
             { SquireDialogTree.StealingNotAllowedHere, new List<string> {
-                "I cannot do it, {master_nickname}, I cannot steal in this area!",
-                "*Is confused by the invisible force stopping them from stealing.*",
-                "This area won't allow us to steal, {master_nickname}!",
-                "I can't steal in this area, {master_nickname}!",
-                "{master_nickname}, we cannot steal here.",
-                "Stealing isn't allowed in this area."
+                "¡No puedo hacerlo, {master_nickname}, no puedo robar en esta área!",
+                "*Está confundido por la fuerza invisible que le impide robar.*",
+                "¡Esta área no nos permitirá robar, {master_nickname}!",
+                "¡No puedo robar en esta área, {master_nickname}!",
+                "{master_nickname}, no podemos robar aquí.",
+                "No se permite robar en esta área."
             }},
             { SquireDialogTree.NotAPartOfThievesGuild, new List<string> {
-                "I can't, {master_nickname}, we need to join the thieves guild!",
-                "*Cannot steal from another player without first joining the thieves guild.*",
-                "Join the thieves guild first, {master_nickname}!",
-                "We cannot steal from players unless we're in the thieves guild, {master_nickname}!",
-                "{master_nickname}, we need to join the thieves guild!",
-                "We cannot steal from players because we are not a part of the thieves guild."
+                "¡No puedo, {master_nickname}, necesitamos unirnos al gremio de ladrones!",
+                "*No puede robar a otro jugador sin antes unirse al gremio de ladrones.*",
+                "¡Únete al gremio de ladrones primero, {master_nickname}!",
+                "¡No podemos robar a los jugadores a menos que estemos en el gremio de ladrones, {master_nickname}!",
+                "¡{master_nickname}, necesitamos unirnos al gremio de ladrones!",
+                "No podemos robar a los jugadores porque no somos parte del gremio de ladrones."
             }},
             { SquireDialogTree.SuspendedFromThievesGuild, new List<string> {
-                "I can't, {master_nickname}, we're suspended from the guild!",
-                "*Suspention from the guild stops them.*",
-                "We cannot steal from players while suspended from the guild, {master_nickname}!",
-                "Suspention is preventing us from stealing from other players, {master_nickname}!",
-                "{master_nickname}, we cannot steal from players while suspended!",
-                "We're currently on suspention in the thieves guild!"
+                "¡No puedo, {master_nickname}, estamos suspendidos del gremio!",
+                "*La suspensión del gremio los detiene.*",
+                "¡No podemos robar a los jugadores mientras estemos suspendidos del gremio, {master_nickname}!",
+                "¡La suspensión nos impide robar a otros jugadores, {master_nickname}!",
+                "¡{master_nickname}, no podemos robar a los jugadores mientras estemos suspendidos!",
+                "¡Actualmente estamos suspendidos en el gremio de ladrones!"
             }},
             { SquireDialogTree.CannotStealFromVendors, new List<string> {
-                "That is a vendor, {master_nickname}, we cannot steal from them!",
-                "*Refuses to steal from a vendor.*",
-                "Vendors cannot be stolen from, {master_nickname}!",
-                "We cannot steal from vendors, {master_nickname}!",
-                "{master_nickname}, we cannot steal from vendors!",
-                "We cannot steal from vendors!"
+                "¡Eso es un vendedor, {master_nickname}, no podemos robarles!",
+                "*Se niega a robar a un vendedor.*",
+                "¡No se puede robar a los vendedores, {master_nickname}!",
+                "¡No podemos robar a los vendedores, {master_nickname}!",
+                "¡{master_nickname}, no podemos robar a los vendedores!",
+                "¡No podemos robar a los vendedores!"
             }},
             { SquireDialogTree.CannotSeeStealingTarget, new List<string> {
-                "I can't see it, {master_nickname}, maybe if you brought me closer?",
-                "*Unable to locate the item you want them to steal.*",
-                "I cannot see it, {master_nickname}!",
-                "I'd have to be able to see what you want me to steal, {master_nickname}!",
-                "{master_nickname}, I cannot steal what I cannot see.",
-                "I cannot see that."
+                "No puedo verlo, {master_nickname}, ¿quizás si me acercaras?",
+                "*No puede localizar el objeto que quieres que roben.*",
+                "¡No puedo verlo, {master_nickname}!",
+                "¡Tendría que poder ver lo que quieres que robe, {master_nickname}!",
+                "{master_nickname}, no puedo robar lo que no puedo ver.",
+                "No puedo ver eso."
             }},
             { SquireDialogTree.FullBackpackStealing, new List<string> {
-                "My backpack is full, {master_nickname}, I cannot fit any more.",
-                "*Cannot stuff any more items in their backpack.*",
-                "My backpack cannot hold anymore, {master_nickname}!",
-                "There is no more that I can fit in my backpack, {master_nickname}!",
-                "{master_nickname}, my backpack is full.",
-                "My backpack cannot hold any more."
+                "Mi mochila está llena, {master_nickname}, no puedo meter más.",
+                "*No puede meter más objetos en su mochila.*",
+                "¡Mi mochila no puede contener más, {master_nickname}!",
+                "¡No hay nada más que pueda meter en mi mochila, {master_nickname}!",
+                "{master_nickname}, mi mochila está llena.",
+                "Mi mochila no puede contener más."
             }},
             { SquireDialogTree.NeedToBeCloserToSteal, new List<string> {
-                "I can't steal it, {master_nickname}, I'm too far away.",
-                "*Arms cannot reach that far.*",
-                "I am too far away from the target to steal it, {master_nickname}!",
-                "I can't steal the target this far away, {master_nickname}!",
-                "{master_nickname}, bring me closer to the target.",
-                "I need to be closer to the target to steal it."
+                "No puedo robarlo, {master_nickname}, estoy demasiado lejos.",
+                "*Los brazos no pueden llegar tan lejos.*",
+                "¡Estoy demasiado lejos del objetivo para robarlo, {master_nickname}!",
+                "¡No puedo robar el objetivo tan lejos, {master_nickname}!",
+                "{master_nickname}, acércame al objetivo.",
+                "Necesito estar más cerca del objetivo para robarlo."
             }},
             { SquireDialogTree.CannotStealThat, new List<string> {
-                "I cannot steal that, {master_nickname}, what do you expect from me?",
-                "*Is unable to steal that.*",
-                "I can't steal that, {master_nickname}!",
-                "What do you expect of me, {master_nickname}!",
-                "{master_nickname}, that is not something I can steal!",
-                "I cannot steal that!"
+                "No puedo robar eso, {master_nickname}, ¿qué esperas de mí?",
+                "*No puede robar eso.*",
+                "¡No puedo robar eso, {master_nickname}!",
+                "¡Qué esperas de mí, {master_nickname}!",
+                "¡{master_nickname}, eso no es algo que pueda robar!",
+                "¡No puedo robar eso!"
             }},
             { SquireDialogTree.CannotStealWhileMorphed, new List<string> {
-                "I can't steal, {master_nickname}, not while I'm transformed.",
-                "*is unable to steal while transformed.*",
-                "This transformation prevents me from stealing, {master_nickname}!",
-                "I will be unable to steal until I transform back, {master_nickname}!",
-                "{master_nickname}, I cannot steal while I'm something or somebody else.",
-                "I cannot steal while I'm not myself!"
+                "No puedo robar, {master_nickname}, no mientras estoy transformado.",
+                "*no puede robar mientras está transformado.*",
+                "¡Esta transformación me impide robar, {master_nickname}!",
+                "¡No podré robar hasta que vuelva a transformarme, {master_nickname}!",
+                "{master_nickname}, no puedo robar mientras soy otra cosa o alguien más.",
+                "¡No puedo robar mientras no soy yo mismo!"
             }},
             { SquireDialogTree.NotSkilledEnoughToStealItem, new List<string> {
-                "I'm not skilled enough, {master_nickname}, I cannot steal that item.",
-                "*Realizes they are not skilled enough to steal that item.*",
-                "I cannot steal that item now, {master_nickname}.",
-                "I need to train more, {master_nickname}.",
-                "{master_nickname}, I need to train more first.",
-                "I am not skilled enough to steal that item."
+                "No soy lo suficientemente hábil, {master_nickname}, no puedo robar ese objeto.",
+                "*Se da cuenta de que no es lo suficientemente hábil para robar ese objeto.*",
+                "No puedo robar ese objeto ahora, {master_nickname}.",
+                "Necesito entrenar más, {master_nickname}.",
+                "{master_nickname}, necesito entrenar más primero.",
+                "No soy lo suficientemente hábil para robar ese objeto."
             }},
             { SquireDialogTree.CannotStealFromTheirHands, new List<string> {
-                "I'm not skilled enough, {master_nickname}, not skilled enough to steal directly from their hands.",
-                "*Is unsure of their ability to steal straight from that person's hand.*",
-                "They would certainly notice us, {master_nickname}.",
-                "Perhaps something from their backpack instead, {master_nickname}.",
-                "{master_nickname}, I don't think I am skilled enough to take the item from their hands.",
-                "It would be foolish for us to attempt to steal from their hands."
+                "No soy lo suficientemente hábil, {master_nickname}, no lo suficientemente hábil para robar directamente de sus manos.",
+                "*No está seguro de su habilidad para robar directamente de la mano de esa persona.*",
+                "Seguramente nos notarían, {master_nickname}.",
+                "Quizás algo de su mochila en su lugar, {master_nickname}.",
+                "{master_nickname}, no creo que sea lo suficientemente hábil para tomar el objeto de sus manos.",
+                "Sería una tontería para nosotros intentar robar de sus manos."
             }},
             { SquireDialogTree.StealFromSelf, new List<string> {
-                "I could just give it to you, {master_nickname}, I don't need to steal it from myself.",
-                "*Is confused as to why they were told to steal their own item.*",
-                "That's a little strange, {master_nickname}.",
-                "Wouldn't you rather I just hand it to you, {master_nickname}?",
-                "{master_nickname}, I've caught myself trying to steal!",
-                "Aha! I've caught you! Wait..."
+                "Podría dártelo, {master_nickname}, no necesito robármelo a mí mismo.",
+                "*Está confundido de por qué le dijeron que robara su propio objeto.*",
+                "Eso es un poco extraño, {master_nickname}.",
+                "¿No preferirías que simplemente te lo entregara, {master_nickname}?",
+                "¡{master_nickname}, me he pillado intentando robar!",
+                "¡Ajá! ¡Te he pillado! Espera..."
             }},
             { SquireDialogTree.TooHeavyToSteal, new List<string> {
-                "That would be too heavy, {master_nickname}, I would not be able to move it.",
-                "*Cannot move that item fast enough with how heavy it is.*",
-                "That is too heavy to steal, {master_nickname}.",
-                "Perhaps if I was stronger, {master_nickname}.",
-                "{master_nickname}, I wouldn't be able to move that fast enough.",
-                "That is too heavy to steal."
+                "Eso sería demasiado pesado, {master_nickname}, no podría moverlo.",
+                "*No puede mover ese objeto lo suficientemente rápido con lo pesado que es.*",
+                "Eso es demasiado pesado para robar, {master_nickname}.",
+                "Quizás si fuera más fuerte, {master_nickname}.",
+                "{master_nickname}, no podría mover eso lo suficientemente rápido.",
+                "Eso es demasiado pesado para robar."
             }},
             { SquireDialogTree.SuccessfulSteal, new List<string> {
-                "I've succeeded in stealing the item, {master_nickname}, we should run!",
-                "*Quickly pockets the item.*",
-                "I've got it, {master_nickname}!",
-                "I've succeeded, {master_nickname}!",
-                "{master_nickname}, I've succeeded in stealing!",
-                "I've successfully stolen the item!"
+                "¡He logrado robar el objeto, {master_nickname}, deberíamos correr!",
+                "*Guarda rápidamente el objeto en su bolsillo.*",
+                "¡Lo tengo, {master_nickname}!",
+                "¡He tenido éxito, {master_nickname}!",
+                "¡{master_nickname}, he logrado robar!",
+                "¡He robado el objeto con éxito!"
             }},
             { SquireDialogTree.UnsuccessfulSteal, new List<string> {
-                "I've failed to steal the item, {master_nickname}, are we gonna be alright?",
-                "*Was unable to liberate the item from its owner.*",
-                "I've failed to take the item, {master_nickname}.",
-                "I was unable to steal the item, {master_nickname}.",
-                "{master_nickname}, I've failed to steal the item.",
-                "I've failed to steal the item."
+                "He fallado al robar el objeto, {master_nickname}, ¿estaremos bien?",
+                "*No pudo liberar el objeto de su dueño.*",
+                "He fallado al tomar el objeto, {master_nickname}.",
+                "No pude robar el objeto, {master_nickname}.",
+                "{master_nickname}, he fallado al robar el objeto.",
+                "He fallado al robar el objeto."
             }},
             { SquireDialogTree.TooSoonToLockpick, new List<string> {
-                "Give me one moment, {master_nickname}, then I'll be ready to try again.",
-                "*Sighs in defeat, needs another moment before trying again.*",
-                "I can't pick the lock again right away, {master_nickname}.",
-                "I need a little time, {master_nickname}.",
-                "{master_nickname}, let me prepare myself first.",
-                "I need a moment."
+                "Dame un momento, {master_nickname}, entonces estaré listo para intentarlo de nuevo.",
+                "*Suspira derrotado, necesita otro momento antes de volver a intentarlo.*",
+                "No puedo forzar la cerradura de nuevo de inmediato, {master_nickname}.",
+                "Necesito un poco de tiempo, {master_nickname}.",
+                "{master_nickname}, déjame prepararme primero.",
+                "Necesito un momento."
             }},
             { SquireDialogTree.TooSoonToSteal, new List<string> {
-                "Give me one moment, {master_nickname}, then I'll be ready to try again.",
-                "*Sighs in defeat, needs another moment before trying again.*",
-                "I can't attempt to steal again right away, {master_nickname}.",
-                "I need a little time, {master_nickname}.",
-                "{master_nickname}, let me prepare myself first.",
-                "I need a moment."
+                "Dame un momento, {master_nickname}, entonces estaré listo para intentarlo de nuevo.",
+                "*Suspira derrotado, necesita otro momento antes de volver a intentarlo.*",
+                "No puedo intentar robar de nuevo de inmediato, {master_nickname}.",
+                "Necesito un poco de tiempo, {master_nickname}.",
+                "{master_nickname}, déjame prepararme primero.",
+                "Necesito un momento."
             }},
             { SquireDialogTree.WhatShouldISteal, new List<string> {
-                "Point me to the target, {master_nickname}, I'll steal it on your command.",
-                "*Awaits stealing orders.*",
-                "Point to the target, {master_nickname}.",
-                "Point to the item, {master_nickname}.",
-                "{master_nickname}, what's the target?",
-                "What should I steal?"
+                "Señálame el objetivo, {master_nickname}, lo robaré a tu orden.",
+                "*Espera órdenes de robo.*",
+                "Señala el objetivo, {master_nickname}.",
+                "Señala el objeto, {master_nickname}.",
+                "{master_nickname}, ¿cuál es el objetivo?",
+                "¿Qué debo robar?"
             }},
             { SquireDialogTree.LearnsFromContract, new List<string> {
-                "That's great, {master_nickname}, I feel like I know so much more!",
-                "*Feels much more intelligent.*",
-                "Thank you, {master_nickname}, I've learned a lot!",
-                "I've learned so much, {master_nickname}!",
-                "{master_nickname}, I feel smarter!",
-                "I feel more intelligent already!"
+                "¡Eso es genial, {master_nickname}, siento que sé mucho más!",
+                "*Se siente mucho más inteligente.*",
+                "¡Gracias, {master_nickname}, he aprendido mucho!",
+                "¡He aprendido mucho, {master_nickname}!",
+                "¡{master_nickname}, me siento más inteligente!",
+                "¡Ya me siento más inteligente!"
             }},
             { SquireDialogTree.RefusesToLootPlayers, new List<string> {
-                "No can do, {master_nickname}, I would be going against the virtues.",
-                "*Feels very uneasy about looting this person.*",
-                "I'm sorry, {master_nickname}, I simply cannot loot them.",
-                "This would be wrong, {master_nickname}!",
-                "{master_nickname}, I don't feel right looting this person.",
-                "I refuse to loot a player."
+                "No puedo, {master_nickname}, iría en contra de las virtudes.",
+                "*Se siente muy incómodo saqueando a esta persona.*",
+                "Lo siento, {master_nickname}, simplemente no puedo saquearlos.",
+                "¡Esto estaría mal, {master_nickname}!",
+                "{master_nickname}, no me siento bien saqueando a esta persona.",
+                "Me niego a saquear a un jugador."
             }},
             { SquireDialogTree.UnequipsTwoHandedForShield, new List<string> {
-                "Thanks, {master_nickname}, please take this two handed weapon back in exchange!",
-                "*Trades the two handed weapon they were using for the shield.*",
-                "Thank you, {master_nickname}, please take this two handed weapon back.",
-                "With this shield, I can no longer use that two handed weapon you gave me, {master_nickname}!",
-                "{master_nickname}, I'm no longer using that two handed weapon you gave me.",
-                "I've removed the two handed weapon I was holding."
+                "¡Gracias, {master_nickname}, por favor toma esta arma de dos manos a cambio!",
+                "*Cambia el arma de dos manos que estaba usando por el escudo.*",
+                "Gracias, {master_nickname}, por favor toma esta arma de dos manos de vuelta.",
+                "¡Con este escudo, ya no puedo usar esa arma de dos manos que me diste, {master_nickname}!",
+                "{master_nickname}, ya no estoy usando esa arma de dos manos que me diste.",
+                "He quitado el arma de dos manos que sostenía."
             }},
             { SquireDialogTree.FirstHandMissing, new List<string> {
-                "Sorry, {master_nickname}, I seem to have lost the item!",
-                "*Rifles through their backpack unable to locate the item.*",
-                "I'm sorry, {master_nickname}, I seem to have lost the item you want me to hold.",
-                "Where did I put it, {master_nickname}!",
-                "{master_nickname}, I can't seem to find the first item I'm to hold.",
-                "I can't seem to find what I'm supposed to be holding in my first hand..."
+                "¡Lo siento, {master_nickname}, parece que he perdido el objeto!",
+                "*Rebusca en su mochila sin poder localizar el objeto.*",
+                "Lo siento, {master_nickname}, parece que he perdido el objeto que quieres que sostenga.",
+                "¡Dónde lo puse, {master_nickname}!",
+                "{master_nickname}, no parece que pueda encontrar el primer objeto que debo sostener.",
+                "No parece que pueda encontrar lo que se supone que debo sostener en mi primera mano..."
             }},
             { SquireDialogTree.SecondHandMissing, new List<string> {
-                "Sorry, {master_nickname}, I seem to have lost the item!",
-                "*Rifles through their backpack unable to locate the item.*",
-                "I'm sorry, {master_nickname}, I seem to have lost the item you want me to hold.",
-                "Where did I put it, {master_nickname}!",
-                "{master_nickname}, I can't seem to find the item I'm to hold.",
-                "I can't seem to find what I'm supposed to be holding in my second hand..."
+                "¡Lo siento, {master_nickname}, parece que he perdido el objeto!",
+                "*Rebusca en su mochila sin poder localizar el objeto.*",
+                "Lo siento, {master_nickname}, parece que he perdido el objeto que quieres que sostenga.",
+                "¡Dónde lo puse, {master_nickname}!",
+                "{master_nickname}, no parece que pueda encontrar el objeto que debo sostener.",
+                "No parece que pueda encontrar lo que se supone que debo sostener en mi segunda mano..."
             }},
             { SquireDialogTree.EmptyHands, new List<string> {
-                "Okay, {master_nickname}, I'll go barehanded!",
-                "*Clenches fists, punching the air before them.*",
-                "Alright, {master_nickname}, I'll fight empty handed.",
-                "Bare handed I go, {master_nickname}!",
-                "{master_nickname}, I suppose wrestling will be my skill then?",
-                "Guess I'm going empty handed!"
+                "¡De acuerdo, {master_nickname}, iré con las manos desnudas!",
+                "*Aprieta los puños, golpeando el aire frente a ellos.*",
+                "Muy bien, {master_nickname}, lucharé con las manos vacías.",
+                "¡Con las manos desnudas voy, {master_nickname}!",
+                "{master_nickname}, ¿supongo que la lucha será mi habilidad entonces?",
+                "¡Supongo que iré con las manos vacías!"
             }},
             { SquireDialogTree.SuccessfulSetCreation, new List<string> {
-                "Okay, {master_nickname}, I'll fight with bravery!",
-                "*Grips equipment accepting their place.*",
-                "Alright, {master_nickname}, I'll fight with these.",
-                "Weapon set created, {master_nickname}.",
-                "{master_nickname}, I will use these weapons bravely.",
-                "Alright, set created!"
+                "¡De acuerdo, {master_nickname}, lucharé con valentía!",
+                "*Agarra el equipo aceptando su lugar.*",
+                "Muy bien, {master_nickname}, lucharé con esto.",
+                "Conjunto de armas creado, {master_nickname}.",
+                "{master_nickname}, usaré estas armas con valentía.",
+                "¡Muy bien, conjunto creado!"
             }},
             { SquireDialogTree.Unarmed, new List<string> {
-                "Okay, {master_nickname}, I've unarmed myself.",
-                "*Places equipment away in their backpack.*",
-                "Alright, {master_nickname}, I've stored my equipment.",
-                "Equipment has been stored, {master_nickname}.",
-                "{master_nickname}, I have unequipped myself.",
-                "Alright, I've put the items I was holding in my backpack."
+                "De acuerdo, {master_nickname}, me he desarmado.",
+                "*Guarda el equipo en su mochila.*",
+                "Muy bien, {master_nickname}, he guardado mi equipo.",
+                "El equipo ha sido guardado, {master_nickname}.",
+                "{master_nickname}, me he desequipado.",
+                "Muy bien, he guardado los objetos que sostenía en mi mochila."
             }},
             { SquireDialogTree.SpiritSpeakSuccess, new List<string> {
-                "Okay, {master_nickname}, let's hear the spirits.",
-                "*Humms a mantra as they begin communing with spirits.*",
-                "So, {master_nickname}, I can talk to spirits.",
-                "I've done it, {master_nickname}, I've channeled the spirit world.",
-                "{master_nickname}, I can now commune with ghosts.",
-                "I've successfully channeled the spirit world."
+                "De acuerdo, {master_nickname}, escuchemos a los espíritus.",
+                "*Tararea un mantra mientras comienzan a comulgar con los espíritus.*",
+                "Entonces, {master_nickname}, puedo hablar con los espíritus.",
+                "Lo he hecho, {master_nickname}, he canalizado el mundo de los espíritus.",
+                "{master_nickname}, ahora puedo comulgar con los fantasmas.",
+                "He canalizado con éxito el mundo de los espíritus."
             }},
             { SquireDialogTree.SpiritSpeakFail, new List<string> {
-                "I'm sorry, {master_nickname}, I cannot hear the spirits.",
-                "*Grimaces as they fail to channel the spirit world.*",
-                "Sorry, {master_nickname}, I cannot speak with spirits.",
-                "I have failed, {master_nickname}.",
-                "{master_nickname}, I am unable to commune with ghosts.",
-                "I've failed to channel the spirit world."
+                "Lo siento, {master_nickname}, no puedo oír a los espíritus.",
+                "*Hace una mueca mientras fallan en canalizar el mundo de los espíritus.*",
+                "Lo siento, {master_nickname}, no puedo hablar con los espíritus.",
+                "He fallado, {master_nickname}.",
+                "{master_nickname}, no puedo comulgar con los fantasmas.",
+                "He fallado en canalizar el mundo de los espíritus."
             }},
             { SquireDialogTree.TooSoonToSpiritSpeak, new List<string> {
-                "I can't channel again so soon.",
-                "*Attempts to channel the spirits but fails.*",
-                "My connection with the spirit world is weak.",
-                "I cannot attempt to channel spirits again this soon, {master_nickname}.",
-                "The channels are weak, I need time.",
-                "It is too soon to try to commune with spirits again, {master_nickname}."
+                "No puedo canalizar de nuevo tan pronto.",
+                "*Intenta canalizar a los espíritus pero falla.*",
+                "Mi conexión con el mundo de los espíritus es débil.",
+                "No puedo intentar canalizar espíritus de nuevo tan pronto, {master_nickname}.",
+                "Los canales son débiles, necesito tiempo.",
+                "Es demasiado pronto para intentar comulgar con los espíritus de nuevo, {master_nickname}."
             }},
             { SquireDialogTree.SpiritChannelFades, new List<string> {
-                "I can no longer talk to the spirits.",
-                "*Feels their connection with the spirits fade.*",
-                "The channel I had to the spirit world has faded.",
-                "My connection to the spirit world is gone, {master_nickname}.",
-                "My communion with the spirit world has ended.",
-                "My channel to the spirit world is fading, {master_nickname}."
+                "Ya no puedo hablar con los espíritus.",
+                "*Siente que su conexión con los espíritus se desvanece.*",
+                "El canal que tenía con el mundo de los espíritus se ha desvanecido.",
+                "Mi conexión con el mundo de los espíritus se ha ido, {master_nickname}.",
+                "Mi comunión con el mundo de los espíritus ha terminado.",
+                "Mi canal con el mundo de los espíritus se está desvaneciendo, {master_nickname}."
             }},
             { SquireDialogTree.StillConnectedToSpirits, new List<string> {
-                "I am still able to talk to the spirits.",
-                "*Is still connected to the spirits.*",
-                "The channel I had to the spirit world is currently active.",
-                "My connection to the spirit world is still active, {master_nickname}.",
-                "My communion with the spirit world is still channelled.",
-                "My channel to the spirit world is still in tact, {master_nickname}."
+                "Todavía puedo hablar con los espíritus.",
+                "*Todavía está conectado a los espíritus.*",
+                "El canal que tenía con el mundo de los espíritus está actualmente activo.",
+                "Mi conexión con el mundo de los espíritus sigue activa, {master_nickname}.",
+                "Mi comunión con el mundo de los espíritus sigue canalizada.",
+                "Mi canal con el mundo de los espíritus sigue intacto, {master_nickname}."
             }},
             { SquireDialogTree.OpenQuiver, new List<string> {
-                "Look at the contents of my quiver if you want.",
-                "*Proudly opens their quiver to you.*",
-                "I am sure your backpack's contents are more interesting than my quiver.",
-                "Here is what your little {squire_nickname} is holding.",
-                "Y-you'd like to see my what? Oh, my quiver.",
-                "Here is what is in my quiver."
+                "Mira el contenido de mi carcaj si quieres.",
+                "*Te abre su carcaj con orgullo.*",
+                "Estoy seguro de que el contenido de tu mochila es más interesante que mi carcaj.",
+                "Aquí está lo que tu pequeño {squire_nickname} está sosteniendo.",
+                "¿Q-quieres ver mi qué? Oh, mi carcaj.",
+                "Aquí está lo que hay en mi carcaj."
             }},
             { SquireDialogTree.NotAQuiver, new List<string> {
-                "Are you okay, {master_nickname}.",
-                "*Briefly looks over their shoulder at their back.*",
-                "I do not believe I am wearing a quiver, {master_nickname}.",
-                "There is no quiver on my back.",
-                "I apologize, {master_nickname}, but I am not holding a quiver.",
-                "I am not wearing a quiver, though."
+                "¿Estás bien, {master_nickname}?",
+                "*Mira brevemente por encima de su hombro a su espalda.*",
+                "No creo que lleve un carcaj, {master_nickname}.",
+                "No hay ningún carcaj en mi espalda.",
+                "Me disculpo, {master_nickname}, pero no llevo un carcaj.",
+                "Sin embargo, no llevo un carcaj."
             }},
             { SquireDialogTree.PoisonToApply, new List<string> {
-                "What poison should be used, {master_nickname}?",
-                "*Is ready for you to choose the poison for them to use.*",
-                "Which bottle should I use, {master_nickname}?",
-                "Which poison should I use?",
-                "What poison do you want me to use, {master_nickname}?",
-                "What poison should I use?"
+                "¿Qué veneno se debe usar, {master_nickname}?",
+                "*Está listo para que elijas el veneno que usarán.*",
+                "¿Qué botella debo usar, {master_nickname}?",
+                "¿Qué veneno debo usar?",
+                "¿Qué veneno quieres que use, {master_nickname}?",
+                "¿Qué veneno debo usar?"
             }},
             { SquireDialogTree.ApplyPoisonTo, new List<string> {
-                "What needs some poison, {master_nickname}?",
-                "*Readies their poison.*",
-                "What would you have me poison, {master_nickname}?",
-                "What is it I should poison?",
-                "What should I poison, {master_nickname}?",
-                "What would you like me to apply the poison to?"
+                "¿Qué necesita un poco de veneno, {master_nickname}?",
+                "*Prepara su veneno.*",
+                "¿Qué quieres que envenene, {master_nickname}?",
+                "¿Qué es lo que debo envenenar?",
+                "¿Qué debo envenenar, {master_nickname}?",
+                "¿A qué te gustaría que le aplicara el veneno?"
             }},
             { SquireDialogTree.NotAPoisonPotion, new List<string> {
-                "That is not poison, {master_nickname}.",
-                "*Is confused by that not being poison.*",
-                "I see no poison here.",
-                "That doesn't appear to be poison.",
-                "Are you sure that's poison, {master_nickname}?",
-                "That is not a poison potion."
+                "Eso no es veneno, {master_nickname}.",
+                "*Está confundido porque eso no es veneno.*",
+                "No veo ningún veneno aquí.",
+                "Eso no parece ser veneno.",
+                "¿Estás seguro de que eso es veneno, {master_nickname}?",
+                "Eso no es una poción de veneno."
             }},
             { SquireDialogTree.TooFarToPoison, new List<string> {
-                "You're a little too far for that, {master_nickname}.",
-                "*Eyes the distance between you two.*",
-                "I cannot poison something so far away.",
-                "Your backpack is a little too far away for me to reach.",
-                "Could you come closer, {master_nickname}?",
-                "You're too far away for me to use that."
+                "Estás un poco demasiado lejos para eso, {master_nickname}.",
+                "*Mira la distancia entre ustedes dos.*",
+                "No puedo envenenar algo tan lejos.",
+                "Tu mochila está un poco demasiado lejos para que la alcance.",
+                "¿Podrías acercarte, {master_nickname}?",
+                "Estás demasiado lejos para que use eso."
             }},
             { SquireDialogTree.CannotPoisonNotInfectious, new List<string> {
-                "I cannot poison that, it is not infectious, {master_nickname}.",
-                "*Is unable to poison that item.*",
-                "It is impossible for me to poison that.",
-                "I cannot poison something that cannot be infected.",
-                "That is not infectious, {master_nickname}.",
-                "I am sorry, {master_nickname}, but I cannot poison something that is not infectious."
+                "No puedo envenenar eso, no es infeccioso, {master_nickname}.",
+                "*No puede envenenar ese objeto.*",
+                "Es imposible para mí envenenar eso.",
+                "No puedo envenenar algo que no se puede infectar.",
+                "Eso no es infeccioso, {master_nickname}.",
+                "Lo siento, {master_nickname}, pero no puedo envenenar algo que no es infeccioso."
             }},
             { SquireDialogTree.CannotPoisonNotBPFoD, new List<string> {
-                "I cannot poison that, it is not bladed, piercing, food or drink, {master_nickname}.",
-                "*Is unable to poison that item.*",
-                "It is impossible for me to poison that.",
-                "I cannot poison something that is not bladed, piercing, food or drink.",
-                "That is not bladed, piercing, food or drink, {master_nickname}.",
-                "I am sorry, {master_nickname}, but I cannot poison something that is not bladed, piercing, or food or drink."
+                "No puedo envenenar eso, no es afilado, perforante, comida o bebida, {master_nickname}.",
+                "*No puede envenenar ese objeto.*",
+                "Es imposible para mí envenenar eso.",
+                "No puedo envenenar algo que no sea afilado, perforante, comida o bebida.",
+                "Eso no es afilado, perforante, comida o bebida, {master_nickname}.",
+                "Lo siento, {master_nickname}, pero no puedo envenenar algo que no sea afilado, perforante, o comida o bebida."
             }},
             { SquireDialogTree.PoisoningSuccess, new List<string> {
-                "It was a success, {master_nickname}.",
-                "*Grins as their poisoning succeeds.*",
-                "The item has been poisoned.",
-                "Poisoning has happened successfully.",
-                "I've applied the poison, {master_nickname}!",
-                "I've succeeded in applying the poison!"
+                "Fue un éxito, {master_nickname}.",
+                "*Sonríe mientras su envenenamiento tiene éxito.*",
+                "El objeto ha sido envenenado.",
+                "El envenenamiento ha ocurrido con éxito.",
+                "¡He aplicado el veneno, {master_nickname}!",
+                "¡He logrado aplicar el veneno!"
             }},
             { SquireDialogTree.PoisoningFailure, new List<string> {
-                "It was a failure, {master_nickname}.",
-                "*Grimaces as they fail their poisoning.*",
-                "The item has not been poisoned.",
-                "Poisoning has failed successfully.",
-                "I've failed to applied the poison, {master_nickname}.",
-                "I have failed to apply a sufficient amount of poison."
+                "Fue un fracaso, {master_nickname}.",
+                "*Hace una mueca mientras falla su envenenamiento.*",
+                "El objeto no ha sido envenenado.",
+                "El envenenamiento ha fallado con éxito.",
+                "He fallado al aplicar el veneno, {master_nickname}.",
+                "He fallado al aplicar una cantidad suficiente de veneno."
             }},
             { SquireDialogTree.TerribleMistake, new List<string> {
-                "I have made a terrible mistake, {master_nickname}.",
-                "*Grimaces as they poison themselves.*",
-                "I got some in my mouth!",
-                "I need a cure potion quickly!",
-                "I've failed, and made a terrible mistake, {master_nickname}.",
-                "I have made a terrible mistake while applying this poison."
+                "He cometido un terrible error, {master_nickname}.",
+                "*Hace una mueca mientras se envenena.*",
+                "¡Me ha entrado un poco en la boca!",
+                "¡Necesito una poción de cura rápidamente!",
+                "He fallado y he cometido un terrible error, {master_nickname}.",
+                "He cometido un terrible error al aplicar este veneno."
             }},
             { SquireDialogTree.NoAnkhNearby, new List<string> {
-                "I'll need to be a little more closer to an ankh in order to tithe, {master_nickname}.",
-                "*Wonders if they're expected to tithe their gold to the ground.*",
-                "I don't seem to be near an ankh.",
-                "Sorry, I need to be closer to an ankh in order to tithe my gold.",
-                "I am not close enough to an ankh, {master_nickname}.",
-                "I must be near an ankh to tithe."
+                "Necesitaré estar un poco más cerca de un ankh para diezmar, {master_nickname}.",
+                "*Se pregunta si se espera que diezmen su oro al suelo.*",
+                "No parece que esté cerca de un ankh.",
+                "Lo siento, necesito estar más cerca de un ankh para diezmar mi oro.",
+                "No estoy lo suficientemente cerca de un ankh, {master_nickname}.",
+                "Debo estar cerca de un ankh para diezmar."
             }},
             { SquireDialogTree.TitheSuccess, new List<string> {
-                "*Lays their gold before the ankh, praying for good fortune.*",
-                "*Tithes gold as a sign of devotion.*",
-                "*Prays to the shrine, tithing their gold.*",
-                "*Tithes their gold to the ankh.*",
-                "*Prays for good fortune as they tithe their gold.*",
-                "*Mutters a prayer as they tithe their gold.*"
+                "*Deja su oro ante el ankh, rezando por buena fortuna.*",
+                "*Diezma oro como señal de devoción.*",
+                "*Reza al santuario, diezmando su oro.*",
+                "*Diezma su oro al ankh.*",
+                "*Reza por buena fortuna mientras diezma su oro.*",
+                "*Murmura una oración mientras diezma su oro.*"
             }},
             { SquireDialogTree.NoGoldToTithe, new List<string> {
-                "I will require more gold to tithe, {master_nickname}.",
-                "*Checks their backpack thuroughly for gold to tithe.*",
-                "There is no gold in my backpack which I may tithe.",
-                "Sorry, in order to tithe gold, first I must have gold to tithe.",
-                "May I have some funds to tithe, {master_nickname}?",
-                "I lack funds."
+                "Necesitaré más oro para diezmar, {master_nickname}.",
+                "*Revisa su mochila a fondo en busca de oro para diezmar.*",
+                "No hay oro en mi mochila que pueda diezmar.",
+                "Lo siento, para diezmar oro, primero debo tener oro para diezmar.",
+                "¿Puedo tener algunos fondos para diezmar, {master_nickname}?",
+                "Me faltan fondos."
             }},
             { SquireDialogTree.NotEnoughTithe, new List<string> {
-                "I am too low on tithing points, {master_nickname}.",
-                "*Is disappointed in their lack of tithing points.*",
-                "I might not be devoted enough to cast this, I will need to tithe more.",
-                "Sorry, I lack the tithing points required to cast this.",
-                "I will need more tithe points to cast that, {master_nickname}.",
-                "I am too low on tithing points to cast this."
+                "Tengo muy pocos puntos de diezmo, {master_nickname}.",
+                "*Está decepcionado por su falta de puntos de diezmo.*",
+                "Puede que no sea lo suficientemente devoto para lanzar esto, necesitaré diezmar más.",
+                "Lo siento, me faltan los puntos de diezmo necesarios para lanzar esto.",
+                "Necesitaré más puntos de diezmo para lanzar eso, {master_nickname}.",
+                "Tengo muy pocos puntos de diezmo para lanzar esto."
             }},
             { SquireDialogTree.NotEnoughMana, new List<string> {
-                "I am too low on mana, {master_nickname}.",
-                "*Lacks the mana required to cast this.*",
-                "I am low on mana.",
-                "Sorry, I lack the mana required to cast this.",
-                "I will need more mana to cast that, {master_nickname}.",
-                "I am too low on mana to cast this."
+                "Tengo muy poco maná, {master_nickname}.",
+                "*Le falta el maná necesario para lanzar esto.*",
+                "Tengo poco maná.",
+                "Lo siento, me falta el maná necesario para lanzar esto.",
+                "Necesitaré más maná para lanzar eso, {master_nickname}.",
+                "Tengo muy poco maná para lanzar esto."
             }},
             { SquireDialogTree.NoChivalryBook, new List<string> {
-                "I would struggle casting that, {master_nickname}, I need a Chivalry book.",
-                "*Does not have a Chivalry book.*",
-                "Will need a Chivalry book to cast this.",
-                "Sorry, I don't seem to have a Chivalry book on me.",
-                "I am unfamiliar with that spell, {master_nickname}, I will need a Chivalry book.",
-                "I will need a Chivalry book to cast that."
+                "Me costaría lanzar eso, {master_nickname}, necesito un libro de Caballería.",
+                "*No tiene un libro de Caballería.*",
+                "Necesitaré un libro de Caballería para lanzar esto.",
+                "Lo siento, no parece que tenga un libro de Caballería encima.",
+                "No estoy familiarizado con ese hechizo, {master_nickname}, necesitaré un libro de Caballería.",
+                "Necesitaré un libro de Caballería para lanzar eso."
             }},
             { SquireDialogTree.TooSoonToMeditate, new List<string> {
-                "I cannot concentrate on meditating again this soon.",
-                "*Becomes too infuriated to meditate.*",
-                "Give me some time, please.",
-                "I need a moment.",
-                "I will not attempt to meditate again this soon, {master_nickname}.",
-                "It's a little too soon for me to attempt meditating, {master_nickname}."
+                "No puedo concentrarme en meditar de nuevo tan pronto.",
+                "*Se enfurece demasiado para meditar.*",
+                "Dame un tiempo, por favor.",
+                "Necesito un momento.",
+                "No intentaré meditar de nuevo tan pronto, {master_nickname}.",
+                "Es un poco pronto para que intente meditar, {master_nickname}."
             }},
             { SquireDialogTree.TooSoonToCastASpell, new List<string> {
-                "I can't concentrate on casting another spell this soon.",
-                "*Cannot concentrate on casting another spell this soon.*",
-                "Give me some time, please.",
-                "I need a moment.",
-                "I will not attempt to cast a spell again this soon, {master_nickname}.",
-                "It's a little too soon for me to attempt casting another spell, {master_nickname}."
+                "No puedo concentrarme en lanzar otro hechizo tan pronto.",
+                "*No puede concentrarse en lanzar otro hechizo tan pronto.*",
+                "Dame un tiempo, por favor.",
+                "Necesito un momento.",
+                "No intentaré lanzar un hechizo de nuevo tan pronto, {master_nickname}.",
+                "Es un poco pronto para que intente lanzar otro hechizo, {master_nickname}."
             }},
             { SquireDialogTree.NotEnoughSpellSkill, new List<string> {
-                "I lack the knowledge to cast this.",
-                "*Is not confident in their ability to cast this spell.*",
-                "I am not confident in my ability to cast this yet.",
-                "I lack the knowledge to cast this yet.",
-                "I will need to get better at this skill first, {master_nickname}.",
-                "I am not skilled enough to cast that yet, {master_nickname}."
+                "Me falta el conocimiento para lanzar esto.",
+                "*No confía en su capacidad para lanzar este hechizo.*",
+                "No confío en mi capacidad para lanzar esto todavía.",
+                "Me falta el conocimiento para lanzar esto todavía.",
+                "Necesitaré mejorar en esta habilidad primero, {master_nickname}.",
+                "No soy lo suficientemente hábil para lanzar eso todavía, {master_nickname}."
             }},
             { SquireDialogTree.NoExplosionPotion, new List<string> {
-                "I don't seem to have one.",
-                "*Checks their backpack for an explosion potion.*",
-                "It's hard for me to throw what I don't have.",
-                "Do you have an explosion potion for me?",
-                "I might need an explosion potion to throw, {master_nickname}.",
-                "I don't seem to have an explosion potion, {master_nickname}."
+                "No parece que tenga una.",
+                "*Revisa su mochila en busca de una poción de explosión.*",
+                "Es difícil para mí lanzar lo que no tengo.",
+                "¿Tienes una poción de explosión para mí?",
+                "Podría necesitar una poción de explosión para lanzar, {master_nickname}.",
+                "No parece que tenga una poción de explosión, {master_nickname}."
             }},
             { SquireDialogTree.SquireHasANewTeam, new List<string> {
-                "Let me try screaming it... GO {squire_team_upper}! Yeah, that works!",
-                "*Is more than excited to be a part of {squire_team}!*",
-                "{squire_team}, huh? I will try to get along with them!",
-                "I am certain I will get used to the team {squire_team}.",
-                "{squire_team}, let's do this!",
-                "Alright, I will belong to {squire_team} from now on."
+                "Déjame intentar gritarlo... ¡VAMOS {squire_team_upper}! ¡Sí, eso funciona!",
+                "*¡Está más que emocionado de ser parte de {squire_team}!*",
+                "{squire_team}, ¿eh? ¡Intentaré llevarme bien con ellos!",
+                "Estoy seguro de que me acostumbraré al equipo {squire_team}.",
+                "¡{squire_team}, vamos a hacerlo!",
+                "Muy bien, perteneceré a {squire_team} de ahora en adelante."
             }},
             { SquireDialogTree.NoBushidoBook, new List<string> {
-                "I would struggle casting that, {master_nickname}, I need a Bushido book.",
-                "*Does not have a Bushido book.*",
-                "Will need a Bushido book to cast this.",
-                "Sorry, I don't seem to have a Bushido book on me.",
-                "I am unfamiliar with that spell, {master_nickname}, I will need a Bushido book.",
-                "I will need a Bushido book to cast that."
+                "Me costaría lanzar eso, {master_nickname}, necesito un libro de Bushido.",
+                "*No tiene un libro de Bushido.*",
+                "Necesitaré un libro de Bushido para lanzar esto.",
+                "Lo siento, no parece que tenga un libro de Bushido encima.",
+                "No estoy familiarizado con ese hechizo, {master_nickname}, necesitaré un libro de Bushido.",
+                "Necesitaré un libro de Bushido para lanzar eso."
             }},
             { SquireDialogTree.NoNecroBook, new List<string> {
-                "I would struggle casting that, {master_nickname}, I need a Necro book.",
-                "*Does not have a Necro book.*",
-                "Will need a Necro book to cast this.",
-                "Sorry, I don't seem to have a Necro book on me.",
-                "I am unfamiliar with that spell, {master_nickname}, I will need a Necro book.",
-                "I will need a Necro book to cast that."
+                "Me costaría lanzar eso, {master_nickname}, necesito un libro de Nigromancia.",
+                "*No tiene un libro de Nigromancia.*",
+                "Necesitaré un libro de Nigromancia para lanzar esto.",
+                "Lo siento, no parece que tenga un libro de Nigromancia encima.",
+                "No estoy familiarizado con ese hechizo, {master_nickname}, necesitaré un libro de Nigromancia.",
+                "Necesitaré un libro de Nigromancia para lanzar eso."
             }},
         };
     }

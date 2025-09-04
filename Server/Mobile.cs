@@ -38,6 +38,7 @@ using Server.Mobiles;
 using Server.Network;
 using Server.Prompts;
 using Server.Targeting;
+using Server.Misc;
 
 namespace Server
 {
@@ -4888,26 +4889,6 @@ namespace Server
 			if( string.IsNullOrEmpty( text ) )
 				return;
 
-			// =================== TRANSLATION HOOK START ===================
-			string overheadText = text;
-			if (!(this is PlayerMobile))
-			{
-				bool fromCache;
-				string translated = Translator.Translate(text, out fromCache);
-				if (!fromCache)
-				{
-					Console.WriteLine(String.Format("NPC {0} says: {1} ({2})", this.Name, text, translated));
-				}
-
-				if (fromCache)
-				{
-					overheadText = translated;
-				}
-			}
-			// For PlayerMobile, logging is handled in its DoSpeech override.
-			// overheadText remains as the original text for players.
-			// =================== TRANSLATION HOOK END =====================
-
 			List<Mobile> hears = m_Hears;
 			List<IEntity> onSpeech = m_OnSpeech;
 
@@ -4950,6 +4931,22 @@ namespace Server
 				}
 
 				eable.Free();
+
+				// =================== TRANSLATION HOOK START ===================
+				string overheadText = text; // Default to original text
+				if (!(this is PlayerMobile)) // Only translate for NPCs
+				{
+					bool fromCache;
+					string translated = Server.Misc.Translator.Translate(text, out fromCache);
+					overheadText = translated; // Use translated text for overhead message
+
+					// Log to console if it's a new translation
+					if (!fromCache)
+					{
+						Console.WriteLine(String.Format("NPC {0} says: {1} ({2})", this.Name, text, translated));
+					}
+				}
+				// =================== TRANSLATION HOOK END =====================
 
 				object mutateContext = null;
 				string mutatedText = overheadText; // Use overheadText for mutation
@@ -10757,17 +10754,17 @@ namespace Server
 
 		public void PublicOverheadMessage( MessageType type, int hue, bool ascii, string text, bool noLineOfSight )
 		{
-			if (Translation.TranslateToSpanish != null)
-				text = Translation.TranslateToSpanish(text);
+			bool fromCache;
+			string translated = Server.Misc.Translator.Translate(text, out fromCache);
 
 			if( m_Map != null )
 			{
 				Packet p = null;
 
 							if( ascii )
-								p = new AsciiMessage( m_Serial, Body, type, hue, 3, Name, text );
+								p = new AsciiMessage( m_Serial, Body, type, hue, 3, Name, translated );
 							else
-								p = new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, text );
+								p = new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, translated );
 
 							p.Acquire();
 
