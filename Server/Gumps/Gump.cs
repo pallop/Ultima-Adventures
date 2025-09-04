@@ -234,21 +234,50 @@ namespace Server.Gumps
 
 		public void AddHtml( int x, int y, int width, int height, string text, bool background, bool scrollbar )
 		{
+			if (Translation.TranslateToSpanish != null)
+				text = Translation.TranslateToSpanish(text);
 			Add( new GumpHtml( x, y, width, height, text, background, scrollbar ) );
 		}
 
 		public void AddHtmlLocalized( int x, int y, int width, int height, int number, bool background, bool scrollbar )
 		{
+			if (Translation.TranslateCliloc != null)
+			{
+				string translated = Translation.TranslateCliloc(number, null);
+				if (translated != null)
+				{
+					AddHtml(x, y, width, height, translated, background, scrollbar);
+					return;
+				}
+			}
 			Add( new GumpHtmlLocalized( x, y, width, height, number, background, scrollbar ) );
 		}
 
 		public void AddHtmlLocalized( int x, int y, int width, int height, int number, int color, bool background, bool scrollbar )
 		{
+			if (Translation.TranslateCliloc != null)
+			{
+				string translated = Translation.TranslateCliloc(number, null);
+				if (translated != null)
+				{
+					AddHtml(x, y, width, height, translated, background, scrollbar);
+					return;
+				}
+			}
 			Add( new GumpHtmlLocalized( x, y, width, height, number, color, background, scrollbar ) );
 		}
 
 		public void AddHtmlLocalized( int x, int y, int width, int height, int number, string args, int color, bool background, bool scrollbar )
 		{
+			if (Translation.TranslateCliloc != null)
+			{
+				string translated = Translation.TranslateCliloc(number, args);
+				if (translated != null)
+				{
+					AddHtml(x, y, width, height, translated, background, scrollbar);
+					return;
+				}
+			}
 			Add( new GumpHtmlLocalized( x, y, width, height, number, args, color, background, scrollbar ) );
 		}
 
@@ -288,6 +317,8 @@ namespace Server.Gumps
 
 		public void AddLabel( int x, int y, int hue, string text )
 		{
+			if (Translation.TranslateToSpanish != null)
+				text = Translation.TranslateToSpanish(text);
 			Add( new GumpLabel( x, y, hue, text ) );
 		}
 

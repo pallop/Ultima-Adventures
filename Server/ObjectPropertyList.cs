@@ -154,6 +154,8 @@ namespace Server
 
 		public void Add( string text )
 		{
+			if (Translation.TranslateToSpanish != null)
+				text = Translation.TranslateToSpanish(text);
 			Add( GetStringNumber(), text );
 		}
 

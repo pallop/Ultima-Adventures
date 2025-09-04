@@ -24,26 +24,11 @@ namespace Server.Misc
         public static void Initialize()
         {
             EventSink.ServerStarted += new ServerStartedEventHandler(EventSink_ServerStarted);
-            EventSink.Speech += new SpeechEventHandler(OnSpeech);
         }
         public static void EventSink_ServerStarted()
         {
             ThreadPool.QueueUserWorkItem(new WaitCallback(ConsoleListen));
             Console.WriteLine("CC initialized...");
-        }
-        private static void OnSpeech(SpeechEventArgs args)
-        {
-            if (args.Mobile != null && Hearconsole)
-            {
-                try
-                {
-                    if ((Server.Misc.Worlds.GetRegionName( args.Mobile.Map, args.Mobile.Location )).Length > 0)
-                        Console.WriteLine("" + args.Mobile.Name + " (" + Server.Misc.Worlds.GetRegionName( args.Mobile.Map, args.Mobile.Location ) + "): " + args.Speech + "");
-                    else
-                        Console.WriteLine("" + args.Mobile.Name + ": " + args.Speech + "");
-                }
-                catch (Exception e) { }
-            }
         }
         public static void ConsoleListen(Object stateInfo)
         {

@@ -964,6 +964,7 @@ namespace Server
 			}
 			else
             {
+
                 if ( m_Amount <= 1 )
 					list.Add( name );
 				else
@@ -4579,7 +4580,10 @@ namespace Server
 				}
 				else
 				{
-					ns.Send( new UnicodeMessage( m_Serial, m_ItemID, MessageType.Label, 0x3B2, 3, "ENU", "", this.Name + ( m_Amount > 1 ? " : " + m_Amount : "" ) ) );
+					string name = this.Name;
+					if (Translation.TranslateToSpanish != null)
+						name = Translation.TranslateToSpanish(name);
+            ns.Send( new UnicodeMessage( m_Serial, m_ItemID, MessageType.Label, 0x3B2, 3, "ENU", "", name + ( m_Amount > 1 ? " : " + m_Amount : "" ) ) );
 				}
 			}
 		}

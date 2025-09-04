@@ -4888,6 +4888,25 @@ namespace Server
 			if( string.IsNullOrEmpty( text ) )
 				return;
 
+			// =================== TRANSLATION HOOK START ===================
+			string overheadText = text;
+			if (!(this is PlayerMobile))
+			{
+				bool fromCache;
+				string translated = Translator.Translate(text, out fromCache);
+				if (!fromCache)
+				{
+					Console.WriteLine(String.Format("NPC {0} says: {1} ({2})", this.Name, text, translated));
+				}
+
+				if (fromCache)
+				{
+					overheadText = translated;
+				}
+			}
+			// For PlayerMobile, logging is handled in its DoSpeech override.
+			// overheadText remains as the original text for players.
+			// =================== TRANSLATION HOOK END =====================
 
 			List<Mobile> hears = m_Hears;
 			List<IEntity> onSpeech = m_OnSpeech;
@@ -4933,7 +4952,7 @@ namespace Server
 				eable.Free();
 
 				object mutateContext = null;
-				string mutatedText = text;
+				string mutatedText = overheadText; // Use overheadText for mutation
 				SpeechEventArgs mutatedArgs = null;
 
 				if( MutateSpeech( hears, ref mutatedText, ref mutateContext ) )
@@ -4958,9 +4977,8 @@ namespace Server
 
 						if( ns != null ) {
 							if( regp == null )
-								regp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, text ) );
-
-							ns.Send( regp );
+								regp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, overheadText ) ); // Use overheadText
+							ns.Send(regp);
 						}
 					} else {
 						heard.OnSpeech( mutatedArgs );
@@ -4970,8 +4988,7 @@ namespace Server
 						if( ns != null ) {
 							if( mutp == null )
 								mutp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, mutatedText ) );
-
-							ns.Send( mutp );
+							ns.Send(mutp);
 						}
 					}
 				}
@@ -10740,6 +10757,9 @@ namespace Server
 
 		public void PublicOverheadMessage( MessageType type, int hue, bool ascii, string text, bool noLineOfSight )
 		{
+			if (Translation.TranslateToSpanish != null)
+				text = Translation.TranslateToSpanish(text);
+
 			if( m_Map != null )
 			{
 				Packet p = null;
@@ -11000,7 +11020,12 @@ namespace Server
 			NetState ns = m_NetState;
 
 			if( ns != null )
+			{
+				if (Translation.TranslateToSpanish != null)
+					text = Translation.TranslateToSpanish(text);
+
 				ns.Send( new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", text ) );
+			}
 		}
 
 		public void SendMessage( int hue, string format, params object[] args )

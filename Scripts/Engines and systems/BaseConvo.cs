@@ -1105,7 +1105,11 @@ namespace Server.Mobiles
 						town = "great wide open";
 					string job = this.Title != null && this.Title.StartsWith( "the" ) ? this.Title.Substring( 5 ) : m_Job.ToString();
 					
-					Say( String.Format( str, pc != null ? pc.Name : "someone", this.Name, job, town, "" ) );
+					string response = String.Format( str, pc != null ? pc.Name : "someone", this.Name, job, town, "" );
+					if (Translation.TranslateToSpanish != null)
+						Say( Translation.TranslateToSpanish(response) );
+					else
+						Say( response );
 					e.Handled = true;
 				}
 			}

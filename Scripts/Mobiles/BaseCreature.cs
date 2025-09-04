@@ -2905,7 +2905,7 @@ namespace Server.Mobiles
 				else if ( this is AncientLich )
 				{
 					this.Name = NameList.RandomName( "evil mage" );
-					this.Title = "the Captain of the Dead";
+					this.Title = Translator.Translate("the Captain of the Dead");
 					PirateChest MyChest = new PirateChest(10,null);
 					MyChest.ContainerOwner = "Treasure Chest of " + this.Name + " " + this.Title + "";
 					MyChest.Hue = 0x47E;
@@ -3037,11 +3037,11 @@ namespace Server.Mobiles
 					if ( this is Gazer ){ this.Name = "a seeker"; }
 					if ( this is MadDog ){ this.Name = "a wolf"; }
 					if ( this is StoneElemental ){ this.Name = "a stone golem"; }
-					if ( this is FrostGiant ){ this.Title = "the ice giant"; }
+					if ( this is FrostGiant ){ this.Title = Translator.Translate("the ice giant"); }
 				}
 				else if ( reg.IsPartOf( "Kylearan's Tower" ) )
 				{
-					if ( this is Gazer ){ this.Body = 674; this.BaseSoundID = 0x47D; this.Name = NameList.RandomName( "drakkul" ); this.Title = "the beholder"; }
+					if ( this is Gazer ){ this.Body = 674; this.BaseSoundID = 0x47D; this.Name = NameList.RandomName( "drakkul" ); this.Title = Translator.Translate("the beholder"); }
 					if ( this is MadDog ){ this.Name = "a wolf"; }
 					if ( this is StoneElemental ){ this.Name = "a stone elemental"; }
 					if ( this is LowerDemon ){ this.Name = "a demon"; this.Hue = 0x5B5; this.Body = 4; }
@@ -3054,7 +3054,7 @@ namespace Server.Mobiles
 					if ( this is Daemon ){ this.Name = "a balrog"; this.Title = ""; this.Body = 38; }
 					if ( this is StormGiant && Utility.RandomMinMax( 1, 2 ) == 1 )
 					{
-						this.Title = "the cloud giant";
+						this.Title = Translator.Translate("the cloud giant");
 						Item lootchest = this.Backpack.FindItemByType( typeof ( LootChest ) );
 						if ( lootchest != null )
 						{
@@ -3074,7 +3074,7 @@ namespace Server.Mobiles
 				}
 				else if ( this is EvilMage )
 				{
-					this.Title = "the dark wizard";
+					this.Title = Translator.Translate("the dark wizard");
 					MorphingTime.ColorMyClothes( this, 0x497 );
 				}
 			}
@@ -3085,11 +3085,11 @@ namespace Server.Mobiles
 				{
 					switch ( Utility.Random( 5 ) )
 					{
-						case 0: this.Title = "the devil of blood"; 			break;
-						case 1: this.Title = "the bleeding devil"; 			break;
-						case 2: this.Title = "the blood devil"; 			break;
-						case 3: this.Title = "the devil of bloody hell"; 	break;
-						case 4: this.Title = "the blood moon devil"; 		break;
+						case 0: this.Title = Translator.Translate("the devil of blood"); 			break;
+						case 1: this.Title = Translator.Translate("the bleeding devil"); 			break;
+						case 2: this.Title = Translator.Translate("the blood devil"); 			break;
+						case 3: this.Title = Translator.Translate("the devil of bloody hell"); 	break;
+						case 4: this.Title = Translator.Translate("the blood moon devil"); 		break;
 					}
 					Hue = Utility.RandomList( 0xB01, 0x870 );
 				}
@@ -3315,13 +3315,13 @@ namespace Server.Mobiles
 			{
 				if ( this is LichLord )
 				{
-					this.Title = "the high pharaoh";
+					this.Title = Server.Translation.TranslateToSpanish("the high pharaoh");
 					this.Hue = 0x9C4;
 					this.Body = 125;
 				}
 				else if ( this is Lich )
 				{
-					this.Title = "the pharaoh";
+					this.Title = Server.Translation.TranslateToSpanish("the pharaoh");
 					this.Hue = 0x9DF;
 					this.Body = 125;
 				}
@@ -3372,19 +3372,19 @@ namespace Server.Mobiles
 				{
 					switch ( Utility.Random( 5 ) )
 					{
-						case 0: this.Title = "the daemon of filth"; break;
-						case 1: this.Title = "the daemon of crud"; break;
-						case 2: this.Title = "the daemon of grime"; break;
-						case 3: this.Title = "the daemon of sludge"; break;
-						case 4: this.Title = "the daemon of the putrid"; break;
+						case 0: this.Title = Server.Translation.TranslateToSpanish("the daemon of filth"); break;
+						case 1: this.Title = Server.Translation.TranslateToSpanish("the daemon of crud"); break;
+						case 2: this.Title = Server.Translation.TranslateToSpanish("the daemon of grime"); break;
+						case 3: this.Title = Server.Translation.TranslateToSpanish("the daemon of sludge"); break;
+						case 4: this.Title = Server.Translation.TranslateToSpanish("the daemon of the putrid"); break;
 					}
 				}
 				if ( this is ToxicElemental ){ this.Name = "a sewage elemental"; this.Hue = Hue = 0xB97; }
-				if ( this is ForestGiant ){ this.Hue = Hue = 0xB97; this.Title = "the sludge giant"; }
+				if ( this is ForestGiant ){ this.Hue = Hue = 0xB97; this.Title = Translator.Translate("the sludge giant"); }
 				if ( this is AncientLich )
 				{
 					this.Hue = Hue = 0x967;
-					this.Title = "the shadow lich";
+					this.Title = Translator.Translate("the shadow lich");
 
 					if ( Utility.Random( 3 ) == 1 )
 					{
@@ -3446,7 +3446,7 @@ namespace Server.Mobiles
 				{
 					this.Hue = Hue = 0x83B;
 					this.Name = "Kazibal";
-					this.Title = "the unearthed";
+					this.Title = Translator.Translate("the unearthed");
 
 					if ( Utility.Random( 3 ) == 1 )
 					{
@@ -3470,15 +3470,15 @@ namespace Server.Mobiles
 					this.Body = 306;
 					this.BaseSoundID = 639;
 					this.Name = NameList.RandomName( "lizardman" );
-					this.Title = "the silisk sorcerer";
+					this.Title = Translator.Translate("the silisk sorcerer");
 				}
 				else if ( this is Sleestax )
 				{
-					this.Title = "the silisk";
+					this.Title = Translator.Translate("the silisk");
 				}
 				else if ( this is Grathek )
 				{
-					this.Title = "the silisk guard";
+					this.Title = Translator.Translate("the silisk guard");
 				}
 			}
 

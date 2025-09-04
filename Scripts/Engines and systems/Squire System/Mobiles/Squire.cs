@@ -441,24 +441,23 @@ namespace Server.Mobiles
         {
             string[] keyWords =
             {
-        " ", "restyle", "stop", "stay", "follow", "follow me", "come",
-        "throw", "change my nickname", "change your nickname", "heal",
-        "dress", "undress", "mount", "dismount", "stats", "unload", "list",
-        "arm", "grab", "grab all", "loot", "loot all", "attack", "kill",
-        "guard", "guard me", "rename yourself", "backpack", "play music",
-        "provoke", "discord", "make peace", "hide", "be quiet", "talk again",
-        "drink agility", "drink poison", "drink refresh", "drink strength",
-        "drink cure", "drink health", "steal", "lockpick", "create set one",
-        "equip set one", "unarm", "create set two", "equip set two",
-        "create set three", "equip set three", "spirit speak", "change title",
-        "quiver", "poison", "skills", "switches", "tithe", "meditate", "consecrate weapon",
-        "divine fury", "dispel evil", "enemy of one", "holy light", "noble sacrifice",
-        "cleanse by fire", "close wounds", "remove curse", "throw explosion",
-        "weapon ability", "weapon ability one", "weapon ability two",
-        "check tithing points", "set team", "Confidence", "LightningStrike",
-        "Evasion", "CounterAttack", "MomentumStrike", "HonorableExecution", "PainSpike",
-        "PoisonStrike", "WraithForm", "CurseWeapon", "Wither", "LichForm", "VampiricEmbrace" // Added 1.9.7 + Rafa Bush and Necro
-	    };
+                " ", "restyle", "stop", "stay", "follow", "follow me", "come", "throw",
+                "change my nickname", "change your nickname", "heal", "dress", "undress",
+                "mount", "dismount", "stats", "unload", "list", "arm", "grab", "grab all",
+                "loot", "loot all", "attack", "kill", "guard", "guard me", "rename yourself",
+                "backpack", "play music", "provoke", "discord", "make peace", "hide",
+                "be quiet", "talk again", "drink agility", "drink poison", "drink refresh",
+                "drink strength", "drink cure", "drink health", "steal", "lockpick",
+                "create set one", "equip set one", "unarm", "create set two", "equip set two",
+                "create set three", "equip set three", "spirit speak", "change title",
+                "quiver", "poison", "skills", "switches", "tithe", "meditate", "consecrate weapon",
+                "divine fury", "dispel evil", "enemy of one", "holy light", "noble sacrifice",
+                "cleanse by fire", "close wounds", "remove curse", "throw explosion",
+                "weapon ability", "weapon ability one", "weapon ability two",
+                "check tithing points", "set team", "Confidence", "LightningStrike",
+                "Evasion", "CounterAttack", "MomentumStrike", "HonorableExecution",
+                "PainSpike", "PoisonStrike", "WraithForm", "CurseWeapon", "Wither", "LichForm", "VampiricEmbrace"
+            };
 
             s_Keywords = new Hashtable(keyWords.Length, StringComparer.OrdinalIgnoreCase);
 
@@ -639,25 +638,26 @@ namespace Server.Mobiles
             }
 
             object command = (int)SquireCommands.None;
+            string translatedSpeech = Translator.Translate(e.Speech);
 
-            if (e.Speech.Length > "all ".Length && e.Speech.Substring(0, "all ".Length).ToLower() == "all ")
+            if (translatedSpeech.Length > "all ".Length && translatedSpeech.Substring(0, "all ".Length).ToLower() == "all ")
             {
-                command = s_Keywords[e.Speech.Substring("all ".Length)];
+                command = s_Keywords[translatedSpeech.Substring("all ".Length)];
                 isSNickname = false;
             }
-            else if (e.Speech.Length > Name.Length + 1 && e.Speech.Substring(0, Name.Length + 1).ToLower() == Name.ToLower() + ' ')
+            else if (translatedSpeech.Length > Name.Length + 1 && translatedSpeech.Substring(0, Name.Length + 1).ToLower() == Name.ToLower() + ' ')
             {
-                command = s_Keywords[e.Speech.Substring(Name.Length + 1)];
+                command = s_Keywords[translatedSpeech.Substring(Name.Length + 1)];
                 isSNickname = false;
             }
-            else if (m_SquireNickname != null && e.Speech.Length > m_SquireNickname.Length + 1 && e.Speech.Substring(0, m_SquireNickname.Length + 1).ToLower() == m_SquireNickname.ToLower() + ' ')
+            else if (m_SquireNickname != null && translatedSpeech.Length > m_SquireNickname.Length + 1 && translatedSpeech.Substring(0, m_SquireNickname.Length + 1).ToLower() == m_SquireNickname.ToLower() + ' ')
             {
-                command = s_Keywords[e.Speech.Substring(m_SquireNickname.Length + 1)];
+                command = s_Keywords[translatedSpeech.Substring(m_SquireNickname.Length + 1)];
                 isSNickname = true;
             }
-            else if (m_SquireTeam != null && e.Speech.Length > m_SquireTeam.Length + 1 && e.Speech.Substring(0, m_SquireTeam.Length + 1).ToLower() == m_SquireTeam.ToLower() + ' ') // Added 1.9.7
+            else if (m_SquireTeam != null && translatedSpeech.Length > m_SquireTeam.Length + 1 && translatedSpeech.Substring(0, m_SquireTeam.Length + 1).ToLower() == m_SquireTeam.ToLower() + ' ') // Added 1.9.7
             {
-                command = s_Keywords[e.Speech.Substring(m_SquireTeam.Length + 1)];
+                command = s_Keywords[translatedSpeech.Substring(m_SquireTeam.Length + 1)];
                 isSquireTeam = true;
             }
 
