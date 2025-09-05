@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="11">
+	<account>
+		<username>pall</username>
+		<email>none</email>
+		<newCryptPassword>A7-3C-FB-03-9B-33-4C-34-DC-9B-2E-0B-9E-BD-3F-63-72-33-0C-17</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<flags>2</flags>
+		<created>2021-10-26T18:48:22.3665492Z</created>
+		<lastLogin>2021-10-26T18:48:22.3665492Z</lastLogin>
+		<totalGameTime>P3DT4H25M59.2571376S</totalGameTime>
+		<chars>
+			<char index="0">52869</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2022-11-11T02:42:33.9906921+01:00">Character #1 0xCB69 "Mr Admin" deleted by 127.0.0.1</comment>
+		</comments>
+		<tags>
+			<tag name="numRewardsChosen">5</tag>
+		</tags>
+		<addressList count="21">
+			<ip>127.0.0.1</ip>
+			<ip>46.222.121.23</ip>
+			<ip>46.222.143.14</ip>
+			<ip>170.253.38.80</ip>
+			<ip>188.26.210.100</ip>
+			<ip>170.253.36.85</ip>
+			<ip>79.116.247.68</ip>
+			<ip>192.168.1.128</ip>
+			<ip>147.28.139.207</ip>
+			<ip>50.31.197.122</ip>
+			<ip>192.168.1.234</ip>
+			<ip>192.168.1.130</ip>
+			<ip>213.162.204.218</ip>
+			<ip>79.117.71.169</ip>
+			<ip>46.24.17.122</ip>
+			<ip>79.117.110.51</ip>
+			<ip>192.168.88.1</ip>
+			<ip>192.168.88.72</ip>
+			<ip>167.88.159.69</ip>
+			<ip>83.42.76.202</ip>
+			<ip>46.6.52.36</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>derkogm</username>
+		<email />
+		<newCryptPassword>F6-F6-83-87-72-A7-79-46-B2-1A-5A-59-A5-D1-45-AE-71-66-16-C2</newCryptPassword>
+		<accessLevel>Administrator</accessLevel>
+		<created>2022-11-11T01:42:56.4120234Z</created>
+		<lastLogin>2022-11-11T01:42:56.4120234Z</lastLogin>
+		<totalGameTime>P1DT9M5.6557794S</totalGameTime>
+		<chars>
+			<char index="0">17222</char>
+			<char index="1">235220</char>
+			<char index="2">269980</char>
+		</chars>
+		<addressList count="4">
+			<ip>79.154.194.14</ip>
+			<ip>79.154.209.38</ip>
+			<ip>83.42.76.202</ip>
+			<ip>149.74.170.42</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>derko</username>
+		<email />
+		<newCryptPassword>49-DE-65-86-9F-C0-04-7D-C7-F5-8D-A2-9A-11-B9-75-75-73-51-C2</newCryptPassword>
+		<created>2022-11-11T14:13:24.3971034Z</created>
+		<lastLogin>2022-11-11T14:13:24.3971034Z</lastLogin>
+		<totalGameTime>PT23H24M16.7305907S</totalGameTime>
+		<chars>
+			<char index="0">275371</char>
+			<char index="1">275377</char>
+			<char index="4">11314</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2024-08-17T21:38:20.93849+02:00">Character #2 0x632E "plonamdo" deleted by 79.154.204.86</comment>
+			<comment addedBy="System" lastModified="2024-08-17T21:38:37.0394843+02:00">Character #1 0xA092 "testskill" deleted by 79.154.204.86</comment>
+			<comment addedBy="System" lastModified="2025-01-17T00:28:37.795561+01:00">Character #1 0x2A "Derko" deleted by 79.154.209.38</comment>
+			<comment addedBy="System" lastModified="2025-01-17T00:28:44.8155826+01:00">Character #2 0x7044 "tontosos" deleted by 79.154.209.38</comment>
+			<comment addedBy="System" lastModified="2025-08-27T01:09:38.6200017+02:00">Character #1 0x15227 "Daerko" deleted by 83.42.76.202</comment>
+			<comment addedBy="System" lastModified="2025-08-27T01:09:42.4797262+02:00">Character #2 0x24266 "Virith" deleted by 83.42.76.202</comment>
+			<comment addedBy="System" lastModified="2025-08-27T01:09:45.9642121+02:00">Character #3 0xEB "Annikka" deleted by 83.42.76.202</comment>
+			<comment addedBy="System" lastModified="2025-08-27T01:09:49.1168205+02:00">Character #4 0x11C42 "Sir Derko Van" deleted by 83.42.76.202</comment>
+		</comments>
+		<tags>
+			<tag name="numRewardsChosen">4</tag>
+		</tags>
+		<addressList count="10">
+			<ip>79.154.194.14</ip>
+			<ip>79.154.204.86</ip>
+			<ip>50.31.197.122</ip>
+			<ip>147.75.87.251</ip>
+			<ip>79.154.213.117</ip>
+			<ip>79.154.209.38</ip>
+			<ip>83.42.76.202</ip>
+			<ip>77.225.93.145</ip>
+			<ip>176.83.68.80</ip>
+			<ip>149.74.170.42</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>12sebiita</username>
+		<email />
+		<newCryptPassword>B7-79-A9-2B-BB-8C-13-09-7C-E8-54-21-6A-73-A3-A6-B4-1C-5B-5F</newCryptPassword>
+		<created>2025-01-24T23:28:27.754866Z</created>
+		<lastLogin>2025-01-24T23:28:27.754866Z</lastLogin>
+		<totalGameTime>PT1M9.0584867S</totalGameTime>
+		<chars>
+			<char index="0">420586</char>
+		</chars>
+		<addressList count="1">
+			<ip>188.26.211.84</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>sebiita12</username>
+		<email />
+		<newCryptPassword>64-A5-E4-8A-41-6A-E2-D2-66-4D-DD-19-C9-51-42-0D-A5-8A-1A-4C</newCryptPassword>
+		<created>2025-01-25T17:48:38.0183759Z</created>
+		<lastLogin>2025-01-25T17:48:38.0183759Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<addressList count="1">
+			<ip>147.28.139.207</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>derko1</username>
+		<email />
+		<newCryptPassword>A8-D2-71-65-F7-FD-A5-64-87-FB-0A-05-82-C6-8A-99-E5-A7-52-4F</newCryptPassword>
+		<created>2025-08-21T23:39:43.3894825Z</created>
+		<lastLogin>2025-08-21T23:39:43.3894825Z</lastLogin>
+		<totalGameTime>PT9M44.609609S</totalGameTime>
+		<chars>
+			<char index="0">275391</char>
+		</chars>
+		<addressList count="3">
+			<ip>192.168.88.1</ip>
+			<ip>192.168.88.72</ip>
+			<ip>149.74.170.42</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>seel82</username>
+		<email />
+		<newCryptPassword>B9-9E-CC-73-4D-88-85-3F-DF-78-35-F1-7F-8B-CB-53-81-80-79-36</newCryptPassword>
+		<created>2025-08-22T12:51:30.759279Z</created>
+		<lastLogin>2025-08-22T12:51:30.759279Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<addressList count="1">
+			<ip>89.222.108.226</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>pallop</username>
+		<email />
+		<newCryptPassword>DA-AF-49-1B-C4-E4-39-AE-ED-92-9E-57-52-D7-78-9A-5A-63-94-CC</newCryptPassword>
+		<created>2025-08-23T21:36:19.4240468Z</created>
+		<lastLogin>2025-08-23T21:36:19.4240468Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<addressList count="1">
+			<ip>167.88.159.69</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>pallz</username>
+		<email />
+		<newCryptPassword>A9-15-59-38-82-EF-5F-85-13-02-23-DD-6C-67-07-B6-C9-8A-51-8D</newCryptPassword>
+		<created>2025-08-23T21:36:54.4761483Z</created>
+		<lastLogin>2025-08-23T21:36:54.4761483Z</lastLogin>
+		<totalGameTime>PT1M6.6562247S</totalGameTime>
+		<chars>
+			<char index="0">547</char>
+		</chars>
+		<addressList count="1">
+			<ip>192.168.88.1</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>derko3</username>
+		<email />
+		<newCryptPassword>EB-8C-14-2A-07-04-86-DB-40-F7-9F-A2-66-CE-C3-94-D0-79-91-AE</newCryptPassword>
+		<created>2025-09-02T16:39:50.1021452Z</created>
+		<lastLogin>2025-09-02T16:39:50.1021452Z</lastLogin>
+		<totalGameTime>PT7M25.58559S</totalGameTime>
+		<chars>
+			<char index="0">909</char>
+		</chars>
+		<addressList count="1">
+			<ip>149.74.170.42</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+	<account>
+		<username>derko2</username>
+		<email />
+		<newCryptPassword>B1-C3-78-A6-05-E3-2D-8F-AC-36-A2-F1-10-24-3B-E4-BA-4C-8E-A3</newCryptPassword>
+		<created>2025-09-02T16:58:15.1454563Z</created>
+		<lastLogin>2025-09-02T16:58:15.1454563Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<addressList count="1">
+			<ip>149.74.170.42</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+	</account>
+</accounts>
