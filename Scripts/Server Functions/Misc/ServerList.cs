@@ -38,7 +38,7 @@ namespace Server.Misc
 		 * firewalls) or specific IP adddresses you can do so by modifying the file SocketOptions.cs found in this directory.
 		 */
 
-		public static readonly string Address = null;
+		public static readonly string Address = 79.117.21.104;
 		public static readonly string ServerName = MyServerSettings.ServerName();
 
 		public static readonly bool AutoDetect = true;
@@ -152,7 +152,7 @@ namespace Server.Misc
 		private static IPAddress FindPublicAddress()
 		{
 			try {
-				WebRequest req = HttpWebRequest.Create( "http://icanhazip.com" );
+				WebRequest req = HttpWebRequest.Create( "http://ipv4.icanhazip.com" );
 				req.Timeout = 15000;
 
 				WebResponse res = req.GetResponse();
