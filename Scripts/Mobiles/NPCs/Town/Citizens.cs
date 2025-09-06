@@ -187,22 +187,19 @@ namespace Server.Mobiles
 			int topic = Utility.RandomMinMax( 0, 40 );
 				if ( this is HouseVisitor ){ topic = 100; }
 
-			string rumor = null;
 			switch ( topic )
 			{
-				case 0:	rumor = "I heard that " + item + " can be obtained in " + locale + "."; break;
-				case 1:	rumor = "I heard something about " + item + " and " + locale + "."; break;
-				case 2:	rumor = "Someone told me that " + locale + " is where you would look for " + item + "."; break;
-				case 3:	rumor = "I heard many tales of adventurers going to " + locale + " and seeing " + item + "."; break;
-				case 4:	rumor = QuestCharacters.RandomWords() + " was in the tavern talking about " + item + " and " + locale + "."; break;
-				case 5:	rumor = "I was talking with the local " + RandomThings.GetRandomJob() + ", and they mentioned " + item + " and " + locale + "."; break;
-				case 6:	rumor = "I met with " + QuestCharacters.RandomWords() + " and they told me to bring back " + item + " from " + locale + "."; break;
-				case 7:	rumor = "I heard that " + item + " can be found in " + locale + "."; break;
-				case 8:	rumor = "Someone from " + RandomThings.GetRandomCity() + " died in " + locale + " searching for " + item + "."; break;
-				case 9:	rumor = Server.Misc.TavernPatrons.GetRareLocation( this, true, false );		break;
+				case 0:	CitizenRumor = "I heard that " + item + " can be obtained in " + locale + "."; break;
+				case 1:	CitizenRumor = "I heard something about " + item + " and " + locale + "."; break;
+				case 2:	CitizenRumor = "Someone told me that " + locale + " is where you would look for " + item + "."; break;
+				case 3:	CitizenRumor = "I heard many tales of adventurers going to " + locale + " and seeing " + item + "."; break;
+				case 4:	CitizenRumor = QuestCharacters.RandomWords() + " was in the tavern talking about " + item + " and " + locale + "."; break;
+				case 5:	CitizenRumor = "I was talking with the local " + RandomThings.GetRandomJob() + ", and they mentioned " + item + " and " + locale + "."; break;
+				case 6:	CitizenRumor = "I met with " + QuestCharacters.RandomWords() + " and they told me to bring back " + item + " from " + locale + "."; break;
+				case 7:	CitizenRumor = "I heard that " + item + " can be found in " + locale + "."; break;
+				case 8:	CitizenRumor = "Someone from " + RandomThings.GetRandomCity() + " died in " + locale + " searching for " + item + "."; break;
+				case 9:	CitizenRumor = Server.Misc.TavernPatrons.GetRareLocation( this, true, false );		break;
 			}
-			if (rumor != null)
-				CitizenRumor = Server.Translation.TranslateToSpanish(rumor);
 
 			switch( Utility.RandomMinMax( 0, 13 ) )
 			{
@@ -222,7 +219,7 @@ namespace Server.Mobiles
 				case 13: preface = "We overheard someone tell of"; 						break;
 			}
 
-			if ( CitizenRumor == null ){ CitizenRumor = Server.Translation.TranslateToSpanish(preface + " " + Server.Misc.TavernPatrons.CommonTalk( "", city, dungeon, this, adventurer, true ) + "."); }
+			if ( CitizenRumor == null ){ CitizenRumor = preface + " " + Server.Misc.TavernPatrons.CommonTalk( "", city, dungeon, this, adventurer, true ) + "."; }
 
 			if ( this is HouseVisitor )
 			{
@@ -340,36 +337,35 @@ namespace Server.Mobiles
 
 			switch ( initPhrase )
 			{
-				case 0:	phrase = Server.Translation.TranslateToSpanish("Greetings, ") + "Z~Z~Z~Z~Z."; break;
-				case 1:	phrase = Server.Translation.TranslateToSpanish("Hail, ") + "Z~Z~Z~Z~Z."; break;
-				case 2:	phrase = Server.Translation.TranslateToSpanish("Good day to you, ") + "Z~Z~Z~Z~Z."; break;
-				case 3:	phrase = Server.Translation.TranslateToSpanish("Hello, ") + "Z~Z~Z~Z~Z."; break;
-				case 4:	phrase = Server.Translation.TranslateToSpanish("We are just here to rest after exploring ") + dungeon + "."; break;
-				case 5:	phrase = Server.Translation.TranslateToSpanish("This is the first time I have been to ") + "Y~Y~Y~Y~Y."; break;
-				case 6:	phrase = Server.Translation.TranslateToSpanish("Hail, ") + "Z~Z~Z~Z~Z." + Server.Translation.TranslateToSpanish(" Welcome to ") + "Y~Y~Y~Y~Y."; break;
+				case 0:	phrase = "Greetings, Z~Z~Z~Z~Z."; break;
+				case 1:	phrase = "Hail, Z~Z~Z~Z~Z."; break;
+				case 2:	phrase = "Good day to you, Z~Z~Z~Z~Z."; break;
+				case 3:	phrase = "Hello, Z~Z~Z~Z~Z."; break;
+				case 4:	phrase = "We are just here to rest after exploring " + dungeon + "."; break;
+				case 5:	phrase = "This is the first time I have been to Y~Y~Y~Y~Y."; break;
+				case 6:	phrase = "Hail, Z~Z~Z~Z~Z. Welcome to Y~Y~Y~Y~Y."; break;
 			}
 
-			string citizenPhrase = phrase;
 			if ( CitizenService == 1 )
 			{
-				if ( CitizenType == 1 ){ citizenPhrase += " I can recharge any wands you may have with you, but only up to a certain amount. If you want my help, then simply hand me your wand so I can perform the ritual needed."; }
-				else if ( CitizenType == 2 ){ citizenPhrase += " I am quite a skilled blacksmith, so if you need any metal armor repaired I can do it for you for 7,500 gold. Just hand me the armor and I will see what I can do."; }
-				else { citizenPhrase += " If you need a chest or box unlocked, I can help you with that. Just hand me the container and I will see what I can do. I promise to give it back."; }
+				if ( CitizenType == 1 ){ CitizenPhrase = phrase + " I can recharge any wands you may have with you, but only up to a certain amount. If you want my help, then simply hand me your wand so I can perform the ritual needed."; }
+				else if ( CitizenType == 2 ){ CitizenPhrase = phrase + " I am quite a skilled blacksmith, so if you need any metal armor repaired I can do it for you for 7,500 gold. Just hand me the armor and I will see what I can do."; }
+				else { CitizenPhrase = phrase + " If you need a chest or box unlocked, I can help you with that. Just hand me the container and I will see what I can do. I promise to give it back."; }
 			}
 			else if ( CitizenService == 2 )
 			{
-				if ( CitizenType == 2 ){ citizenPhrase += " I am quite a skilled blacksmith, so if you need any metal weapons repaired I can do it for you for 7,500 gold. Just hand me the weapon and I will see what I can do."; }
-				else { citizenPhrase += " I am quite a skilled leather worker, so if you need any leather item repaired I can do it for you for 7,500 gold. Just hand me the item and I will see what I can do."; }
+				if ( CitizenType == 2 ){ CitizenPhrase = phrase + " I am quite a skilled blacksmith, so if you need any metal weapons repaired I can do it for you for 7,500 gold. Just hand me the weapon and I will see what I can do."; }
+				else { CitizenPhrase = phrase + " I am quite a skilled leather worker, so if you need any leather item repaired I can do it for you for 7,500 gold. Just hand me the item and I will see what I can do."; }
 			}
 			else if ( CitizenService == 3 )
 			{
-				if ( CitizenType == 2 ){ citizenPhrase += " I am quite a skilled wood worker, so if you need any wooden weapons repaired I can do it for you for 7,500 gold. Just hand me the weapon and I will see what I can do."; }
-				else { citizenPhrase += " I am quite a skilled wood worker, so if you need any wooden weapons repaired I can do it for you for 7,500 gold. Just hand me the weapon and I will see what I can do."; }
+				if ( CitizenType == 2 ){ CitizenPhrase = phrase + " I am quite a skilled wood worker, so if you need any wooden weapons repaired I can do it for you for 7,500 gold. Just hand me the weapon and I will see what I can do."; }
+				else { CitizenPhrase = phrase + " I am quite a skilled wood worker, so if you need any wooden weapons repaired I can do it for you for 7,500 gold. Just hand me the weapon and I will see what I can do."; }
 			}
 			else if ( CitizenService == 4 )
 			{
-				if ( CitizenType == 2 ){ citizenPhrase += " I am quite a skilled wood worker, so if you need any wooden armor repaired I can do it for you for 7,500 gold. Just hand me the armor and I will see what I can do."; }
-				else { citizenPhrase += " I am quite a skilled wood worker, so if you need any wooden armor repaired I can do it for you for 7,500 gold. Just hand me the armor and I will see what I can do."; }
+				if ( CitizenType == 2 ){ CitizenPhrase = phrase + " I am quite a skilled wood worker, so if you need any wooden armor repaired I can do it for you for 7,500 gold. Just hand me the armor and I will see what I can do."; }
+				else { CitizenPhrase = phrase + " I am quite a skilled wood worker, so if you need any wooden armor repaired I can do it for you for 7,500 gold. Just hand me the armor and I will see what I can do."; }
 			}
 			else if ( CitizenService == 5 )
 			{
@@ -379,17 +375,15 @@ namespace Server.Mobiles
 
 				switch ( Utility.RandomMinMax( 0, 5 ) )
 				{
-					case 0:	citizenPhrase += " I have " + aty1 + " I " + aty2 + " while exploring " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
-					case 1:	citizenPhrase += " I won " + aty1 + " from a card game in " + city + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
-					case 2:	citizenPhrase += " I have " + aty1 + " I " + aty2 + " on the remains of some " + adventurer + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
-					case 3:	citizenPhrase += " I have " + aty1 + " I " + aty2 + " from a chest in " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
-					case 4:	citizenPhrase += " I have " + aty1 + " I " + aty2 + " on a beast I killed in " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
-					case 5:	citizenPhrase += " I have " + aty1 + " I " + aty2 + " on some " + adventurer + " in " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
+					case 0:	CitizenPhrase = phrase + " I have " + aty1 + " I " + aty2 + " while exploring " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
+					case 1:	CitizenPhrase = phrase + " I won " + aty1 + " from a card game in " + city + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
+					case 2:	CitizenPhrase = phrase + " I have " + aty1 + " I " + aty2 + " on the remains of some " + adventurer + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
+					case 3:	CitizenPhrase = phrase + " I have " + aty1 + " I " + aty2 + " from a chest in " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
+					case 4:	CitizenPhrase = phrase + " I have " + aty1 + " I " + aty2 + " on a beast I killed in " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
+					case 5:	CitizenPhrase = phrase + " I have " + aty1 + " I " + aty2 + " on some " + adventurer + " in " + Clues + " that I am " + aty3 + " for G~G~G~G~G gold."; break;
 				}
-				citizenPhrase += " You can look in my backpack to examine the item if you wish. If you want to trade, then hand me the gold and I will give you the item.";
+				CitizenPhrase = CitizenPhrase + " You can look in my backpack to examine the item if you wish. If you want to trade, then hand me the gold and I will give you the item.";
 			}
-			if (citizenPhrase != null)
-				CitizenPhrase = Server.Translation.TranslateToSpanish(citizenPhrase);
 			else if ( CitizenType == 20 && CitizenService == 20 )
 			{
 				dungeon = RandomThings.MadeUpDungeon();
@@ -1672,14 +1666,14 @@ namespace Server.Mobiles
 					else if ( bw.IntRequirement == 40 ) { myCharges = 6; }
 					else if ( bw.IntRequirement == 45 ) { myCharges = 3; }
 
-					if ( bw.IntRequirement < 1 ){ say = Server.Translation.TranslateToSpanish("That does not need to be recharged."); }
+					if ( bw.IntRequirement < 1 ){ say = "That does not need to be recharged."; }
                     else if ( ba.Charges <= myCharges )
                     {
-                        say = Server.Translation.TranslateToSpanish("Your wand is charged.");
+                        say = "Your wand is charged.";
                         sound = 0x5C1;
 						ba.Charges = myCharges;
                     }
-                    else { say = Server.Translation.TranslateToSpanish("That wand has too many charges already."); }
+                    else { say = "That wand has too many charges already."; }
 				}
 			}
 			else if ( CitizenService == 1 )
@@ -1688,7 +1682,7 @@ namespace Server.Mobiles
 				else if ( CitizenType == 3 && dropped is LockableContainer )
 				{
 					LockableContainer box = (LockableContainer)dropped;
-					say = Server.Translation.TranslateToSpanish("I unlocked it for you.");
+					say = "I unlocked it for you.";
 					sound = 0x241;
 					box.Locked = false;
 					box.TrapPower = 0;
@@ -1719,7 +1713,7 @@ namespace Server.Mobiles
 			Container bank = from.FindBankNoCreate();
 			if ( fixArmor && dropped is BaseArmor && ( ( from.Backpack != null && from.Backpack.ConsumeTotal( typeof( Gold ), 7500 ) ) || ( bank != null && bank.ConsumeTotal( typeof( Gold ), 7500 ) ) ) )
 			{
-				say = Server.Translation.TranslateToSpanish("This is repaired and ready for battle.");
+				say = "This is repaired and ready for battle.";
 				BaseArmor ba = (BaseArmor)dropped;
 				if (ba.MaxHitPoints > 10)
 					ba.MaxHitPoints -= Utility.RandomMinMax(5, 10);
@@ -1729,7 +1723,7 @@ namespace Server.Mobiles
 			}
 			else if ( fixWeapon && dropped is BaseWeapon && ( ( from.Backpack != null && from.Backpack.ConsumeTotal( typeof( Gold ), 7500 ) ) || ( bank != null && bank.ConsumeTotal( typeof( Gold ), 7500 ) ) ) )
 			{
-				say = Server.Translation.TranslateToSpanish("This is repaired and is ready for battle.");
+				say = "This is repaired and is ready for battle.";
 				BaseWeapon bw = (BaseWeapon)dropped;
 				if (bw.MaxHitPoints > 10)
 					bw.MaxHitPoints -= Utility.RandomMinMax(5, 10);
@@ -1738,7 +1732,7 @@ namespace Server.Mobiles
 				bw.HitPoints = bw.MaxHitPoints;
 			}
 			else 
-				say = Server.Translation.TranslateToSpanish("Look friend, it doesn't look like you have enough gold in your pack or bank... ");
+				say = "Look friend, it doesn't look like you have enough gold in your pack or bank... ";
 
 			SayTo(from, say);
 			if ( sound > 0 ){ from.PlaySound( sound ); }

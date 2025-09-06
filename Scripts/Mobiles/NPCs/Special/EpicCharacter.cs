@@ -284,7 +284,7 @@ namespace Server.Mobiles
 			{
 				this.Body = 9; 
 				this.Name = "Lord Draxinusom";
-				this.Title = Server.Translation.TranslateToSpanish("the Gargoyle King");
+				this.Title = "the Gargoyle King";
 				this.MyAlignment = "neutral";
 				this.Direction = Direction.East;
 				this.MyItemText = "of the Gargoyles";
@@ -298,7 +298,6 @@ namespace Server.Mobiles
 				this.Body = 21;
 				this.Hue = 0x83F;
 				this.Name = "the Great Earth Serpent";
-				this.Title = Server.Translation.TranslateToSpanish("the Great Earth Serpent");
 				this.MyAlignment = "neutral";
 				this.Direction = Direction.East;
 				this.MyItemText = "of Balance";
@@ -312,7 +311,7 @@ namespace Server.Mobiles
 				this.Body = 24;
 				this.Hue = 0x83B;
 				this.Name = "Morphius";
-				this.Title = Server.Translation.TranslateToSpanish("the Vile Lich");
+				this.Title = "the Vile Lich";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.South;
 				this.MyItemText = "of the Necrotic";
@@ -336,7 +335,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth1 );
 
 				this.Name = "Mondain";
-				this.Title = Server.Translation.TranslateToSpanish("the Wizard");
+				this.Title = "the Wizard";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.South;
 				this.MyItemText = "of Mondain";
@@ -364,7 +363,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth2 );
 
 				this.Name = "Tyball";
-				this.Title = Server.Translation.TranslateToSpanish("the Demonologist");
+				this.Title = "the Demonologist";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.South;
 				this.MyItemText = "of Demonic Souls";
@@ -378,7 +377,7 @@ namespace Server.Mobiles
 				this.Body = 9; 
 				this.Hue = 0x845;
 				this.Name = "Arcadion";
-				this.Title = Server.Translation.TranslateToSpanish("the Daemon");
+				this.Title = "the Daemon";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.South;
 				this.MyItemText = "of Purgatory";
@@ -406,7 +405,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth2 );
 
 				this.Name = "Samhayne";
-				this.Title = Server.Translation.TranslateToSpanish("the Master Sailor");
+				this.Title = "the Master Sailor";
 				this.MyAlignment = "good";
 				this.Direction = Direction.East;
 				this.MyItemText = "of Poseidon";
@@ -438,7 +437,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth3 );
 
 				this.Name = "Seggallion";
-				this.Title = Server.Translation.TranslateToSpanish("the Pirate Lord");
+				this.Title = "the Pirate Lord";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.East;
 				this.MyItemText = "of the Buccaneer";
@@ -462,7 +461,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth1 );
 
 				this.Name = "Minax";
-				this.Title = Server.Translation.TranslateToSpanish("the Enchantress");
+				this.Title = "the Enchantress";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.East;
 				this.MyItemText = "of Minax";
@@ -490,7 +489,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth2 );
 
 				this.Name = "Nystal";
-				this.Title = Server.Translation.TranslateToSpanish("the Royal Wizard");
+				this.Title = "the Royal Wizard";
 				this.MyAlignment = "good";
 				this.Direction = Direction.East;
 				this.MyItemText = "of Wizardry";
@@ -524,7 +523,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth3 );
 
 				this.Name = "Lord British";
-				this.Title = Server.Translation.TranslateToSpanish("the King of Britain");
+				this.Title = "the King of Britain";
 				this.MyAlignment = "good";
 				this.Direction = Direction.South;
 				this.MyItemText = "of Sosaria";
@@ -541,7 +540,7 @@ namespace Server.Mobiles
 				AddItem( new LordBlackthorneSuit()); 
 
 				this.Name = "Lord Blackthorne";
-				this.Title = Server.Translation.TranslateToSpanish("the Ruler of Kuldar");
+				this.Title = "the Ruler of Kuldar";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.East;
 				this.MyItemText = "of Blackthorne";
@@ -592,7 +591,7 @@ namespace Server.Mobiles
 				this.AddItem( new Longsword() );
 
 				this.Name = "Geoffrey";
-				this.Title = Server.Translation.TranslateToSpanish("the Knight");
+				this.Title = "the Knight";
 				this.MyAlignment = "good";
 				this.Direction = Direction.West;
 				this.MyItemText = "of the Warrior";
@@ -644,7 +643,7 @@ namespace Server.Mobiles
 				}
 
 				this.Name = "Shimazu";
-				this.Title = Server.Translation.TranslateToSpanish("the Shogun Samurai");
+				this.Title = "the Shogun Samurai";
 				this.MyAlignment = "neutral";
 				this.Direction = Direction.East;
 				this.MyItemText = "of the Shogun";
@@ -674,7 +673,7 @@ namespace Server.Mobiles
 				AddItem( new StuddedGloves() );
 
 				this.Name = "Gorn";
-		this.Title = Server.Translation.TranslateToSpanish("the King of Cimmeran");
+		this.Title = "the King of Cimmeran";
 				this.MyAlignment = "neutral";
 				this.Direction = Direction.East;
 				this.MyItemText = "of the Barbarian";
@@ -698,7 +697,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth1 );
 
 				this.Name = "Jaana";
-				this.Title = Server.Translation.TranslateToSpanish("the Herb Healer");
+				this.Title = "the Herb Healer";
 				this.MyAlignment = "good";
 				this.Direction = Direction.South;
 				this.MyItemText = "of the Cleric";
@@ -717,7 +716,7 @@ namespace Server.Mobiles
 				AddItem( new Server.Items.Boots() );
 				AddItem( new DupreSuit());
 
-				this.Title = Server.Translation.TranslateToSpanish("the Paladin");
+				this.Title = "the Paladin";
 				this.MyItemText = "of the Paladin";
 				this.MyItemHue = 0x430;
 				this.MyWorld = this.Map;
@@ -740,7 +739,7 @@ namespace Server.Mobiles
 					cloth1.Hue = 0x96F;
 					this.AddItem( cloth1 );
 
-				this.Title = Server.Translation.TranslateToSpanish("the Bard");
+				this.Title = "the Bard";
 				this.MyItemText = "of the Minstrel";
 				this.MyItemHue = 0;
 				this.MyWorld = this.Map;
@@ -768,7 +767,7 @@ namespace Server.Mobiles
 				AddItem( new Cloak( Utility.RandomYellowHue() ) );
 				AddItem( new LeatherGloves() );
 
-		this.Title = Server.Translation.TranslateToSpanish("the Bowman");
+		this.Title = "the Bowman";
 				this.MyItemText = "of the Archer";
 				this.MyItemHue = 0;
 				this.MyWorld = this.Map;
@@ -796,7 +795,7 @@ namespace Server.Mobiles
 				AddItem( new Cloak( Utility.RandomRedHue() ) );
 				AddItem( new LeatherGloves() );
 
-		this.Title = Server.Translation.TranslateToSpanish("the Woodsman");
+		this.Title = "the Woodsman";
 				this.MyItemText = "of the Woodlands";
 				this.MyItemHue = 0x840;
 				this.MyWorld = this.Map;
@@ -823,7 +822,7 @@ namespace Server.Mobiles
 				AddItem( new Cloak( Utility.RandomBlueHue() ) );
 				AddItem( new LeatherGloves() );
 
-		this.Title = Server.Translation.TranslateToSpanish("the Sneak");
+		this.Title = "the Sneak";
 				this.MyItemText = "of the Thief";
 				this.MyItemHue = 0x83A;
 				this.MyWorld = this.Map;
@@ -848,7 +847,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth2 );
 
 				this.Name = "Katrina";
-				this.Title = Server.Translation.TranslateToSpanish("the Shepherd");
+				this.Title = "the Shepherd";
 				this.MyAlignment = "good";
 				this.Direction = Direction.East;
 				this.MyItemText = "of the Beastmaster";
@@ -890,7 +889,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth2 );
 
 				this.Name = "Garamon";
-				this.Title = Server.Translation.TranslateToSpanish("the Wizard");
+				this.Title = "the Wizard";
 				this.MyAlignment = "good";
 				this.Direction = Direction.South;
 				this.MyItemText = "of the Alchemist";
@@ -939,7 +938,7 @@ namespace Server.Mobiles
 					this.AddItem( cloth7 );
 
 				this.Name = "Mors Gotha";
-				this.Title = Server.Translation.TranslateToSpanish("the Death Knight");
+				this.Title = "the Death Knight";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.South;
 				this.MyItemText = "of Death";
@@ -953,7 +952,7 @@ namespace Server.Mobiles
 				this.Body = 24;
 				this.Hue = 0x83B;
 				this.Name = "Lethe";
-				this.Title = Server.Translation.TranslateToSpanish("the Dreaded Lich");
+				this.Title = "the Dreaded Lich";
 				this.MyAlignment = "evil";
 				this.Direction = Direction.South;
 				this.MyItemText = "of the Undertaker";

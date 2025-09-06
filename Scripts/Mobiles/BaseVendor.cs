@@ -29,23 +29,23 @@ namespace Server.Mobiles
         private static bool m_Talked;
         string[] VendorSay = new string[] 
 		{ 
-			Server.Translation.TranslateToSpanish("Greetings"),
-            Server.Translation.TranslateToSpanish("Hello there"),
-            Server.Translation.TranslateToSpanish("I have what ye needs."),
-            Server.Translation.TranslateToSpanish("Look here!"),
-            Server.Translation.TranslateToSpanish("Shop ye here!"),
-			Server.Translation.TranslateToSpanish("Hey there what can I do for you?"),
-			Server.Translation.TranslateToSpanish("I might have that thing you were looking for..."),
-			Server.Translation.TranslateToSpanish("Ahoy!"),
-			Server.Translation.TranslateToSpanish("Best prices... I think"),
-			Server.Translation.TranslateToSpanish("yes?"),
-			Server.Translation.TranslateToSpanish("Quick, I'm busy"),
-			Server.Translation.TranslateToSpanish("People used to say Vendor this and that... I have a name"),
-			Server.Translation.TranslateToSpanish("My inventory refreshed just now!"),
-			Server.Translation.TranslateToSpanish("Welcome to my shoppe"),
-			"*Grumble*",
-			Server.Translation.TranslateToSpanish("Weather's acting up lately"),
-			Server.Translation.TranslateToSpanish("Nice armor, is it for sale?")
+			"Saludos",
+            "Hola",
+            "Tengo lo que necesitas.",
+            "¡Mira aquí!",
+            "¡Compra aquí!",
+			"Hola, ¿qué puedo hacer por ti?",
+			"Puede que tenga eso que buscabas...",
+			"¡Ah del barco!",
+			"Los mejores precios... creo",
+			"¿sí?",
+			"Rápido, estoy ocupado",
+			"La gente solía decir Vendedor esto y aquello... Tengo un nombre",
+			"¡Mi inventario se acaba de reponer!",
+			"Bienvenido a mi tienda",
+			"*Murmullo*",
+			"El tiempo está revuelto últimamente",
+			"Bonita armadura, ¿está a la venta?"
 		};
 
         public override void OnMovement(Mobile m, Point3D oldLocation)
@@ -62,9 +62,9 @@ namespace Server.Mobiles
 						if (sRegion == "the City of Britain")
 						{
 							if (Utility.RandomBool())
-								Say(Server.Translation.TranslateToSpanish("Help Sire!  Someone keeps stealing my SawMill!"));
+								Say("¡Ayuda, señor! ¡Alguien sigue robando mi aserradero!");
 							else
-								Say(Server.Translation.TranslateToSpanish("Welp!  There's a Sawmill thief around!"));
+								Say("¡Vaya! ¡Hay un ladrón de aserraderos por aquí!");
 						}
 					}
 					else
@@ -379,15 +379,15 @@ namespace Server.Mobiles
 
 		public static string BeggingWords() // LET US SEE IF THEY ARE BEGGING
 		{
-			string sSpeak = Server.Translation.TranslateToSpanish("Please give me a good price as I am so poor.");
+			string sSpeak = "Por favor, dame un buen precio, que soy muy pobre.";
 			switch( Utility.RandomMinMax( 0, 5 ) )
 			{
-				case 0: sSpeak = Server.Translation.TranslateToSpanish("Please give me a good price as I am so poor."); break;
-				case 1: sSpeak = Server.Translation.TranslateToSpanish("I have very little gold so whatever you can give..."); break;
-				case 2: sSpeak = Server.Translation.TranslateToSpanish("I have not eaten in days so your gold will surely help."); break;
-				case 3: sSpeak = Server.Translation.TranslateToSpanish("Will thou give a poor soul more for these?"); break;
-				case 4: sSpeak = Server.Translation.TranslateToSpanish("I have fallen on hard times, will thou be kind?"); break;
-				case 5: sSpeak = Server.Translation.TranslateToSpanish("Whatever you can give for these will surely help."); break;
+				case 0: sSpeak = "Por favor, dame un buen precio, que soy muy pobre."; break;
+				case 1: sSpeak = "Tengo muy poco oro, así que lo que puedas darme..."; break;
+				case 2: sSpeak = "No he comido en días, así que tu oro me ayudará mucho."; break;
+				case 3: sSpeak = "¿Le darás a un alma pobre más por esto?"; break;
+				case 4: sSpeak = "He pasado por malos momentos, ¿serás amable?"; break;
+				case 5: sSpeak = "Lo que sea que puedas dar por esto seguramente ayudará."; break;
 			}
 			return sSpeak;
 		}
@@ -586,14 +586,14 @@ namespace Server.Mobiles
 			}
 			else if ( reg.Name == "the Forgotten Lighthouse" || reg.Name == "Savage Sea Docks" || reg.Name == "Serpent Sail Docks" || reg.Name == "Anchor Rock Docks" || reg.Name == "Kraken Reef Docks" || reg.Name == "the Port" )
 			{
-				if ( this is Provisioner && reg.Name != "the Port" ){ this.Title = Server.Translation.TranslateToSpanish("the dock worker"); if ( Utility.RandomBool() ){ this.Title = Server.Translation.TranslateToSpanish("the merchant"); } }
-				else if ( this is Fisherman && reg.Name != "the Port" ){ this.Title = Server.Translation.TranslateToSpanish("the sailor"); }
-				else if ( this is Carpenter && reg.Name != "the Port" ){ this.Title = Server.Translation.TranslateToSpanish("the cooper"); }
-				else if ( this is Waiter ){ this.Title = Server.Translation.TranslateToSpanish("the cabin boy"); if ( this.Female ){ this.Title = Server.Translation.TranslateToSpanish("the serving wench"); } }
-				else if ( this is Weaponsmith && reg.Name != "the Port" ){ this.Title = Server.Translation.TranslateToSpanish("the master-at-arms"); }
+				if ( this is Provisioner && reg.Name != "the Port" ){ this.Title = "the dock worker"; if ( Utility.RandomBool() ){ this.Title = "the merchant"; } }
+				else if ( this is Fisherman && reg.Name != "the Port" ){ this.Title = "the sailor"; }
+				else if ( this is Carpenter && reg.Name != "the Port" ){ this.Title = "the cooper"; }
+				else if ( this is Waiter ){ this.Title = "the cabin boy"; if ( this.Female ){ this.Title = "the serving wench"; } }
+				else if ( this is Weaponsmith && reg.Name != "the Port" ){ this.Title = "the master-at-arms"; }
 				else if ( this is Ranger )
 				{
-					this.Title = Server.Translation.TranslateToSpanish("the harpooner");
+					this.Title = "the harpooner";
 					if ( this.FindItemOnLayer( Layer.OneHanded ) != null ) { this.FindItemOnLayer( Layer.OneHanded ).Delete(); }
 					if ( this.FindItemOnLayer( Layer.TwoHanded ) != null ) { this.FindItemOnLayer( Layer.TwoHanded ).Delete(); }
 					if ( this.FindItemOnLayer( Layer.Helm ) != null ) { this.FindItemOnLayer( Layer.Helm ).Delete(); }
@@ -601,7 +601,7 @@ namespace Server.Mobiles
 					if ( Utility.RandomBool() ){ this.AddItem( new SkullCap( Utility.RandomDyedHue() ) ); }
 					this.AddItem( new Harpoon() );
 				}
-				else if ( this is Shipwright && reg.Name != "the Port" ){ this.Title = Server.Translation.TranslateToSpanish("the boatswain"); }
+				else if ( this is Shipwright && reg.Name != "the Port" ){ this.Title = "the boatswain"; }
 
 				if ( !(this is Shipwright && reg.Name == "the Port" ) )
 				{
@@ -616,12 +616,12 @@ namespace Server.Mobiles
 			}
 			else if ( reg.Name == "the Thieves Guild" && this is Provisioner )
 			{
-				this.Title = Server.Translation.TranslateToSpanish("the fence");
+				this.Title = "the fence";
 			}
 			else if ( reg.Name == "the Ship's Lower Deck" && !(this is Jester) )
 			{
-				if ( this is Provisioner  ){ this.Title = Server.Translation.TranslateToSpanish("the quartermaster"); }
-				else if ( this is Waiter ){ this.Title = Server.Translation.TranslateToSpanish("the cabin boy"); if ( this.Female ){ this.Title = Server.Translation.TranslateToSpanish("the serving wench"); } }
+				if ( this is Provisioner  ){ this.Title = "the quartermaster"; }
+				else if ( this is Waiter ){ this.Title = "the cabin boy"; if ( this.Female ){ this.Title = "the serving wench"; } }
 				if ( this.FindItemOnLayer( Layer.Helm ) != null ) { this.FindItemOnLayer( Layer.Helm ).Delete(); }
 				if ( Utility.RandomBool() ){ this.AddItem( new SkullCap() ); }
 				else { this.AddItem( new Bandana() ); }
@@ -629,11 +629,11 @@ namespace Server.Mobiles
 			}
 			else if ( reg.Name == "the Wizards Guild" && this is Waiter && this.Body == 400 )
 			{
-				this.Title = Server.Translation.TranslateToSpanish("the butler");
+				this.Title = "the butler";
 			}
 			else if ( reg.Name == "the Wizards Guild" && this is Waiter && this.Body == 401 )
 			{
-				this.Title = Server.Translation.TranslateToSpanish("the maid");
+				this.Title = "the maid";
 			}
 			else if ( reg.Name == "The Pit" )
 			{
@@ -846,12 +846,12 @@ namespace Server.Mobiles
 
 		public override void OnGaveMeleeAttack( Mobile defender )
 		{
-			switch ( Utility.Random( 4 ))		   
+			switch ( Utility.Random( 4 ))
 			{
-				case 0: Say("Leave this place!"); break;
-				case 1: Say("" + defender.Name + ", we have heard of you!"); break;
-				case 2: Say("We have been told to watch for you, " + defender.Name + "!"); break;
-				case 3: Say("Guards, " + defender.Name + " is here!"); break;
+				case 0: Say("¡Sal de este lugar!"); break;
+				case 1: Say("" + defender.Name + ", ¡hemos oído hablar de ti!"); break;
+				case 2: Say("¡Nos han dicho que te vigilemos, " + defender.Name + "!"); break;
+				case 3: Say("¡Guardias, " + defender.Name + " está aquí!"); break;
 			};
 		}
 
@@ -984,13 +984,13 @@ namespace Server.Mobiles
 			if ( !CheckVendorAccess( from ) )
 			{
 				//Say( 501522 ); // I shall not treat with scum like thee!
-				this.Say( Server.Translation.TranslateToSpanish("I have no business with you.") );
+				this.Say( "No tengo nada que tratar contigo." );
 				return;
 			}
 
 			if (AdventuresFunctions.IsPuritain((object)this))
 			{
-				this.Say( Server.Translation.TranslateToSpanish("Apologies but I don't sell anything M'lord.") );
+				this.Say( "Disculpas, pero no vendo nada, mi señor." );
 				return;
 			}	
 
@@ -1210,13 +1210,13 @@ namespace Server.Mobiles
 			if ( !CheckVendorAccess( from ) )
 			{
 				//Say( 501522 ); // I shall not treat with scum like thee!
-				this.Say( Server.Translation.TranslateToSpanish("I have no business with you.") );
+				this.Say( "No tengo nada que tratar contigo." );
 				return;
 			}
 
 			if (AdventuresFunctions.IsPuritain((object)this))
 			{
-				this.Say( Server.Translation.TranslateToSpanish("Apologies but I don't sell anything M'lord.") );
+				this.Say( "Disculpas, pero no vendo nada, mi señor." );
 				return;
 			}
 
@@ -1296,7 +1296,7 @@ namespace Server.Mobiles
 				}
 				else
 				{
-					Say( true, Server.Translation.TranslateToSpanish("You have nothing I would be interested in.") );
+					Say( true, "No tienes nada que me interese." );
 				}
 			}
 		}
@@ -1305,13 +1305,13 @@ namespace Server.Mobiles
 		{
 			if ( from.Blessed )
 			{
-				string sSay = Server.Translation.TranslateToSpanish("I cannot deal with you while you are in that state.");
+				string sSay = "No puedo tratar contigo mientras estés en ese estado.";
 				this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sSay, from.NetState);
 				return false;
 			}
 			else if ( IntelligentAction.GetMyEnemies( from, this, false ) == true )
 			{
-				string sSay = Server.Translation.TranslateToSpanish("I don't think I should accept that from you.");
+				string sSay = "No creo que deba aceptar eso de ti.";
 				this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sSay, from.NetState);
 				return false;
 			}
@@ -1381,7 +1381,7 @@ namespace Server.Mobiles
 						dropped.Delete();
 						Coffee cof = new Coffee();
 						from.Backpack.DropItem(cof);
-						this.Say(Server.Translation.TranslateToSpanish("Ohhh... yes... this will brew well!"));
+						this.Say("Ohhh... yes... this will brew well!");
 						return true;
 					}	
 				}
@@ -1406,16 +1406,16 @@ namespace Server.Mobiles
 					string sMessage = "";
 					switch ( Utility.RandomMinMax( 0, 9 ) )
 					{
-						case 0:	sMessage = Server.Translation.TranslateToSpanish("I have been looking for something like this. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 1:	sMessage = Server.Translation.TranslateToSpanish("I have heard of this item before. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 2:	sMessage = Server.Translation.TranslateToSpanish("I never thought I would see one of these. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 3:	sMessage = Server.Translation.TranslateToSpanish("I have never seen one of these. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 4:	sMessage = Server.Translation.TranslateToSpanish("What a rare item. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 5:	sMessage = Server.Translation.TranslateToSpanish("This is quite rare. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 6:	sMessage = Server.Translation.TranslateToSpanish("This will go nicely in my collection. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 7:	sMessage = Server.Translation.TranslateToSpanish("I have only heard tales about such items. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 8:	sMessage = Server.Translation.TranslateToSpanish("How did you come across this? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 9:	sMessage = Server.Translation.TranslateToSpanish("Where did you find this? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
+						case 0: sMessage = "He estado buscando algo como esto. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 1: sMessage = "He oído hablar de este objeto antes. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 2: sMessage = "Nunca pensé que vería uno de estos. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 3: sMessage = "Nunca he visto uno de estos. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 4: sMessage = "Qué objeto tan raro. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 5: sMessage = "Esto es bastante raro. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 6: sMessage = "Esto quedará muy bien en mi colección. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 7: sMessage = "Solo he oído cuentos sobre tales objetos. Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 8: sMessage = "¿Cómo te encontraste con esto? Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
+						case 9: sMessage = "¿Dónde encontraste esto? Aquí tienes " + gBonus.ToString() + " de oro para ti."; break;
 					}
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 					dropped.Delete();
@@ -1446,7 +1446,7 @@ namespace Server.Mobiles
 					dropped.Delete();
 					carpet.Hue = dropped.Hue;
 					from.AddToBackpack( carpet );
-					SayTo(from, Server.Translation.TranslateToSpanish("I altered your magic carpet."));
+					SayTo(from, "He alterado tu alfombra mágica.");
 					Effects.PlaySound(from.Location, from.Map, 0x248);
 				}
 				else if ( dropped is Gold && this is Mapmaker )
@@ -1470,7 +1470,7 @@ namespace Server.Mobiles
 						else
 							from.AddToBackpack ( new WorldMapSosaria() );
 
-						string sMessage = Server.Translation.TranslateToSpanish("Thank you. Here is your world map.");
+						string sMessage = "Gracias. Aquí tienes tu mapa del mundo.";
 						this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 						dropped.Delete();
 						return true;
@@ -1482,12 +1482,12 @@ namespace Server.Mobiles
 
 					if ( !(Server.Items.DugUpCoal.CheckForDugUpCoal( from, dropped.Amount, false ) ) )
 					{
-						sMessage = Server.Translation.TranslateToSpanish("You don't have enought iron ore for me to make steel from this.");
+						sMessage = "No tienes suficiente mineral de hierro para que pueda hacer acero con esto.";
 						this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 					}
 					else
 					{
-						sMessage = Server.Translation.TranslateToSpanish("Let's turn this into bars of steel you can use.");
+						sMessage = "Convirtamos esto en barras de acero que puedas usar.";
 						Server.Items.DugUpCoal.CheckForDugUpCoal( from, dropped.Amount, true );
 						from.AddToBackpack ( new SteelIngot( dropped.Amount ) );
 						dropped.Delete();
@@ -1504,12 +1504,12 @@ namespace Server.Mobiles
 
 					if ( !(Server.Items.DugUpZinc.CheckForDugUpZinc( from, dropped.Amount, false ) ) )
 					{
-						sMessage = Server.Translation.TranslateToSpanish("You don't have enought iron ore for me to make brass from this.");
+						sMessage = "No tienes suficiente mineral de hierro para que pueda hacer latón con esto.";
 						this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 					}
 					else
 					{
-						sMessage = Server.Translation.TranslateToSpanish("Let's turn this into bars of brass you can use.");
+						sMessage = "Convirtamos esto en barras de latón que puedas usar.";
 						Server.Items.DugUpZinc.CheckForDugUpZinc( from, dropped.Amount, true );
 						from.AddToBackpack ( new BrassIngot( dropped.Amount ) );
 						dropped.Delete();
@@ -1531,16 +1531,16 @@ namespace Server.Mobiles
 					int nGold = (int)Math.Floor((decimal)(dropped.Amount / nRate));
 					int nChange = dropped.Amount - ( nGold * nRate );
 
-					string sMessage = Server.Translation.TranslateToSpanish("Sorry, you do not have enough here to exchange for even a single gold coin.");
+					string sMessage = "Lo siento, no tienes suficiente aquí para cambiar por una sola moneda de oro.";
 
 					if ( ( nGold > 0 ) && ( nChange > 0 ) )
 					{
-						sMessage = Server.Translation.TranslateToSpanish("Here is ") + nGold.ToString() + Server.Translation.TranslateToSpanish(" gold for you, and ") + nChange.ToString() + " " + sCoin + Server.Translation.TranslateToSpanish(" back in change.");
+						sMessage = "Aquí tienes " + nGold.ToString() + " de oro para ti, y " + nChange.ToString() + " " + sCoin + " de vuelta.";
 						from.AddToBackpack ( new Gold( nGold ) );
 					}
 					else if ( nGold > 0 )
 					{
-						sMessage = Server.Translation.TranslateToSpanish("Here is ") + nGold.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");
+						sMessage = "Aquí tienes " + nGold.ToString() + " de oro para ti.";
 						from.AddToBackpack ( new Gold( nGold ) );
 					}
 
@@ -1556,7 +1556,7 @@ namespace Server.Mobiles
 				{
 					int nGold = dropped.Amount * 3;
 
-					string sMessage = Server.Translation.TranslateToSpanish("Here is ") + nGold.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");
+					string sMessage = "Aquí tienes " + nGold.ToString() + " de oro.";
 					from.AddToBackpack ( new Gold( nGold ) );
 
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
@@ -1568,7 +1568,7 @@ namespace Server.Mobiles
 				{
 					int nGold = dropped.Amount * 5;
 
-					string sMessage = Server.Translation.TranslateToSpanish("Here is ") + nGold.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");
+					string sMessage = "Aquí tienes " + nGold.ToString() + " de oro.";
 					from.AddToBackpack ( new Gold( nGold ) );
 
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
@@ -1580,7 +1580,7 @@ namespace Server.Mobiles
 				{
 					int nGold = dropped.Amount * 2;
 
-					string sMessage = Server.Translation.TranslateToSpanish("Here is ") + nGold.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");
+					string sMessage = "Aquí tienes " + nGold.ToString() + " de oro.";
 					from.AddToBackpack ( new Gold( nGold ) );
 
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
@@ -1592,7 +1592,7 @@ namespace Server.Mobiles
 				{
 					int nGold = dropped.Amount * 2;
 
-					string sMessage = Server.Translation.TranslateToSpanish("Here is ") + nGold.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");
+					string sMessage = "Aquí tienes " + nGold.ToString() + " de oro.";
 					from.AddToBackpack ( new Gold( nGold ) );
 
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
@@ -1604,7 +1604,7 @@ namespace Server.Mobiles
 				{
 					int nGold = dropped.Amount;
 
-					string sMessage = Server.Translation.TranslateToSpanish("Here is ") + nGold.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");
+					string sMessage = "Aquí tienes " + nGold.ToString() + " de oro.";
 					from.AddToBackpack ( new Gold( nGold ) );
 
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
@@ -1635,16 +1635,16 @@ namespace Server.Mobiles
 					string sMessage = "";
 					switch ( Utility.RandomMinMax( 0, 9 ) )
 					{
-						case 0:	sMessage = Server.Translation.TranslateToSpanish("Hmmmm...I needed some of this. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");						break;
-						case 1:	sMessage = Server.Translation.TranslateToSpanish("I'll take that. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");										break;
-						case 2:	sMessage = Server.Translation.TranslateToSpanish("I assume this is fresh? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");								break;
-						case 3:	sMessage = Server.Translation.TranslateToSpanish("You are better than some of the undertakers I know. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");	break;
-						case 4:	sMessage = Server.Translation.TranslateToSpanish("This is a good bottle you found here. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-						case 5:	sMessage = Server.Translation.TranslateToSpanish("Keep this up and my lab will be stocked. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-						case 6:	sMessage = Server.Translation.TranslateToSpanish("How did you manage to get this bottle? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-						case 7:	sMessage = Server.Translation.TranslateToSpanish("You seem to be good with a surgeons knife. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");			break;
-						case 8:	sMessage = Server.Translation.TranslateToSpanish("I have seen bottles like this before. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-						case 9:	sMessage = Server.Translation.TranslateToSpanish("I have never seen such a nice bottle of this before. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");	break;
+						case 0: sMessage = "Hmmmm... necesitaba algo de esto. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 1: sMessage = "Me lo quedo. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 2: sMessage = "¿Supongo que esto es fresco? Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 3: sMessage = "Eres mejor que algunos de los enterradores que conozco. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 4: sMessage = "Esta es una buena botella que encontraste aquí. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 5: sMessage = "Sigue así y mi laboratorio estará abastecido. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 6: sMessage = "¿Cómo conseguiste esta botella? Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 7: sMessage = "Pareces ser bueno con el bisturí de cirujano. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 8: sMessage = "He visto botellas como esta antes. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+						case 9: sMessage = "Nunca he visto una botella tan bonita como esta. Aquí tienes " + gBonus.ToString() + " de oro."; break;
 					}
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 					dropped.Delete();
@@ -1689,16 +1689,16 @@ namespace Server.Mobiles
 					string sMessage = "";
 					switch ( Utility.RandomMinMax( 0, 9 ) )
 					{
-						case 0:	sMessage = Server.Translation.TranslateToSpanish("Hmmmm...someone has been busy. Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");						break;
-						case 1:	sMessage = Server.Translation.TranslateToSpanish("I'll take that. Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");										break;
-						case 2:	sMessage = Server.Translation.TranslateToSpanish("I assume the traps were well avoided? Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-						case 3:	sMessage = Server.Translation.TranslateToSpanish("You are better than some of the thieves I have met. Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");	break;
-						case 4:	sMessage = Server.Translation.TranslateToSpanish("This is a good one you stole here. Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-						case 5:	sMessage = Server.Translation.TranslateToSpanish("Keep this up and we will both be rich. Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-						case 6:	sMessage = Server.Translation.TranslateToSpanish("How did you manage to steal this one? Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-						case 7:	sMessage = Server.Translation.TranslateToSpanish("You seem to be avoiding the dangers out there. Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-						case 8:	sMessage = Server.Translation.TranslateToSpanish("I haven't seen one like this before. Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-						case 9:	sMessage = Server.Translation.TranslateToSpanish("Why earn when you can take? Here is ") + TombRaid.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");							break;
+						case 0: sMessage = "Hmmmm... alguien ha estado ocupado. Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 1: sMessage = "Me lo quedo. Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 2: sMessage = "¿Supongo que las trampas fueron bien evitadas? Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 3: sMessage = "Eres mejor que algunos de los ladrones que he conocido. Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 4: sMessage = "Este es uno bueno que robaste aquí. Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 5: sMessage = "Sigue así y ambos seremos ricos. Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 6: sMessage = "¿Cómo te las arreglaste para robar este? Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 7: sMessage = "Parece que estás evitando los peligros de ahí fuera. Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 8: sMessage = "No he visto uno como este antes. Aquí tienes " + TombRaid.ToString() + " de oro."; break;
+						case 9: sMessage = "¿Por qué ganar cuando puedes tomar? Aquí tienes " + TombRaid.ToString() + " de oro."; break;
 					}
 					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 
@@ -1714,7 +1714,7 @@ namespace Server.Mobiles
 
 					int iAmThief = (int)from.Skills[SkillName.Stealing].Value;
 
-					if ( iAmThief < 10 ){ this.PrivateOverheadMessage(MessageType.Regular, 1153, false, Server.Translation.TranslateToSpanish("I only deal with fellow thieves."), from.NetState); }
+					if ( iAmThief < 10 ){ this.PrivateOverheadMessage(MessageType.Regular, 1153, false, "Solo trato con otros ladrones.", from.NetState); }
 					else if ( dropped is StealBox || dropped is StealMetalBox || dropped is StealBag )
 					{
 						int gBonus = (int)Math.Round((( from.Skills[SkillName.ItemID].Value * 500 ) / 100), 0);
@@ -1730,16 +1730,16 @@ namespace Server.Mobiles
 						string sMessage = "";
 						switch ( Utility.RandomMinMax( 0, 9 ) )
 						{
-							case 0:	sMessage = Server.Translation.TranslateToSpanish("Hmmmm...someone has been busy. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");						break;
-							case 1:	sMessage = Server.Translation.TranslateToSpanish("I'll take that. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");										break;
-							case 2:	sMessage = Server.Translation.TranslateToSpanish("I assume the traps were well avoided? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-							case 3:	sMessage = Server.Translation.TranslateToSpanish("You are better than some of the thieves I have met. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");	break;
-							case 4:	sMessage = Server.Translation.TranslateToSpanish("This is a good one you stole here. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-							case 5:	sMessage = Server.Translation.TranslateToSpanish("Keep this up and we will both be rich. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-							case 6:	sMessage = Server.Translation.TranslateToSpanish("How did you manage to steal this one? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-							case 7:	sMessage = Server.Translation.TranslateToSpanish("You seem to be avoiding the dangers out there. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-							case 8:	sMessage = Server.Translation.TranslateToSpanish("I have seen one like this before. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");						break;
-							case 9:	sMessage = Server.Translation.TranslateToSpanish("Why earn when you can take? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");							break;
+							case 0:	sMessage = "Hmmmm... alguien ha estado ocupado. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 1:	sMessage = "Me lo quedo. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 2:	sMessage = "¿Supongo que las trampas fueron bien evitadas? Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 3:	sMessage = "Eres mejor que algunos de los ladrones que he conocido. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 4:	sMessage = "Este es uno bueno que robaste aquí. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 5:	sMessage = "Sigue así y ambos seremos ricos. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 6:	sMessage = "¿Cómo te las arreglaste para robar este? Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 7:	sMessage = "Parece que estás evitando los peligros de ahí fuera. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 8:	sMessage = "He visto uno como este antes. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 9:	sMessage = "¿Por qué ganar cuando puedes tomar? Aquí tienes " + gBonus.ToString() + " de oro."; break;
 						}
 						this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 						dropped.Delete();
@@ -1763,16 +1763,16 @@ namespace Server.Mobiles
 						string sMessage = "";
 						switch ( Utility.RandomMinMax( 0, 9 ) )
 						{
-							case 0:	sMessage = Server.Translation.TranslateToSpanish("Hmmmm...someone has been busy. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");						break;
-							case 1:	sMessage = Server.Translation.TranslateToSpanish("I'll take that. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");										break;
-							case 2:	sMessage = Server.Translation.TranslateToSpanish("I assume the traps were well avoided? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-							case 3:	sMessage = Server.Translation.TranslateToSpanish("You are better than some of the thieves I have met. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");	break;
-							case 4:	sMessage = Server.Translation.TranslateToSpanish("This is a good one you stole here. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-							case 5:	sMessage = Server.Translation.TranslateToSpanish("Keep this up and we will both be rich. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");				break;
-							case 6:	sMessage = Server.Translation.TranslateToSpanish("How did you manage to steal this one? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");					break;
-							case 7:	sMessage = Server.Translation.TranslateToSpanish("You seem to be avoiding the dangers out there. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");		break;
-							case 8:	sMessage = Server.Translation.TranslateToSpanish("I have seen one like this before. Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");						break;
-							case 9:	sMessage = Server.Translation.TranslateToSpanish("Why earn when you can take? Here is ") + gBonus.ToString() + Server.Translation.TranslateToSpanish(" gold for you.");							break;
+							case 0:	sMessage = "Hmmmm... alguien ha estado ocupado. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 1:	sMessage = "Me lo quedo. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 2:	sMessage = "¿Supongo que las trampas fueron bien evitadas? Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 3:	sMessage = "Eres mejor que algunos de los ladrones que he conocido. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 4:	sMessage = "Este es uno bueno que robaste aquí. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 5:	sMessage = "Sigue así y ambos seremos ricos. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 6:	sMessage = "¿Cómo te las arreglaste para robar este? Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 7:	sMessage = "Parece que estás evitando los peligros de ahí fuera. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 8:	sMessage = "He visto uno como este antes. Aquí tienes " + gBonus.ToString() + " de oro."; break;
+							case 9:	sMessage = "¿Por qué ganar cuando puedes tomar? Aquí tienes " + gBonus.ToString() + " de oro."; break;
 						}
 						this.PrivateOverheadMessage(MessageType.Regular, 1153, false, sMessage, from.NetState);
 						dropped.Delete();
@@ -1785,14 +1785,14 @@ namespace Server.Mobiles
 					string sMessage = "";
 					switch ( Utility.RandomMinMax( 0, 7 ) )
 					{
-						case 0:	sMessage = Server.Translation.TranslateToSpanish("So, this follower is not working out for you?"); break;
-						case 1:	sMessage = Server.Translation.TranslateToSpanish("Looking for a replacement henchman eh?"); break;
-						case 2:	sMessage = Server.Translation.TranslateToSpanish("Well...this one is looking for fame and fortune."); break;
-						case 3:	sMessage = Server.Translation.TranslateToSpanish("Maybe this one will be a better fit in your group."); break;
-						case 4:	sMessage = Server.Translation.TranslateToSpanish("Not all relationships work out."); break;
-						case 5:	sMessage = Server.Translation.TranslateToSpanish("At you least you parted ways amiably."); break;
-						case 6:	sMessage = Server.Translation.TranslateToSpanish("This one has been hanging out around here."); break;
-						case 7:	sMessage = Server.Translation.TranslateToSpanish("This one also seeks great treasure.");		break;
+						case 0: sMessage = "¿Así que este seguidor no te está funcionando?"; break;
+						case 1: sMessage = "¿Buscando un secuaz de reemplazo, eh?"; break;
+						case 2: sMessage = "Bueno... este busca fama y fortuna."; break;
+						case 3: sMessage = "Tal vez este encaje mejor en tu grupo."; break;
+						case 4: sMessage = "No todas las relaciones funcionan."; break;
+						case 5: sMessage = "Al menos se separaron amistosamente."; break;
+						case 6: sMessage = "Este ha estado por aquí."; break;
+						case 7: sMessage = "Este también busca un gran tesoro."; break;
 					}
 					if ( dropped is HenchmanFighterItem )
 					{
@@ -1833,7 +1833,7 @@ namespace Server.Mobiles
 						dropped.Delete();
 						return true;
 					}
-					else { this.PrivateOverheadMessage(MessageType.Regular, 1153, false, Server.Translation.TranslateToSpanish("This is not a graveyard! Bury them somewhere else!"), from.NetState); }
+					else { this.PrivateOverheadMessage(MessageType.Regular, 1153, false, "¡Esto no es un cementerio! ¡Entiérralos en otro lugar!", from.NetState); }
 				}
 				else if ( dropped is BookBox && ( this is Mage || this is KeeperOfChivalry || this is Witches || this is Necromancer || this is MageGuildmaster || this is HolyMage || this is NecroMage ) )
 				{
@@ -1847,7 +1847,7 @@ namespace Server.Mobiles
 						{
 							from.AddToBackpack ( item );
 						}
-					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, Server.Translation.TranslateToSpanish("The curse has been lifted from the books."), from.NetState);
+					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, "La maldición ha sido levantada de los libros.", from.NetState);
 					dropped.Delete();
 					return true;
 				}
@@ -1865,7 +1865,7 @@ namespace Server.Mobiles
 						}
 					string curseName = dropped.Name;
 						if ( curseName == ""){ curseName = "item"; }
-					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, Server.Translation.TranslateToSpanish("The curse has been lifted from the ") + curseName + ".", from.NetState);
+					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, "La maldición ha sido levantada del " + curseName + ".", from.NetState);
 					dropped.Delete();
 					return true;
 				}
@@ -1881,7 +1881,7 @@ namespace Server.Mobiles
 						{
 							from.AddToBackpack ( item );
 						}
-					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, Server.Translation.TranslateToSpanish("The item has been cleaned."), from.NetState);
+					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, "El objeto ha sido limpiado.", from.NetState);
 					dropped.Delete();
 					return true;
 				}
@@ -1897,7 +1897,7 @@ namespace Server.Mobiles
 						{
 							from.AddToBackpack ( item );
 						}
-					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, Server.Translation.TranslateToSpanish("The weeds have been removed."), from.NetState);
+					this.PrivateOverheadMessage(MessageType.Regular, 1153, false, "Las malas hierbas han sido eliminadas.", from.NetState);
 					dropped.Delete();
 					return true;
 				}
@@ -1919,12 +1919,12 @@ namespace Server.Mobiles
 
 					if ( !IsValidBulkOrder( dropped ) || !SupportsBulkOrders( from ) )
 					{
-						SayTo( from, 1045130 ); // That order is for some other shopkeeper.
+						SayTo( from, "Esa orden es para otro tendero." ); // That order is for some other shopkeeper.
 						return false;
 					}
 					else if ( ( dropped is SmallBOD && !( (SmallBOD)dropped ).Complete ) || ( dropped is LargeBOD && !( (LargeBOD)dropped ).Complete ) )
 					{
-						SayTo( from, 1045131 ); // You have not completed the order yet.
+						SayTo( from, "Aún no has completado la orden." ); // You have not completed the order yet.
 						return false;
 					}
 					
@@ -1973,8 +1973,8 @@ namespace Server.Mobiles
 					from.SendSound( 0x3D );
 
 					//SayTo( from, 1045132 ); // Thank you so much!  Here is a reward for your effort.
-					SayTo( from, Server.Translation.TranslateToSpanish("Thank you!  You've earned ") + (creds) + Server.Translation.TranslateToSpanish(" credits with the Guild.") );
-					SayTo( from, Server.Translation.TranslateToSpanish("You can always ask me about your credits total or to redeem them.") );
+					SayTo( from, "¡Gracias! Has ganado " + (creds) + " créditos con el Gremio." );
+					SayTo( from, "Siempre puedes preguntarme por tu total de créditos o para canjearlos." );
 
 					if (
 						( dropped is SmallBOD && ( (SmallBOD)dropped ).Material == BulkMaterialType.None ) ||
@@ -2075,19 +2075,19 @@ namespace Server.Mobiles
             int tier = BulkOrderRewardTable.TryGetRewardTier(amount, out cost);
             if (tier < 1)
             {
-				Say(Server.Translation.TranslateToSpanish("I wouldn't even give you my pocket lint!"));
+				Say("¡No te daría ni la pelusa de mi bolsillo!");
                 this.PlaySound(this.Female ? 802 : 1074); // No!
 				return;
             }
 
 			if (!HasEnoughCredits(player, type, cost))
             {
-                Say(Server.Translation.TranslateToSpanish("You should a few more orders. Your quality isn't THAT good.."));
+                Say("Deberías hacer algunos pedidos más. Tu calidad no es TAN buena...");
                 return;
 			}
 
-            this.Say(Server.Translation.TranslateToSpanish("Thank you for your help!"));
-			this.Say(Server.Translation.TranslateToSpanish("Let me see what I can find for you... "));
+            this.Say("¡Gracias por tu ayuda!");
+			this.Say("Déjame ver qué puedo encontrar para ti...");
 			
 			Timer.DelayCall( TimeSpan.FromSeconds( 2 ), new TimerStateCallback ( LookForReward ), new object[]{ from, type, cost }  );
         }
@@ -2120,11 +2120,11 @@ namespace Server.Mobiles
 				
 			switch (Utility.Random(5))
 			{
-				case 0: Emote("I have this... "); break;
-				case 1: Emote("Perhaps I could part with that there..."); break;
-				case 2: Emote("Points to an item on a shelf and changes his mind."); break;
-				case 3: Emote("I can't give that soo...."); break;
-				case 4: Emote("ah... maybe you could use this."); break;
+				case 0: Emote("Tengo esto... "); break;
+				case 1: Emote("Quizás podría desprenderme de eso de allí..."); break;
+				case 2: Emote("Señala un objeto en un estante y cambia de opinión."); break;
+				case 3: Emote("No puedo dar eso..."); break;
+				case 4: Emote("ah... tal vez podrías usar esto."); break;
 			}
 			
 			if (Utility.RandomDouble() > 0.75)
@@ -2152,7 +2152,7 @@ namespace Server.Mobiles
             var success = table.TryClaim(amount, out item, out cost);
             if (!success)
             {
-				Say(Server.Translation.TranslateToSpanish("Err, what was I looking for again?"));
+				Say("Err, ¿qué estaba buscando de nuevo?");
                 return;
             }
 
@@ -2177,8 +2177,8 @@ namespace Server.Mobiles
 
             Titles.AwardFame(from, (cost / 50), true);
 
-            Say(Server.Translation.TranslateToSpanish("Here you go."));
-            from.SendMessage(Server.Translation.TranslateToSpanish("You have redeemed ") + cost + Server.Translation.TranslateToSpanish(" credits from the Guild."));
+            Say("Aquí tienes.");
+            from.SendMessage("Has canjeado " + cost + " créditos del Gremio.");
             int gold = cost * Utility.RandomMinMax(4, 7);
 
             if (AdventuresFunctions.IsPuritain(this))
@@ -2385,8 +2385,8 @@ namespace Server.Mobiles
 
             if (neverBuyable)
             {
-				string message = Server.Translation.TranslateToSpanish("No! That's not for sale, go find your own!!");
-				if (this is Sage) message = Server.Translation.TranslateToSpanish("That Artifact is for Research purposes only. Go find your own!");
+				string message = "¡No! ¡Eso no está a la venta, búscate el tuyo!!";
+				if (this is Sage) message = "Ese artefacto es solo para fines de investigación. ¡Ve a buscar el tuyo!";
 
                 SayTo(buyer, true, message);
                 this.PlaySound(this.Female ? 802 : 1074);
@@ -2394,9 +2394,9 @@ namespace Server.Mobiles
             }
 
             if ( fullPurchase && validBuy.Count == 0 )
-				SayTo( buyer, 500190 ); // Thou hast bought nothing!
+				SayTo( buyer, "¡No has comprado nada!" ); // Thou hast bought nothing!
 			else if ( validBuy.Count == 0 )
-				SayTo( buyer, 500187 ); // Your order cannot be fulfilled, please try again.
+				SayTo( buyer, "Tu pedido no se puede cumplir, por favor inténtalo de nuevo." ); // Your order cannot be fulfilled, please try again.
 
 			if ( validBuy.Count == 0 )
 				return false;
@@ -2409,7 +2409,7 @@ namespace Server.Mobiles
 				if ( cont.ConsumeTotal( typeof( Gold ), totalCost ) )
 					bought = true;
 				else if ( totalCost < 2000 )
-					SayTo( buyer, 500192 );//Begging thy pardon, but thou casnt afford that.
+					SayTo( buyer, "Disculpa, pero no puedes permitirte eso." );//Begging thy pardon, but thou casnt afford that.
 			}
 
 			if ( !bought && totalCost >= 2000 )
@@ -2421,7 +2421,7 @@ namespace Server.Mobiles
 				}
 				else
 				{
-					SayTo( buyer, 500191 ); //Begging thy pardon, but thy bank account lacks these funds.
+					SayTo( buyer, "Disculpa, pero tu cuenta bancaria no tiene fondos suficientes." ); //Begging thy pardon, but thy bank account lacks these funds.
 				}
 			}
 
@@ -2505,20 +2505,20 @@ namespace Server.Mobiles
 			if ( fullPurchase )
 			{
 				if ( buyer.AccessLevel >= AccessLevel.GameMaster )
-					SayTo( buyer, true, Server.Translation.TranslateToSpanish("I would not presume to charge thee anything.  Here are the goods you requested.") );
+					SayTo( buyer, true, "No me atrevería a cobrarte nada. Aquí tienes los bienes que solicitaste." );
 				else if ( fromBank )
-					SayTo( buyer, true, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold, which has been withdrawn from your bank account.  My thanks for the patronage.", totalCost)) );
+					SayTo( buyer, true, "El total de tu compra es de {0} de oro, que ha sido retirado de tu cuenta bancaria. Gracias por tu patrocinio.", totalCost );
 				else
-					SayTo( buyer, true, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold.  My thanks for the patronage.", totalCost)) );
+					SayTo( buyer, true, "El total de tu compra es de {0} de oro. Gracias por tu patrocinio.", totalCost );
 			}
 			else
 			{
 				if ( buyer.AccessLevel >= AccessLevel.GameMaster )
-					SayTo( buyer, true, Server.Translation.TranslateToSpanish("I would not presume to charge thee anything.  Unfortunately, I could not sell you all the goods you requested.") );
+					SayTo( buyer, true, "No me atrevería a cobrarte nada. Desafortunadamente, no pude venderte todos los bienes que solicitaste." );
 				else if ( fromBank )
-					SayTo( buyer, true, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold, which has been withdrawn from your bank account.  My thanks for the patronage.  Unfortunately, I could not sell you all the goods you requested.", totalCost)) );
+					SayTo( buyer, true, "El total de tu compra es de {0} de oro, que ha sido retirado de tu cuenta bancaria. Gracias por tu patrocinio. Desafortunadamente, no pude venderte todos los bienes que solicitaste.", totalCost );
 				else
-					SayTo( buyer, true, Server.Translation.TranslateToSpanish(String.Format("The total of thy purchase is {0} gold.  My thanks for the patronage.  Unfortunately, I could not sell you all the goods you requested.", totalCost)) );
+					SayTo( buyer, true, "El total de tu compra es de {0} de oro. Gracias por tu patrocinio. Desafortunadamente, no pude venderte todos los bienes que solicitaste.", totalCost );
 			}
 
 			return true;
@@ -2535,7 +2535,10 @@ namespace Server.Mobiles
 				return false;
 
 			if ( this is BaseGuildmaster && this.NpcGuild != pm.NpcGuild ) // ONLY GUILD MEMBERS CAN BUY FROM GUILD MASTERS
+			{
+				Say("Solo los miembros del gremio pueden comprarme.");
 				return false;
+			}
 
 			return true;
 		}
@@ -2551,7 +2554,7 @@ namespace Server.Mobiles
 			if ( !CheckVendorAccess( seller ) )
 			{
 				//Say( 501522 ); // I shall not treat with scum like thee!
-				this.Say( "I have no business with you." );
+				this.Say( "No tengo nada que tratar contigo." );
 				return false;
 			}
 
@@ -2586,7 +2589,7 @@ namespace Server.Mobiles
 
 			if ( Sold > MaxSell )
 			{
-				SayTo( seller, true, Server.Translation.TranslateToSpanish(String.Format("You may only sell {0} items at a time!", MaxSell)) );
+				SayTo( seller, true, "¡Solo puedes vender {0} artículos a la vez!", MaxSell );
 				return false;
 			}
 			else if ( Sold == 0 )
@@ -2763,8 +2766,8 @@ namespace Server.Mobiles
 				this is RangerGuildmaster
 				)
 			{
-				list.Add(Server.Translation.TranslateToSpanish("Bulk orders give credits, say 'credits' to see how many you have."));
-				list.Add(Server.Translation.TranslateToSpanish("To redeem your credits, say 'claim'."));
+				list.Add("Los pedidos a granel dan créditos, di 'créditos' para ver cuántos tienes.");
+				list.Add("Para canjear tus créditos, di 'reclamar'.");
 			}
 
 		}

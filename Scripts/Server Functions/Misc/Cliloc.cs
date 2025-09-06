@@ -1,113 +1,65 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
 
 namespace Server.Misc
 {
-    public static class Cliloc
+    public class Cliloc
     {
-        internal static readonly Dictionary<int, string> m_Entries;
+        private static Dictionary<int, string> m_Table;
 
         static Cliloc()
         {
-            m_Entries = new Dictionary<int, string>();
+            string path = Core.FindDataFile("Cliloc.enu");
 
-            string path = Path.Combine(Core.BaseDirectory, "Files", "Cliloc.enu");
-            if (!File.Exists(path))
-                return;
-
-            try
+            if (path != null)
             {
+                m_Table = new Dictionary<int, string>();
                 using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read))
-                using (BinaryReader reader = new BinaryReader(fs))
                 {
-                    // Consumir cabecera y versión (no se usan, pero hay que leerlas)
-                    int header = reader.ReadInt32();
-                    short version = reader.ReadInt16();
-
-                    while (reader.BaseStream.Position < reader.BaseStream.Length)
+                    using (BinaryReader br = new BinaryReader(fs))
                     {
-                        int number = reader.ReadInt32();
-                        byte flag = reader.ReadByte();
-                        int length = reader.ReadUInt16(); // longitud sin signo
+                        br.ReadInt32(); //header
+                        br.ReadInt16(); //version
 
-                        if (length <= 0)
-                            continue;
+                        while (br.BaseStream.Length != br.BaseStream.Position)
+                        {
+                            int number = br.ReadInt32();
+                            br.ReadByte(); // flag
+                            int length = br.ReadInt16();
 
-                        long remaining = reader.BaseStream.Length - reader.BaseStream.Position;
-                        if (length > remaining)
-                            break; // archivo corrupto/truncado
-
-                        byte[] buffer = reader.ReadBytes(length);
-                        string text = Encoding.UTF8.GetString(buffer, 0, buffer.Length);
-
-                        int nullIdx = text.IndexOf('\0');
-                        if (nullIdx >= 0)
-                            text = text.Substring(0, nullIdx);
-
-                        m_Entries[number] = text;
+                            if (length > 0)
+                            {
+                                byte[] buffer = new byte[length];
+                                br.Read(buffer, 0, length);
+                                m_Table[number] = Encoding.UTF8.GetString(buffer);
+                            }
+                        }
                     }
                 }
-            }
-            catch
-            {
-                // Opcional: loguear el error
             }
         }
 
         public static string GetString(int number)
         {
-            string text;
-            return m_Entries.TryGetValue(number, out text) ? text : null;
+            if (m_Table != null && m_Table.ContainsKey(number))
+                return m_Table[number];
+
+            return null;
         }
 
-        // args tabulados en una sola cadena (p.ej. "uno\tdos\ttres")
         public static string GetString(int number, string args)
         {
-            string text = GetString(number);
-            if (text == null)
-                return null;
+            string s = GetString(number);
 
-            if (string.IsNullOrEmpty(args))
-                return text;
-
-            string[] parts = args.Split('\t');
-            // Construir object[] sin LINQ:
-            object[] boxed = Array.ConvertAll(parts, new Converter<string, object>(delegate (string s) { return (object)s; }));
-
-            try
-            {
-                return string.Format(text, boxed);
-            }
-            catch (FormatException)
-            {
-                // Si no coinciden los marcadores, devolver el texto plano.
-                return text;
-            }
-        }
-
-        // Overload útil por si ya tienes los argumentos separados
-        public static string GetString(int number, params string[] args)
-        {
-            string text = GetString(number);
-            if (text == null)
+            if (s == null)
                 return null;
 
             if (args == null || args.Length == 0)
-                return text;
+                return s;
 
-            // Convertir string[] -> object[] sin LINQ
-            object[] boxed = Array.ConvertAll(args, new Converter<string, object>(delegate (string s) { return (object)s; }));
-
-            try
-            {
-                return string.Format(text, boxed);
-            }
-            catch (FormatException)
-            {
-                return text;
-            }
+            return String.Format(s, args.Split('\t'));
         }
     }
 }

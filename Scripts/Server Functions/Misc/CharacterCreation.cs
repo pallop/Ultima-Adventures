@@ -15,6 +15,11 @@ namespace Server.Misc
 		{
 			// Register our event handler
 			EventSink.CharacterCreated += new CharacterCreatedEventHandler( EventSink_CharacterCreated );
+			TranslationSpeech.Initialize();
+			TranslationOPL.Initialize();
+			TranslationOverhead.Initialize();
+			TranslationTitles.Initialize();
+			TranslationMessages.Initialize();
 		}
 
 		private static void AddBackpack( Mobile m )

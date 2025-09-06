@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Server.Misc;
+using Server;
 
 namespace Server.Items
 {
@@ -789,7 +790,7 @@ namespace Server.Items
 		{
 			m_Hue = hue;
 			m_Number = number;
-			m_Name = name;
+			m_Name = EventSink.InvokeResourceNameTranslate(name);
 			m_AttributeInfo = attributeInfo;
 			m_Resource = resource;
 			m_ResourceTypes = resourceTypes;

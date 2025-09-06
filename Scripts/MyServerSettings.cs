@@ -902,25 +902,5 @@ namespace Server.Misc
 
 			return Heat;
 		}
-
-		public static bool EnableTranslation()
-		{
-			// ENABLES OR DISABLES THE REAL-TIME TRANSLATION FEATURE
-			return true;
-		}
-
-		public static string TranslationApiKey()
-		{
-			// SET THE API KEY FOR THE TRANSLATION SERVICE
-			// LEAVE BLANK IF NO KEY IS REQUIRED
-			return "";
-		}
-
-		public static bool TranslationVerbose()
-		{
-			// ENABLES OR DISABLES DETAILED TRANSLATION LOGGING IN THE CONSOLE
-			// USEFUL FOR DEBUGGING, CAN BE SPAMMY
-			return true;
-		}
 	}
 }

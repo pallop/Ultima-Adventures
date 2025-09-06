@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Xml;
 using Server;
-using Server.Custom;
 
 namespace Server
 {
@@ -37,10 +36,7 @@ namespace Server
 		public string GetRandomName()
 		{
 			if ( m_List.Length > 0 )
-			{
-				string name = m_List[Utility.Random( m_List.Length )];
-				return Translator.Translate(name);
-			}
+				return m_List[Utility.Random( m_List.Length )];
 
 			return "";
 		}

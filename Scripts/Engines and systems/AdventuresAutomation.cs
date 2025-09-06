@@ -72,8 +72,7 @@ namespace Server.Items
 
 		public static void StartTask(PlayerMobile pm, string speech)
 		{
-			if (Server.Translation.TranslateToEnglish != null)
-				speech = Server.Translation.TranslateToEnglish(speech);
+			speech = EventSink.InvokeTranslateToEnglish(speech);
 			CheckHashTables();
 
 			string task = "";

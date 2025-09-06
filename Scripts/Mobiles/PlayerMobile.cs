@@ -4248,88 +4248,75 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 
 		public override void DoSpeech( string text, int[] keywords, MessageType type, int hue )
 		{
+
 			bool drunks = false;
 			string newspeech = "";
 			if (BAC > 0) //is drunk!
-			{
-				if (text.Length > 0 && Utility.RandomDouble() < ((double)BAC/100))
 				{
-					drunks = true;
-					// lets have fun
-					string[] said = text.Split(' ');
-
-					for( int i = 0; i < said.Length; i++ )
+					if (text.Length > 0 && Utility.RandomDouble() < ((double)BAC/100))
 					{
-						if (Utility.RandomDouble() > 0.77)
-						{
-							string junk = "";
-							switch (Utility.Random(10))
-							{
-							case 0: newspeech += "ftgnt" + " "; break; //Final twist gets no thanks
-							case 1: newspeech += "fcatc" + " "; break; //for coding all this code
-							case 2: newspeech += "hgya" + " "; break; //he gets yelled at
-							case 3: newspeech += "buls" + " "; break; //by ungrateful little shits
-							case 4: newspeech += "bhkat" + " "; break; //but he keeps at it
-							case 5: newspeech += "bhas" + " "; break; //because he appreciates some
-							case 6: newspeech += "otcphm" + " "; break; //of the cool players he met
-							case 7: newspeech += "otlty" + " "; break; //over the last two years
-							case 8: newspeech += "sgapar" + " "; break; //so go and play and remember
-							case 9: newspeech += "jsbhb" + " "; break; //jetson sucks big hairy balls
-							}
-						}
-						else
-							newspeech += said[Utility.Random(said.Length)]+ " ";
-					}
-					if (Utility.RandomDouble() < ((double)BAC / 75) )
-						keywords = new int[0];
-				}
-			}
+						drunks = true;
+						// lets have fun
+						string[] said = text.Split(' ');
 
-			if (THC > 0) //is high!
-			{
-				if (text.Length > 0 && Utility.RandomDouble() < ((double)THC/100))
+						for( int i = 0; i < said.Length; i++ )
+						{
+							if (Utility.RandomDouble() > 0.77)
+							{
+								string junk = "";
+								switch (Utility.Random(10))
+								{
+								case 0: newspeech += "ftgnt" + " "; break; //Final twist gets no thanks
+								case 1: newspeech += "fcatc" + " "; break; //for coding all this code
+								case 2: newspeech += "hgya" + " "; break; //he gets yelled at
+								case 3: newspeech += "buls" + " "; break; //by ungrateful little shits
+								case 4: newspeech += "bhkat" + " "; break; //but he keeps at it
+								case 5: newspeech += "bhas" + " "; break; //because he appreciates some
+								case 6: newspeech += "otcphm" + " "; break; //of the cool players he met
+								case 7: newspeech += "otlty" + " "; break; //over the last two years
+								case 8: newspeech += "sgapar" + " "; break; //so go and play and remember
+								case 9: newspeech += "jsbhb" + " "; break; //jetson sucks big hairy balls
+								}
+							}
+							else
+								newspeech += said[Utility.Random(said.Length)]+ " ";
+						}
+						if (Utility.RandomDouble() < ((double)BAC / 75) )
+							keywords = new int[0];
+					}
+				}
+
+			if (THC > 0) //is drunk!
 				{
-					drunks = true;
-					// lets have fun
-					string[] said = text.Split(' ');
-
-					for( int i = 0; i < said.Length; i++ )
+					if (text.Length > 0 && Utility.RandomDouble() < ((double)THC/100))
 					{
-						if (Utility.RandomDouble() > 0.77)
+						drunks = true;
+						// lets have fun
+						string[] said = text.Split(' ');
+
+						for( int i = 0; i < said.Length; i++ )
 						{
-							string junk = "";
-							switch (Utility.Random(7))
+							if (Utility.RandomDouble() > 0.77)
 							{
-								case 0: newspeech += "man" + " "; break;
-								case 1: newspeech += "dude" + " "; break;
-								case 2: newspeech += "groovy" + " "; break;
-								case 3: newspeech += "trippy" + " "; break;
-								case 4: newspeech += "enlightened" + " "; break;
-								case 5: newspeech += "uh" + " "; break;
-								case 6: newspeech += "woah" + " "; break;
+								string junk = "";
+								switch (Utility.Random(7))
+								{
+									case 0: newspeech += "man" + " "; break;
+									case 1: newspeech += "dude" + " "; break;
+									case 2: newspeech += "groovy" + " "; break;
+									case 3: newspeech += "trippy" + " "; break;
+									case 4: newspeech += "enlightened" + " "; break;
+									case 5: newspeech += "uh" + " "; break;
+									case 6: newspeech += "woah" + " "; break;
+								}
 							}
+							else
+								newspeech += said[Utility.Random(i)]+ " ";
 						}
-						else
-							newspeech += said[Utility.Random(i)]+ " ";
+						if (Utility.RandomDouble() < ((double)THC / 75) )
+							keywords = new int[0];
 					}
-					if (Utility.RandomDouble() < ((double)THC / 75) )
-						keywords = new int[0];
 				}
-			}
-
-			string speechToUse = drunks ? newspeech : text;
-
-			// =================== TRANSLATION HOOK START ===================
-			// This hook is for logging player speech to the console.
-			// The overhead text for other players remains the original Spanish.
-			bool fromCache;
-			string translated = Server.Misc.Translator.Translate(text, out fromCache);
-			if (!fromCache)
-			{
-				// Only log if it's a new translation to avoid spam.
-				Console.WriteLine(String.Format("{0} says: {1} ({2})", this.Name, text, translated));
-			}
-			// =================== TRANSLATION HOOK END =====================
 
 			if( Guilds.Guild.NewGuildSystem && (type == MessageType.Guild || type == MessageType.Alliance) )
 			{
@@ -4343,8 +4330,8 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 					if( g.Alliance != null && g.Alliance.IsMember( g ) )
 					{
 						//g.Alliance.AllianceTextMessage( hue, "[Alliance][{0}]: {1}", this.Name, text );
-						g.Alliance.AllianceChat( this, speechToUse );
-						SendToStaffMessage( this, "[Alliance]: {0}", speechToUse );
+						g.Alliance.AllianceChat( this, text );
+						SendToStaffMessage( this, "[Alliance]: {0}", text );
 
 					}
 					else
@@ -4356,13 +4343,16 @@ A little mouse catches sight of you and flees into a small hole in the ground.*/
 				{
 					m_GuildMessageHue = hue;
 
-					g.GuildChat( this, speechToUse );
-					SendToStaffMessage( this, "[Guild]: {0}", speechToUse );
+					g.GuildChat( this, text );
+					SendToStaffMessage( this, "[Guild]: {0}", text );
 				}
 			}
 			else
 			{
-				base.DoSpeech( text, keywords, type, hue );
+				if (drunks)
+					base.DoSpeech( newspeech, keywords, type, hue );
+				else
+					base.DoSpeech( text, keywords, type, hue );
 			}
 		}
 

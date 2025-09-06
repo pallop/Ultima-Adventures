@@ -25,8 +25,14 @@ using Server.Network;
 
 namespace Server
 {
+	public delegate string OPLTranslateHandler(int number, string args);
+	public delegate string OPLRawTranslateHandler(string text);
+
 	public sealed class ObjectPropertyList : Packet
 	{
+		public static event OPLTranslateHandler OnTranslate;
+		public static event OPLRawTranslateHandler OnRawTranslate;
+
 		private IEntity m_Entity;
 		private int m_Hash;
 		private int m_Header;
@@ -60,6 +66,16 @@ namespace Server
 		{
 			if ( number == 0 )
 				return;
+
+			if (OnTranslate != null)
+			{
+				string translated = OnTranslate(number, "");
+				if (translated != null)
+				{
+					Add(translated);
+					return;
+				}
+			}
 
 			AddHash( number );
 
@@ -97,6 +113,16 @@ namespace Server
 
 			if ( arguments == null )
 				arguments = "";
+
+			if (OnTranslate != null)
+			{
+				string translated = OnTranslate(number, arguments);
+				if (translated != null)
+				{
+					Add(translated);
+					return;
+				}
+			}
 
 			if ( m_Header == 0 )
 			{
@@ -154,8 +180,14 @@ namespace Server
 
 		public void Add( string text )
 		{
-			if (Translation.TranslateToSpanish != null)
-				text = Translation.TranslateToSpanish(text);
+			if (OnRawTranslate != null)
+			{
+				string translated = OnRawTranslate(text);
+				if (translated != null)
+				{
+					text = translated;
+				}
+			}
 			Add( GetStringNumber(), text );
 		}
 

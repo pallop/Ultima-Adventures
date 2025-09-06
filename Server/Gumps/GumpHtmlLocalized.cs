@@ -232,12 +232,27 @@ namespace Server.Gumps
 
 		public override void AppendTo( IGumpWriter disp )
 		{
+			string translated = EventSink.InvokeTranslateCliloc(m_Number, m_Args);
+
+			if (translated != null)
+			{
+				disp.AppendLayout( Gump.StringToBuffer( "htmlgump" ) );
+				disp.AppendLayout( m_X );
+				disp.AppendLayout( m_Y );
+				disp.AppendLayout( m_Width );
+				disp.AppendLayout( m_Height );
+				disp.AppendLayout( disp.Parent.Intern( translated ) );
+				disp.AppendLayout( m_Background );
+				disp.AppendLayout( m_Scrollbar );
+				return;
+			}
+
+			// Fallback to original behavior if translation is disabled or fails
 			switch ( m_Type )
 			{
 				case GumpHtmlLocalizedType.Plain:
 				{
 					disp.AppendLayout( m_LayoutNamePlain );
-
 					disp.AppendLayout( m_X );
 					disp.AppendLayout( m_Y );
 					disp.AppendLayout( m_Width );
@@ -245,14 +260,11 @@ namespace Server.Gumps
 					disp.AppendLayout( m_Number );
 					disp.AppendLayout( m_Background );
 					disp.AppendLayout( m_Scrollbar );
-
 					break;
 				}
-
 				case GumpHtmlLocalizedType.Color:
 				{
 					disp.AppendLayout( m_LayoutNameColor );
-
 					disp.AppendLayout( m_X );
 					disp.AppendLayout( m_Y );
 					disp.AppendLayout( m_Width );
@@ -261,14 +273,11 @@ namespace Server.Gumps
 					disp.AppendLayout( m_Background );
 					disp.AppendLayout( m_Scrollbar );
 					disp.AppendLayout( m_Color );
-
 					break;
 				}
-
 				case GumpHtmlLocalizedType.Args:
 				{
 					disp.AppendLayout( m_LayoutNameArgs );
-
 					disp.AppendLayout( m_X );
 					disp.AppendLayout( m_Y );
 					disp.AppendLayout( m_Width );
@@ -278,7 +287,6 @@ namespace Server.Gumps
 					disp.AppendLayout( m_Color );
 					disp.AppendLayout( m_Number );
 					disp.AppendLayout( m_Args );
-
 					break;
 				}
 			}

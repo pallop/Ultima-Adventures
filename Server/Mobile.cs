@@ -38,7 +38,6 @@ using Server.Mobiles;
 using Server.Network;
 using Server.Prompts;
 using Server.Targeting;
-using Server.Misc;
 
 namespace Server
 {
@@ -502,6 +501,9 @@ namespace Server
 
 	public delegate int AOSStatusHandler( Mobile from, int index );
 
+	public delegate bool SendLocalizedMessageHandler(Mobile to, int number, string args);
+	public delegate string SpeechLogEventHandler(string speech);
+
 	#endregion
 
 	/// <summary>
@@ -587,6 +589,8 @@ namespace Server
 		}
 
 		private static AOSStatusHandler m_AOSStatusHandler;
+		public static SendLocalizedMessageHandler OnSendLocalizedMessage;
+		public static SpeechLogEventHandler OnSpeechLog;
 
 		public static AOSStatusHandler AOSStatusHandler
 		{
@@ -4881,6 +4885,8 @@ namespace Server
 			this.Region.OnSpeech( regArgs );
 			OnSaid( regArgs );
 
+			text = EventSink.InvokeTranslateToEnglish(text);
+
 			if( regArgs.Blocked )
 				return;
 
@@ -4888,6 +4894,7 @@ namespace Server
 
 			if( string.IsNullOrEmpty( text ) )
 				return;
+
 
 			List<Mobile> hears = m_Hears;
 			List<IEntity> onSpeech = m_OnSpeech;
@@ -4932,24 +4939,8 @@ namespace Server
 
 				eable.Free();
 
-				// =================== TRANSLATION HOOK START ===================
-				string overheadText = text; // Default to original text
-				if (!(this is PlayerMobile)) // Only translate for NPCs
-				{
-					bool fromCache;
-					string translated = Server.Misc.Translator.Translate(text, out fromCache);
-					overheadText = translated; // Use translated text for overhead message
-
-					// Log to console if it's a new translation
-					if (!fromCache)
-					{
-						Console.WriteLine(String.Format("NPC {0} says: {1} ({2})", this.Name, text, translated));
-					}
-				}
-				// =================== TRANSLATION HOOK END =====================
-
 				object mutateContext = null;
-				string mutatedText = overheadText; // Use overheadText for mutation
+				string mutatedText = text;
 				SpeechEventArgs mutatedArgs = null;
 
 				if( MutateSpeech( hears, ref mutatedText, ref mutateContext ) )
@@ -4974,8 +4965,9 @@ namespace Server
 
 						if( ns != null ) {
 							if( regp == null )
-								regp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, overheadText ) ); // Use overheadText
-							ns.Send(regp);
+								regp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, text ) );
+
+							ns.Send( regp );
 						}
 					} else {
 						heard.OnSpeech( mutatedArgs );
@@ -4985,7 +4977,8 @@ namespace Server
 						if( ns != null ) {
 							if( mutp == null )
 								mutp = Packet.Acquire( new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, mutatedText ) );
-							ns.Send(mutp);
+
+							ns.Send( mutp );
 						}
 					}
 				}
@@ -10754,17 +10747,16 @@ namespace Server
 
 		public void PublicOverheadMessage( MessageType type, int hue, bool ascii, string text, bool noLineOfSight )
 		{
-			bool fromCache;
-			string translated = Server.Misc.Translator.Translate(text, out fromCache);
+			text = EventSink.InvokeTranslateToSpanish(text);
 
 			if( m_Map != null )
 			{
 				Packet p = null;
 
 							if( ascii )
-								p = new AsciiMessage( m_Serial, Body, type, hue, 3, Name, translated );
+								p = new AsciiMessage( m_Serial, Body, type, hue, 3, Name, text );
 							else
-								p = new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, translated );
+								p = new UnicodeMessage( m_Serial, Body, type, hue, 3, m_Language, Name, text );
 
 							p.Acquire();
 
@@ -10945,6 +10937,9 @@ namespace Server
 
 		public void SendLocalizedMessage( int number )
 		{
+			if (OnSendLocalizedMessage != null && OnSendLocalizedMessage(this, number, ""))
+                return;
+
 			NetState ns = m_NetState;
 
 			if( ns != null )
@@ -10958,6 +10953,9 @@ namespace Server
 
 		public void SendLocalizedMessage( int number, string args, int hue )
 		{
+			if (OnSendLocalizedMessage != null && OnSendLocalizedMessage(this, number, args))
+                return;
+
 			if( hue == 0x3B2 && (args == null || args.Length == 0) )
 			{
 				NetState ns = m_NetState;
@@ -10986,6 +10984,9 @@ namespace Server
 
 		public void SendLocalizedMessage( int number, bool append, string affix, string args, int hue )
 		{
+			if (OnSendLocalizedMessage != null && OnSendLocalizedMessage(this, number, args))
+                return;
+
 			NetState ns = m_NetState;
 
 			if( ns != null )
@@ -11017,12 +11018,7 @@ namespace Server
 			NetState ns = m_NetState;
 
 			if( ns != null )
-			{
-				if (Translation.TranslateToSpanish != null)
-					text = Translation.TranslateToSpanish(text);
-
 				ns.Send( new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", text ) );
-			}
 		}
 
 		public void SendMessage( int hue, string format, params object[] args )

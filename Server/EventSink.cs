@@ -81,6 +81,10 @@ namespace Server
 	public delegate void GuildGumpRequestHandler( GuildGumpRequestArgs e );
 	public delegate void QuestGumpRequestHandler( QuestGumpRequestArgs e );
 	public delegate void ClientVersionReceivedHandler( ClientVersionReceivedArgs e );
+	public delegate string ResourceNameTranslateEventHandler( string name );
+	public delegate string TranslateClilocEventHandler( int number, string args );
+	public delegate string TranslateToEnglishEventHandler( string text );
+	public delegate string TranslateToSpanishEventHandler( string text );
 
 	public class ClientVersionReceivedArgs : EventArgs
 	{
@@ -862,6 +866,10 @@ namespace Server
 		public static event GuildGumpRequestHandler GuildGumpRequest;
 		public static event QuestGumpRequestHandler QuestGumpRequest;
 		public static event ClientVersionReceivedHandler ClientVersionReceived;
+		public static event ResourceNameTranslateEventHandler ResourceNameTranslate;
+		public static event TranslateClilocEventHandler TranslateCliloc;
+		public static event TranslateToEnglishEventHandler TranslateToEnglish;
+		public static event TranslateToSpanishEventHandler TranslateToSpanish;
 
 		/* The following is a .NET 2.0 "Generic EventHandler" implementation.
 		 * It is a breaking change; we would have to refactor all event handlers.
@@ -919,6 +927,34 @@ namespace Server
 		{
 			if( ClientVersionReceived != null )
 				ClientVersionReceived( e );
+		}
+
+		public static string InvokeResourceNameTranslate( string name )
+		{
+			if ( ResourceNameTranslate != null )
+				return ResourceNameTranslate( name );
+			return name;
+		}
+
+		public static string InvokeTranslateCliloc( int number, string args )
+		{
+			if ( TranslateCliloc != null )
+				return TranslateCliloc( number, args );
+			return null;
+		}
+
+		public static string InvokeTranslateToEnglish( string text )
+		{
+			if ( TranslateToEnglish != null )
+				return TranslateToEnglish( text );
+			return text;
+		}
+
+		public static string InvokeTranslateToSpanish( string text )
+		{
+			if ( TranslateToSpanish != null )
+				return TranslateToSpanish( text );
+			return text;
 		}
 
 		public static void InvokeServerStarted()

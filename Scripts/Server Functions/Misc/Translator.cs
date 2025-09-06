@@ -1,9 +1,10 @@
 using System;
+using System.IO;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
-using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Server.Misc
@@ -11,59 +12,70 @@ namespace Server.Misc
     public class Translator
     {
         private static readonly HttpClient client = new HttpClient();
-        internal static readonly ConcurrentDictionary<string, string> m_TranslationCache = new ConcurrentDictionary<string, string>();
-        private static readonly Regex m_HtmlRegex = new Regex(@">(?<text>[^<]*)<", RegexOptions.Compiled);
+        internal static ConcurrentDictionary<string, string> m_TranslationCache;
+        private static readonly string CachePath = Path.Combine(Core.BaseDirectory, "Data/translation_cache.json");
+
+        static Translator()
+        {
+            LoadCache();
+        }
+
+        public static void LoadCache()
+        {
+            if (File.Exists(CachePath))
+            {
+                try
+                {
+                    string json = File.ReadAllText(CachePath);
+                    var dictionary = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+                    m_TranslationCache = new ConcurrentDictionary<string, string>(dictionary);
+                    Console.WriteLine("Loaded {0} entries from translation cache.", m_TranslationCache.Count);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error loading translation cache: " + e.Message);
+                    m_TranslationCache = new ConcurrentDictionary<string, string>();
+                }
+            }
+            else
+            {
+                m_TranslationCache = new ConcurrentDictionary<string, string>();
+            }
+        }
+
+        public static void SaveCache()
+        {
+            if (m_TranslationCache != null && m_TranslationCache.Count > 0)
+            {
+                try
+                {
+                    string json = JsonConvert.SerializeObject(m_TranslationCache, Formatting.Indented);
+                    File.WriteAllText(CachePath, json);
+                    Console.WriteLine("Saved {0} entries to translation cache.", m_TranslationCache.Count);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Error saving translation cache: " + e.Message);
+                }
+            }
+        }
 
         private static string Translate(string text, string source, string target, out bool fromCache)
         {
             fromCache = false;
-            if (string.IsNullOrEmpty(text))
+            if (string.IsNullOrEmpty(text) || !MyServerSettings.EnableTranslation())
                 return text;
 
-            // If the text contains HTML, parse it. Otherwise, translate the whole thing.
-            if (text.Contains("<") && text.Contains(">"))
+            if (m_TranslationCache.TryGetValue(text, out string cachedTranslation))
             {
-                // Use a MatchEvaluator to replace only the text content between tags.
-                return m_HtmlRegex.Replace(text, (match) =>
-                {
-                    string originalText = match.Groups["text"].Value;
-                    // We must still translate the text content, which uses the main Translate method.
-                    // This creates a recursive call, but the inner call will not contain HTML tags,
-                    // so it will use the direct translation path.
-                    bool innerFromCache; // This is not used for the outer call, but the method requires it.
-                    string translatedText = Translate(originalText, source, target, out innerFromCache);
-                    return ">" + translatedText + "<";
-                });
-            }
-
-            // --- Direct Translation Logic (for non-HTML or for text segments from HTML) ---
-
-            string cachedTranslation;
-            if (m_TranslationCache.TryGetValue(text, out cachedTranslation))
-            {
-                if (MyServerSettings.TranslationVerbose())
-                    Console.WriteLine("Translation Cache HIT: \"{0}\" -> \"{1}\"", text, cachedTranslation);
                 fromCache = true;
                 return cachedTranslation;
             }
 
-            if (MyServerSettings.TranslationVerbose())
-                Console.WriteLine("Translation Cache MISS: \"{0}\". Requesting from service...", text);
-
             try
             {
                 var apiKey = MyServerSettings.TranslationApiKey();
-
-                object data;
-                if (!string.IsNullOrEmpty(apiKey))
-                {
-                    data = new { q = text, source = source, target = target, api_key = apiKey };
-                }
-                else
-                {
-                    data = new { q = text, source = source, target = target };
-                }
-
+                var data = new { q = text, source, target, api_key = apiKey };
                 var json = JsonConvert.SerializeObject(data);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
@@ -76,63 +88,41 @@ namespace Server.Misc
                     string translatedText = result["translatedText"];
 
                     if (!string.IsNullOrWhiteSpace(text))
-                    {
                         m_TranslationCache.TryAdd(text, translatedText);
-                    }
+
                     return translatedText;
                 }
                 else
                 {
-                    if (MyServerSettings.TranslationVerbose())
-                        Console.WriteLine("LibreTranslate request FAILED with status {0}: {1}", response.StatusCode, response.ReasonPhrase);
-                    return text; // Return original text on error
+                    Console.WriteLine($"LibreTranslate request FAILED with status {response.StatusCode}: {response.ReasonPhrase}");
+                    return text;
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine("LibreTranslate request EXCEPTION for text \"{0}\": {1}", text, e.Message);
+                Console.WriteLine($"LibreTranslate request EXCEPTION for text \"{text}\": {e.Message}");
                 return text;
             }
         }
 
-        public static string Translate(string text)
-        {
-            bool fromCache;
-            return Translate(text, "es", "en", out fromCache);
-        }
-
-        public static string Translate(string text, out bool fromCache)
-        {
-            return Translate(text, "es", "en", out fromCache);
-        }
-
         public static string TranslateToSpanish(string text)
         {
-			if (!MyServerSettings.EnableTranslation())
-				return text;
             bool fromCache;
             return Translate(text, "en", "es", out fromCache);
         }
 
         public static string TranslateToEnglish(string text)
         {
-			if (!MyServerSettings.EnableTranslation())
-				return text;
             bool fromCache;
             return Translate(text, "es", "en", out fromCache);
         }
 
-		public static string TranslateCliloc(int number, string args)
-		{
-			if (!MyServerSettings.EnableTranslation())
-				return null;
-
-			string text = Cliloc.GetString(number, args);
-
-			if (text != null)
-				return TranslateToSpanish(text);
-
-			return null;
-		}
+        public static string TranslateCliloc(int number, string args)
+        {
+            string text = Cliloc.GetString(number, args);
+            if (text != null)
+                return TranslateToSpanish(text);
+            return null;
+        }
     }
 }
