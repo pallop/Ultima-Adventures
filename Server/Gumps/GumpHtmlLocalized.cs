@@ -241,7 +241,7 @@ namespace Server.Gumps
 				disp.AppendLayout( m_Y );
 				disp.AppendLayout( m_Width );
 				disp.AppendLayout( m_Height );
-				disp.AppendLayout( disp.Parent.Intern( translated ) );
+				disp.AppendLayout( this.Parent.Intern( translated ) );
 				disp.AppendLayout( m_Background );
 				disp.AppendLayout( m_Scrollbar );
 				return;
