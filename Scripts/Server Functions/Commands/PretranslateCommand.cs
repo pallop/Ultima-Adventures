@@ -18,6 +18,7 @@ namespace Server.Commands
         private static void Pretranslate_OnCommand(CommandEventArgs e)
         {
             e.Mobile.SendMessage("Starting pre-translation...");
+            e.Mobile.SendMessage("WARNING: This command will attempt to instantiate every Item and Mobile type in the server. This can be resource-intensive and may cause unexpected side effects. It is recommended to run this on a test server first.");
 
             // Pre-translate common strings
             Server.Translation.TranslateToSpanish("This creature has suffered");
@@ -50,7 +51,7 @@ namespace Server.Commands
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Error pre-translating item type {type.FullName}: {ex.Message}");
+                            Console.WriteLine(String.Format("Error pre-translating item type {0}: {1}", type.FullName, ex.Message));
                         }
                     }
                     else if (type.IsSubclassOf(typeof(Mobile)))
@@ -70,7 +71,7 @@ namespace Server.Commands
                         }
                         catch (Exception ex)
                         {
-                            Console.WriteLine($"Error pre-translating mobile type {type.FullName}: {ex.Message}");
+                            Console.WriteLine(String.Format("Error pre-translating mobile type {0}: {1}", type.FullName, ex.Message));
                         }
                     }
                 }
