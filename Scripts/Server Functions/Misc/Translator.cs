@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json;
-using Server.Models;
 
 namespace Server.Misc
 {
@@ -50,19 +48,8 @@ namespace Server.Misc
 
             try
             {
-                var apiKey = MyServerSettings.TranslationApiKey();
-
-                object data;
-                if (!string.IsNullOrEmpty(apiKey))
-                {
-                    data = new { q = text, source = source, target = target, api_key = apiKey };
-                }
-                else
-                {
-                    data = new { q = text, source = source, target = target };
-                }
-
-                var json = JsonConvert.SerializeObject(data);
+                // Manual JSON construction to avoid dependency
+                string json = "{\"q\":\"" + text.Replace("\"", "\\\"") + "\",\"source\":\"" + source + "\",\"target\":\"" + target + "\"}";
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 var response = client.PostAsync("http://localhost:5000/translate", content).Result;
@@ -70,30 +57,36 @@ namespace Server.Misc
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = response.Content.ReadAsStringAsync().Result;
-                    var result = JsonConvert.DeserializeObject<List<TranslationData>>(responseString);
 
-                    if (result != null && result.Count > 0)
+                    // Manual JSON parsing
+                    string key = "\"translatedText\":\"";
+                    int start = responseString.IndexOf(key);
+                    if (start > -1)
                     {
-                        string translatedText = result[0].translatedText;
-                        if (!string.IsNullOrWhiteSpace(text))
+                        start += key.Length;
+                        int end = responseString.IndexOf("\"", start);
+                        if (end > -1)
                         {
-                            m_TranslationCache.TryAdd(text, translatedText);
+                            string translatedText = responseString.Substring(start, end - start);
+                            if (!string.IsNullOrWhiteSpace(text))
+                            {
+                                m_TranslationCache.TryAdd(text, translatedText);
+                            }
+                            return translatedText;
                         }
-                        return translatedText;
                     }
                 }
                 else
                 {
                     if (MyServerSettings.TranslationVerbose())
                         Console.WriteLine("LibreTranslate request FAILED with status {0}: {1}", response.StatusCode, response.ReasonPhrase);
-                    return text; // Return original text on error
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine("LibreTranslate request EXCEPTION for text \"{0}\": {1}", text, e.Message);
-                return text;
             }
+            return text; // Return original text on failure or empty result
         }
 
         public static string ToSpanish(string text)
