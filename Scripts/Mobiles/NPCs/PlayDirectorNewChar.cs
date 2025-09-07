@@ -331,7 +331,7 @@ namespace Server.Mobiles
                     cloth2.Hue = 1633;
                     Actor1.AddItem( cloth2 );
                 Actor1.Name = "Peter Grimm";
-                Actor1.Title = "the Dastardly";
+                Actor1.Title = "el Vil";
                 Actor1.SpeechHue = 233;
                 Actor1.MoveToWorld( new Point3D( 1953, 1327, 0), Map.Malas );
             
@@ -343,13 +343,13 @@ namespace Server.Mobiles
                 Actor2.AddItem( new PlateHelm() );
                 Actor2.AddItem( new Boots( ) );
                 Actor2.Name = "Sygun";
-                Actor2.Title = "the Subservient";
+                Actor2.Title = "el Sumiso";
                 Actor2.SpeechHue = 64;
                 Actor2.MoveToWorld( new Point3D(1958,1323,0), Map.Malas );
             
                 Actor3 = new PlayActor( true );
-                Actor3.Name = "FinalTwist";
-                Actor3.Title = "the admin";
+                Actor3.Name = "Giro Final";
+                Actor3.Title = "el administrador";
                 Item doublet = new Doublet();
                 doublet.Hue = 1291;
                 Actor3.AddItem( doublet );
@@ -479,7 +479,7 @@ namespace Server.Mobiles
                     {
                         //Move actor 2 down in front of cell
                         MoveActor( Actor2, new Point3D(1963,1323,0) );
-                        Actor2.Say("*burps*");
+                        Actor2.Say("*eructa*");
                     }
                     if (PlayStep == 10)
                     {
@@ -496,7 +496,7 @@ namespace Server.Mobiles
                     {
                         //Move actor 2 up in front of cell
                         MoveActor( Actor2, new Point3D(1958,1323,0) );
-                        Actor1.Say("Yes... Yes....");
+                        Actor1.Say("Sí... sí....");
                     }
                     if (PlayStep == 17)
                     {
@@ -519,26 +519,26 @@ namespace Server.Mobiles
                         ((PlayActor)Actor2).Direction = Actor2.GetDirectionTo( Actor1.Location );
 
                         //Actor 2 says the player woke up
-                        Actor2.Say("M'Lord, the Prisoner woke up.");
+                        Actor2.Say("Mi Señor, el prisionero ha despertado.");
                     }
                     if (PlayStep == 28)
                     {
-                        Actor1.Say("Darnit, my new sleep spell exploit failed again.");
+                        Actor1.Say("Maldición, mi nuevo hechizo de sueño ha vuelto a fallar.");
                     }
                     if (PlayStep == 34)
                     {
-                        Actor1.Say("I'll need you to get me more of that special ingredient.");
+                        Actor1.Say("Necesitaré que me traigas más de ese ingrediente especial.");
                     }
                     if (PlayStep == 40)
                     {
-                        Actor2.Say("But M'Lord");
+                        Actor2.Say("Pero, Mi Señor");
                     }
                     if (PlayStep == 43)
-                        Actor1.Say("No buts, you lazy lout.");
+                        Actor1.Say("Sin peros, holgazán.");
                     if (PlayStep == 45)
-                        Actor1.Say("Go, or I'll sic my paragon pets on you again.");
+                        Actor1.Say("Ve, o volveré a soltar a mis mascotas paragon sobre ti.");
                     if (PlayStep == 50)
-                        Actor2.Say("Yes M'Lord");
+                        Actor2.Say("Sí, Mi Señor");
                     if (PlayStep == 52)
                     {
                         //Move actor to exit point
@@ -550,7 +550,7 @@ namespace Server.Mobiles
                         Actor2.PlaySound( 0xEC );
                     }
                     if (PlayStep == 58)
-                        Actor1.Say("*Grumbles*");
+                        Actor1.Say("*Refunfuña*");
                     
                     //Moongate gate = new Moongate();
                     
@@ -570,7 +570,7 @@ namespace Server.Mobiles
                     if (PlayStep == 63)
                     {
                         ((PlayActor)Actor1).Direction = Actor1.GetDirectionTo( new Point3D(1964,1325,0) );
-                        Actor1.Say("What's this?");
+                        Actor1.Say("¿Qué es esto?");
                     }
                     if (PlayStep == 66)
                     {
@@ -584,23 +584,23 @@ namespace Server.Mobiles
                     if (PlayStep == 68)
                     {
                         ((PlayActor)Actor3).Direction = Actor3.GetDirectionTo( Actor1.Location );
-                        Actor3.Say("AHA! Found you!");
+                        Actor3.Say("¡AJA! ¡Te encontré!");
                     }
                     if (PlayStep == 72)
                     {
-                        Actor1.Say("Dastardly Barnacles!  Defences have been breached!");
+                        Actor1.Say("¡Malditos percebes! ¡Han roto las defensas!");
                     }
                     if (PlayStep == 77)
-                        Actor3.Say("I'll stop you from using any more exploits!");
+                        Actor3.Say("¡Impediré que uses más exploits!");
                     if (PlayStep == 82)
                     {
                         Actor3.Say("Vas Flam");
                     }
                     if (PlayStep == 83)
-                        Actor1.Say("We shall meet again, Final!");
+                        Actor1.Say("¡Nos volveremos a ver, Final!");
                     if (PlayStep == 84)
                     {
-                        Actor1.Say("Lord of Exploits, Take me!");
+                        Actor1.Say("¡Señor de los Exploits, llévame!");
                         Effects.SendLocationParticles( EffectItem.Create( Actor1.Location, Actor1.Map, EffectItem.DefaultDuration ), 0x3728, 10, 10, 0, 0, 2023, 0 );
                         Actor1.PlaySound( 0x1FE );
                     }
@@ -622,7 +622,7 @@ namespace Server.Mobiles
                                 del.Delete();
                                     
                         }
-                        Actor3.Say("That Peter Grimm... Always trying to find new exploits for unlimited gold.");
+                        Actor3.Say("Ese Peter Grimm... Siempre intentando encontrar nuevos exploits para conseguir oro ilimitado.");
 
 
                     }
@@ -633,93 +633,36 @@ namespace Server.Mobiles
                     if (PlayStep == 92)
                         ((PlayActor)Actor3).Direction = Actor3.GetDirectionTo( new Point3D(1961,1318,0) );
                     if (PlayStep == 95)
-                        Actor3.Say("Well well... what do we have here... a new Adventurer!");
+                        Actor3.Say("Vaya, vaya... ¿qué tenemos aquí?... ¡un nuevo aventurero!");
                     if (PlayStep == 100)
-                        Actor3.Say("Stuck in jail are we?");
+                        Actor3.Say("¿Atrapado en la cárcel, eh?");
                     if (PlayStep == 104)
-                        Actor3.Say("Well... I guess I can let you out.");
+                        Actor3.Say("Bueno... supongo que puedo dejarte salir.");
                     if (PlayStep == 108)
-                        Actor3.Say("But I need to know a few things first.");
+                        Actor3.Say("Pero primero necesito saber algunas cosas.");
                     if (PlayStep == 114)
-                        Actor3.Say("This world was created by a being called Djeryv long ago.");
+                        Actor3.Say("Este mundo fue creado por un ser llamado Djeryv hace mucho tiempo.");
                     if (PlayStep == 120)
-                        Actor3.Say("But it has changed, morphed... for better or worse.");
+                        Actor3.Say("Pero ha cambiado, se ha transformado... para bien o para mal.");
                     if (PlayStep == 130)
-                        Actor3.Say("Forces of Good and Evil battle for dominance, and the world is plagued by horrible beings of power.");
+                        Actor3.Say("Las fuerzas del Bien y del Mal luchan por el dominio, y el mundo está plagado de horribles seres de poder.");
                     if (PlayStep == 140)
                     {
-                        Actor3.Say("If I let you out, I need to know a few things...");
+                        Actor3.Say("Si te dejo salir, necesito saber algunas cosas...");
                     }
                     if (PlayStep == 145)
                     {
-                        Actor3.Say("Do you pledge to keep this world clean, and respect other adventurers?"); 
-                        PlayCheck = 2;
-                        Waiting = true;
+                        NewPlayer.SendGump(new PlayDirectorGump(this));
+                        PlayCheck = 0; // Stop the play while waiting for gump response
                     }
 
                     if (PlayStep < 145)
-                        PlayStep ++;
-                    else 
-                    {
-                        PlayStep = 0;
-                        PlayCheck = 2;
-                        Waiting = true;
-                    }
-                }
-                else if (PlayCheck == 2 && !Waiting )
-                {
-                    if (CheckCount == 5) // needs to keep talking
-                        Actor3.Say("Do you pledge to keep this world clean, and respect other adventurers?"); 
-                    if (CheckCount >= 5)
-                    {
-                        Waiting = true;
-                        CheckCount = 0;
-                    }
-                    else
-                        CheckCount ++;
-                }
-                else if (PlayCheck == 3 && !Waiting )
-                {
-                    if (CheckCount == 5) // needs to keep talking
-                        Actor3.Say("A Powerful Balance affects all things in this world.  The actions of avatars affects whether it moves towards evil, or good."); 
-                    if (CheckCount == 15)
-                        Actor3.Say("Avatars can choose to pledge for either side of the Balance, and affect a large number of things, like gold rewards, monster difficulty, and shop prices."); 
-                    if (CheckCount == 26)
-                        Actor3.Say("This comes with benefits like more attributes and faster skillgain, but also at a cost: death will carry a very real penalty."); 
-                    if (CheckCount == 40)
-                        Actor3.Say("Do you wish to become an avatar of the balance?  Be warned that this may be a more difficult experience."); 
-                    
-                    if (CheckCount >= 40)
-                    {
-                        Waiting = true;
-                        CheckCount = 0;
-                    }
-                    else
-                        CheckCount ++;
-                }
-                else if (PlayCheck == 4 && !Waiting )
-                {
-                    if (CheckCount == 3) // needs to keep talking
-                        Actor3.Say("Next, you may choose to bind your soul to the very fabric of this world. "); 
-                    if (CheckCount == 13)
-                        Actor3.Say("Doing so means death will be permanent and you will return as a new person every time you die."); 
-                    if (CheckCount == 23)
-                        Actor3.Say("Adventuring this way can be very hard, but very rewarding - it is said that SoulBound can bind properties of items into their very beings.  "); 
-                    if (CheckCount == 29)
-                        Actor3.Say("Do you wish to be a SoulBound? *This is Not recommended for new adventurers*"); 
-                    
-                    if (CheckCount >= 29)
-                    {
-                        Waiting = true;
-                        CheckCount = 0;
-                    }
-                    else
-                        CheckCount ++;
+                        PlayStep++;
                 }
                 else if (PlayCheck == 5)
                 {
                     if (CheckCount == 2)
-                        Actor3.Say("See you out there!");
+                        Actor3.Say("¡Nos vemos ahí fuera!");
                     if (CheckCount == 5) // needs to keep talking
                     {
                         Actor3.Say("An Vam Trav"); 
@@ -763,13 +706,13 @@ namespace Server.Mobiles
                     {
                         switch (Utility.Random(7))
                         {
-                            case 0: Actor3.Say("Hello?"); break;
-                            case 1: Actor3.Say("So, what will it be, yes or no?"); break;
-                            case 2: Actor3.Say("You can just tell me your answer."); break;
-                            case 3: Actor3.Say("Did you want me to repeat?  Just say repeat."); break;
-                            case 4: Actor3.Say("What'll it be, friend?"); break;
-                            case 5: Actor3.Say("I know... tough decision and all."); break;
-                            case 6: Actor3.Say("If you want me to repeat what I wrote, just ask me to repeat :)"); break;
+                            case 0: Actor3.Say("¿Hola?"); break;
+                            case 1: Actor3.Say("Entonces, ¿qué será, sí o no?"); break;
+                            case 2: Actor3.Say("Puedes simplemente decirme tu respuesta."); break;
+                            case 3: Actor3.Say("¿Quieres que repita? Solo di 'repetir'."); break;
+                            case 4: Actor3.Say("¿Qué será, amigo?"); break;
+                            case 5: Actor3.Say("Lo sé... es una decisión difícil."); break;
+                            case 6: Actor3.Say("Si quieres que repita lo que dije, solo pídeme que repita :)"); break;
                         }
                         CheckCount = 0;
                         NoAnswer ++;
@@ -883,89 +826,67 @@ namespace Server.Mobiles
 
         public override void OnSpeech(SpeechEventArgs e)
         {
-
-			if ( !(e.Mobile is PlayerMobile) )
-				return;
+            if (!(e.Mobile is PlayerMobile))
+                return;
 
             Mobile m = e.Mobile;
-			if (  m.AccessLevel > AccessLevel.Player && Insensitive.Contains( e.Speech, "start" ) )
-			{
-                StartPlay( this );
+            if (m.AccessLevel > AccessLevel.Player && Insensitive.Contains(e.Speech, "start"))
+            {
+                StartPlay(this);
             }
 
-			if (  Waiting && ( Insensitive.Contains( e.Speech, "i pledge" ) || Insensitive.Contains( e.Speech, "i do" ) || Insensitive.Contains( e.Speech, "aye" ) || Insensitive.Contains( e.Speech, "yes") || Insensitive.Contains( e.Speech, "sure") || Insensitive.Contains( e.Speech, "okay") ) )
-			{
-                
-                if (PlayCheck == 2)
-                {
-				    Actor3.Say("Very well!  Welcome, friend."); 	
-                    CheckCount = 0;
-                    PlayCheck = 3;
-                }	
-                else if (PlayCheck == 3)
-                {
-				    Actor3.Say("Good Choice."); 	
-                    CheckCount = 0;
-                    PlayCheck = 4;
-                    ((PlayerMobile)NewPlayer).Avatar= true;
-                    NewPlayer.StatCap = 250;
-                }
-                else if (PlayCheck == 4)
-                {
-				    Actor3.Say("Good Luck!"); 	
-                    CheckCount = 0;
-                    PlayCheck = 5;
-                    ((PlayerMobile)NewPlayer).SoulBound = true;
-                    ((PlayerMobile)NewPlayer).Avatar = true;
-                    NewPlayer.Backpack.AddItem( new SoulTome() );
-                    ((PlayerMobile)NewPlayer).SbRes = true;
-                    ((PlayerMobile)NewPlayer).ResetPlayer(NewPlayer, true);
-                    NewPlayer.Frozen = false;
-                    NewPlayer = null;
-                    InitPlay();
-                }
-                NoAnswer = 0;
-                Waiting = false;
-			}
-            else if (  Waiting && (Insensitive.Contains( e.Speech, "nay" ) || Insensitive.Contains( e.Speech, "no") || Insensitive.Contains( e.Speech, "nope") || Insensitive.Contains( e.Speech, "naw") ) )
-			{
-
-                if (PlayCheck == 2)
-                {
-				    Actor3.Say("Okay, your choice, GoodBye!"); 	
-                    NewPlayer.MoveToWorld(new Point3D(2008, 1316, 0), Map.Malas);
-                    InitPlay();
-                    //Logout!!!! kick this player off
-                }	
-                else if (PlayCheck == 3)
-                {
-				    Actor3.Say("Thats fine... you prefer an easier experience."); 	
-                    CheckCount = 0;
-                    PlayCheck = 4;
-                    ((PlayerMobile)NewPlayer).Avatar= false;
-                    NewPlayer.StatCap = 225;
-                }
-                else if (PlayCheck == 4)
-                {
-				    Actor3.Say("Fair enough!"); 	
-                    CheckCount = 0;
-                    PlayCheck = 5;
-                    ((PlayerMobile)NewPlayer).SoulBound = false;
-                }
-
-                NoAnswer = 0;
-                Waiting = false;
-			}
-            else if (  PlayCheck > 1 && Waiting && Insensitive.Contains( e.Speech, "repeat" ) )
-			{
-                NoAnswer = 0;
-                Waiting = false;
-            }
-                
             base.OnSpeech(e);
-
         }
 
+        public void HandleGumpResponse(Mobile from, bool choice1, bool choice2, bool choice3)
+        {
+            if (from is PlayerMobile)
+            {
+                PlayerMobile pm = (PlayerMobile)from;
+
+                if (!choice1) // Chose not to respect others
+                {
+                    Actor3.Say("De acuerdo, es tu elección, ¡adiós!");
+                    from.MoveToWorld(new Point3D(2008, 1316, 0), Map.Malas);
+                    InitPlay();
+                    return;
+                }
+
+                Actor3.Say("¡Muy bien! Bienvenido, amigo.");
+
+                if (choice2) // Chose to be an avatar
+                {
+                    Actor3.Say("Buena elección.");
+                    pm.Avatar = true;
+                    pm.StatCap = 250;
+                }
+                else
+                {
+                    Actor3.Say("Está bien... prefieres una experiencia más fácil.");
+                    pm.Avatar = false;
+                    pm.StatCap = 225;
+                }
+
+                if (choice3) // Chose to be SoulBound
+                {
+                    Actor3.Say("¡Buena suerte!");
+                    pm.SoulBound = true;
+                    pm.Avatar = true; // Soulbound implies Avatar
+                    pm.Backpack.AddItem(new SoulTome());
+                    pm.SbRes = true;
+                    pm.ResetPlayer(pm, true);
+                }
+                else
+                {
+                    Actor3.Say("¡Me parece justo!");
+                    pm.SoulBound = false;
+                }
+
+                pm.Frozen = false;
+                pm.MoveToWorld(new Point3D(2983, 1043, 25), Map.Trammel);
+                InitPlay();
+            }
+        }
 
         public PlayDirectorNewChar(Serial serial)
             : base(serial)
