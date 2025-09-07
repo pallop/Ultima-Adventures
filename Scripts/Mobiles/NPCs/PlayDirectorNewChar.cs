@@ -931,18 +931,25 @@ namespace Server.Mobiles
         }
         public override void OnThink()
         {
+            Console.WriteLine("PlayDirectorNewChar.OnThink called.");
             if (Actor1 == null || Actor2 == null || Actor3 == null)
+            {
+                Console.WriteLine("Actors are null, calling InitPlay.");
                 InitPlay();
+            }
 
             if (!Hidden) // keep me hidden!
                 Hidden = true;
 
             if (!ActivePlay && NewPlayer == null) // look for new players
             {
+                Console.WriteLine("Looking for new players...");
                foreach ( Mobile mob in this.GetMobilesInRange( 5 ) )
                 {
+                     Console.WriteLine("Found a mobile in range: " + mob.Name);
                     if (mob is PlayerMobile && mob.AccessLevel == AccessLevel.Player ) // new player found
                     {
+                        Console.WriteLine("Found a new player: " + mob.Name);
                         StartPlay(mob);
                     }
                 }
