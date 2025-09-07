@@ -94,13 +94,13 @@ namespace Server.Misc
                 }
                 else
                 {
-                    Console.WriteLine($"LibreTranslate request FAILED with status {response.StatusCode}: {response.ReasonPhrase}");
+                    Console.WriteLine(String.Format("LibreTranslate request FAILED with status {0}: {1}", response.StatusCode, response.ReasonPhrase));
                     return text;
                 }
             }
             catch (Exception e)
             {
-                Console.WriteLine($"LibreTranslate request EXCEPTION for text \"{text}\": {e.Message}");
+                Console.WriteLine(String.Format("LibreTranslate request EXCEPTION for text \"{0}\": {1}", text, e.Message));
                 return text;
             }
         }
