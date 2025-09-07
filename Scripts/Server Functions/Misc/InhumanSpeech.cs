@@ -61,6 +61,8 @@ namespace Server.Misc
 							"attack", "raid", "plunder", "pillage", "treasure",
 							"loser", "lose", "scum"
 						};
+					for (int i = 0; i < m_RatmanSpeech.Responses.Length; ++i)
+						m_RatmanSpeech.Responses[i] = Server.Translation.TranslateToSpanish(m_RatmanSpeech.Responses[i]);
 
 					m_RatmanSpeech.Syllables = new string[]
 						{
@@ -137,6 +139,9 @@ namespace Server.Misc
 							"attack", "raid", "plunder", "pillage", "treasure",
 							"loser", "lose", "scum"
 						};
+
+					for (int i = 0; i < m_OrcSpeech.Responses.Length; ++i)
+						m_OrcSpeech.Responses[i] = Server.Translation.TranslateToSpanish(m_OrcSpeech.Responses[i]);
 
 					m_OrcSpeech.Syllables = new string[]
 						{
@@ -224,6 +229,9 @@ namespace Server.Misc
 							"attack", "raid", "plunder", "pillage", "treasure",
 							"loser", "lose", "scum"
 						};
+
+					for (int i = 0; i < m_LizardmanSpeech.Responses.Length; ++i)
+						m_LizardmanSpeech.Responses[i] = Server.Translation.TranslateToSpanish(m_LizardmanSpeech.Responses[i]);
 
 					m_LizardmanSpeech.Syllables = new string[]
 						{
@@ -398,7 +406,7 @@ namespace Server.Misc
 		public void SayRandomTranslate( Mobile mob, params string[] sentancesInEnglish )
 		{
 			SaySentance( mob, Utility.RandomMinMax( 2, 3 ) );
-			mob.Say( sentancesInEnglish[Utility.Random( sentancesInEnglish.Length )] );
+			mob.Say( Server.Translation.TranslateToSpanish(sentancesInEnglish[Utility.Random( sentancesInEnglish.Length )]) );
 		}
 
 		private string GetRandomResponseWord( List<string> keywordsFound )
@@ -450,6 +458,9 @@ namespace Server.Misc
 					responseWord = keywordsFound[Utility.Random( keywordsFound.Count )];
 
 				string secondResponseWord = GetRandomResponseWord( keywordsFound );
+
+				responseWord = Server.Translation.TranslateToSpanish(responseWord);
+				secondResponseWord = Server.Translation.TranslateToSpanish(secondResponseWord);
 
 				StringBuilder response = new StringBuilder();
 

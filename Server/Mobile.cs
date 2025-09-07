@@ -1106,15 +1106,17 @@ namespace Server
 			if( name == null )
 				name = String.Empty;
 
+			name = Server.Translation.TranslateToSpanish(name);
+
 			string prefix = "";
 
 			if( ShowFameTitle && (m_Player || m_Body.IsHuman) && m_Fame >= 10000 )
-				prefix = m_Female ? "Lady" : "Lord";
+				prefix = m_Female ? Server.Translation.TranslateToSpanish("Lady") : Server.Translation.TranslateToSpanish("Lord");
 
 			string suffix = "";
 
 			if( PropertyTitle && Title != null && Title.Length > 0 )
-				suffix = Title;
+				suffix = Server.Translation.TranslateToSpanish(Title);
 
 			BaseGuild guild = m_Guild;
 
@@ -1148,14 +1150,14 @@ namespace Server
 
 				if( NewGuildDisplay && title.Length > 0 )
 				{
-					list.Add( "{0}, {1}", Utility.FixHtml( title ), Utility.FixHtml( guild.Name ) );
+					list.Add( "{0}, {1}", Utility.FixHtml( Server.Translation.TranslateToSpanish(title) ), Utility.FixHtml( Server.Translation.TranslateToSpanish(guild.Name) ) );
 				}
 				else
 				{
 					if( title.Length > 0 )
-						list.Add( "{0}, {1} Guild{2}", Utility.FixHtml( title ), Utility.FixHtml( guild.Name ), type );
+						list.Add( "{0}, {1} Guild{2}", Utility.FixHtml( Server.Translation.TranslateToSpanish(title) ), Utility.FixHtml( Server.Translation.TranslateToSpanish(guild.Name) ), type );
 					else
-						list.Add( Utility.FixHtml( guild.Name ) );
+						list.Add( Utility.FixHtml( Server.Translation.TranslateToSpanish(guild.Name) ) );
 				}
 			}
 		}
@@ -11282,6 +11284,8 @@ namespace Server
 					else
 						title = title.Trim();
 
+					title = Server.Translation.TranslateToSpanish(title);
+
 					if( guild.Type >= 0 && (int)guild.Type < m_GuildTypes.Length )
 						type = m_GuildTypes[(int)guild.Type];
 					else
@@ -11307,15 +11311,17 @@ namespace Server
 			if( name == null )
 				name = String.Empty;
 
+			name = Server.Translation.TranslateToSpanish(name);
+
 			string prefix = "";
 
 			if( ShowFameTitle && (m_Player || m_Body.IsHuman) && m_Fame >= 10000 )
-				prefix = (m_Female ? "Lady" : "Lord");
+				prefix = (m_Female ? Server.Translation.TranslateToSpanish("Lady") : Server.Translation.TranslateToSpanish("Lord"));
 
 			string suffix = "";
 
 			if( ClickTitle && Title != null && Title.Length > 0 )
-				suffix = Title;
+				suffix = Server.Translation.TranslateToSpanish(Title);
 
 			suffix = ApplyNameSuffix( suffix );
 

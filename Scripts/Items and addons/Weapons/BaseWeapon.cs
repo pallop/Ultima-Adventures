@@ -3824,73 +3824,27 @@ namespace Server.Items
 
 		public override void AddNameProperty( ObjectPropertyList list )
 		{
-			int oreType;
+			string resourceName = CraftResources.GetName(m_Resource);
+			string translatedResourceName = Server.Translation.TranslateToSpanish(resourceName);
 
-			switch ( m_Resource )
-			{
-				case CraftResource.DullCopper:		oreType = 1053108; break; // dull copper
-				case CraftResource.ShadowIron:		oreType = 1053107; break; // shadow iron
-				case CraftResource.Copper:			oreType = 1053106; break; // copper
-				case CraftResource.Bronze:			oreType = 1053105; break; // bronze
-				case CraftResource.Gold:			oreType = 1053104; break; // golden
-				case CraftResource.Agapite:			oreType = 1053103; break; // agapite
-				case CraftResource.Verite:			oreType = 1053102; break; // verite
-				case CraftResource.Valorite:		oreType = 1053101; break; // valorite
-				case CraftResource.Nepturite:		oreType = 1036175; break; // nepturite
-				case CraftResource.Obsidian:		oreType = 1036165; break; // obsidian
-				case CraftResource.Steel:			oreType = 1036146; break; // steel
-				case CraftResource.Brass:			oreType = 1036154; break; // brass
-				case CraftResource.Mithril:			oreType = 1036139; break; // mithril
-				case CraftResource.Xormite:			oreType = 1034439; break; // xormite
-				case CraftResource.Dwarven:			oreType = 1036183; break; // dwarven
-				case CraftResource.SpinedLeather:	oreType = 1061118; break; // deep sea
-				case CraftResource.HornedLeather:	oreType = 1061117; break; // lizard
-				case CraftResource.BarbedLeather:	oreType = 1061116; break; // serpent
-				case CraftResource.NecroticLeather:	oreType = 1034413; break; // necrotic
-				case CraftResource.VolcanicLeather:	oreType = 1034424; break; // volcanic
-				case CraftResource.FrozenLeather:	oreType = 1034435; break; // frozen
-				case CraftResource.GoliathLeather:	oreType = 1034380; break; // goliath
-				case CraftResource.DraconicLeather:	oreType = 1034391; break; // draconic
-				case CraftResource.HellishLeather:	oreType = 1034402; break; // hellish
-				case CraftResource.DinosaurLeather:	oreType = 1036161; break; // dinosaur
-				case CraftResource.AlienLeather:	oreType = 1034454; break; // alien
-				case CraftResource.RedScales:		oreType = 1060814; break; // red
-				case CraftResource.YellowScales:	oreType = 1060818; break; // yellow
-				case CraftResource.BlackScales:		oreType = 1060820; break; // black
-				case CraftResource.GreenScales:		oreType = 1060819; break; // green
-				case CraftResource.WhiteScales:		oreType = 1060821; break; // white
-				case CraftResource.BlueScales:		oreType = 1060815; break; // blue
-				case CraftResource.AshTree: 		oreType = 1095399; break; // ash
-				case CraftResource.CherryTree: 		oreType = 1095400; break; // cherry
-				case CraftResource.EbonyTree: 		oreType = 1095401; break; // ebony
-				case CraftResource.GoldenOakTree: 	oreType = 1095402; break; // gold oak
-				case CraftResource.HickoryTree: 	oreType = 1095403; break; // hickory
-				case CraftResource.MahoganyTree: 	oreType = 1095404; break; // mahogany
-				case CraftResource.DriftwoodTree: 	oreType = 1095510; break; // driftwood
-				case CraftResource.OakTree: 		oreType = 1095405; break; // oak
-				case CraftResource.PineTree: 		oreType = 1095406; break; // pine
-				case CraftResource.GhostTree: 		oreType = 1095513; break; // ghostwood
-				case CraftResource.RosewoodTree: 	oreType = 1095407; break; // rosewood
-				case CraftResource.WalnutTree: 		oreType = 1095408; break; // walnut
-				case CraftResource.PetrifiedTree: 	oreType = 1095534; break; // petrified
-				case CraftResource.ElvenTree: 		oreType = 1095537; break; // elven
-				default: oreType = 0; break;
-			}
+			if (string.IsNullOrEmpty(resourceName) || resourceName.ToLower() == "none" || resourceName.ToLower() == "normal" || resourceName.ToLower() == "iron")
+				translatedResourceName = "";
 
-			if ( oreType != 0 )
-				list.Add( 1053099, "#{0}\t{1}", oreType, GetNameString() ); // ~1_oretype~ ~2_armortype~
+			string name = GetNameString();
+			name = Server.Translation.TranslateToSpanish(name);
+
+			if ( translatedResourceName != "" )
+				list.Add( 1053099, "{0} {1}", translatedResourceName, name );
 			else if ( Name == null )
 				list.Add( LabelNumber );
 			else
-				list.Add( Name );
+				list.Add( name );
 
 			if ( !String.IsNullOrEmpty( m_EngravedText ) )
-				list.Add( 1062613, m_EngravedText );
+				list.Add( 1062613, Server.Translation.TranslateToSpanish(m_EngravedText) );
 
 			if (Wear >0)
-				list.Add("Wear and Tear: " + Wear + "%");
-
-				/* list.Add( 1062613, Utility.FixHtml( m_EngravedText ) ); */
+				list.Add(Server.Translation.TranslateToSpanish("Wear and Tear") + ": " + Wear + "%");
 		}
 
 		public override bool AllowEquipedCast( Mobile from )
@@ -3926,7 +3880,7 @@ namespace Server.Items
 			base.GetProperties( list );
 
 			if ( m_Crafter != null )
-				list.Add( 1050043, m_Crafter.Name ); // crafted by ~1_NAME~
+				list.Add( 1050043, Server.Translation.TranslateToSpanish(m_Crafter.Name) ); // crafted by ~1_NAME~
 
 			if ( m_AosSkillBonuses != null )
 				m_AosSkillBonuses.GetProperties( list );

@@ -94,9 +94,9 @@ namespace Server.Items
 		public override void AddNameProperty( ObjectPropertyList list )
 		{
 			if ( Amount > 1 )
-				list.Add( 1050039, "{0}\t#{1}", Amount, 1027154 ); // ~1_NUMBER~ ~2_ITEMNAME~
+				list.Add( 1050039, "{0} {1}", Amount, Server.Translation.TranslateToSpanish("ingots") ); // ~1_NUMBER~ ~2_ITEMNAME~
 			else
-				list.Add( 1027154 ); // ingots
+				list.Add( Server.Translation.TranslateToSpanish("ingots") ); // ingots
 		}
 
 		public override void GetProperties( ObjectPropertyList list )
@@ -110,7 +110,7 @@ namespace Server.Items
 				if ( num > 0 )
 					list.Add( num );
 				else
-					list.Add( CraftResources.GetName( m_Resource ) );
+					list.Add( Server.Translation.TranslateToSpanish(CraftResources.GetName( m_Resource )) );
 			}
 		}
 

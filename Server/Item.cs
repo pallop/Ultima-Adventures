@@ -4581,9 +4581,8 @@ namespace Server
 				else
 				{
 					string name = this.Name;
-					if (Translation.TranslateToSpanish != null)
-						name = Translation.TranslateToSpanish(name);
-            ns.Send( new UnicodeMessage( m_Serial, m_ItemID, MessageType.Label, 0x3B2, 3, "ENU", "", name + ( m_Amount > 1 ? " : " + m_Amount : "" ) ) );
+					name = Server.Translation.TranslateToSpanish(name);
+					ns.Send( new UnicodeMessage( m_Serial, m_ItemID, MessageType.Label, 0x3B2, 3, "ENU", "", name + ( m_Amount > 1 ? " : " + m_Amount : "" ) ) );
 				}
 			}
 		}

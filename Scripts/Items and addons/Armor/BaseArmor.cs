@@ -1738,21 +1738,28 @@ m_MaxHits
         [CommandProperty(AccessLevel.GameMaster)]
         public bool IsAugmented { get; set; }
 
-        public override void AddNameProperty( ObjectPropertyList list )
-		{
-		    #region [Item Name Color]
-		    string resourceName = CraftResources.GetName(m_Resource);
-		    TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
+        public override void AddNameProperty(ObjectPropertyList list)
+        {
+            #region [Item Name Color]
+            string resourceName = CraftResources.GetName(m_Resource);
+            string translatedResourceName = Server.Translation.TranslateToSpanish(resourceName);
+            TextInfo cultInfo = new CultureInfo("en-US", false).TextInfo;
 
-		    if (string.IsNullOrEmpty(resourceName) || resourceName.ToLower() == "none" || resourceName.ToLower() == "normal" || resourceName.ToLower() == "iron")
-				resourceName = "";
+            if (string.IsNullOrEmpty(resourceName) || resourceName.ToLower() == "none" || resourceName.ToLower() == "normal" || resourceName.ToLower() == "iron")
+                translatedResourceName = "";
 
-		    if (resourceName == "")
-				list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}"), cultInfo.ToTitleCase(GetNameString()));
-		    else
-				list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, ((m_Quality == ArmorQuality.Exceptional) ? "Exceptional " : "") + "{0}\t{1}"), resourceName, GetNameString());
-		    #endregion
-		}
+            string qualityName = "";
+            if (m_Quality == ArmorQuality.Exceptional)
+                qualityName = Server.Translation.TranslateToSpanish("Exceptional") + " ";
+
+            string finalName = Server.Translation.TranslateToSpanish(GetNameString());
+
+            if (translatedResourceName == "")
+                list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, qualityName + "{0}"), cultInfo.ToTitleCase(finalName));
+            else
+                list.Add(1053099, ItemNameHue.UnifiedItemProps.RarityNameMod(this, qualityName + "{0}\t{1}"), translatedResourceName, finalName);
+            #endregion
+        }
 
 		public override bool AllowEquipedCast( Mobile from )
 		{
@@ -1782,7 +1789,7 @@ m_MaxHits
 			base.GetProperties( list );
 
 			if ( m_Crafter != null )
-				list.Add( 1050043, m_Crafter.Name ); // crafted by ~1_NAME~
+				list.Add( 1050043, Server.Translation.TranslateToSpanish(m_Crafter.Name) ); // crafted by ~1_NAME~
 
 
 			bool md = false;
@@ -1843,7 +1850,7 @@ m_MaxHits
 				list.Add( 1060436, prop.ToString() ); // luck ~1_val~
 
 			if ( (prop = m_AosArmorAttributes.MageArmor) != 0 )
-				list.Add( 1060437 ); // mage armor
+				list.Add( Server.Translation.TranslateToSpanish("mage armor") ); // mage armor
 
 			if ( (prop = m_AosAttributes.BonusMana) != 0 && !md)
 				list.Add( 1060439, prop.ToString() ); // mana increase ~1_val~
@@ -1892,8 +1899,8 @@ m_MaxHits
 			if ( m_HitPoints >= 0 && m_MaxHitPoints > 0 )
 				list.Add( 1060639, "{0}\t{1}", m_HitPoints, m_MaxHitPoints ); // durability ~1_val~ / ~2_val~
 
-			if (this is IClothingStub) list.Add("this item is considered clothing");
-			else list.Add("this item is considered armor");
+			if (this is IClothingStub) list.Add(Server.Translation.TranslateToSpanish("this item is considered clothing"));
+			else list.Add(Server.Translation.TranslateToSpanish("this item is considered armor"));
 		}
 
 		public override void OnSingleClick( Mobile from )

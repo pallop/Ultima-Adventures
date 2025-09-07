@@ -8925,68 +8925,73 @@ namespace Server.Mobiles
 
 			if ( this is JediMirage || this is SythProjection || this is Clown || this is Clone ){} // NO WORDS
 			else if ( this is HenchmanFamiliar )
-				list.Add( "(familiar)" );
+				list.Add( Server.Translation.TranslateToSpanish("(familiar)") );
 			else if ( this is PackBeast )
-				list.Add( "(Pack Animal)" );
+				list.Add( Server.Translation.TranslateToSpanish("(Pack Animal)") );
 			else if ( this is GolemPorter || this is GolemFighter )
-				list.Add( "(automaton)" );
+				list.Add( Server.Translation.TranslateToSpanish("(automaton)") );
 			else if ( this is Robot )
-				list.Add( "(robot)" );
+				list.Add( Server.Translation.TranslateToSpanish("(robot)") );
 			else if ( this is FrankenPorter || this is FrankenFighter )
-				list.Add( "(reanimation)" );
+				list.Add( Server.Translation.TranslateToSpanish("(reanimation)") );
 			else if ( Summoned && !IsAnimatedDead && !IsNecroFamiliar )
 				list.Add( 1049646 ); // (summoned)
 			else if ( Controlled && Commandable && !(this is FrankenFighter) && !(this is AerialServant) && !(this is FrankenPorter) && !(this is Robot) && !(this is GolemFighter) && !(this is GolemPorter) && !(this is PackBeast) && !(this is HenchmanMonster) && !(this is HenchmanFighter) && !(this is HenchmanWizard) && !(this is HenchmanArcher) && !(this is HenchmanFamiliar) && !(this is BaseChild))
 			{
 				if (this is Squire)
-						list.Add("(pledged)");
+						list.Add(Server.Translation.TranslateToSpanish("(pledged)"));
 				else if ( IsBonded )	//Intentional difference (showing ONLY bonded when bonded instead of bonded & tame)
 				{
 					if ( ((Mobile)this).Karma > 100 )
-						list.Add("(dominated)");
+						list.Add(Server.Translation.TranslateToSpanish("(dominated)"));
 					else
 						list.Add( 1049608 ); // (bonded)
 				}
 				else
 				{
 					if ( ((Mobile)this).Karma > 100 )
-						list.Add("(enslaved)");
+						list.Add(Server.Translation.TranslateToSpanish("(enslaved)"));
 					else 
 						list.Add( 502006 ); // (tame)
 				}
 
-                list.Add(1060662, String.Format("Loyalty Rating\t{0}%", Loyalty.ToString())); // ADD THIS
+                list.Add(1060662, String.Format(Server.Translation.TranslateToSpanish("Loyalty Rating")+"\t{0}%", Loyalty.ToString())); // ADD THIS
 				
 				#region Jako Taming
                 if (!Summoned && JakoIsEnabled)
-                    list.Add("Level {0} {1}", m_realLevel, SexString);
+                    list.Add(Server.Translation.TranslateToSpanish("Level")+" {0} {1}", m_realLevel, SexString);
                 #endregion
 
 				if ( m_special != 0 ) 
 				{
 					if (m_special == 1)
-						list.Add( "*Ferocious*" ); //damage increase done
+						list.Add( Server.Translation.TranslateToSpanish("*Ferocious*") ); //damage increase done
 					else if (m_special == 2)
-						list.Add( "*Regenerative*" ); //life leech done
+						list.Add( Server.Translation.TranslateToSpanish("*Regenerative*") ); //life leech done
 					else if (m_special == 3)
-						list.Add( "*Mystical*" ); //hit harm done
+						list.Add( Server.Translation.TranslateToSpanish("*Mystical*") ); //hit harm done
 					else if (m_special == 4)
-						list.Add( "*Firebreather*" ); //hit fireball done
+						list.Add( Server.Translation.TranslateToSpanish("*Firebreather*") ); //hit fireball done
 					else if (m_special == 5)
-						list.Add( "*Thor's touch*" ); //hit lightning done
+						list.Add( Server.Translation.TranslateToSpanish("*Thor's touch*") ); //hit lightning done
 					else if (m_special == 6)
-						list.Add( "*Tactical*" ); //Armor ignore done
+						list.Add( Server.Translation.TranslateToSpanish("*Tactical*") ); //Armor ignore done
 					else if (m_special == 7)
-						list.Add( "*Shamanic*" ); //can heal/res player done
+						list.Add( Server.Translation.TranslateToSpanish("*Shamanic*") ); //can heal/res player done
 					else if (m_special == 8)
-						list.Add( "*Chaotic*" ); //Chaos damage done
+						list.Add( Server.Translation.TranslateToSpanish("*Chaotic*") ); //Chaos damage done
 					else if (m_special == 9)
-						list.Add( "*Poisonous*" ); //hit poison (greater) done
+						list.Add( Server.Translation.TranslateToSpanish("*Poisonous*") ); //hit poison (greater) done
 
 				}
-			if (m_injuries >0)
-				list.Add( "This creature has suffered " + m_injuries + " injuries" );
-			}
+			if (m_injuries > 0)
+            {
+                if (m_injuries == 1)
+                    list.Add(String.Format("{0} {1} {2}", Server.Translation.TranslateToSpanish("This creature has suffered"), m_injuries, Server.Translation.TranslateToSpanish("injury")));
+                else
+                    list.Add(String.Format("{0} {1} {2}", Server.Translation.TranslateToSpanish("This creature has suffered"), m_injuries, Server.Translation.TranslateToSpanish("injuries")));
+            }
+		}
 		}
 
 		public override void OnSingleClick( Mobile from )
