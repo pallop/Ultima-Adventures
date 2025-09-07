@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
+using Server.Models;
 
 namespace Server.Misc
 {
@@ -69,14 +70,17 @@ namespace Server.Misc
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = response.Content.ReadAsStringAsync().Result;
-                    var result = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseString);
-                    string translatedText = result["translatedText"];
+                    var result = JsonConvert.DeserializeObject<List<TranslationData>>(responseString);
 
-                    if (!string.IsNullOrWhiteSpace(text))
+                    if (result != null && result.Count > 0)
                     {
-                        m_TranslationCache.TryAdd(text, translatedText);
+                        string translatedText = result[0].translatedText;
+                        if (!string.IsNullOrWhiteSpace(text))
+                        {
+                            m_TranslationCache.TryAdd(text, translatedText);
+                        }
+                        return translatedText;
                     }
-                    return translatedText;
                 }
                 else
                 {
