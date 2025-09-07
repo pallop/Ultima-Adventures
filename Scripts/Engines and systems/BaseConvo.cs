@@ -1106,7 +1106,10 @@ namespace Server.Mobiles
 					string job = this.Title != null && this.Title.StartsWith( "the" ) ? this.Title.Substring( 5 ) : m_Job.ToString();
 					
 					string response = String.Format( str, pc != null ? pc.Name : "someone", this.Name, job, town, "" );
-					Say( Server.Translation.TranslateToSpanish(response) );
+					if (Server.Translation.TranslateToSpanish != null)
+						Say( Server.Translation.TranslateToSpanish(response) );
+					else
+						Say( response );
 					e.Handled = true;
 				}
 			}
