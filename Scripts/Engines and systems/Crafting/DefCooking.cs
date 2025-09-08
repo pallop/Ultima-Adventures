@@ -102,21 +102,21 @@ namespace Server.Engines.Craft
 			/* Begin Preparations */
 			index = AddCraft(typeof(UnbakedQuiche), 1044496, 1041339, 30.0, 85.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(Eggs), 1044477, 1, 1044253);
-			AddRes(index, typeof(Carrot), "Carrot", 1, 1044253);
+			AddRes(index, typeof(Carrot), "Zanahoria", 1, 1044253);
 
 			// TODO: This must also support chicken and lamb legs
 			index = AddCraft(typeof(UnbakedMeatPie), 1044496, 1041338, 30.0, 80.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(RawRibs), 1044482, 1, 1044253);
-			AddRes(index, typeof(FoodPotato), "Potato", 1, 1044253);
+			AddRes(index, typeof(FoodPotato), "Patata", 1, 1044253);
 
 			index = AddCraft(typeof(UncookedSausagePizza), 1044496, 1041337, 40.0, 90.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(Sausage), 1044483, 1, 1044253);
-			AddRes(index, typeof(Tomato), "Tomatoes", 2, 1044253);
+			AddRes(index, typeof(Tomato), "Tomates", 2, 1044253);
 			AddRes(index, typeof(CheeseWheel), 1044486, 1, 1044253);
 
 			index = AddCraft(typeof(UncookedCheesePizza), 1044496, 1041341, 30.0, 75.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(CheeseWheel), 1044486, 1, 1044253);
-			AddRes(index, typeof(Tomato), "Tomatoes", 2, 1044253);
+			AddRes(index, typeof(Tomato), "Tomates", 2, 1044253);
 
 			index = AddCraft(typeof(UnbakedFruitPie), 1044496, 1041334, 40.0, 85.0, typeof(SweetDough), 1044475, 1, 1044253);
 			AddRes(index, typeof(Pear), 1044481, 1, 1044253);
@@ -154,7 +154,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(BreadLoaf), 1044497, 1024156, 30.0, 80.0, typeof(Dough), 1044469, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(CheeseBread), 1044497, "cheese bread", 40.0, 90.0, typeof(Dough), 1044469, 1, 1044253);
+			index = AddCraft(typeof(CheeseBread), 1044497, "pan de queso", 40.0, 90.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(CheeseWheel), 1044486, 1, 1044253);
 			SetNeedOven(index, true);
 
@@ -167,8 +167,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Muffins), 1044497, 1022539, 60.0, 110.0, typeof(SweetDough), 1044475, 1, 1044253);
 			SetNeedOven(index, true);
 
-            index = AddCraft(typeof(CornBreadMuffins), 1044497, "corn bread muffins", 60.0, 110.0, typeof(SweetDough), 1044475, 1, 1044253);
-            AddRes(index, typeof(Corn), "corn", 1, 1044253);
+            index = AddCraft(typeof(CornBreadMuffins), 1044497, "magdalenas de pan de maíz", 60.0, 110.0, typeof(SweetDough), 1044475, 1, 1044253);
+            AddRes(index, typeof(Corn), "maíz", 1, 1044253);
             SetNeedOven(index, true);
 
             index = AddCraft(typeof(Quiche), 1044497, 1041345, 60.0, 100.0, typeof(UnbakedQuiche), 1044518, 1, 1044253);
@@ -232,128 +232,128 @@ namespace Server.Engines.Craft
 			SetNeedHeat(index, true);
 
             // Begin batches
-            index = AddCraft(typeof(CookedBird), 1044498, "batch of cooked birds", 0.0, 70.0, typeof(RawBird), 1044470, 1, 1044253);
+            index = AddCraft(typeof(CookedBird), 1044498, "lote de pájaros cocidos", 0.0, 70.0, typeof(RawBird), 1044470, 1, 1044253);
             SetNeedHeat(index, true);
             SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(ChickenLeg), 1044498, "batch of chicken legs", 0.0, 70.0, typeof(RawChickenLeg), 1044473, 1, 1044253);
+            index = AddCraft(typeof(ChickenLeg), 1044498, "lote de muslos de pollo", 0.0, 70.0, typeof(RawChickenLeg), 1044473, 1, 1044253);
             SetNeedHeat(index, true);
             SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(FishSteak), 1044498, "batch of fish steaks", 0.0, 70.0, typeof(RawFishSteak), 1044476, 1, 1044253);
+            index = AddCraft(typeof(FishSteak), 1044498, "lote de filetes de pescado", 0.0, 70.0, typeof(RawFishSteak), 1044476, 1, 1044253);
             SetNeedHeat(index, true);
             SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(FriedEggs), 1044498, "batch of eggs", 0.0, 70.0, typeof(Eggs), 1044477, 1, 1044253);
+            index = AddCraft(typeof(FriedEggs), 1044498, "lote de huevos", 0.0, 70.0, typeof(Eggs), 1044477, 1, 1044253);
             SetNeedHeat(index, true);
             SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(LambLeg), 1044498, "batch of lamb legs", 0.0, 70.0, typeof(RawLambLeg), 1044478, 1, 1044253);
+            index = AddCraft(typeof(LambLeg), 1044498, "lote de piernas de cordero", 0.0, 70.0, typeof(RawLambLeg), 1044478, 1, 1044253);
             SetNeedHeat(index, true);
             SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(Ribs), 1044498, "batch of ribs", 0.0, 70.0, typeof(RawRibs), 1044485, 1, 1044253);
+            index = AddCraft(typeof(Ribs), 1044498, "lote de costillas", 0.0, 70.0, typeof(RawRibs), 1044485, 1, 1044253);
             SetNeedHeat(index, true);
             SetUseAllRes(index, true);
             /* End Barbecue */
 
             /* Rations By Krystofer */
-            index = AddCraft(typeof(FoodSmallRation), "Rations", "small ration (fish)", 70.0, 100.0, typeof(RawFishSteak), 1044476, 1, 1044253);
+            index = AddCraft(typeof(FoodSmallRation), "Raciones", "ración pequeña (pescado)", 70.0, 100.0, typeof(RawFishSteak), 1044476, 1, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 1, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodSmallRation), "Rations", "small ration (lamb)", 70.0, 100.0, typeof(RawLambLeg), 1044478, 1, 1044253);
+			index = AddCraft(typeof(FoodSmallRation), "Raciones", "ración pequeña (cordero)", 70.0, 100.0, typeof(RawLambLeg), 1044478, 1, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 1, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodSmallRation), "Rations", "small ration (ribs)", 70.0, 100.0, typeof(RawRibs), 1044485, 1, 1044253);
+			index = AddCraft(typeof(FoodSmallRation), "Raciones", "ración pequeña (costillas)", 70.0, 100.0, typeof(RawRibs), 1044485, 1, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 1, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodSmallRation), "Rations", "small ration (chicken)", 70.0, 100.0, typeof(RawChickenLeg), 1044473, 1, 1044253);
+			index = AddCraft(typeof(FoodSmallRation), "Raciones", "ración pequeña (pollo)", 70.0, 100.0, typeof(RawChickenLeg), 1044473, 1, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 1, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodSmallRation), "Rations", "small ration (bird)", 70.0, 100.0, typeof(RawBird), 1044470, 1, 1044253);
+			index = AddCraft(typeof(FoodSmallRation), "Raciones", "ración pequeña (pájaro)", 70.0, 100.0, typeof(RawBird), 1044470, 1, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 1, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodLargeRation), "Rations", "large ration (cookies)", 95.0, 120.0, typeof(Cookies), "cookies", 2, 1044253);
+			index = AddCraft(typeof(FoodLargeRation), "Raciones", "ración grande (galletas)", 95.0, 120.0, typeof(Cookies), "galletas", 2, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 2, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodLargeRation), "Rations", "large ration (quiche)", 90.0, 120.0, typeof(Quiche), "quiche", 2, 1044253);
+			index = AddCraft(typeof(FoodLargeRation), "Raciones", "ración grande (quiche)", 90.0, 120.0, typeof(Quiche), "quiche", 2, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 2, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodLargeRation), "Rations", "large ration (meat pie)", 90.0, 120.0, typeof(MeatPie), "meat pie", 2, 1044253);
+			index = AddCraft(typeof(FoodLargeRation), "Raciones", "ración grande (pastel de carne)", 90.0, 120.0, typeof(MeatPie), "pastel de carne", 2, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 2, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodLargeRation), "Rations", "large ration (sausage pizza)", 90.0, 120.0, typeof(SausagePizza), "saussage pizza", 2, 1044253);
+			index = AddCraft(typeof(FoodLargeRation), "Raciones", "ración grande (pizza de salchicha)", 90.0, 120.0, typeof(SausagePizza), "pizza de salchicha", 2, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 2, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FoodLargeRation), "Rations", "large ration (cheese pizza)", 90.0, 120.0, typeof(CheesePizza), "cheese pizza", 2, 1044253);
+			index = AddCraft(typeof(FoodLargeRation), "Raciones", "ración grande (pizza de queso)", 90.0, 120.0, typeof(CheesePizza), "pizza de queso", 2, 1044253);
 			AddRes(index, typeof(BreadLoaf), 1024156, 2, 1024156);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
 
 			/* End Rations */
 
-			index = AddCraft(typeof(FruitBasket), "Preparations", "fruit basket", 40.0, 85.0, typeof(Basket), "Basket", 1, 1044253);
+			index = AddCraft(typeof(FruitBasket), "Preparativos", "cesta de frutas", 40.0, 85.0, typeof(Basket), "Cesta", 1, 1044253);
 			AddRes(index, typeof(Pear), 1044481, 2, 1044253);
 			AddRes(index, typeof(Peach), 1044480, 2, 1044253);
 			AddRes(index, typeof(Apple), 1044479, 2, 1044253);
 
 
-			AddCraft(typeof(CarvedPumpkin), "Halloween", "jack-o-lantern", 80.0, 110.0, typeof(PumpkinLarge), "Large Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin2), "Halloween", "jack-o-lantern", 80.0, 110.0, typeof(PumpkinLarge), "Large Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin16), "Halloween", "jack-o-lantern", 80.0, 110.0, typeof(PumpkinLarge), "Large Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin17), "Halloween", "jack-o-lantern", 80.0, 110.0, typeof(PumpkinLarge), "Large Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin18), "Halloween", "jack-o-lantern", 80.0, 110.0, typeof(PumpkinLarge), "Large Pumpkin", 1, 1042081);
-			index = AddCraft(typeof(CarvedPumpkin19), "Halloween", "jack-o-lantern", 80.0, 110.0, typeof(PumpkinLarge), "Large Pumpkin", 1, 1042081);
-			AddRes(index, typeof(SkullGiant), "Giant Skull", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin), "Halloween", "calabaza de Halloween", 80.0, 110.0, typeof(PumpkinLarge), "Calabaza Grande", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin2), "Halloween", "calabaza de Halloween", 80.0, 110.0, typeof(PumpkinLarge), "Calabaza Grande", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin16), "Halloween", "calabaza de Halloween", 80.0, 110.0, typeof(PumpkinLarge), "Calabaza Grande", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin17), "Halloween", "calabaza de Halloween", 80.0, 110.0, typeof(PumpkinLarge), "Calabaza Grande", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin18), "Halloween", "calabaza de Halloween", 80.0, 110.0, typeof(PumpkinLarge), "Calabaza Grande", 1, 1042081);
+			index = AddCraft(typeof(CarvedPumpkin19), "Halloween", "calabaza de Halloween", 80.0, 110.0, typeof(PumpkinLarge), "Calabaza Grande", 1, 1042081);
+			AddRes(index, typeof(SkullGiant), "Calavera Gigante", 1, 1042081);
 
-			AddCraft(typeof(CarvedPumpkin3), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin4), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin5), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin6), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin7), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin8), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin9), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin10), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin11), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin12), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin13), "Halloween", "jack-o-lantern", 90.0, 120.0, typeof(PumpkinTall), "Tall Pumpkin", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin3), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin4), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin5), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin6), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin7), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin8), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin9), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin10), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin11), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin12), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin13), "Halloween", "calabaza de Halloween", 90.0, 120.0, typeof(PumpkinTall), "Calabaza Alta", 1, 1042081);
 
-			AddCraft(typeof(CarvedPumpkin14), "Halloween", "jack-o-lantern", 95.0, 120.0, typeof(PumpkinGreen), "Green Pumpkin", 1, 1042081);
-			AddCraft(typeof(CarvedPumpkin15), "Halloween", "jack-o-lantern", 95.0, 120.0, typeof(PumpkinGreen), "Green Pumpkin", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin14), "Halloween", "calabaza de Halloween", 95.0, 120.0, typeof(PumpkinGreen), "Calabaza Verde", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin15), "Halloween", "calabaza de Halloween", 95.0, 120.0, typeof(PumpkinGreen), "Calabaza Verde", 1, 1042081);
 
-			AddCraft(typeof(CarvedPumpkin20), "Halloween", "jack-o-lantern", 99.0, 125.0, typeof(PumpkinGiant), "Giant Pumpkin", 1, 1042081);
+			AddCraft(typeof(CarvedPumpkin20), "Halloween", "calabaza de Halloween", 99.0, 125.0, typeof(PumpkinGiant), "Calabaza Gigante", 1, 1042081);
 
             /* Start Nox's Seafood */
-            index = AddCraft(typeof(FishFilet), "Seafood", "fish filet", 45.0, 85.0, typeof(Fish), "fish", 1, 1044253);
+            index = AddCraft(typeof(FishFilet), "Marisco", "filete de pescado", 45.0, 85.0, typeof(Fish), "pescado", 1, 1044253);
             SetNeedOven(index, true);
-            index = AddCraft(typeof(SteamedLobster), "Seafood", "steamed lobster", 45.0, 85.0, typeof(Lobster), "lobster", 1, 1044253);
+            index = AddCraft(typeof(SteamedLobster), "Marisco", "langosta al vapor", 45.0, 85.0, typeof(Lobster), "langosta", 1, 1044253);
             SetNeedOven(index, true);
-            index = AddCraft(typeof(SteamedCrab), "Seafood", "steamed crab", 45.0, 85.0, typeof(Crab), 1035000, 1, 1044253);
+            index = AddCraft(typeof(SteamedCrab), "Marisco", "cangrejo al vapor", 45.0, 85.0, typeof(Crab), 1035000, 1, 1044253);
             SetNeedOven(index, true);
-            index = AddCraft(typeof(WoodenBowlOfLobsterBisque), "Seafood", "lobster bisque", 45.0, 85.0, typeof(Lobster), "lobster", 4, 1044253);
+            index = AddCraft(typeof(WoodenBowlOfLobsterBisque), "Marisco", "sopa de langosta", 45.0, 85.0, typeof(Lobster), "langosta", 4, 1044253);
             SetNeedOven(index, true);
-            index = AddCraft(typeof(CrabCakes), "Seafood", "crab cakes", 70.0, 100.0, typeof(Crab), 1035000, 1, 1044253);
+            index = AddCraft(typeof(CrabCakes), "Marisco", "pasteles de cangrejo", 70.0, 100.0, typeof(Crab), 1035000, 1, 1044253);
             AddRes(index, typeof(Dough), 1044469, 1, 1044253);
             SetNeedOven(index, true); 
-            index = AddCraft(typeof(CrabRangoon), "Seafood", "crab rangoon", 70.0, 100.0, typeof(Crab), 1035000, 1, 1044253);
+            index = AddCraft(typeof(CrabRangoon), "Marisco", "rangoon de cangrejo", 70.0, 100.0, typeof(Crab), 1035000, 1, 1044253);
             AddRes(index, typeof(Dough), 1044469, 1, 1044253);
             SetNeedOven(index, true);
         }

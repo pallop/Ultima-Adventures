@@ -315,342 +315,342 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( Beeswax ), 1025154, 5, 1044253 );
 
 			//index = AddCraft(typeof(SongBook), 1044294, 1028787, 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378); //nox change
-			index = AddCraft(typeof(SongBook), 1044294, "Song Book", 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft(typeof(SongBook), 1044294, "Libro de Canciones", 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 5, 1044253 );
 
 			MarkOption = true;
 
-			index = AddCraft(typeof(ArmysPaeonScroll), 1044294, "Armys Paeon Scroll", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(ArmysPaeonScroll), 1044294, "Pergamino de Peón de Ejército", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(EnchantingEtudeScroll), 1044294, "Enchanting Etude", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(EnchantingEtudeScroll), 1044294, "Estudio Encantador", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(EnergyCarolScroll), 1044294, "Energy Carol", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(EnergyCarolScroll), 1044294, "Villancico de Energía", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(EnergyThrenodyScroll), 1044294, "Energy Threnody", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(EnergyThrenodyScroll), 1044294, "Trenodia de Energía", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(FireCarolScroll), 1044294, "Fire Carol", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(FireCarolScroll), 1044294, "Villancico de Fuego", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(FireThrenodyScroll), 1044294, "Fire Threnody", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(FireThrenodyScroll), 1044294, "Trenodia de Fuego", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(FoeRequiemScroll), 1044294, "Foe Requiem", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(FoeRequiemScroll), 1044294, "Réquiem del Enemigo", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(IceCarolScroll), 1044294, "Ice Carol", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(IceCarolScroll), 1044294, "Villancico de Hielo", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(IceThrenodyScroll), 1044294, "Ice Threnody", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(IceThrenodyScroll), 1044294, "Trenodia de Hielo", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(KnightsMinneScroll), 1044294, "Knights Minne", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(KnightsMinneScroll), 1044294, "Minne de Caballero", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(MagesBalladScroll), 1044294, "Mages Ballad", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(MagesBalladScroll), 1044294, "Balada de Magos", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(MagicFinaleScroll), 1044294, "Magic Finale", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(MagicFinaleScroll), 1044294, "Final Mágico", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(PoisonCarolScroll), 1044294, "Poison Carol", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(PoisonCarolScroll), 1044294, "Villancico de Veneno", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(PoisonThrenodyScroll), 1044294, "Poison Threnody", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(PoisonThrenodyScroll), 1044294, "Trenodia de Veneno", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(SheepfoeMamboScroll), 1044294, "Sheepfoe Mambo", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(SheepfoeMamboScroll), 1044294, "Mambo de la Oveja Enemiga", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
-			index = AddCraft(typeof(SinewyEtudeScroll), 1044294, "Sinewy Etude", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
-			AddRes( index, typeof(Lute), "lute", 1, 1044253);
+			index = AddCraft(typeof(SinewyEtudeScroll), 1044294, "Estudio Nervudo", 75.0, 95.0, typeof (BlankScroll), 1044377, 1, 1044378);
+			AddRes( index, typeof(Lute), "laúd", 1, 1044253);
 			AddSkill( index, SkillName.Musicianship, 95.0, 120.0);
 
 			//Expert Study Books
-			index = AddCraft( typeof(StandardAlchemyStudyBook), "Expert Study Books", "Expert Alchemy", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardAlchemyStudyBook), "Libros de Estudio de Experto", "Alquimia Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Alchemy, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardAnatomyStudyBook), "Expert Study Books", "Expert Anatomy", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardAnatomyStudyBook), "Libros de Estudio de Experto", "Anatomía Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Anatomy, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardAnimalLoreStudyBook), "Expert Study Books", "Expert Animal Lore", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardAnimalLoreStudyBook), "Libros de Estudio de Experto", "Conocimiento Animal Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.AnimalLore, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardAnimalTamingStudyBook), "Expert Study Books", "Expert Animal Taming", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardAnimalTamingStudyBook), "Libros de Estudio de Experto", "Doma de Animales Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.AnimalTaming, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardArcheryStudyBook), "Expert Study Books", "Expert Archery", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardArcheryStudyBook), "Libros de Estudio de Experto", "Arquería Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Archery, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardArmsLoreStudyBook), "Expert Study Books", "Expert Arms Lore", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardArmsLoreStudyBook), "Libros de Estudio de Experto", "Conocimiento de Armas Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.ArmsLore, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardBeggingStudyBook), "Expert Study Books", "Expert Begging", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardBeggingStudyBook), "Libros de Estudio de Experto", "Mendicidad Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Begging, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardBlacksmithStudyBook), "Expert Study Books", "Expert Blacksmithing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardBlacksmithStudyBook), "Libros de Estudio de Experto", "Herrería Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Blacksmith, 70.0, 80.0 );	
 
-			index = AddCraft( typeof(StandardBushidoStudyBook), "Expert Study Books", "Expert Bushido", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardBushidoStudyBook), "Libros de Estudio de Experto", "Bushido Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Bushido, 70.0, 80.0 );	
 
-			index = AddCraft( typeof(StandardCampingStudyBook), "Expert Study Books", "Expert Camping", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardCampingStudyBook), "Libros de Estudio de Experto", "Acampada Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Camping, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardCarpentryStudyBook), "Expert Study Books", "Expert Carpentry", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardCarpentryStudyBook), "Libros de Estudio de Experto", "Carpintería Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Carpentry, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardCartographyStudyBook), "Expert Study Books", "Expert Cartography", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardCartographyStudyBook), "Libros de Estudio de Experto", "Cartografía Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Cartography, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardChivalryStudyBook), "Expert Study Books", "Expert Chivlary", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardChivalryStudyBook), "Libros de Estudio de Experto", "Caballería Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Chivalry, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardCookingStudyBook), "Expert Study Books", "Expert Cooking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardCookingStudyBook), "Libros de Estudio de Experto", "Cocina Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Cooking, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardDetectHiddenStudyBook), "Expert Study Books", "Expert Detecting Hidden", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardDetectHiddenStudyBook), "Libros de Estudio de Experto", "Detección de Ocultos Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.DetectHidden, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardDiscordanceStudyBook), "Expert Study Books", "Expert Discordance", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardDiscordanceStudyBook), "Libros de Estudio de Experto", "Discordancia Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Discordance, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardEvalIntStudyBook), "Expert Study Books", "Expert Evaluating Intelligence", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardEvalIntStudyBook), "Libros de Estudio de Experto", "Evaluación de Inteligencia Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.EvalInt, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardFencingStudyBook), "Expert Study Books", "Expert Fencing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardFencingStudyBook), "Libros de Estudio de Experto", "Esgrima Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Fencing, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardFishingStudyBook), "Expert Study Books", "Expert Fishing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardFishingStudyBook), "Libros de Estudio de Experto", "Pesca Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Fishing, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardFocusStudyBook), "Expert Study Books", "Expert Focus", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardFocusStudyBook), "Libros de Estudio de Experto", "Concentración Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Focus, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardForensicsStudyBook), "Expert Study Books", "Expert Forensic Evaluation", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardForensicsStudyBook), "Libros de Estudio de Experto", "Evaluación Forense Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Forensics, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardHealingStudyBook), "Expert Study Books", "Expert Healing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardHealingStudyBook), "Libros de Estudio de Experto", "Curación Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Healing, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardHerdingStudyBook), "Expert Study Books", "Expert Herding", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardHerdingStudyBook), "Libros de Estudio de Experto", "Pastoreo Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Herding, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardHidingStudyBook), "Expert Study Books", "Expert Hiding", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardHidingStudyBook), "Libros de Estudio de Experto", "Ocultación Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Hiding, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardInscribeStudyBook), "Expert Study Books", "Expert Inscription", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardInscribeStudyBook), "Libros de Estudio de Experto", "Inscripción Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Inscribe, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardItemIDStudyBook), "Expert Study Books", "Expert Item Identification", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardItemIDStudyBook), "Libros de Estudio de Experto", "Identificación de Objetos Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.ItemID, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardLockpickingStudyBook), "Expert Study Books", "Expert Lockpicking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardLockpickingStudyBook), "Libros de Estudio de Experto", "Ganzuado Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Lockpicking, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardLumberjackingStudyBook), "Expert Study Books", "Expert Lumberjacking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardLumberjackingStudyBook), "Libros de Estudio de Experto", "Tala de Árboles Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Lumberjacking, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardMacingStudyBook), "Expert Study Books", "Expert Mace Fighting", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardMacingStudyBook), "Libros de Estudio de Experto", "Lucha con Maza Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Macing, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardMageryStudyBook), "Expert Study Books", "Expert Magery", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardMageryStudyBook), "Libros de Estudio de Experto", "Magia Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Magery, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardMagicResistStudyBook), "Expert Study Books", "Expert Magic Resist", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardMagicResistStudyBook), "Libros de Estudio de Experto", "Resistencia Mágica Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.MagicResist, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardMeditationStudyBook), "Expert Study Books", "Expert Meditation", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardMeditationStudyBook), "Libros de Estudio de Experto", "Meditación Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Meditation, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardMiningStudyBook), "Expert Study Books", "Expert Mining", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardMiningStudyBook), "Libros de Estudio de Experto", "Minería Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Mining, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardMusicianshipStudyBook), "Expert Study Books", "Expert Musicianship", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardMusicianshipStudyBook), "Libros de Estudio de Experto", "Música Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Musicianship, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardNecromancyStudyBook), "Expert Study Books", "Expert Necromancy", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardNecromancyStudyBook), "Libros de Estudio de Experto", "Nigromancia Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Necromancy, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardNinjitsuStudyBook), "Expert Study Books", "Expert Ninjitsu", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardNinjitsuStudyBook), "Libros de Estudio de Experto", "Ninjitsu Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Ninjitsu, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardParryStudyBook), "Expert Study Books", "Expert Parry", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardParryStudyBook), "Libros de Estudio de Experto", "Parada Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Parry, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardPeacemakingStudyBook), "Expert Study Books", "Expert Peacemaking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardPeacemakingStudyBook), "Libros de Estudio de Experto", "Pacificador Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Peacemaking, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardPoisoningStudyBook), "Expert Study Books", "Expert Poisoning", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardPoisoningStudyBook), "Libros de Estudio de Experto", "Envenenamiento Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Poisoning, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardProvocationStudyBook), "Expert Study Books", "Expert Provocation", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardProvocationStudyBook), "Libros de Estudio de Experto", "Provocación Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Provocation, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardRemoveTrapStudyBook), "Expert Study Books", "Expert Remove Trap", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardRemoveTrapStudyBook), "Libros de Estudio de Experto", "Remover Trampas Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.RemoveTrap, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardSnoopingStudyBook), "Expert Study Books", "Expert Snooping", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardSnoopingStudyBook), "Libros de Estudio de Experto", "Fisgoneo Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Snooping, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardSpiritSpeakStudyBook), "Expert Study Books", "Expert SpiritSpeak", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardSpiritSpeakStudyBook), "Libros de Estudio de Experto", "Habla Espiritual Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.SpiritSpeak, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardStealingStudyBook), "Expert Study Books", "Expert Stealing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardStealingStudyBook), "Libros de Estudio de Experto", "Robo Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Stealing, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardStealthStudyBook), "Expert Study Books", "Expert Stealth", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardStealthStudyBook), "Libros de Estudio de Experto", "Sigilo Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Stealth, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardSwordsStudyBook), "Expert Study Books", "Expert Swordsmanship", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardSwordsStudyBook), "Libros de Estudio de Experto", "Esgrima Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Swords, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardTacticsStudyBook), "Expert Study Books", "Expert Tactics", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardTacticsStudyBook), "Libros de Estudio de Experto", "Tácticas Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Tactics, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardTailoringStudyBook), "Expert Study Books", "Expert Tailoring", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardTailoringStudyBook), "Libros de Estudio de Experto", "Sastrería Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Tailoring, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardTasteIDStudyBook), "Expert Study Books", "Expert Taste Identification", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardTasteIDStudyBook), "Libros de Estudio de Experto", "Identificación de Sabores Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.TasteID, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardThrowingStudyBook), "Expert Study Books", "Expert Throwing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardThrowingStudyBook), "Libros de Estudio de Experto", "Lanzamiento Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Throwing, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardTinkeringStudyBook), "Expert Study Books", "Expert Tinkering", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardTinkeringStudyBook), "Libros de Estudio de Experto", "Manitas Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Tinkering, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardTrackingStudyBook), "Expert Study Books", "Expert Tracking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardTrackingStudyBook), "Libros de Estudio de Experto", "Rastreo Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Tracking, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardVeterinaryStudyBook), "Expert Study Books", "Expert Veterinary", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardVeterinaryStudyBook), "Libros de Estudio de Experto", "Veterinaria Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Veterinary, 70.0, 80.0 );
 
-			index = AddCraft( typeof(StandardWrestlingStudyBook), "Expert Study Books", "Expert Wrestling", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(StandardWrestlingStudyBook), "Libros de Estudio de Experto", "Lucha Experta", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 1, 1044253 );
 			AddRes( index, typeof( Leather ),1044462, 2, 1044253 );
 			AddSkill( index, SkillName.Wrestling, 70.0, 80.0 );
@@ -659,328 +659,328 @@ namespace Server.Engines.Craft
 
 			//Grandmaster Study Books
 			
-			index = AddCraft( typeof(AdvancedAlchemyStudyBook), "Grandmaster Study Books", "Grandmaster Alchemy", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedAlchemyStudyBook), "Libros de Estudio de Gran Maestro", "Alquimia Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirAlchemy ), "alchemy elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirAlchemy ), "elixir de alquimia", 1, 1044253 );
 			AddSkill( index, SkillName.Alchemy, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedAnatomyStudyBook), "Grandmaster Study Books", "Grandmaster Anatomy", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedAnatomyStudyBook), "Libros de Estudio de Gran Maestro", "Anatomía Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirAnatomy ), "anatomy elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirAnatomy ), "elixir de anatomía", 1, 1044253 );
 			AddSkill( index, SkillName.Anatomy, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedAnimalLoreStudyBook), "Grandmaster Study Books", "Grandmaster Animal Lore", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedAnimalLoreStudyBook), "Libros de Estudio de Gran Maestro", "Conocimiento Animal Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirAnimalLore ), "animal lore elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirAnimalLore ), "elixir de conocimiento animal", 1, 1044253 );
 			AddSkill( index, SkillName.AnimalLore, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedAnimalTamingStudyBook), "Grandmaster Study Books", "Grandmaster Animal Taming", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedAnimalTamingStudyBook), "Libros de Estudio de Gran Maestro", "Doma de Animales Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirAnimalTaming ), "animal taming elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirAnimalTaming ), "elixir de doma de animales", 1, 1044253 );
 			AddSkill( index, SkillName.AnimalTaming, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedArcheryStudyBook), "Grandmaster Study Books", "Grandmaster Archery", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedArcheryStudyBook), "Libros de Estudio de Gran Maestro", "Arquería Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirArchery ), "archery elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirArchery ), "elixir de arquería", 1, 1044253 );
 			AddSkill( index, SkillName.Archery, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedArmsLoreStudyBook), "Grandmaster Study Books", "Grandmaster Arms Lore", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedArmsLoreStudyBook), "Libros de Estudio de Gran Maestro", "Conocimiento de Armas Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirArmsLore ), "arms lore elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirArmsLore ), "elixir de conocimiento de armas", 1, 1044253 );
 			AddSkill( index, SkillName.ArmsLore, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedBeggingStudyBook), "Grandmaster Study Books", "Grandmaster Begging", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedBeggingStudyBook), "Libros de Estudio de Gran Maestro", "Mendicidad Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirBegging ), "begging elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirBegging ), "elixir de mendicidad", 1, 1044253 );
 			AddSkill( index, SkillName.Begging, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedBlacksmithStudyBook), "Grandmaster Study Books", "Grandmaster Blacksmithing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedBlacksmithStudyBook), "Libros de Estudio de Gran Maestro", "Herrería Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirBlacksmith ), "blacksmithing elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirBlacksmith ), "elixir de herrería", 1, 1044253 );
 			AddSkill( index, SkillName.Blacksmith, 100.0, 100.0 );	
 
-			index = AddCraft( typeof(AdvancedBushidoStudyBook), "Grandmaster Study Books", "Grandmaster Bushido", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedBushidoStudyBook), "Libros de Estudio de Gran Maestro", "Bushido Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirParry ), "parry elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirParry ), "elixir de parada", 1, 1044253 );
 			AddSkill( index, SkillName.Bushido, 100.0, 100.0 );	
 
-			index = AddCraft( typeof(AdvancedCampingStudyBook), "Grandmaster Study Books", "Grandmaster Camping", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedCampingStudyBook), "Libros de Estudio de Gran Maestro", "Acampada Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirCamping ), "camping elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirCamping ), "elixir de acampada", 1, 1044253 );
 			AddSkill( index, SkillName.Camping, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedCarpentryStudyBook), "Grandmaster Study Books", "Grandmaster Carpentry", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedCarpentryStudyBook), "Libros de Estudio de Gran Maestro", "Carpintería Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirCarpentry ), "carpentry elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirCarpentry ), "elixir de carpintería", 1, 1044253 );
 			AddSkill( index, SkillName.Carpentry, 100.0, 100.0 );	
 
-			index = AddCraft( typeof(AdvancedCartographyStudyBook), "Grandmaster Study Books", "Grandmaster Cartography", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedCartographyStudyBook), "Libros de Estudio de Gran Maestro", "Cartografía Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirCartography ), "cartography elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirCartography ), "elixir de cartografía", 1, 1044253 );
 			AddSkill( index, SkillName.Cartography, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedChivalryStudyBook), "Grandmaster Study Books", "Grandmaster Chivlary", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedChivalryStudyBook), "Libros de Estudio de Gran Maestro", "Caballería Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( Diamond ), "diamond", 10, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( Diamond ), "diamante", 10, 1044253 );
 			AddSkill( index, SkillName.Chivalry, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedCookingStudyBook), "Grandmaster Study Books", "Grandmaster Cooking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedCookingStudyBook), "Libros de Estudio de Gran Maestro", "Cocina Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirCooking ), "cooking elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirCooking ), "elixir de cocina", 1, 1044253 );
 			AddSkill( index, SkillName.Cooking, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedDetectHiddenStudyBook), "Grandmaster Study Books", "Grandmaster Detecting Hidden", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedDetectHiddenStudyBook), "Libros de Estudio de Gran Maestro", "Detección de Ocultos Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirDetectHidden ), "detecting hidden elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirDetectHidden ), "elixir de detección de ocultos", 1, 1044253 );
 			AddSkill( index, SkillName.DetectHidden, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedDiscordanceStudyBook), "Grandmaster Study Books", "Grandmaster Discordance", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedDiscordanceStudyBook), "Libros de Estudio de Gran Maestro", "Discordancia Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirDiscordance ), "discordance elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirDiscordance ), "elixir de discordancia", 1, 1044253 );
 			AddSkill( index, SkillName.Discordance, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedEvalIntStudyBook), "Grandmaster Study Books", "Grandmaster Evaluating Intelligence", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedEvalIntStudyBook), "Libros de Estudio de Gran Maestro", "Evaluación de Inteligencia Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirEvalInt ), "evaluating intelligence elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirEvalInt ), "elixir de evaluación de inteligencia", 1, 1044253 );
 			AddSkill( index, SkillName.EvalInt, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedFencingStudyBook), "Grandmaster Study Books", "Grandmaster Fencing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedFencingStudyBook), "Libros de Estudio de Gran Maestro", "Esgrima Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirFencing ), "fencing elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirFencing ), "elixir de esgrima", 1, 1044253 );
 			AddSkill( index, SkillName.Fencing, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedFishingStudyBook), "Grandmaster Study Books", "Grandmaster Fishing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedFishingStudyBook), "Libros de Estudio de Gran Maestro", "Pesca Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirFishing ), "fishing elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirFishing ), "elixir de pesca", 1, 1044253 );
 			AddSkill( index, SkillName.Fishing, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedFocusStudyBook), "Grandmaster Study Books", "Grandmaster Focus", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedFocusStudyBook), "Libros de Estudio de Gran Maestro", "Concentración Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirFocus ), "focus elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirFocus ), "elixir de concentración", 1, 1044253 );
 			AddSkill( index, SkillName.Focus, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedForensicsStudyBook), "Grandmaster Study Books", "Grandmaster Forensic Evaluation", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedForensicsStudyBook), "Libros de Estudio de Gran Maestro", "Evaluación Forense Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirForensics ), "forensic evaluation elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirForensics ), "elixir de evaluación forense", 1, 1044253 );
 			AddSkill( index, SkillName.Forensics, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedHealingStudyBook), "Grandmaster Study Books", "Grandmaster Healing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedHealingStudyBook), "Libros de Estudio de Gran Maestro", "Curación Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirHealing ), "healing elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirHealing ), "elixir de curación", 1, 1044253 );
 			AddSkill( index, SkillName.Healing, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedHerdingStudyBook), "Grandmaster Study Books", "Grandmaster Herding", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedHerdingStudyBook), "Libros de Estudio de Gran Maestro", "Pastoreo Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirHerding ), "herding elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirHerding ), "elixir de pastoreo", 1, 1044253 );
 			AddSkill( index, SkillName.Herding, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedHidingStudyBook), "Grandmaster Study Books", "Grandmaster Hiding", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedHidingStudyBook), "Libros de Estudio de Gran Maestro", "Ocultación Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirHiding ), "hiding elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirHiding ), "elixir de ocultación", 1, 1044253 );
 			AddSkill( index, SkillName.Hiding, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedInscribeStudyBook), "Grandmaster Study Books", "Grandmaster Inscription", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedInscribeStudyBook), "Libros de Estudio de Gran Maestro", "Inscripción Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirInscribe ), "inscription elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirInscribe ), "elixir de inscripción", 1, 1044253 );
 			AddSkill( index, SkillName.Inscribe, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedItemIDStudyBook), "Grandmaster Study Books", "Grandmaster Item Identification", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedItemIDStudyBook), "Libros de Estudio de Gran Maestro", "Identificación de Objetos Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirItemID ), "item identification elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirItemID ), "elixir de identificación de objetos", 1, 1044253 );
 			AddSkill( index, SkillName.ItemID, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedLockpickingStudyBook), "Grandmaster Study Books", "Grandmaster Lockpicking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedLockpickingStudyBook), "Libros de Estudio de Gran Maestro", "Ganzuado Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirLockpicking ), "lockpicking elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirLockpicking ), "elixir de ganzuado", 1, 1044253 );
 			AddSkill( index, SkillName.Lockpicking, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedLumberjackingStudyBook), "Grandmaster Study Books", "Grandmaster Lumberjacking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedLumberjackingStudyBook), "Libros de Estudio de Gran Maestro", "Tala de Árboles Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirLumberjacking ), "lumberjacking elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirLumberjacking ), "elixir de tala de árboles", 1, 1044253 );
 			AddSkill( index, SkillName.Lumberjacking, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedMacingStudyBook), "Grandmaster Study Books", "Grandmaster Mace Fighting", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedMacingStudyBook), "Libros de Estudio de Gran Maestro", "Lucha con Maza Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirMacing ), "mace fighting elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirMacing ), "elixir de lucha con maza", 1, 1044253 );
 			AddSkill( index, SkillName.Macing, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedMageryStudyBook), "Grandmaster Study Books", "Grandmaster Magery", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedMageryStudyBook), "Libros de Estudio de Gran Maestra", "Magia Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( LiquidFire ), "liquid fire", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( LiquidFire ), "fuego líquido", 1, 1044253 );
 			AddSkill( index, SkillName.Magery, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedMagicResistStudyBook), "Grandmaster Study Books", "Grandmaster Magic Resist", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedMagicResistStudyBook), "Libros de Estudio de Gran Maestra", "Resistencia Mágica Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirMagicResist ), "magic resistance elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirMagicResist ), "elixir de resistencia mágica", 1, 1044253 );
 			AddSkill( index, SkillName.MagicResist, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedMeditationStudyBook), "Grandmaster Study Books", "Grandmaster Meditation", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedMeditationStudyBook), "Libros de Estudio de Gran Maestra", "Meditación Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirMeditation ), "meditation elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirMeditation ), "elixir de meditación", 1, 1044253 );
 			AddSkill( index, SkillName.Meditation, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedMiningStudyBook), "Grandmaster Study Books", "Grandmaster Mining", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedMiningStudyBook), "Libros de Estudio de Gran Maestra", "Minería Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirMining ), "mining elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirMining ), "elixir de minería", 1, 1044253 );
 			AddSkill( index, SkillName.Mining, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedMusicianshipStudyBook), "Grandmaster Study Books", "Grandmaster Musicianship", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedMusicianshipStudyBook), "Libros de Estudio de Gran Maestra", "Música Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirMusicianship ), "musicianship elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirMusicianship ), "elixir de música", 1, 1044253 );
 			AddSkill( index, SkillName.Musicianship, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedNecromancyStudyBook), "Grandmaster Study Books", "Grandmaster Necromancy", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedNecromancyStudyBook), "Libros de Estudio de Gran Maestra", "Nigromancia Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirSpiritSpeak ), "spirit speak elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirSpiritSpeak ), "elixir de habla espiritual", 1, 1044253 );
 			AddSkill( index, SkillName.Necromancy, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedNinjitsuStudyBook), "Grandmaster Study Books", "Grandmaster Ninjitsu", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedNinjitsuStudyBook), "Libros de Estudio de Gran Maestra", "Ninjitsu Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirStealth ), "stealth elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirStealth ), "elixir de sigilo", 1, 1044253 );
 			AddSkill( index, SkillName.Ninjitsu, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedParryStudyBook), "Grandmaster Study Books", "Grandmaster Parry", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedParryStudyBook), "Libros de Estudio de Gran Maestra", "Parada Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirParry ), "parry elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirParry ), "elixir de parada", 1, 1044253 );
 			AddSkill( index, SkillName.Parry, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedPeacemakingStudyBook), "Grandmaster Study Books", "Grandmaster Peacemaking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedPeacemakingStudyBook), "Libros de Estudio de Gran Maestro", "Pacificador Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirPeacemaking ), "peacemaking elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirPeacemaking ), "elixir de pacificador", 1, 1044253 );
 			AddSkill( index, SkillName.Peacemaking, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedPoisoningStudyBook), "Grandmaster Study Books", "Grandmaster Poisoning", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedPoisoningStudyBook), "Libros de Estudio de Gran Maestro", "Envenenamiento Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirPoisoning ), "poisoning elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirPoisoning ), "elixir de envenenamiento", 1, 1044253 );
 			AddSkill( index, SkillName.Poisoning, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedProvocationStudyBook), "Grandmaster Study Books", "Grandmaster Provocation", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedProvocationStudyBook), "Libros de Estudio de Gran Maestro", "Provocación Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirProvocation ), "provocation elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirProvocation ), "elixir de provocación", 1, 1044253 );
 			AddSkill( index, SkillName.Provocation, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedRemoveTrapStudyBook), "Grandmaster Study Books", "Grandmaster Remove Trap", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedRemoveTrapStudyBook), "Libros de Estudio de Gran Maestro", "Remover Trampas Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirRemoveTrap ), "remove trap elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirRemoveTrap ), "elixir de remover trampas", 1, 1044253 );
 			AddSkill( index, SkillName.RemoveTrap, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedSnoopingStudyBook), "Grandmaster Study Books", "Grandmaster Snooping", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedSnoopingStudyBook), "Libros de Estudio de Gran Maestro", "Fisgoneo Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirSnooping ), "snooping elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirSnooping ), "elixir de fisgoneo", 1, 1044253 );
 			AddSkill( index, SkillName.Snooping, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedSpiritSpeakStudyBook), "Grandmaster Study Books", "Grandmaster SpiritSpeak", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedSpiritSpeakStudyBook), "Libros de Estudio de Gran Maestra", "Habla Espiritual Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirSpiritSpeak ), "spirit speak elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirSpiritSpeak ), "elixir de habla espiritual", 1, 1044253 );
 			AddSkill( index, SkillName.SpiritSpeak, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedStealingStudyBook), "Grandmaster Study Books", "Grandmaster Stealing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedStealingStudyBook), "Libros de Estudio de Gran Maestra", "Robo Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirStealing ), "stealing elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirStealing ), "elixir de robo", 1, 1044253 );
 			AddSkill( index, SkillName.Stealing, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedStealthStudyBook), "Grandmaster Study Books", "Grandmaster Stealth", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedStealthStudyBook), "Libros de Estudio de Gran Maestra", "Sigilo Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirStealth ), "stealth elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirStealth ), "elixir de sigilo", 1, 1044253 );
 			AddSkill( index, SkillName.Stealth, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedSwordsStudyBook), "Grandmaster Study Books", "Grandmaster Swordsmanship", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedSwordsStudyBook), "Libros de Estudio de Gran Maestra", "Esgrima Gran Maestra", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirSwords ), "swordsmanship elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirSwords ), "elixir de esgrima", 1, 1044253 );
 			AddSkill( index, SkillName.Swords, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedTacticsStudyBook), "Grandmaster Study Books", "Grandmaster Tactics", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedTacticsStudyBook), "Libros de Estudio de Gran Maestro", "Tácticas Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirTactics ), "tactics elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirTactics ), "elixir de tácticas", 1, 1044253 );
 			AddSkill( index, SkillName.Tactics, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedTailoringStudyBook), "Grandmaster Study Books", "Grandmaster Tailoring", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedTailoringStudyBook), "Libros de Estudio de Gran Maestro", "Sastrería Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirTailoring ), "tailoring elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirTailoring ), "elixir de sastrería", 1, 1044253 );
 			AddSkill( index, SkillName.Tailoring, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedTasteIDStudyBook), "Grandmaster Study Books", "Grandmaster Taste Identification", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedTasteIDStudyBook), "Libros de Estudio de Gran Maestro", "Identificación de Sabores Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirTasteID ), "taste identification elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirTasteID ), "elixir de identificación de sabores", 1, 1044253 );
 			AddSkill( index, SkillName.TasteID, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedThrowingStudyBook), "Grandmaster Study Books", "Grandmaster Throwing", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedThrowingStudyBook), "Libros de Estudio de Gran Maestro", "Lanzamiento Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirArchery ), "archery elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirArchery ), "elixir de arquería", 1, 1044253 );
 			AddSkill( index, SkillName.Throwing, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedTinkeringStudyBook), "Grandmaster Study Books", "Grandmaster Tinkering", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedTinkeringStudyBook), "Libros de Estudio de Gran Maestro", "Manitas Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirTinkering ), "tinkering elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirTinkering ), "elixir de manitas", 1, 1044253 );
 			AddSkill( index, SkillName.Tinkering, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedTrackingStudyBook), "Grandmaster Study Books", "Grandmaster Tracking", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedTrackingStudyBook), "Libros de Estudio de Gran Maestro", "Rastreo Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirTracking ), "tracking elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirTracking ), "elixir de rastreo", 1, 1044253 );
 			AddSkill( index, SkillName.Tracking, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedVeterinaryStudyBook), "Grandmaster Study Books", "Grandmaster Veterinary", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedVeterinaryStudyBook), "Libros de Estudio de Gran Maestro", "Veterinaria Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirVeterinary ), "veterninary elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirVeterinary ), "elixir de veterinaria", 1, 1044253 );
 			AddSkill( index, SkillName.Veterinary, 100.0, 100.0 );
 
-			index = AddCraft( typeof(AdvancedWrestlingStudyBook), "Grandmaster Study Books", "Grandmaster Wrestling", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft( typeof(AdvancedWrestlingStudyBook), "Libros de Estudio de Gran Maestro", "Lucha Gran Maestro", 65.0, 85.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			AddRes( index, typeof( Beeswax ), 1025154, 3, 1044253 );
-			AddRes( index, typeof( ArcaneGem ),"arcane gem", 2, 1044253 );
-			AddRes( index, typeof( ElixirWrestling ), "wrestling elixir", 1, 1044253 );
+			AddRes( index, typeof( ArcaneGem ),"gema arcana", 2, 1044253 );
+			AddRes( index, typeof( ElixirWrestling ), "elixir de lucha", 1, 1044253 );
 			AddSkill( index, SkillName.Wrestling, 100.0, 100.0 );
 
 
