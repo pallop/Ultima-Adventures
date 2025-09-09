@@ -88,9 +88,9 @@ namespace Server.Engines.Craft
 			index = AddCraft( typeof( Shaft ), 1044457, 1027124, 0.0, 40.0, typeof( Log ), 1015101, 1, 1044351 );
 
 			// Batch begin
-			index = AddCraft( typeof( Kindling ), 1044457, "lote de leña", 0.0, 00.0, typeof( Log ), 1015101, 1, 1044351 );
+			index = AddCraft( typeof( Kindling ), 1044457, "batch of kindling", 0.0, 00.0, typeof( Log ), 1015101, 1, 1044351 );
 			SetUseAllRes( index, true );
-			index = AddCraft( typeof( Shaft ), 1044457, "lote de astiles", 0.0, 40.0, typeof( Log ), 1015101, 1, 1044351 );
+			index = AddCraft( typeof( Shaft ), 1044457, "batch of shafts", 0.0, 40.0, typeof( Log ), 1015101, 1, 1044351 );
 			SetUseAllRes( index, true );
 
 			// Ammunition
@@ -101,18 +101,18 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( Feather ), 1044562, 1, 1044563 );
 
 			index = AddCraft( typeof( FukiyaDarts ), 1044565, 1030246, 0.0, 40.0, typeof( Log ), 1015101, 1, 1044351 );
-			index = AddCraft(typeof(ThrowingWeapon), 1044565, "arma arrojadiza", 0.0, 40.0, typeof(IronIngot), 1074904, 1, 1044037);
+			index = AddCraft(typeof(ThrowingWeapon), 1044565, "throwing weapon", 0.0, 40.0, typeof(IronIngot), 1074904, 1, 1044037);
 			
 			// Batch Begin
-			index = AddCraft( typeof( Arrow ), 1044565, "lote de flechas", 0.0, 40.0, typeof( Shaft ), 1044560, 1, 1044561 );
+			index = AddCraft( typeof( Arrow ), 1044565, "batch of arrows", 0.0, 40.0, typeof( Shaft ), 1044560, 1, 1044561 );
 			AddRes( index, typeof( Feather ), 1044562, 1, 1044563 );
 			SetUseAllRes( index, true );
-			index = AddCraft( typeof( Bolt ), 1044565, "lote de virotes de ballesta", 0.0, 40.0, typeof( Shaft ), 1044560, 1, 1044561 );
+			index = AddCraft( typeof( Bolt ), 1044565, "batch of crossbow bolts", 0.0, 40.0, typeof( Shaft ), 1044560, 1, 1044561 );
 			AddRes( index, typeof( Feather ), 1044562, 1, 1044563 );
 			SetUseAllRes( index, true );
-			index = AddCraft( typeof( FukiyaDarts ), 1044565, "lote de dardos fukiya", 0.0, 40.0, typeof( Log ), 1015101, 1, 1044351 );
+			index = AddCraft( typeof( FukiyaDarts ), 1044565, "batch of fukiya darts", 0.0, 40.0, typeof( Log ), 1015101, 1, 1044351 );
 			SetUseAllRes( index, true );
-			index = AddCraft(typeof(ThrowingWeapon), 1044565, "lote de armas arrojadizas", 0.0, 40.0, typeof(IronIngot), 1074904, 1, 1044037);
+			index = AddCraft(typeof(ThrowingWeapon), 1044565, "batch of throwing weapons", 0.0, 40.0, typeof(IronIngot), 1074904, 1, 1044037);
 			SetUseAllRes(index, true);
 
 			// Weapons
@@ -132,8 +132,8 @@ namespace Server.Engines.Craft
 				 
 			}
 
-			AddCraft( typeof( MagicalShortbow ), 1044566, "arco corto del bosque", 50.0, 80.0, typeof( Board ), 1015101, 7, 1044351 );
-			AddCraft( typeof( ElvenCompositeLongbow ), 1044566, "arco largo del bosque", 50.0, 80.0, typeof( Board ), 1015101, 7, 1044351 );
+			AddCraft( typeof( MagicalShortbow ), 1044566, "woodland shortbow", 50.0, 80.0, typeof( Board ), 1015101, 7, 1044351 );
+			AddCraft( typeof( ElvenCompositeLongbow ), 1044566, "woodland longbow", 50.0, 80.0, typeof( Board ), 1015101, 7, 1044351 );
 
 			Repair = true;
 			MarkOption = true;

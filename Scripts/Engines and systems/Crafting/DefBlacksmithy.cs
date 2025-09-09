@@ -262,8 +262,8 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( RingmailChest ), "Chain/Ring/Banded", 1025100, 21.9, 71.9, typeof( IronIngot ), 1044036, 18, 1044037 );
 			#endregion
 
-			AddCraft( typeof( RingmailSkirt ), "Chain/Ring/Banded", "falda de malla anillada", 19.4, 69.4, typeof( IronIngot ), 1044036, 16, 1044037 );
-			AddCraft( typeof( ChainSkirt ), "Chain/Ring/Banded", "falda de metal", 36.7, 86.7, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( RingmailSkirt ), "Chain/Ring/Banded", "banded mail skirt", 19.4, 69.4, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( ChainSkirt ), "Chain/Ring/Banded", "metal skirt", 36.7, 86.7, typeof( IronIngot ), 1044036, 18, 1044037 );
 
 			int index = -1;
 

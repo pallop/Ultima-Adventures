@@ -129,11 +129,11 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( Axle ), 1044042, 1024187, -25.0, 25.0, typeof( Log ), 1015101, 2, 1044351 );
 			AddCraft( typeof( RollingPin ), 1044042, 1024163, 0.0, 50.0, typeof( Log ), 1015101, 5, 1044351 );
 
-			index = AddCraft( typeof( SawMillSouthAddonDeed ), 1044042, "aserradero sur", 60.0, 120.0, typeof( Granite ), 1044514, 80, 1044513 );
+			index = AddCraft( typeof( SawMillSouthAddonDeed ), 1044042, "saw mill (south)", 60.0, 120.0, typeof( Granite ), 1044514, 80, 1044513 );
 			AddSkill( index, SkillName.Lumberjacking, 75.0, 80.0 );
 			AddRes( index, typeof( IronIngot ), 1044036, 10, 1044037 );
 
-			index = AddCraft( typeof( SawMillEastAddonDeed ), 1044042, "aserradero este", 60.0, 120.0, typeof( Granite ), 1044514, 80, 1044513 );
+			index = AddCraft( typeof( SawMillEastAddonDeed ), 1044042, "saw mill (east)", 60.0, 120.0, typeof( Granite ), 1044514, 80, 1044513 );
 			AddSkill( index, SkillName.Lumberjacking, 75.0, 80.0 );
 			AddRes( index, typeof( IronIngot ), 1044036, 10, 1044037 );
 
@@ -144,7 +144,7 @@ namespace Server.Engines.Craft
 				 
 			}
 
-            index = AddCraft( typeof( FishingTrap ), 1044042, "trampa de pesca", 45.0, 65.0, typeof( Board ), 1015101, 4, 1044351 );
+            index = AddCraft( typeof( FishingTrap ), 1044042, "fishing trap", 45.0, 65.0, typeof( Board ), 1015101, 4, 1044351 );
             AddSkill( index, SkillName.Fishing, 45.0, 65.0 );
             AddRes( index, typeof( SpoolOfThread ), 1024000, 10, 1073463);
 			#endregion
@@ -157,14 +157,14 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( Hatchet ), 1044046, 1023907, 30.0, 80.0, typeof( IronIngot ), 1044036, 4, 1044037 );
 			AddCraft( typeof( DrawKnife ), 1044046, 1024324, 30.0, 80.0, typeof( IronIngot ), 1044036, 2, 1044037 );
 			AddCraft( typeof( SewingKit ), 1044046, 1023997, 10.0, 70.0, typeof( IronIngot ), 1044036, 2, 1044037 );
-			AddCraft( typeof( GardenTool ), 1044046, "tijeras de jardinería", 5.0, 55.0, typeof( IronIngot ), 1044036, 2, 1044037 );
-			AddCraft( typeof( HerbalistCauldron ), 1044046, "caldero de herbolario", 30.0, 60.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( GardenTool ), 1044046, "gardening shears", 5.0, 55.0, typeof( IronIngot ), 1044036, 2, 1044037 );
+			AddCraft( typeof( HerbalistCauldron ), 1044046, "herbalist cauldron", 30.0, 60.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 			AddCraft( typeof( Saw ), 1044046, 1024148, 30.0, 80.0, typeof( IronIngot ), 1044036, 4, 1044037 );
 			AddCraft( typeof( DovetailSaw ), 1044046, 1024136, 30.0, 80.0, typeof( IronIngot ), 1044036, 4, 1044037 );
 			AddCraft( typeof( Froe ), 1044046, 1024325, 30.0, 80.0, typeof( IronIngot ), 1044036, 2, 1044037 );
 			AddCraft( typeof( Shovel ), 1044046, 1023898, 40.0, 90.0, typeof( IronIngot ), 1044036, 4, 1044037 );
-			AddCraft( typeof( OreShovel ), 1044046, "pala de mineral", 35.0, 85.0, typeof( IronIngot ), 1044036, 4, 1044037 );
-			AddCraft( typeof( GraveShovel ), 1044046, "pala de sepulturero", 35.0, 85.0, typeof( IronIngot ), 1044036, 4, 1044037 );
+			AddCraft( typeof( OreShovel ), 1044046, "ore spade", 35.0, 85.0, typeof( IronIngot ), 1044036, 4, 1044037 );
+			AddCraft( typeof( GraveShovel ), 1044046, "grave shovel", 35.0, 85.0, typeof( IronIngot ), 1044036, 4, 1044037 );
 			AddCraft( typeof( Hammer ), 1044046, 1024138, 30.0, 80.0, typeof( IronIngot ), 1044036, 1, 1044037 );
 			AddCraft( typeof( Tongs ), 1044046, 1024028, 35.0, 85.0, typeof( IronIngot ), 1044036, 1, 1044037 );
 			AddCraft( typeof( SmithHammer ), 1044046, 1025091, 40.0, 90.0, typeof( IronIngot ), 1044036, 4, 1044037 );
@@ -177,12 +177,12 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( FletcherTools ), 1044046, 1044166, 35.0, 85.0, typeof( IronIngot ), 1044036, 3, 1044037 );
 			AddCraft( typeof( MapmakersPen ), 1044046, 1044167, 25.0, 75.0, typeof( IronIngot ), 1044036, 1, 1044037 );
 			AddCraft( typeof( ScribesPen ), 1044046, 1044168, 25.0, 75.0, typeof( IronIngot ), 1044036, 1, 1044037 );
-			AddCraft( typeof( SkinningKnife ), 1044046, "cuchillo de desollar", 15.0, 55.0, typeof( IronIngot ), 1044036, 2, 1044037 );
-			AddCraft( typeof( SurgeonsKnife ), 1044046, "cuchillo de cirujano", 15.0, 55.0, typeof( IronIngot ), 1044036, 2, 1044037 );
-			AddCraft( typeof( MixingCauldron ), 1044046, "caldero para mezclar", 30.0, 60.0, typeof( IronIngot ), 1044036, 20, 1044037 );
-			AddCraft( typeof( WaxingPot ), 1044046, "olla para encerar", 20.0, 60.0, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( WoodworkingTools ), 1044046, "herramientas para trabajar la madera", 30.0, 80.0, typeof( IronIngot ), 1044036, 2, 1044037 );
-			AddCraft( typeof( TrapKit ), 1044046, "herramientas para trampas", 75.0, 110.0, typeof( IronIngot ), 1044036, 32, 1044037 );
+			AddCraft( typeof( SkinningKnife ), 1044046, "skinning knife", 15.0, 55.0, typeof( IronIngot ), 1044036, 2, 1044037 );
+			AddCraft( typeof( SurgeonsKnife ), 1044046, "surgeons knife", 15.0, 55.0, typeof( IronIngot ), 1044036, 2, 1044037 );
+			AddCraft( typeof( MixingCauldron ), 1044046, "mixing cauldron", 30.0, 60.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( WaxingPot ), 1044046, "wax crafting pot", 20.0, 60.0, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( WoodworkingTools ), 1044046, "woodworking tools", 30.0, 80.0, typeof( IronIngot ), 1044036, 2, 1044037 );
+			AddCraft( typeof( TrapKit ), 1044046, "trapping tools", 75.0, 110.0, typeof( IronIngot ), 1044036, 32, 1044037 );
 
 			#endregion
 
@@ -226,13 +226,13 @@ namespace Server.Engines.Craft
 			AddCraft( typeof( Key ), 1044050, 1024112, 20.0, 70.0, typeof( IronIngot ), 1044036, 3, 1044037 );
 			AddCraft( typeof( KeyRing ), 1044050, 1024113, 10.0, 60.0, typeof( IronIngot ), 1044036, 2, 1044037 );
 			AddCraft( typeof( Globe ), 1044050, 1024167, 55.0, 105.0, typeof( IronIngot ), 1044036, 4, 1044037 );
-			AddCraft( typeof( Spyglass ), 1044050, "telescopio", 60.0, 110.0, typeof( IronIngot ), 1044036, 4, 1044037 );
+			AddCraft( typeof( Spyglass ), 1044050, "telescope", 60.0, 110.0, typeof( IronIngot ), 1044036, 4, 1044037 );
 			AddCraft( typeof( Lantern ), 1044050, 1022597, 30.0, 80.0, typeof( IronIngot ), 1044036, 2, 1044037 );
 			AddCraft( typeof( HeatingStand ), 1044050, 1026217, 60.0, 110.0, typeof( IronIngot ), 1044036, 4, 1044037 );
-				index = AddCraft( typeof( WallTorch ), 1044050, "antorcha de pared", 55.0, 105.0, typeof( IronIngot ), 1044036, 5, 1044037 );
+				index = AddCraft( typeof( WallTorch ), 1044050, "wall torch", 55.0, 105.0, typeof( IronIngot ), 1044036, 5, 1044037 );
 				AddRes( index, typeof( Torch ), 1011410, 1, 1053098 );
 
-				index = AddCraft( typeof( ColoredWallTorch ), 1044050, "antorcha de pared de colores", 85.0, 125.0, typeof( IronIngot ), 1044036, 5, 1044037 );
+				index = AddCraft( typeof( ColoredWallTorch ), 1044050, "colored wall torch", 85.0, 125.0, typeof( IronIngot ), 1044036, 5, 1044037 );
 				AddRes( index, typeof( Torch ), 1011410, 1, 1053098 );
 
 				index = AddCraft( typeof( ShojiLantern ), 1044050, 1029404, 65.0, 115.0, typeof( IronIngot ), 1044036, 10, 1044037 );
@@ -487,23 +487,23 @@ namespace Server.Engines.Craft
 			AddRes( index, typeof( WoodenBox ), "Wooden Box", 1, 1044253 );
 
             // Hospitality
-            index = AddCraft(typeof(AleBarrel), "Hospitalidad", "barril de cerveza", 60.0, 100.0, typeof(ArcaneGem), 1114115, 1, 1044253);
+            index = AddCraft(typeof(AleBarrel), "Hospitality", "ale barrel", 60.0, 100.0, typeof(ArcaneGem), 1114115, 1, 1044253);
             AddRes(index, typeof(Keg), "Keg", 2, 1044253);
             AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
 
-            index = AddCraft(typeof(CheesePress), "Hospitalidad", "prensa de queso", 60.0, 100.0, typeof(ArcaneGem), 1114115, 2, 1044253);
+            index = AddCraft(typeof(CheesePress), "Hospitality", "cheese press", 60.0, 100.0, typeof(ArcaneGem), 1114115, 2, 1044253);
             AddRes(index, typeof(Keg), "Keg", 2, 1044253);
             AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
 
-            index = AddCraft(typeof(CiderBarrel), "Hospitalidad", "barril de sidra", 60.0, 100.0, typeof(ArcaneGem), 1114115, 1, 1044253);
+            index = AddCraft(typeof(CiderBarrel), "Hospitality", "cider barrel", 60.0, 100.0, typeof(ArcaneGem), 1114115, 1, 1044253);
             AddRes(index, typeof(Keg), "Keg", 2, 1044253);
             AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
 
-            index = AddCraft(typeof(LiquorBarrel), "Hospitalidad", "barril de licor", 95.0, 120.0, typeof(ArcaneGem), 1114115, 4, 1044253);
+            index = AddCraft(typeof(LiquorBarrel), "Hospitality", "liquor barrel", 95.0, 120.0, typeof(ArcaneGem), 1114115, 4, 1044253);
             AddRes(index, typeof(Keg), "Keg", 2, 1044253);
             AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
 
-            index = AddCraft(typeof(WineBarrel), "Hospitalidad", "barril de vino", 80.0, 100.0, typeof(ArcaneGem), 1114115, 2, 1044253);
+            index = AddCraft(typeof(WineBarrel), "Hospitality", "wine barrel", 80.0, 100.0, typeof(ArcaneGem), 1114115, 2, 1044253);
             AddRes(index, typeof(Keg), "Keg", 2, 1044253);
             AddRes(index, typeof(AxleGears), 1044170, 4, 1044253);
 

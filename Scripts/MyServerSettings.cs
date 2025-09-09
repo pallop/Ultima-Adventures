@@ -532,8 +532,8 @@ namespace Server.Misc
 		
 		public static bool buysellcontext() // do you want vendors to have clickable context menus for buy/sell? (comment one OR the other)
 		{
-			//return true; 
-			return false;
+			return true;
+			//return false;
 		}
 		
 		public static int decayrate() // note, itemdecay was disabled in this release.  if you want itemdecay, run runuo.exe.itemdecay instead and set the value here to the amount of time you want for item decay .  

@@ -21,97 +21,97 @@ namespace Server.Misc
 			{
 				BaseWeapon weapon = (BaseWeapon)item;
 
-				if ( weapon.Resource == CraftResource.DullCopper ){ material = "cobre opaco"; }
-				else if ( weapon.Resource == CraftResource.ShadowIron ){ material = "hierro sombrío"; }
-				else if ( weapon.Resource == CraftResource.Copper ){ material = "cobre"; }
-				else if ( weapon.Resource == CraftResource.Bronze ){ material = "bronce"; }
-				else if ( weapon.Resource == CraftResource.Gold ){ material = "dorado"; }
-				else if ( weapon.Resource == CraftResource.Agapite ){ material = "agapita"; }
-				else if ( weapon.Resource == CraftResource.Verite ){ material = "verita"; }
-				else if ( weapon.Resource == CraftResource.Valorite ){ material = "valorita"; }
-				else if ( weapon.Resource == CraftResource.Steel ){ material = "acero"; }
-				else if ( weapon.Resource == CraftResource.Brass ){ material = "latón"; }
-				else if ( weapon.Resource == CraftResource.Mithril ){ material = "mitril"; }
-				else if ( weapon.Resource == CraftResource.Xormite ){ material = "xormita"; }
-				else if ( weapon.Resource == CraftResource.Obsidian ){ material = "obsidiana"; }
-				else if ( weapon.Resource == CraftResource.Nepturite ){ material = "nepturita"; }
-				else if ( weapon.Resource == CraftResource.Dwarven ){ material = "enano"; }
-				else if ( weapon.Resource == CraftResource.Iron ){ material = "hierro"; }
-				else if ( weapon.Resource == CraftResource.RegularLeather ){ material = "cuero"; }
-				else if ( weapon.Resource == CraftResource.SpinedLeather ){ material = "mar profundo"; }
-				else if ( weapon.Resource == CraftResource.HornedLeather ){ material = "lagarto"; }
-				else if ( weapon.Resource == CraftResource.BarbedLeather ){ material = "serpiente"; }
-				else if ( weapon.Resource == CraftResource.NecroticLeather ){ material = "necrótico"; }
-				else if ( weapon.Resource == CraftResource.VolcanicLeather ){ material = "volcánico"; }
-				else if ( weapon.Resource == CraftResource.FrozenLeather ){ material = "congelado"; }
-				else if ( weapon.Resource == CraftResource.GoliathLeather ){ material = "goliat"; }
-				else if ( weapon.Resource == CraftResource.DraconicLeather ){ material = "dracónico"; }
-				else if ( weapon.Resource == CraftResource.HellishLeather ){ material = "infernal"; }
-				else if ( weapon.Resource == CraftResource.DinosaurLeather ){ material = "dinosaurio"; }
-				else if ( weapon.Resource == CraftResource.AlienLeather ){ material = "alienígena"; }
-				else if ( weapon.Resource == CraftResource.RegularWood ){ material = "de madera"; }
-				else if ( weapon.Resource == CraftResource.AshTree ){ material = "fresno"; }
-				else if ( weapon.Resource == CraftResource.CherryTree ){ material = "cerezo"; }
-				else if ( weapon.Resource == CraftResource.EbonyTree ){ material = "ébano"; }
-				else if ( weapon.Resource == CraftResource.GoldenOakTree ){ material = "roble dorado"; }
-				else if ( weapon.Resource == CraftResource.HickoryTree ){ material = "nogal americano"; }
-				else if ( weapon.Resource == CraftResource.MahoganyTree ){ material = "caoba"; }
-				else if ( weapon.Resource == CraftResource.OakTree ){ material = "roble"; }
-				else if ( weapon.Resource == CraftResource.PineTree ){ material = "pino"; }
-				else if ( weapon.Resource == CraftResource.RosewoodTree ){ material = "palo de rosa"; }
-				else if ( weapon.Resource == CraftResource.DriftwoodTree ){ material = "madera de deriva"; }
-				else if ( weapon.Resource == CraftResource.WalnutTree ){ material = "nogal"; }
-				else if ( weapon.Resource == CraftResource.ElvenTree ){ material = "élfico"; }
-				else if ( weapon.Resource == CraftResource.GhostTree ){ material = "madera espectral"; }
-				else if ( weapon.Resource == CraftResource.PetrifiedTree ){ material = "petrificado"; }
+				if ( weapon.Resource == CraftResource.DullCopper ){ material = "dull copper"; }
+				else if ( weapon.Resource == CraftResource.ShadowIron ){ material = "shadow iron"; }
+				else if ( weapon.Resource == CraftResource.Copper ){ material = "copper"; }
+				else if ( weapon.Resource == CraftResource.Bronze ){ material = "bronze"; }
+				else if ( weapon.Resource == CraftResource.Gold ){ material = "golden"; }
+				else if ( weapon.Resource == CraftResource.Agapite ){ material = "agapite"; }
+				else if ( weapon.Resource == CraftResource.Verite ){ material = "verite"; }
+				else if ( weapon.Resource == CraftResource.Valorite ){ material = "valorite"; }
+				else if ( weapon.Resource == CraftResource.Steel ){ material = "steel"; }
+				else if ( weapon.Resource == CraftResource.Brass ){ material = "brass"; }
+				else if ( weapon.Resource == CraftResource.Mithril ){ material = "mithril"; }
+				else if ( weapon.Resource == CraftResource.Xormite ){ material = "xormite"; }
+				else if ( weapon.Resource == CraftResource.Obsidian ){ material = "obsidian"; }
+				else if ( weapon.Resource == CraftResource.Nepturite ){ material = "nepturite"; }
+				else if ( weapon.Resource == CraftResource.Dwarven ){ material = "dwarven"; }
+				//else if ( weapon.Resource == CraftResource.Iron ){ material = "iron"; }
+				//else if ( weapon.Resource == CraftResource.RegularLeather ){ material = "leather"; }
+				else if ( weapon.Resource == CraftResource.SpinedLeather ){ material = "deep sea"; }
+				else if ( weapon.Resource == CraftResource.HornedLeather ){ material = "lizard"; }
+				else if ( weapon.Resource == CraftResource.BarbedLeather ){ material = "serpent"; }
+				else if ( weapon.Resource == CraftResource.NecroticLeather ){ material = "necrotic"; }
+				else if ( weapon.Resource == CraftResource.VolcanicLeather ){ material = "volcanic"; }
+				else if ( weapon.Resource == CraftResource.FrozenLeather ){ material = "frozen"; }
+				else if ( weapon.Resource == CraftResource.GoliathLeather ){ material = "goliath"; }
+				else if ( weapon.Resource == CraftResource.DraconicLeather ){ material = "draconic"; }
+				else if ( weapon.Resource == CraftResource.HellishLeather ){ material = "hellish"; }
+				else if ( weapon.Resource == CraftResource.DinosaurLeather ){ material = "dinosaur"; }
+				else if ( weapon.Resource == CraftResource.AlienLeather ){ material = "alien"; }
+				//else if ( weapon.Resource == CraftResource.RegularWood ){ material = "wooden"; }
+				else if ( weapon.Resource == CraftResource.AshTree ){ material = "ash"; }
+				else if ( weapon.Resource == CraftResource.CherryTree ){ material = "cherry"; }
+				else if ( weapon.Resource == CraftResource.EbonyTree ){ material = "ebony"; }
+				else if ( weapon.Resource == CraftResource.GoldenOakTree ){ material = "golden oak"; }
+				else if ( weapon.Resource == CraftResource.HickoryTree ){ material = "hickory"; }
+				else if ( weapon.Resource == CraftResource.MahoganyTree ){ material = "mahogany"; }
+				else if ( weapon.Resource == CraftResource.OakTree ){ material = "oak"; }
+				else if ( weapon.Resource == CraftResource.PineTree ){ material = "pine"; }
+				else if ( weapon.Resource == CraftResource.RosewoodTree ){ material = "rosewood"; }
+				else if ( weapon.Resource == CraftResource.DriftwoodTree ){ material = "driftwood"; }
+				else if ( weapon.Resource == CraftResource.WalnutTree ){ material = "walnut"; }
+				else if ( weapon.Resource == CraftResource.ElvenTree ){ material = "elven"; }
+				else if ( weapon.Resource == CraftResource.GhostTree ){ material = "ghostwood"; }
+				else if ( weapon.Resource == CraftResource.PetrifiedTree ){ material = "petrified"; }
 			}
 			else if ( item is BaseArmor )
 			{
 				BaseArmor armor = (BaseArmor)item;
 
-				if ( armor.Resource == CraftResource.DullCopper ){ material = "cobre opaco"; }
-				else if ( armor.Resource == CraftResource.ShadowIron ){ material = "hierro sombrío"; }
-				else if ( armor.Resource == CraftResource.Copper ){ material = "cobre"; }
-				else if ( armor.Resource == CraftResource.Bronze ){ material = "bronce"; }
-				else if ( armor.Resource == CraftResource.Gold ){ material = "dorado"; }
-				else if ( armor.Resource == CraftResource.Agapite ){ material = "agapita"; }
-				else if ( armor.Resource == CraftResource.Verite ){ material = "verita"; }
-				else if ( armor.Resource == CraftResource.Valorite ){ material = "valorita"; }
-				else if ( armor.Resource == CraftResource.Steel ){ material = "acero"; }
-				else if ( armor.Resource == CraftResource.Brass ){ material = "latón"; }
-				else if ( armor.Resource == CraftResource.Mithril ){ material = "mitril"; }
-				else if ( armor.Resource == CraftResource.Xormite ){ material = "xormita"; }
-				else if ( armor.Resource == CraftResource.Obsidian ){ material = "obsidiana"; }
-				else if ( armor.Resource == CraftResource.Nepturite ){ material = "nepturita"; }
-				else if ( armor.Resource == CraftResource.Dwarven ){ material = "enano"; }
-				else if ( armor.Resource == CraftResource.Iron ){ material = "hierro"; }
-				else if ( armor.Resource == CraftResource.RegularLeather ){ material = "cuero"; }
-				else if ( armor.Resource == CraftResource.SpinedLeather ){ material = "mar profundo"; }
-				else if ( armor.Resource == CraftResource.HornedLeather ){ material = "lagarto"; }
-				else if ( armor.Resource == CraftResource.BarbedLeather ){ material = "serpiente"; }
-				else if ( armor.Resource == CraftResource.NecroticLeather ){ material = "necrótico"; }
-				else if ( armor.Resource == CraftResource.VolcanicLeather ){ material = "volcánico"; }
-				else if ( armor.Resource == CraftResource.FrozenLeather ){ material = "congelado"; }
-				else if ( armor.Resource == CraftResource.GoliathLeather ){ material = "goliat"; }
-				else if ( armor.Resource == CraftResource.DraconicLeather ){ material = "dracónico"; }
-				else if ( armor.Resource == CraftResource.HellishLeather ){ material = "infernal"; }
-				else if ( armor.Resource == CraftResource.DinosaurLeather ){ material = "dinosaurio"; }
-				else if ( armor.Resource == CraftResource.AlienLeather ){ material = "alienígena"; }
-				else if ( armor.Resource == CraftResource.RegularWood ){ material = "de madera"; }
-				else if ( armor.Resource == CraftResource.AshTree ){ material = "fresno"; }
-				else if ( armor.Resource == CraftResource.CherryTree ){ material = "cerezo"; }
-				else if ( armor.Resource == CraftResource.EbonyTree ){ material = "ébano"; }
-				else if ( armor.Resource == CraftResource.GoldenOakTree ){ material = "roble dorado"; }
-				else if ( armor.Resource == CraftResource.HickoryTree ){ material = "nogal americano"; }
-				else if ( armor.Resource == CraftResource.MahoganyTree ){ material = "caoba"; }
-				else if ( armor.Resource == CraftResource.OakTree ){ material = "roble"; }
-				else if ( armor.Resource == CraftResource.PineTree ){ material = "pino"; }
-				else if ( armor.Resource == CraftResource.RosewoodTree ){ material = "palo de rosa"; }
-				else if ( armor.Resource == CraftResource.DriftwoodTree ){ material = "madera de deriva"; }
-				else if ( armor.Resource == CraftResource.WalnutTree ){ material = "nogal"; }
-				else if ( armor.Resource == CraftResource.ElvenTree ){ material = "élfico"; }
-				else if ( armor.Resource == CraftResource.GhostTree ){ material = "madera espectral"; }
-				else if ( armor.Resource == CraftResource.PetrifiedTree ){ material = "petrificado"; }
+				if ( armor.Resource == CraftResource.DullCopper ){ material = "dull copper"; }
+				else if ( armor.Resource == CraftResource.ShadowIron ){ material = "shadow iron"; }
+				else if ( armor.Resource == CraftResource.Copper ){ material = "copper"; }
+				else if ( armor.Resource == CraftResource.Bronze ){ material = "bronze"; }
+				else if ( armor.Resource == CraftResource.Gold ){ material = "golden"; }
+				else if ( armor.Resource == CraftResource.Agapite ){ material = "agapite"; }
+				else if ( armor.Resource == CraftResource.Verite ){ material = "verite"; }
+				else if ( armor.Resource == CraftResource.Valorite ){ material = "valorite"; }
+				else if ( armor.Resource == CraftResource.Steel ){ material = "steel"; }
+				else if ( armor.Resource == CraftResource.Brass ){ material = "brass"; }
+				else if ( armor.Resource == CraftResource.Mithril ){ material = "mithril"; }
+				else if ( armor.Resource == CraftResource.Xormite ){ material = "xormite"; }
+				else if ( armor.Resource == CraftResource.Obsidian ){ material = "obsidian"; }
+				else if ( armor.Resource == CraftResource.Nepturite ){ material = "nepturite"; }
+				else if ( armor.Resource == CraftResource.Dwarven ){ material = "dwarven"; }
+				//else if ( armor.Resource == CraftResource.Iron ){ material = "iron"; }
+				//else if ( armor.Resource == CraftResource.RegularLeather ){ material = "leather"; }
+				else if ( armor.Resource == CraftResource.SpinedLeather ){ material = "deep sea"; }
+				else if ( armor.Resource == CraftResource.HornedLeather ){ material = "lizard"; }
+				else if ( armor.Resource == CraftResource.BarbedLeather ){ material = "serpent"; }
+				else if ( armor.Resource == CraftResource.NecroticLeather ){ material = "necrotic"; }
+				else if ( armor.Resource == CraftResource.VolcanicLeather ){ material = "volcanic"; }
+				else if ( armor.Resource == CraftResource.FrozenLeather ){ material = "frozen"; }
+				else if ( armor.Resource == CraftResource.GoliathLeather ){ material = "goliath"; }
+				else if ( armor.Resource == CraftResource.DraconicLeather ){ material = "draconic"; }
+				else if ( armor.Resource == CraftResource.HellishLeather ){ material = "hellish"; }
+				else if ( armor.Resource == CraftResource.DinosaurLeather ){ material = "dinosaur"; }
+				else if ( armor.Resource == CraftResource.AlienLeather ){ material = "alien"; }
+				//else if ( armor.Resource == CraftResource.RegularWood ){ material = "wooden"; }
+				else if ( armor.Resource == CraftResource.AshTree ){ material = "ash"; }
+				else if ( armor.Resource == CraftResource.CherryTree ){ material = "cherry"; }
+				else if ( armor.Resource == CraftResource.EbonyTree ){ material = "ebony"; }
+				else if ( armor.Resource == CraftResource.GoldenOakTree ){ material = "golden oak"; }
+				else if ( armor.Resource == CraftResource.HickoryTree ){ material = "hickory"; }
+				else if ( armor.Resource == CraftResource.MahoganyTree ){ material = "mahogany"; }
+				else if ( armor.Resource == CraftResource.OakTree ){ material = "oak"; }
+				else if ( armor.Resource == CraftResource.PineTree ){ material = "pine"; }
+				else if ( armor.Resource == CraftResource.RosewoodTree ){ material = "rosewood"; }
+				else if ( armor.Resource == CraftResource.DriftwoodTree ){ material = "driftwood"; }
+				else if ( armor.Resource == CraftResource.WalnutTree ){ material = "walnut"; }
+				else if ( armor.Resource == CraftResource.ElvenTree ){ material = "elven"; }
+				else if ( armor.Resource == CraftResource.GhostTree ){ material = "ghostwood"; }
+				else if ( armor.Resource == CraftResource.PetrifiedTree ){ material = "petrified"; }
 			}
 
 			return material;
@@ -374,63 +374,63 @@ namespace Server.Misc
 
 			if ( IsStrangeWoodItem( i ) || IsStrangeMetalItem( i ) || IsStrangeClothItem( i ) )
 			{
-				if ( (i.Name).Contains("Ice") ){ str = "Aleación de Hielo "; }
-				else if ( (i.Name).Contains("Garnet") ){ str = "Aleación de Granate "; }
-				else if ( (i.Name).Contains("Emerald") ){ str = "Aleación de Esmeralda "; }
-				else if ( (i.Name).Contains("Caddellite") ){ str = "Aleación de Caddellita "; }
-				else if ( (i.Name).Contains("Amethyst") ){ str = "Aleación de Amatista "; }
-				else if ( (i.Name).Contains("Topaz") ){ str = "Aleación de Topacio "; }
-				else if ( (i.Name).Contains("Star Ruby") ){ str = "Aleación de Rubí Estelar "; }
-				else if ( (i.Name).Contains("Spinel") ){ str = "Aleación de Espinela "; }
-				else if ( (i.Name).Contains("Silver") ){ str = "Aleación de Plata "; }
-				else if ( (i.Name).Contains("Quartz") ){ str = "Aleación de Cuarzo "; }
-				else if ( (i.Name).Contains("Onyx") ){ str = "Aleación de Ónix "; }
-				else if ( (i.Name).Contains("Marble") ){ str = "Aleación de Mármol "; }
-				else if ( (i.Name).Contains("Jade") ){ str = "Aleación de Jade "; }
-				else if ( (i.Name).Contains("Ruby") ){ str = "Aleación de Rubí "; }
-				else if ( (i.Name).Contains("Beskar") ){ str = "Aleación de Beskar "; }
-				else if ( (i.Name).Contains("Carbonite") ){ str = "Aleación de Carbonita "; }
-				else if ( (i.Name).Contains("Phrik") ){ str = "Aleación de Phrik "; }
-				else if ( (i.Name).Contains("Cortosis") ){ str = "Aleación de Cortosis "; }
-				else if ( (i.Name).Contains("Songsteel") ){ str = "Aleación de Acero Cantarín "; }
-				else if ( (i.Name).Contains("Agrinium") ){ str = "Aleación de Agrinio "; }
-				else if ( (i.Name).Contains("Durasteel") ){ str = "Aleación de Duracero "; }
-				else if ( (i.Name).Contains("Titanium") ){ str = "Aleación de Titanio "; }
-				else if ( (i.Name).Contains("Laminasteel") ){ str = "Aleación de Laminacero "; }
-				else if ( (i.Name).Contains("Neuranium") ){ str = "Aleación de Neuranio "; }
-				else if ( (i.Name).Contains("Promethium") ){ str = "Aleación de Prometio "; }
-				else if ( (i.Name).Contains("Quadranium") ){ str = "Aleación de Quadranio "; }
-				else if ( (i.Name).Contains("Durite") ){ str = "Aleación de Durita "; }
-				else if ( (i.Name).Contains("Farium") ){ str = "Aleación de Farium "; }
-				else if ( (i.Name).Contains("Trimantium") ){ str = "Aleación de Trimantio "; }
-				else if ( (i.Name).Contains("Xonolite") ){ str = "Aleación de Xonolita "; }
-				else if ( (i.Name).Contains("Veshok") ){ str = "Madera de Veshok "; }
-				else if ( (i.Name).Contains("Cosian") ){ str = "Madera de Cosian "; }
-				else if ( (i.Name).Contains("Greel") ){ str = "Madera de Greel "; }
-				else if ( (i.Name).Contains("Teej") ){ str = "Madera de Teej "; }
-				else if ( (i.Name).Contains("Kyshyyyk") ){ str = "Madera de Kyshyyyk "; }
-				else if ( (i.Name).Contains("Laroon") ){ str = "Madera de Laroon "; }
-				else if ( (i.Name).Contains("Borl") ){ str = "Madera de Borl "; }
-				else if ( (i.Name).Contains("Japor") ){ str = "Madera de Japor "; }
-				else if ( (i.Name).Contains("Adesote") ){ str = "Tejido de Adesota "; }
-				else if ( (i.Name).Contains("Nylonite") ){ str = "Tejido de Nylonita "; }
-				else if ( (i.Name).Contains("Biomesh") ){ str = "Tejido de Biomalla "; }
-				else if ( (i.Name).Contains("Cerlin") ){ str = "Tejido de Cerlin "; }
-				else if ( (i.Name).Contains("Polyfiber") ){ str = "Tejido de Polifibra "; }
-				else if ( (i.Name).Contains("Durafiber") ){ str = "Tejido de Durafibra "; }
-				else if ( (i.Name).Contains("Syncloth") ){ str = "Tejido de Telasintética "; }
-				else if ( (i.Name).Contains("Hypercloth") ){ str = "Tejido de Hipertela "; }
-				else if ( (i.Name).Contains("Flexicris") ){ str = "Tejido de Flexicris "; }
-				else if ( (i.Name).Contains("Thermoweave") ){ str = "Tejido de Termotejido "; }
-				else if ( (i.Name).Contains("Nylar") ){ str = "Tejido de Nylar "; }
-				else if ( (i.Name).Contains("Twi'lek") ){ str = "Esquelético Twi'lek "; }
-				else if ( (i.Name).Contains("Rodian") ){ str = "Esquelético Rodiano "; }
-				else if ( (i.Name).Contains("Martian") ){ str = "Esquelético Marciano "; }
-				else if ( (i.Name).Contains("Cardassian") ){ str = "Esquelético Cardassiano "; }
-				else if ( (i.Name).Contains("Xindi") ){ str = "Esquelético Xindi "; }
-				else if ( (i.Name).Contains("Tusken") ){ str = "Esquelético Tusken "; }
-				else if ( (i.Name).Contains("Andorian") ){ str = "Esquelético Andoriano "; }
-				else if ( (i.Name).Contains("Zabrak") ){ str = "Esquelético Zabrak "; }
+				if ( (i.Name).Contains("Ice") ){ str = "Ice Alloy "; }
+				else if ( (i.Name).Contains("Garnet") ){ str = "Garnet Alloy "; }
+				else if ( (i.Name).Contains("Emerald") ){ str = "Emerald Alloy "; }
+				else if ( (i.Name).Contains("Caddellite") ){ str = "Caddellite Alloy "; }
+				else if ( (i.Name).Contains("Amethyst") ){ str = "Amethyst Alloy "; }
+				else if ( (i.Name).Contains("Topaz") ){ str = "Topaz Alloy "; }
+				else if ( (i.Name).Contains("Star Ruby") ){ str = "Star Ruby Alloy "; }
+				else if ( (i.Name).Contains("Spinel") ){ str = "Spinel Alloy "; }
+				else if ( (i.Name).Contains("Silver") ){ str = "Silver Alloy "; }
+				else if ( (i.Name).Contains("Quartz") ){ str = "Quartz Alloy "; }
+				else if ( (i.Name).Contains("Onyx") ){ str = "Onyx Alloy "; }
+				else if ( (i.Name).Contains("Marble") ){ str = "Marble Alloy "; }
+				else if ( (i.Name).Contains("Jade") ){ str = "Jade Alloy "; }
+				else if ( (i.Name).Contains("Ruby") ){ str = "Ruby Alloy "; }
+				else if ( (i.Name).Contains("Beskar") ){ str = "Beskar Alloy "; }
+				else if ( (i.Name).Contains("Carbonite") ){ str = "Carbonite Alloy "; }
+				else if ( (i.Name).Contains("Phrik") ){ str = "Phrik Alloy "; }
+				else if ( (i.Name).Contains("Cortosis") ){ str = "Cortosis Alloy "; }
+				else if ( (i.Name).Contains("Songsteel") ){ str = "Songsteel Alloy "; }
+				else if ( (i.Name).Contains("Agrinium") ){ str = "Agrinium Alloy "; }
+				else if ( (i.Name).Contains("Durasteel") ){ str = "Durasteel Alloy "; }
+				else if ( (i.Name).Contains("Titanium") ){ str = "Titanium Alloy "; }
+				else if ( (i.Name).Contains("Laminasteel") ){ str = "Laminasteel Alloy "; }
+				else if ( (i.Name).Contains("Neuranium") ){ str = "Neuranium Alloy "; }
+				else if ( (i.Name).Contains("Promethium") ){ str = "Promethium Alloy "; }
+				else if ( (i.Name).Contains("Quadranium") ){ str = "Quadranium Alloy "; }
+				else if ( (i.Name).Contains("Durite") ){ str = "Durite Alloy "; }
+				else if ( (i.Name).Contains("Farium") ){ str = "Farium Alloy "; }
+				else if ( (i.Name).Contains("Trimantium") ){ str = "Trimantium Alloy "; }
+				else if ( (i.Name).Contains("Xonolite") ){ str = "Xonolite Alloy "; }
+				else if ( (i.Name).Contains("Veshok") ){ str = "Veshok Timber "; }
+				else if ( (i.Name).Contains("Cosian") ){ str = "Cosian Timber "; }
+				else if ( (i.Name).Contains("Greel") ){ str = "Greel Timber "; }
+				else if ( (i.Name).Contains("Teej") ){ str = "Teej Timber "; }
+				else if ( (i.Name).Contains("Kyshyyyk") ){ str = "Kyshyyyk Timber "; }
+				else if ( (i.Name).Contains("Laroon") ){ str = "Laroon Timber "; }
+				else if ( (i.Name).Contains("Borl") ){ str = "Borl Timber "; }
+				else if ( (i.Name).Contains("Japor") ){ str = "Japor Timber "; }
+				else if ( (i.Name).Contains("Adesote") ){ str = "Adesote Woven "; }
+				else if ( (i.Name).Contains("Nylonite") ){ str = "Nylonite Woven "; }
+				else if ( (i.Name).Contains("Biomesh") ){ str = "Biomesh Woven "; }
+				else if ( (i.Name).Contains("Cerlin") ){ str = "Cerlin Woven "; }
+				else if ( (i.Name).Contains("Polyfiber") ){ str = "Polyfiber Woven "; }
+				else if ( (i.Name).Contains("Durafiber") ){ str = "Durafiber Woven "; }
+				else if ( (i.Name).Contains("Syncloth") ){ str = "Syncloth Woven "; }
+				else if ( (i.Name).Contains("Hypercloth") ){ str = "Hypercloth Woven "; }
+				else if ( (i.Name).Contains("Flexicris") ){ str = "Flexicris Woven "; }
+				else if ( (i.Name).Contains("Thermoweave") ){ str = "Thermoweave Woven "; }
+				else if ( (i.Name).Contains("Nylar") ){ str = "Nylar Woven "; }
+				else if ( (i.Name).Contains("Twi'lek") ){ str = "Twi'lek Skeletal "; }
+				else if ( (i.Name).Contains("Rodian") ){ str = "Rodian Skeletal "; }
+				else if ( (i.Name).Contains("Martian") ){ str = "Martian Skeletal "; }
+				else if ( (i.Name).Contains("Cardassian") ){ str = "Cardassian Skeletal "; }
+				else if ( (i.Name).Contains("Xindi") ){ str = "Xindi Skeletal "; }
+				else if ( (i.Name).Contains("Tusken") ){ str = "Tusken Skeletal "; }
+				else if ( (i.Name).Contains("Andorian") ){ str = "Andorian Skeletal "; }
+				else if ( (i.Name).Contains("Zabrak") ){ str = "Zabrak Skeletal "; }
 			}
 			return str;
 		}
@@ -959,43 +959,43 @@ namespace Server.Misc
 
 			switch ( color ) 
 			{
-				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "star ruby", "", 0 ); item.Name = "rubí estelar " + item.Name;		break;
-				case 2: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "spinel", "", 0 ); item.Name = "espinela " + item.Name;			break;
-				case 3: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "silver", "", 0 ); item.Name = "plata " + item.Name;			break;
-				case 4: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "sapphire", "", 0 ); item.Name = "zafiro " + item.Name;		break;
-				case 5: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ruby", "", 0 ); item.Name = "rubí " + item.Name;			break;
-				case 6: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "quartz", "", 0 ); item.Name = "cuarzo " + item.Name;			break;
-				case 7: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "onyx", "", 0 ); item.Name = "ónix " + item.Name;			break;
+				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "star ruby", "", 0 ); item.Name = "star ruby " + item.Name;		break;
+				case 2: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "spinel", "", 0 ); item.Name = "spinel " + item.Name;			break;
+				case 3: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "silver", "", 0 ); item.Name = "silver " + item.Name;			break;
+				case 4: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "sapphire", "", 0 ); item.Name = "sapphire " + item.Name;		break;
+				case 5: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ruby", "", 0 ); item.Name = "ruby " + item.Name;			break;
+				case 6: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "quartz", "", 0 ); item.Name = "quartz " + item.Name;			break;
+				case 7: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "onyx", "", 0 ); item.Name = "onyx " + item.Name;			break;
 				case 8: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "jade", "", 0 ); item.Name = "jade " + item.Name;			break;
-				case 9: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "garnet", "", 0 ); item.Name = "granate " + item.Name;			break;
-				case 10: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "emerald", "", 0 ); item.Name = "esmeralda " + item.Name;		break;
-				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "amethyst", "", 0 ); item.Name = "amatista " + item.Name;		break;
-				case 12: item.Hue = 0x47E; item.Name = "perla " + item.Name;		break;
-				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "obsidian", "", 0 ); item.Name = "obsidiana " + item.Name;		break;
-				case 14: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dull copper", "", 0 ); item.Name = "cobre opaco " + item.Name;	break;
-				case 15: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "shadow iron", "", 0 ); item.Name = "hierro sombrío " + item.Name;	break;
-				case 16: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "copper", "", 0 ); item.Name = "cobre " + item.Name;		break;
-				case 17: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "bronze", "", 0 ); item.Name = "bronce " + item.Name;		break;
-				case 18: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "gold", "", 0 ); item.Name = "oro " + item.Name;			break;
-				case 19: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "agapite", "", 0 ); item.Name = "agapita " + item.Name;		break;
-				case 20: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "verite", "", 0 ); item.Name = "verita " + item.Name;		break;
-				case 21: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "valorite", "", 0 ); item.Name = "valorita " + item.Name;		break;
-				case 22: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "steel", "", 0 ); item.Name = "acero " + item.Name;		break;
-				case 23: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "brass", "", 0 ); item.Name = "latón " + item.Name;		break;
-				case 24: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "nepturite", "", 0 ); item.Name = "nepturita " + item.Name;	break;
-				case 25: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "shadow iron", "", 0 ); item.Name = "sombra " + item.Name;		break;
-				case 26: item.Hue = 0x486; item.Name = "violeta " + item.Name;		break;
-				case 27: item.Hue = 0x5B6; item.Name = "azurita " + item.Name;		break;
-				case 28: item.Hue = 0x495; item.Name = "turquesa " + item.Name;	break;
-				case 29: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mithril", "", 0 ); item.Name = "mitril " + item.Name;		break;
-				case 30: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "caddellite", "", 0 ); item.Name = "caddellita " + item.Name;	break;
-				case 31: item.Hue = 0x71B; item.Name = "madera " + item.Name;		break;
-				case 32: item.Hue = 0xB92; item.Name = "hueso " + item.Name;			break;
-				case 33: item.Hue = 0xA61; item.Name = "diamante " + item.Name;		break;
-				case 34: item.Hue = 0x54F; item.Name = "ámbar " + item.Name;		break;
-				case 35: item.Hue = 0x550; item.Name = "turmalina " + item.Name;	break;
-				case 36: item.Hue = 0x4F2; item.Name = "zafiro estelar " + item.Name;break;
-				case 37: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "topaz", "", 0 ); item.Name = "topacio " + item.Name;			break;
+				case 9: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "garnet", "", 0 ); item.Name = "garnet " + item.Name;			break;
+				case 10: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "emerald", "", 0 ); item.Name = "emerald " + item.Name;		break;
+				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "amethyst", "", 0 ); item.Name = "amethyst " + item.Name;		break;
+				case 12: item.Hue = 0x47E; item.Name = "pearl " + item.Name;		break;
+				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "obsidian", "", 0 ); item.Name = "obsidian " + item.Name;		break;
+				case 14: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dull copper", "", 0 ); item.Name = "dull copper " + item.Name;	break;
+				case 15: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "shadow iron", "", 0 ); item.Name = "shadow iron " + item.Name;	break;
+				case 16: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "copper", "", 0 ); item.Name = "copper " + item.Name;		break;
+				case 17: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "bronze", "", 0 ); item.Name = "bronze " + item.Name;		break;
+				case 18: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "gold", "", 0 ); item.Name = "gold " + item.Name;			break;
+				case 19: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "agapite", "", 0 ); item.Name = "agapite " + item.Name;		break;
+				case 20: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "verite", "", 0 ); item.Name = "verite " + item.Name;		break;
+				case 21: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "valorite", "", 0 ); item.Name = "valorite " + item.Name;		break;
+				case 22: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "steel", "", 0 ); item.Name = "steel " + item.Name;		break;
+				case 23: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "brass", "", 0 ); item.Name = "brass " + item.Name;		break;
+				case 24: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "nepturite", "", 0 ); item.Name = "nepturite " + item.Name;	break;
+				case 25: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "shadow iron", "", 0 ); item.Name = "shadow " + item.Name;		break;
+				case 26: item.Hue = 0x486; item.Name = "violet " + item.Name;		break;
+				case 27: item.Hue = 0x5B6; item.Name = "azurite " + item.Name;		break;
+				case 28: item.Hue = 0x495; item.Name = "turquoise " + item.Name;	break;
+				case 29: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mithril", "", 0 ); item.Name = "mithril " + item.Name;		break;
+				case 30: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "caddellite", "", 0 ); item.Name = "caddellite " + item.Name;	break;
+				case 31: item.Hue = 0x71B; item.Name = "wooden " + item.Name;		break;
+				case 32: item.Hue = 0xB92; item.Name = "bone " + item.Name;			break;
+				case 33: item.Hue = 0xA61; item.Name = "diamond " + item.Name;		break;
+				case 34: item.Hue = 0x54F; item.Name = "amber " + item.Name;		break;
+				case 35: item.Hue = 0x550; item.Name = "tourmaline " + item.Name;	break;
+				case 36: item.Hue = 0x4F2; item.Name = "star sapphire " + item.Name;break;
+				case 37: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "topaz", "", 0 ); item.Name = "topaz " + item.Name;			break;
 			}
 		}
 
@@ -1003,21 +1003,21 @@ namespace Server.Misc
 		{
 			switch ( Utility.RandomMinMax( 0, 14 ) ) 
 			{
-				case 0: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "silver", "", 0 ); item.Name = "plata " + item.Name;			break;
-				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dull copper", "", 0 ); item.Name = "cobre opaco " + item.Name;	break;
-				case 2: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "shadow iron", "", 0 ); item.Name = "hierro sombrío " + item.Name;	break;
-				case 3: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "copper", "", 0 ); item.Name = "cobre " + item.Name;		break;
-				case 4: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "bronze", "", 0 ); item.Name = "bronce " + item.Name;		break;
-				case 5: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "gold", "", 0 ); item.Name = "oro " + item.Name;			break;
-				case 6: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "agapite", "", 0 ); item.Name = "agapita " + item.Name;		break;
-				case 7: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "verite", "", 0 ); item.Name = "verita " + item.Name;		break;
-				case 8: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "valorite", "", 0 ); item.Name = "valorita " + item.Name;		break;
-				case 9: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "steel", "", 0 ); item.Name = "acero " + item.Name;			break;
-				case 10: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "brass", "", 0 ); item.Name = "latón " + item.Name;		break;
-				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "nepturite", "", 0 ); item.Name = "nepturita " + item.Name;	break;
-				case 12: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mithril", "", 0 ); item.Name = "mitril " + item.Name;		break;
-				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "caddellite", "", 0 ); item.Name = "caddellita " + item.Name;	break;
-				case 14: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dwarven", "", 0 ); item.Name = "enano " + item.Name;	break;
+				case 0: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "silver", "", 0 ); item.Name = "silver " + item.Name;			break;
+				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dull copper", "", 0 ); item.Name = "dull copper " + item.Name;	break;
+				case 2: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "shadow iron", "", 0 ); item.Name = "shadow iron " + item.Name;	break;
+				case 3: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "copper", "", 0 ); item.Name = "copper " + item.Name;		break;
+				case 4: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "bronze", "", 0 ); item.Name = "bronze " + item.Name;		break;
+				case 5: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "gold", "", 0 ); item.Name = "gold " + item.Name;			break;
+				case 6: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "agapite", "", 0 ); item.Name = "agapite " + item.Name;		break;
+				case 7: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "verite", "", 0 ); item.Name = "verite " + item.Name;		break;
+				case 8: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "valorite", "", 0 ); item.Name = "valorite " + item.Name;		break;
+				case 9: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "steel", "", 0 ); item.Name = "steel " + item.Name;			break;
+				case 10: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "brass", "", 0 ); item.Name = "brass " + item.Name;		break;
+				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "nepturite", "", 0 ); item.Name = "nepturite " + item.Name;	break;
+				case 12: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mithril", "", 0 ); item.Name = "mithril " + item.Name;		break;
+				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "caddellite", "", 0 ); item.Name = "caddellite " + item.Name;	break;
+				case 14: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "dwarven", "", 0 ); item.Name = "dwarven " + item.Name;	break;
 			}
 		}
 
@@ -1025,20 +1025,20 @@ namespace Server.Misc
 		{
 			switch ( Utility.RandomMinMax( 0, 13 ) ) 
 			{
-				case 0: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ash", "", 0 ); item.Name = "fresno " + item.Name;			break;
-				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "cherry", "", 0 ); item.Name = "cerezo " + item.Name;	break;
-				case 2: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ebony", "", 0 ); item.Name = "ébano " + item.Name;	break;
-				case 3: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "golden oak", "", 0 ); item.Name = "roble dorado " + item.Name;		break;
-				case 4: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "hickory", "", 0 ); item.Name = "nogal americano " + item.Name;		break;
-				case 5: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mahogany", "", 0 ); item.Name = "caoba " + item.Name;			break;
-				case 6: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "oak", "", 0 ); item.Name = "roble " + item.Name;		break;
-				case 7: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "pine", "", 0 ); item.Name = "pino " + item.Name;		break;
-				case 8: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ghostwood", "", 0 ); item.Name = "madera espectral " + item.Name;		break;
-				case 9: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "rosewood", "", 0 ); item.Name = "palo de rosa " + item.Name;			break;
-				case 10: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "walnut", "", 0 ); item.Name = "nogal " + item.Name;		break;
-				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "petrified", "", 0 ); item.Name = "petrificado " + item.Name;	break;
-				case 12: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "driftwood", "", 0 ); item.Name = "madera de deriva " + item.Name;		break;
-				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "elven", "", 0 ); item.Name = "élfico " + item.Name;	break;
+				case 0: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ash", "", 0 ); item.Name = "ash " + item.Name;			break;
+				case 1: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "cherry", "", 0 ); item.Name = "cherry " + item.Name;	break;
+				case 2: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ebony", "", 0 ); item.Name = "ebony " + item.Name;	break;
+				case 3: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "golden oak", "", 0 ); item.Name = "golden oak " + item.Name;		break;
+				case 4: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "hickory", "", 0 ); item.Name = "hickory " + item.Name;		break;
+				case 5: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "mahogany", "", 0 ); item.Name = "mahogany " + item.Name;			break;
+				case 6: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "oak", "", 0 ); item.Name = "oak " + item.Name;		break;
+				case 7: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "pine", "", 0 ); item.Name = "pine " + item.Name;		break;
+				case 8: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "ghostwood", "", 0 ); item.Name = "ghostwood " + item.Name;		break;
+				case 9: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "rosewood", "", 0 ); item.Name = "rosewood " + item.Name;			break;
+				case 10: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "walnut", "", 0 ); item.Name = "walnut " + item.Name;		break;
+				case 11: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "petrified", "", 0 ); item.Name = "petrified " + item.Name;	break;
+				case 12: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "driftwood", "", 0 ); item.Name = "driftwood " + item.Name;		break;
+				case 13: item.Hue = Server.Misc.MaterialInfo.GetMaterialColor( "elven", "", 0 ); item.Name = "elven " + item.Name;	break;
 			}
 		}
 

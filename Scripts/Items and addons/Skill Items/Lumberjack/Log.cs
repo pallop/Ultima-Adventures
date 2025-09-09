@@ -62,7 +62,7 @@ namespace Server.Items
 					list.Add( CraftResources.GetName( m_Resource ) );
 			}
 			
-			list.Add( "Di 'Deseo comenzar a cortar troncos' para hacer tablas automáticamente." );
+			list.Add( "Say 'I wish to start cutting logs' to make boards automatically." );
 		}
 
 		public BaseLog( Serial serial ) : base( serial )
@@ -106,12 +106,12 @@ namespace Server.Items
 			
 			if ( from.InRange( this.GetWorldLocation(), 2 ) )
 			{
-				from.SendMessage( "Selecciona el aserradero en el que cortar los troncos." );
+				from.SendMessage( "Select the saw mill on which to cut the logs." );
 				from.Target = new InternalTarget( this );
 			}
 			else
 			{
-				from.SendMessage( "Los troncos están demasiado lejos." );
+				from.SendMessage( "The logs are too far away." );
 			}
 		}
 
@@ -147,7 +147,7 @@ namespace Server.Items
 
 			if ( !IsSawmill( targeted ) )
 			{
-				from.SendMessage("Eso no es un aserradero.");
+				from.SendMessage("That is not a saw mill.");
 				return false;
 			}
 
@@ -175,7 +175,7 @@ namespace Server.Items
 			
 			if ( difficulty > 50.0 && difficulty > from.Skills[SkillName.Lumberjacking].Value )
 			{
-				from.SendMessage( "¡No tienes idea de cómo cortar este tipo de madera!" );
+				from.SendMessage( "You have no idea how to best cut this type of wood!" );
 				return false;
 			}
 
@@ -187,7 +187,7 @@ namespace Server.Items
 				wood.Amount = cuttable;
 				from.AddToBackpack(wood);
 				from.PlaySound(0x21C);
-				from.SendMessage("Cortas los troncos y pones algunas tablas en tu mochila.");
+				from.SendMessage("You cut the logs and put some boards in your backpack.");
 
 				Amount -= cuttable;
 			}
@@ -198,11 +198,11 @@ namespace Server.Items
 
 				if (lose == cuttable)
 				{
-					from.SendMessage("Intentas cortar los troncos pero arruinas toda la madera.");
+					from.SendMessage("You try to cut the logs but ruin all of the wood.");
 				}
 				else
 				{
-					from.SendMessage("Intentas cortar los troncos pero arruinas parte de la madera.");
+					from.SendMessage("You try to cut the logs but ruin some of the wood.");
 				}
 
 				from.PlaySound(0x21C);
