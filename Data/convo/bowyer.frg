@@ -25,6 +25,12 @@
                                 "I make fine bows and arrows."
                         }
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+                {
+                "¿Necesitas mejorar tu arquería? Claro, podría enseñarte.",
+                "Necesitas un poco de habilidad para crear arcos y flechas. Puedo enseñarte algunas cosas.",
+                "Bueno, podría mostrarte cómo mejorar tus habilidades y hacerte algunos arcos y flechas, pero no vayas a rebajar mis precios."
+                }
 
                 #KEY "*bow*" {
                         #Attitude Wicked {
@@ -146,6 +152,12 @@
                                 "I'm a bowyer by trade.",
                                 "I make fine bows and arrows."
                         }
+                }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+                {
+                "¿Necesitas mejorar tu arquería? Claro, podría enseñarte.",
+                "Necesitas un poco de habilidad para crear arcos y flechas. Puedo enseñarte algunas cosas.",
+                "Bueno, podría mostrarte cómo mejorar tus habilidades y hacerte algunos arcos y flechas, pero no vayas a rebajar mis precios."
                 }
 
                 #KEY "*bow*" {
@@ -269,6 +281,12 @@
                                 "I make fine bows and arrows."
                         }
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+                {
+                "¿Necesitas mejorar tu arquería? Claro, podría enseñarte.",
+                "Necesitas un poco de habilidad para crear arcos y flechas. Puedo enseñarte algunas cosas.",
+                "Bueno, podría mostrarte cómo mejorar tus habilidades y hacerte algunos arcos y flechas, pero no vayas a rebajar mis precios."
+                }
 
                 #KEY "*bow*" {
                         #Attitude Wicked {
@@ -376,4 +394,3 @@
                 }
         }
 }
-

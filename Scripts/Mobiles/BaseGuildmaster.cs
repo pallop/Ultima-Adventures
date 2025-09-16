@@ -64,17 +64,6 @@ namespace Server.Mobiles
 			if ( pm.NpcGuild == this.NpcGuild ){ list.Add( new ResignEntry( from, this ) ); }
 		} 
 
-		public override void AddCustomContextEntries( Mobile from, List<ContextMenuEntry> list )
-		{
-			base.AddCustomContextEntries( from, list );
-
-			for ( int i = list.Count - 1; i >= 0; i-- )
-			{
-				if ( list[i] is VendorBuyEntry || list[i] is VendorSellEntry )
-					list.RemoveAt( i );
-			}
-		}
-
 		public class JoinEntry : ContextMenuEntry
 		{
 			private Mobile m_Mobile;

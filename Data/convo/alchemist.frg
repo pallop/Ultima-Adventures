@@ -88,11 +88,11 @@
                                 "An alchemist and a mage are as different as water and mercury, though they do share certain properties."
                         }
                 }
-		#KEY "*skill*"  
-		{    
-			"Dost thou need to improve thy alchemy? Sure, I might be able to teach thee.",
-			"Thou dost need some bit of skill to create potions. I may be able to teach thee some things.",
-			"Well, I could show thee how to improve thy skills and make thyself some potions, but don't go and undercut my prices."
+		#KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+		{
+			"¿Necesitas mejorar tu alquimia? Claro, podría enseñarte.",
+			"Necesitas un poco de habilidad para crear pociones. Puedo enseñarte algunas cosas.",
+			"Bueno, podría mostrarte cómo mejorar tus habilidades y hacerte algunas pociones, pero no vayas a rebajar mis precios."
 		}
                 #KEY "*mortar*" "*pestle*" "*vial*" 
 		{

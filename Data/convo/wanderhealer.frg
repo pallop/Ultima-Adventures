@@ -34,22 +34,22 @@
 		{
 			#Attitude Wicked 
 			{
-				"I can help thee learn a few things. I would prefer that thou didst leave me alone, but I can teach thee, if thou dost need it.",
-				"I'd wish for thee to leave me be. But if thou dost need, I could teach thee some of my skills.",
-				"Please, just leave me alone. I have no time for thee."
+				"Puedo ayudarte a aprender algunas cosas. Preferiría que me dejaras en paz, pero puedo enseñarte, si lo necesitas.",
+				"Desearía que me dejaras en paz. Pero si lo necesitas, podría enseñarte algunas de mis habilidades.",
+				"Por favor, déjame en paz. No tengo tiempo para ti."
 			}
 			#Attitude Neutral 
 			{
-				"If thou dost want to learn, I might be persuaded to teach thee about first aid. I could teach thee, also, about the human anatomy. Thou wouldst need to pay me, of course.",
-				"Thou shouldst know something about the healing arts. Could be of use to thee. I could help thee some, I think.",
-				"If thou dost need help with first aid, just ask me to teach thee and if I can, I will. For a small price.",
-				"I can teach thee how to know anatomy better. Could be of use to thee in the future."
+				"Si quieres aprender, podría persuadirte para que te enseñe sobre primeros auxilios. También podría enseñarte sobre la anatomía humana. Tendrías que pagarme, por supuesto.",
+				"Deberías saber algo sobre las artes curativas. Podría serte de utilidad. Creo que podría ayudarte un poco.",
+				"Si necesitas ayuda con los primeros auxilios, solo pídeme que te enseñe y si puedo, lo haré. Por un módico precio.",
+				"Puedo enseñarte a conocer mejor la anatomía. Podría serte de utilidad en el futuro."
 			}
 			#Attitude Goodhearted 
 			{
-				"I'd be happy for thee to learn what I know about first aid. I could give thee lessons for a few coins.",
-				"Thou can always learn new things, my friend. I could teach thee some things that could help thee perform first aid, for instance. For some small amount of money, of course.",
-				"I can teach thee things that could help thee when thou art injured. I would need thee to pay me for my time, however."
+				"Me alegraría que aprendieras lo que sé sobre primeros auxilios. Podría darte lecciones por unas pocas monedas.",
+				"Siempre puedes aprender cosas nuevas, amigo mío. Podría enseñarte algunas cosas que podrían ayudarte a realizar los primeros auxilios, por ejemplo. Por una pequeña cantidad de dinero, por supuesto.",
+				"Puedo enseñarte cosas que podrían ayudarte cuando estés herido. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
                 #Key "*cure*", "*poison*" 
@@ -120,22 +120,22 @@
 		{
 			#Attitude Wicked 
 			{
-				"I can help thee learn a few things. I would prefer that thou didst leave me alone, but I can teach thee, if thou dost need it.",
-				"I'd wish for thee to leave me be. But if thou dost need, I could teach thee some of my skills.",
-				"Please, just leave me alone. I have no time for thee."
+				"Puedo ayudarte a aprender algunas cosas. Preferiría que me dejaras en paz, pero puedo enseñarte, si lo necesitas.",
+				"Desearía que me dejaras en paz. Pero si lo necesitas, podría enseñarte algunas de mis habilidades.",
+				"Por favor, déjame en paz. No tengo tiempo para ti."
 			}
 			#Attitude Neutral 
 			{
-				"If thou dost want to learn, I might be persuaded to teach thee about first aid. I could teach thee, also, about the human anatomy. Thou wouldst need to pay me, of course.",
-				"Thou shouldst know something about the healing arts. Could be of use to thee. I could help thee some, I think.",
-				"If thou dost need help with first aid, just ask me to teach thee and if I can, I will. For a small price.",
-				"I can teach thee how to know anatomy better. Could be of use to thee in the future."
+				"Si quieres aprender, podría persuadirte para que te enseñe sobre primeros auxilios. También podría enseñarte sobre la anatomía humana. Tendrías que pagarme, por supuesto.",
+				"Deberías saber algo sobre las artes curativas. Podría serte de utilidad. Creo que podría ayudarte un poco.",
+				"Si necesitas ayuda con los primeros auxilios, solo pídeme que te enseñe y si puedo, lo haré. Por un módico precio.",
+				"Puedo enseñarte a conocer mejor la anatomía. Podría serte de utilidad en el futuro."
 			}
 			#Attitude Goodhearted 
 			{
-				"I'd be happy for thee to learn what I know about first aid. I could give thee lessons for a few coins.",
-				"Thou can always learn new things, my friend. I could teach thee some things that could help thee perform first aid, for instance. For some small amount of money, of course.",
-				"I can teach thee things that could help thee when thou art injured. I would need thee to pay me for my time, however."
+				"Me alegraría que aprendieras lo que sé sobre primeros auxilios. Podría darte lecciones por unas pocas monedas.",
+				"Siempre puedes aprender cosas nuevas, amigo mío. Podría enseñarte algunas cosas que podrían ayudarte a realizar los primeros auxilios, por ejemplo. Por una pequeña cantidad de dinero, por supuesto.",
+				"Puedo enseñarte cosas que podrían ayudarte cuando estés herido. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
                 #Key "*help*" "*hurt*" "*injured*" 
@@ -210,22 +210,22 @@
 		{
 			#Attitude Wicked 
 			{
-				"I can help thee. I'd like for thee to leave me alone, but I'll teach thee, if thou needs it.",
-				"I want thee to leave me be. But I could teach thee some of my skills, for a price.",
-				"Please, just leave me alone."
+				"Puedo ayudarte. Me gustaría que me dejaras en paz, pero te enseñaré, si lo necesitas.",
+				"Quiero que me dejes en paz. Pero podría enseñarte algunas de mis habilidades, por un precio.",
+				"Por favor, déjame en paz."
 			}
 			#Attitude Neutral 
 			{
-				"If thou wants to learn, I can teach thee first aid. 'Course, I want payment.",
-				"Thou should know healing. Could be of use. I could help thee some, I think.",
-				"If thou needs to learn first aid, just ask an' I'll try an' help. For a small price.",
-				"I can teach thee about anatomy. Could be of use in the future."
+				"Si quieres aprender, puedo enseñarte primeros auxilios. Por supuesto, quiero un pago.",
+				"Deberías saber de curación. Podría ser útil. Creo que podría ayudarte un poco.",
+				"Si necesitas aprender primeros auxilios, solo pregunta e intentaré ayudarte. Por un módico precio.",
+				"Puedo enseñarte sobre anatomía. Podría ser útil en el futuro."
 			}
 			#Attitude Goodhearted 
 			{
-				"I could teach thee what I know 'bout first aid for a few coins.",
-				"I could teach thee some things 'bout first aid for some small amount of money.",
-				"Thou could learn things that could help when thou'rt injured. It'll cost thee, though."
+				"Podría enseñarte lo que sé sobre primeros auxilios por unas pocas monedas.",
+				"Podría enseñarte algunas cosas sobre primeros auxilios por una pequeña cantidad de dinero.",
+				"Podrías aprender cosas que podrían ayudarte cuando estés herido. Sin embargo, te costará."
 			}
 		}
                 #Key "*help*" "*hurt*" "*injured*" 

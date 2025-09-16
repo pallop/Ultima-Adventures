@@ -27,19 +27,19 @@
 	}
 #KEY "*skill*" "*appraise*"  "*evaluate*"  "*peek*"  {
 	#Attitude Wicked {
-	"I can teach thee some things. Could help thee when thou art in need, if thou art following me. Gotta pay me somethin', though.",
-"Thou shouldst know something about the people that thou art likely to spend time with when thou art in the city. Could be of use to thee.",
-"I could teach thee a few things that may be of use to thee. Not for free, of course."
+	"Puedo enseñarte algunas cosas. Podría ayudarte cuando lo necesites, si me sigues. Sin embargo, tienes que pagarme algo.",
+"Deberías saber algo sobre la gente con la que es probable que pases tiempo cuando estés en la ciudad. Podría serte de utilidad.",
+"Podría enseñarte algunas cosas que pueden serte de utilidad. No gratis, por supuesto."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee about surviving in the city.",
-"I could show thee a few things that the local guard wouldn't much take to, I'm sure.",
-"I can teach thee things about the people that thou dost see every day."
+	"Si quieres aprender, podría persuadirte para que te enseñe a sobrevivir en la ciudad.",
+"Podría mostrarte algunas cosas que a la guardia local no le gustarían mucho, estoy seguro.",
+"Puedo enseñarte cosas sobre la gente que ves todos los días."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to teach thee some - shall we say - people skills.",
-"Thou art always able to learn new things, my friend. I could show thee some things, for instance, about people that could help thee when thou art penniless.",
-"I can teach thee things that could help thee in the towns. I would need thee to pay me for my time, of course."
+	"Estaría feliz de enseñarte algunas, digamos, habilidades sociales.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre la gente que podrían ayudarte cuando no tengas un centavo.",
+"Puedo enseñarte cosas que podrían ayudarte en las ciudades. Por supuesto, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*gamble*" {
@@ -99,19 +99,19 @@
 	}
 #KEY "*skill*" "*appraise*"  "*evaluate*"  "*peek*"  {
 	#Attitude Wicked {
-	"I can teach thee some things. Could help thee when thou art in need, if thou art following me. Gotta pay me somethin', though.",
-"Thou shouldst know something about the people that thou art likely to spend time with when thou art in the city. Could be of use to thee.",
-"I could teach thee a few things that may be of use to thee. Not for free, of course."
+	"Puedo enseñarte algunas cosas. Podría ayudarte cuando lo necesites, si me sigues. Sin embargo, tienes que pagarme algo.",
+"Deberías saber algo sobre la gente con la que es probable que pases tiempo cuando estés en la ciudad. Podría serte de utilidad.",
+"Podría enseñarte algunas cosas que pueden serte de utilidad. No gratis, por supuesto."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee about surviving in the city.",
-"I could show thee a few things that the local guard wouldn't much take to, I'm sure.",
-"I can teach thee things about the people that thou dost see every day."
+	"Si quieres aprender, podría persuadirte para que te enseñe a sobrevivir en la ciudad.",
+"Podría mostrarte algunas cosas que a la guardia local no le gustarían mucho, estoy seguro.",
+"Puedo enseñarte cosas sobre la gente que ves todos los días."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to teach thee some - shall we say - people skills.",
-"Thou art always able to learn new things, my friend. I could show thee some things, for instance, about people that could help thee when thou art penniless.",
-"I can teach thee things that could help thee in the towns. I would need thee to pay me for my time, of course."
+	"Estaría feliz de enseñarte algunas, digamos, habilidades sociales.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre la gente que podrían ayudarte cuando no tengas un centavo.",
+"Puedo enseñarte cosas que podrían ayudarte en las ciudades. Por supuesto, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*gamble*" {
@@ -171,19 +171,19 @@
 	}
 #KEY "*skill*" "*appraise*"  "*evaluate*"  "*peek*"  {
 	#Attitude Wicked {
-	"I can teach things that'd help thee when thou'rt in need, if thou'rt followin' me. Gotta pay me somethin', though.",
-"Thou should know somethin' 'bout the people that thou spend time with. Could be o' use to thee.",
-"I could teach thee a few things that may be o' use. Not for free, of course."
+	"Puedo enseñar cosas que te ayudarán cuando lo necesites, si me sigues. Sin embargo, tienes que pagarme algo.",
+"Deberías saber algo sobre la gente con la que pasas el tiempo. Podría serte de utilidad.",
+"Podría enseñarte algunas cosas que pueden serte de utilidad. No gratis, por supuesto."
 			}
 	#Attitude Neutral {
-	"If thou wants to learn, I might be persuaded to teach thee 'bout survivin' in the city.",
-"I could show thee things that the local guard wouldn't like, I'm sure.",
-"I can teach thee things 'bout the people that thou see every day."
+	"Si quieres aprender, podría persuadirte para que te enseñe a sobrevivir en la ciudad.",
+"Podría mostrarte cosas que a la guardia local no le gustarían, estoy seguro.",
+"Puedo enseñarte cosas sobre la gente que ves todos los días."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to teach thee some - we can say - people skills.",
-"Thou can learn from me. I could show thee some things that could help when thou'rt penniless.",
-"I can teach thee things that could help in the towns. I'd need thee to pay me for my time, of course."
+	"Estaría feliz de enseñarte algunas, digamos, habilidades sociales.",
+"Puedes aprender de mí. Podría mostrarte algunas cosas que podrían ayudarte cuando no tengas un centavo.",
+"Puedo enseñarte cosas que podrían ayudarte en las ciudades. Por supuesto, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*gamble*" {

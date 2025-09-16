@@ -31,6 +31,12 @@
                                 "Working metal is what I was born to do!"
                         }
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+		{
+			"¿Necesitas mejorar tu herrería? Claro, podría enseñarte.",
+			"Necesitas un poco de habilidad para crear armas y armaduras. Puedo enseñarte algunas cosas.",
+			"Bueno, podría mostrarte cómo mejorar tus habilidades y hacerte algunas armas y armaduras, pero no vayas a rebajar mis precios."
+		}
                 #KEY "*sword*" 
 		{
                         #Attitude Wicked 
@@ -265,6 +271,12 @@
                                 "Working metal is what I was born to do!"
                         }
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+		{
+			"¿Necesitas mejorar tu herrería? Claro, podría enseñarte.",
+			"Necesitas un poco de habilidad para crear armas y armaduras. Puedo enseñarte algunas cosas.",
+			"Bueno, podría mostrarte cómo mejorar tus habilidades y hacerte algunas armas y armaduras, pero no vayas a rebajar mis precios."
+		}
                 #KEY "*sword*" 
 		{
                         #Attitude Wicked 
@@ -499,6 +511,12 @@
                                 "Working metal is what I was born to do!"
                         }
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+		{
+			"¿Necesitas mejorar tu herrería? Claro, podría enseñarte.",
+			"Necesitas un poco de habilidad para crear armas y armaduras. Puedo enseñarte algunas cosas.",
+			"Bueno, podría mostrarte cómo mejorar tus habilidades y hacerte algunas armas y armaduras, pero no vayas a rebajar mis precios."
+		}
                 #KEY "*sword*" 
 		{
                         #Attitude Wicked 
@@ -713,4 +731,3 @@
                 }
         }
 }
-

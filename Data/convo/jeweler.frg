@@ -27,20 +27,20 @@
 		}
 #KEY "*skill*" "*appraise*" "*value*" "*quality*" "*estimate*"  {
 	#Attitude Wicked {
-	"To what use wouldst thou put any skills I could teach thee? Ill use, I'd wager.",
-"Thou couldst learn some things from me, if thou couldst covince me to teach thee. Though that's improbable.",
-"I could teach thee the value of jewels and how to tell for thyself what they're worth.  I might be - um - persuaded to show thee a thing or two."
+	"¿Para qué usarías las habilidades que podría enseñarte? Mal uso, apostaría.",
+"Podrías aprender algunas cosas de mí, si pudieras convencerme de que te enseñe. Aunque eso es improbable.",
+"Podría enseñarte el valor de las joyas y cómo saber por ti mismo lo que valen. Podría ser, um, persuadido para mostrarte una o dos cosas."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee some appraisal skills. Thou wouldst need to pay me, of course.",
-"Some things I know could be of use to thee, if thou dost value jewels. I could help thee some, I think.",
-"If thou dost need help with something I might know, like how to tell the value of jewels, just ask me to teach thee and I will. For a small price.",
-"I can teach thee some things about the quality of jewels."
+	"Si quieres aprender, podría persuadirte para que te enseñe algunas habilidades de tasación. Tendrías que pagarme, por supuesto.",
+"Algunas cosas que sé podrían serte de utilidad, si valoras las joyas. Creo que podría ayudarte un poco.",
+"Si necesitas ayuda con algo que yo sepa, como saber el valor de las joyas, solo pídeme que te enseñe y lo haré. Por un módico precio.",
+"Puedo enseñarte algunas cosas sobre la calidad de las joyas."
 			}
 	#Attitude Goodhearted {
-	"Sure, I could teach thee a few things about jewels. For a small cost to thy beltpouch.",
-"Thou can always learn new things, my friend. I could show thee some things about the quality of jewels that might help thee. For some small amount of money, of course.",
-"I can teach thee some of the keys to appraisals. I would need thee to pay me for my time, however."
+	"Claro, podría enseñarte algunas cosas sobre las joyas. Por un pequeño costo para tu bolsa.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas sobre la calidad de las joyas que podrían ayudarte. Por una pequeña cantidad de dinero, por supuesto.",
+"Puedo enseñarte algunas de las claves de las tasaciones. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*jewel*" {
@@ -100,20 +100,20 @@
 		}
 #KEY "*skill*" "*appraise*" "*value*" "*quality*" "*estimate*"  {
 	#Attitude Wicked {
-	"To what use wouldst thou put any skills I could teach thee? Ill use, I'd wager.",
-"Thou couldst learn some things from me, if thou couldst covince me to teach thee. Though that's improbable.",
-"I could teach thee the value of jewels and how to tell for thyself what they're worth.  I might be - um - persuaded to show thee a thing or two."
+	"¿Para qué usarías las habilidades que podría enseñarte? Mal uso, apostaría.",
+"Podrías aprender algunas cosas de mí, si pudieras convencerme de que te enseñe. Aunque eso es improbable.",
+"Podría enseñarte el valor de las joyas y cómo saber por ti mismo lo que valen. Podría ser, um, persuadido para mostrarte una o dos cosas."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee some appraisal skills. Thou wouldst need to pay me, of course.",
-"Some things I know could be of use to thee, if thou dost value jewels. I could help thee some, I think.",
-"If thou dost need help with something I might know, like how to tell the value of jewels, just ask me to teach thee and I will. For a small price.",
-"I can teach thee some things about the quality of jewels."
+	"Si quieres aprender, podría persuadirte para que te enseñe algunas habilidades de tasación. Tendrías que pagarme, por supuesto.",
+"Algunas cosas que sé podrían serte de utilidad, si valoras las joyas. Creo que podría ayudarte un poco.",
+"Si necesitas ayuda con algo que yo sepa, como saber el valor de las joyas, solo pídeme que te enseñe y lo haré. Por un módico precio.",
+"Puedo enseñarte algunas cosas sobre la calidad de las joyas."
 			}
 	#Attitude Goodhearted {
-	"Sure, I could teach thee a few things about jewels. For a small cost to thy beltpouch.",
-"Thou can always learn new things, my friend. I could show thee some things about the quality of jewels that might help thee. For some small amount of money, of course.",
-"I can teach thee some of the keys to appraisals. I would need thee to pay me for my time, however."
+	"Claro, podría enseñarte algunas cosas sobre las joyas. Por un pequeño costo para tu bolsa.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas sobre la calidad de las joyas que podrían ayudarte. Por una pequeña cantidad de dinero, por supuesto.",
+"Puedo enseñarte algunas de las claves de las tasaciones. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*jewel*" {
@@ -173,20 +173,20 @@
 		}
 #KEY "*skill*" "*appraise*" "*value*" "*quality*" "*estimate*"  {
 	#Attitude Wicked {
-	"I don't trust thee. So, I shouldn't help thee.",
-"I could teach thee some things, if thou could pay me enough.",
-"I could teach some of the value of jewels.  I might be - um - talked into showin' a thing or two."
+	"No confío en ti. Así que no debería ayudarte.",
+"Podría enseñarte algunas cosas, si pudieras pagarme lo suficiente.",
+"Podría enseñar algo del valor de las joyas. Podría ser, um, convencido de mostrar una o dos cosas."
 			}
 	#Attitude Neutral {
-	"If thou'rt wantin' to learn, I might could teach some useful appraisal tips. I'd need to get paid, of course.",
-"I could teach thee to value jewels. I could help thee some, I think.",
-"If thou'rt needin' help with somethin', like how to tell what's a jewel worth, just ask me to teach thee and I will. For a small price.",
-"I can teach thee some things 'bout the quality of jewels."
+	"Si quieres aprender, podría enseñarte algunos consejos útiles de tasación. Necesitaría que me pagaran, por supuesto.",
+"Podría enseñarte a valorar las joyas. Creo que podría ayudarte un poco.",
+"Si necesitas ayuda con algo, como saber el valor de una joya, solo pídeme que te enseñe y lo haré. Por un módico precio.",
+"Puedo enseñarte algunas cosas sobre la calidad de las joyas."
 			}
 	#Attitude Goodhearted {
-	"Sure, I could teach 'bout jewels. I wouldn't even charge much to do it.",
-"I probably know more than thee about the quality of jewels. For some amount of money thou could learn some.",
-"I can teach thee to appraise jewels 'n things. I'd need thee to pay me, though."
+	"Claro, podría enseñar sobre joyas. Ni siquiera cobraría mucho por hacerlo.",
+"Probablemente sé más que tú sobre la calidad de las joyas. Por una cantidad de dinero podrías aprender algo.",
+"Puedo enseñarte a tasar joyas y cosas. Sin embargo, necesitaría que me pagaras."
 			}
 		}
 #KEY "*jewel*" {

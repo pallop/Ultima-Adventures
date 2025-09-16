@@ -57,11 +57,11 @@
                         "Art thou intersested in tales? Or possibly hearing some bit of gossip from other parts? I can often tell thee things that may be of interest to thee.",
                         "I sometimes know news that only a barkeep, or maybe an innkeeper would have heard."
                 }
-                #Key "*conservatory*", "*bard*" 
+                #Key "*conservatory*", "*bard*", "*conservatorio*", "*bardo*"
 		{
-                        "The Bardic Conservatory of Britain is a haven for all of a musical bent, and 'tis the ideal place for storytellers and gatherers of lore.",
-                        "Our grand Conservatory in Britain is a place of training, of retreat, a place joyful with music and tales.",
-                        "I am a bard, and I must say that the best place for bards in all of Britannia must be the Conservatory - 'tis a place for lovers of the arts."
+                        "El Conservatorio Bárdico de Britain es un refugio para todos los de inclinación musical, y es el lugar ideal para los contadores de historias y recolectores de tradiciones.",
+                        "Nuestro gran Conservatorio en Britain es un lugar de entrenamiento, de retiro, un lugar alegre con música y cuentos.",
+                        "Soy un bardo, y debo decir que el mejor lugar para los bardos en toda Britannia debe ser el Conservatorio - es un lugar para los amantes de las artes."
                 }
         }
         #Sophistication Medium 

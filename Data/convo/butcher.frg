@@ -14,6 +14,12 @@
 			"Why, I cut fresh meat, $milord/milady$.",
                         "I see to it that people like thee have fresh meat."
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+		{
+			"¿Necesitas mejorar tu carnicería? Claro, podría enseñarte.",
+			"Necesitas un poco de habilidad para cortar carne. Puedo enseñarte algunas cosas.",
+			"Bueno, podría mostrarte cómo mejorar tus habilidades y cortar carne, pero no vayas a rebajar mis precios."
+		}
 
                 #Key "*buy*" {
                         "Thou wouldst like to purchase fresh meat?",
@@ -58,6 +64,12 @@
 			"Why, I cut fresh meat, $milord/milady$.",
                         "I see to it that people like thee have fresh meat."
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+		{
+			"¿Necesitas mejorar tu carnicería? Claro, podría enseñarte.",
+			"Necesitas un poco de habilidad para cortar carne. Puedo enseñarte algunas cosas.",
+			"Bueno, podría mostrarte cómo mejorar tus habilidades y cortar carne, pero no vayas a rebajar mis precios."
+		}
 
                 #Key "*buy*" {
                         "Thou wouldst like to purchase fresh meat?",
@@ -102,6 +114,12 @@
 			"I cut fresh meat, $milord/milady$.",
                         "It's my job to cut up fresh meat."
                 }
+                #KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+		{
+			"¿Necesitas mejorar tu carnicería? Claro, podría enseñarte.",
+			"Necesitas un poco de habilidad para cortar carne. Puedo enseñarte algunas cosas.",
+			"Bueno, podría mostrarte cómo mejorar tus habilidades y cortar carne, pero no vayas a rebajar mis precios."
+		}
 
                 #Key "*buy*" {
                         "I have several meats for sale.",

@@ -25,6 +25,12 @@
 	"I make and sell fine shoes and boots."
 	}
 	}
+#KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+{
+"¿Necesitas mejorar tu zapatería? Claro, podría enseñarte.",
+"Necesitas un poco de habilidad para hacer zapatos. Puedo enseñarte algunas cosas.",
+"Bueno, podría mostrarte cómo mejorar tus habilidades y hacer zapatos, pero no vayas a rebajar mis precios."
+}
 #KEY "*cobbler*" {
 #Attitude Wicked {
 	"I make shoes, boots and sandals.",
@@ -84,6 +90,12 @@
 	"I make and sell fine shoes and boots."
 	}
 	}
+#KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+{
+"¿Necesitas mejorar tu zapatería? Claro, podría enseñarte.",
+"Necesitas un poco de habilidad para hacer zapatos. Puedo enseñarte algunas cosas.",
+"Bueno, podría mostrarte cómo mejorar tus habilidades y hacer zapatos, pero no vayas a rebajar mis precios."
+}
 #KEY "*cobbler*" {
 #Attitude Wicked {
 	"I make shoes, boots and sandals.",
@@ -142,6 +154,12 @@
 	"I make and sell shoes and boots."
 	}
 	}
+#KEY "*skill*", "*habilidad*", "*entrenar*", "*enseñar*"
+{
+"¿Necesitas mejorar tu zapatería? Claro, podría enseñarte.",
+"Necesitas un poco de habilidad para hacer zapatos. Puedo enseñarte algunas cosas.",
+"Bueno, podría mostrarte cómo mejorar tus habilidades y hacer zapatos, pero no vayas a rebajar mis precios."
+}
 #KEY "*cobbler*" {
 #Attitude Wicked {
 	"I make shoes, boots and sandals.",

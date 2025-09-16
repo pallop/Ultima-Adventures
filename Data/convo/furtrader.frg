@@ -40,19 +40,19 @@
 		}
 #KEY "*skill*" "*critter*" "*animal*" "*camp*" "*creature*"  {
 	#Attitude Wicked {
-	"I can teach thee some things about animals. Could help thee when thou art out in the wild.",
-"Thou shouldst know something about the creatures that thou art likely to spend time with when thou art outdoors. Could be of use to thee.",
-"I could teach thee to know the creatures of the woods. And thou couldst learn a bit about camping from me. I know things that could help thee, I do."
+	"Puedo enseñarte algunas cosas sobre los animales. Podría ayudarte cuando estés en la naturaleza.",
+"Deberías saber algo sobre las criaturas con las que es probable que pases tiempo al aire libre. Podría serte de utilidad.",
+"Podría enseñarte a conocer a las criaturas del bosque. Y podrías aprender un poco sobre acampar de mí. Sé cosas que podrían ayudarte, de verdad."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee about camping in the wild.",
-"If thou dost need help with thy camping skills, just ask me to teach thee and if I can, I will.",
-"I can teach thee about the animals in the forest and how to know more about them, if thou art willing."
+	"Si quieres aprender, podría persuadirte para que te enseñe a acampar en la naturaleza.",
+"Si necesitas ayuda con tus habilidades para acampar, solo pídeme que te enseñe y si puedo, lo haré.",
+"Puedo enseñarte sobre los animales del bosque y cómo saber más sobre ellos, si estás dispuesto."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy for thee to learn what I know about surviving in the wilderness.",
-"Thou can always learn new things, my friend. I could show thee some things, for instance, about the wilderness that could help thee.",
-"I can teach thee things that could help thee in the wild. I would need thee to pay me for my time, however."
+	"Me alegraría que aprendieras lo que sé sobre sobrevivir en la naturaleza.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre la naturaleza que podrían ayudarte.",
+"Puedo enseñarte cosas que podrían ayudarte en la naturaleza. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*food*", "*hungry*", "*bread*", "*pie*", "*cake*", "*muffin*", "*cheese*", "*bird*", "*ribs*", "*mutton*", "*chicken*", "*carrots*", "*corn*", "*lettuce*", "*peas*", "*potatoes*", "*stew*", "*soup*" {
@@ -101,19 +101,19 @@
 		}
 #KEY "*skill*" "*critter*" "*animal*" "*camp*" "*creature*"  {    
 	#Attitude Wicked {
-	"I can teach thee some things about animals. Could help thee when thou art out in the wild.",
-"Thou shouldst know something about the creatures that thou art likely to spend time with when thou art outdoors. Could be of use to thee.",
-"I could teach thee to know the creatures of the woods. And thou couldst learn a bit about camping from me. I know things that could help thee, I do."
+	"Puedo enseñarte algunas cosas sobre los animales. Podría ayudarte cuando estés en la naturaleza.",
+"Deberías saber algo sobre las criaturas con las que es probable que pases tiempo al aire libre. Podría serte de utilidad.",
+"Podría enseñarte a conocer a las criaturas del bosque. Y podrías aprender un poco sobre acampar de mí. Sé cosas que podrían ayudarte, de verdad."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee about camping in the wild.",
-"If thou dost need help with thy camping skills, just ask me to teach thee and if I can, I will.",
-"I can teach thee about the animals in the forest and how to know more about them, if thou art willing."
+	"Si quieres aprender, podría persuadirte para que te enseñe a acampar en la naturaleza.",
+"Si necesitas ayuda con tus habilidades para acampar, solo pídeme que te enseñe y si puedo, lo haré.",
+"Puedo enseñarte sobre los animales del bosque y cómo saber más sobre ellos, si estás dispuesto."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy for thee to learn what I know about living in the wilderness.",
-"Thou can always learn new things, my friend. I could show thee some things, for instance, about the wilderness that could help thee.",
-"I can teach thee things that could help thee in the wild. I would need thee to pay me for my time, however."
+	"Me alegraría que aprendieras lo que sé sobre sobrevivir en la naturaleza.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre la naturaleza que podrían ayudarte.",
+"Puedo enseñarte cosas que podrían ayudarte en la naturaleza. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*food*", "*hungry*", "*bread*", "*pie*", "*cake*", "*muffin*", "*cheese*", "*bird*", "*ribs*", "*mutton*", "*chicken*", "*carrots*", "*corn*", "*lettuce*", "*peas*", "*potatoes*", "*stew*", "*soup*" {
@@ -162,19 +162,19 @@
 		}
 #KEY "*skill*" "*critter*" "*animal*" "*camp*" "*creature*"  {    
 	#Attitude Wicked {
-	"I'll teach thee 'bout animals. Could help when thou'rt in the wild.",
-"Thou should know 'bout the wild creatures. Could be o' use to thee.",
-"I could teach thee 'bout the animals in the wild. And thou could stand to learn a bit 'bout campin', too. I know things that'd help thee, I do."
+	"Te enseñaré sobre los animales. Podría ayudar cuando estés en la naturaleza.",
+"Deberías saber sobre las criaturas salvajes. Podría serte de utilidad.",
+"Podría enseñarte sobre los animales en la naturaleza. Y también te vendría bien aprender un poco sobre acampar. Sé cosas que te ayudarían, de verdad."
 			}
 	#Attitude Neutral {
-	"If thou wants to learn, I might be persuaded to teach thee about campin' in the wild.",
-"If thou'rt needin' help with thy campin' skills, just ask me to teach thee and I will.",
-"I can teach thee some 'bout the animals in the forest, if thou'rt willing."
+	"Si quieres aprender, podría persuadirte para que te enseñe a acampar en la naturaleza.",
+"Si necesitas ayuda con tus habilidades para acampar, solo pídeme que te enseñe y lo haré.",
+"Puedo enseñarte algo sobre los animales del bosque, si estás dispuesto."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to learn thee what I know about livin' in the wild.",
-"Thou can always learn stuff. I could show some things about the wild that could help.",
-"I can teach things that could help in the wild. I'd need some money for it, though."
+	"Me alegraría enseñarte lo que sé sobre vivir en la naturaleza.",
+"Siempre puedes aprender cosas. Podría mostrarte algunas cosas sobre la naturaleza que podrían ayudar.",
+"Puedo enseñar cosas que podrían ayudar en la naturaleza. Sin embargo, necesitaría algo de dinero por ello."
 			}
 		}
 #KEY "*food*", "*hungry*", "*bread*", "*pie*", "*cake*", "*muffin*", "*cheese*", "*bird*", "*ribs*", "*mutton*", "*chicken*", "*carrots*", "*corn*", "*lettuce*", "*peas*", "*potatoes*", "*stew*", "*soup*" {

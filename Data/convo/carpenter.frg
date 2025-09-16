@@ -28,19 +28,19 @@
 		}
 #KEY "*skill*" {    
 	#Attitude Wicked {
-	"What, dost thou want to learn some wood working? I'm not sure that thou art trainable.",
-"Thou dost need some skill to craft anything out of wood. I might be able to teach thee a thing or two, but I can't promise anything.",
-"Well, for a little compensation, I could show thee some things to practice to improve thy skill in wood working."
+	"¿Qué, quieres aprender a trabajar la madera? No estoy seguro de que seas entrenable.",
+"Necesitas algo de habilidad para fabricar cualquier cosa de madera. Podría enseñarte una o dos cosas, pero no puedo prometer nada.",
+"Bueno, por una pequeña compensación, podría mostrarte algunas cosas para practicar y mejorar tu habilidad en el trabajo de la madera."
 			}
 	#Attitude Neutral {
-	"I've been known to teach some how to improve their skills, for a few coins.",
-"If thou dost need some training in carpentry, just say the word.",
-"I can give thee some practice in carpentry, all thou dost need do is to ask.  And leave me a few coins."
+	"Se sabe que enseño a algunos a mejorar sus habilidades, por unas pocas monedas.",
+"Si necesitas algo de entrenamiento en carpintería, solo dilo.",
+"Puedo darte algo de práctica en carpintería, todo lo que tienes que hacer es pedirlo. Y déjame unas pocas monedas."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to help train thee in some wood working techniques. I'd ask for a few coins, though, to help cover my time.",
-"I'd be honored to teach thee some of what I know.  'Twould be up to thyself, though, to practice it.",
-"I can teach thee only if thou art willing to learn. And pay me for the time I would invest. A few coins would suffice."
+	"Estaría feliz de ayudarte a entrenar en algunas técnicas de trabajo de la madera. Sin embargo, te pediría unas pocas monedas para ayudar a cubrir mi tiempo.",
+"Me sentiría honrado de enseñarte algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+"Puedo enseñarte solo si estás dispuesto a aprender. Y pagarme por el tiempo que invertiría. Unas pocas monedas serían suficientes."
 			}
 		}
 #KEY "*carpent*" "*woodcarving*"  "*joining*" {
@@ -100,19 +100,19 @@
 		}
 #KEY "*skill*" {    
 	#Attitude Wicked {
-	"What, dost thou want to learn some wood working? I'm not sure that thou art trainable.",
-"Thou dost need some skill to craft anything out of wood. I might be able to teach thee a thing or two, but I can't promise anything.",
-"Well, for a little compensation, I could show thee some things to practice to improve thy skill in wood working."
+	"¿Qué, quieres aprender a trabajar la madera? No estoy seguro de que seas entrenable.",
+"Necesitas algo de habilidad para fabricar cualquier cosa de madera. Podría enseñarte una o dos cosas, pero no puedo prometer nada.",
+"Bueno, por una pequeña compensación, podría mostrarte algunas cosas para practicar y mejorar tu habilidad en el trabajo de la madera."
 			}
 	#Attitude Neutral {
-	"I've been known to teach some how to improve their skills, for a few coins.",
-"If thou dost need some training in carpentry, just say the word.",
-"I can give thee some practice in carpentry, all thou dost need do is to ask.  And leave me a few coins."
+	"Se sabe que enseño a algunos a mejorar sus habilidades, por unas pocas monedas.",
+"Si necesitas algo de entrenamiento en carpintería, solo dilo.",
+"Puedo darte algo de práctica en carpintería, todo lo que tienes que hacer es pedirlo. Y déjame unas pocas monedas."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to help train thee in some wood working techniques. I'd ask for a few coins, though, to help cover my time.",
-"I'd be honored to teach thee some of what I know.  'Twould be up to thyself, though, to practice it.",
-"I can teach thee only if thou art willing to learn. And pay me for the time I would invest. A few coins would suffice."
+	"Estaría feliz de ayudarte a entrenar en algunas técnicas de trabajo de la madera. Sin embargo, te pediría unas pocas monedas para ayudar a cubrir mi tiempo.",
+"Me sentiría honrado de enseñarte algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+"Puedo enseñarte solo si estás dispuesto a aprender. Y pagarme por el tiempo que invertiría. Unas pocas monedas serían suficientes."
 			}
 		}
 #KEY "*carpent*" "*woodcarving*"  "*joining*" {
@@ -172,19 +172,19 @@
 		}
 #KEY "*skill*" {    
 	#Attitude Wicked {
-	"What, dost thou want to learn to work wood? I'm not sure that thou art able.",
-"Thou dost need skill to make anything out of wood. I might be able to teach thee some, but I ain't promisin' nothin'.",
-"Well, for a little money, I could show thee some things to practice. But the more thou dost practice, the better thou'lt be."
+	"¿Qué, quieres aprender a trabajar la madera? No estoy seguro de que seas capaz.",
+"Necesitas habilidad para hacer cualquier cosa de madera. Podría enseñarte algo, pero no prometo nada.",
+"Bueno, por un poco de dinero, podría mostrarte algunas cosas para practicar. Pero cuanto más practiques, mejor serás."
 			}
 	#Attitude Neutral {
-	"I've been known to teach some how to improve their skills, for a few coins.",
-"If thou dost need some leanin' in carpentry, just say so.",
-"I can give thee some practice in carpentry, just ask.  And gimme some coins."
+	"Se sabe que enseño a algunas personas, por unas pocas monedas.",
+"Si necesitas que te entrenen en carpintería, solo dilo.",
+"Puedo dejarte practicar la construcción de armaduras aquí, todo lo que tienes que hacer es pedirlo. Y darme unas pocas monedas por mi tiempo."
 			}
 	#Attitude Goodhearted {
-	"I could help train thee in some wood working techniques. I'd need some money, though.",
-"I'd like to show thee what I can do.  'Tis thy own problem, though, to practice it.",
-"Sure, I can teach. Thou needs to pay me for my time. A few coins would be fine."
+	"¿No es adorable? Estaría feliz de ayudarte a practicar un poco de blindaje. Sin embargo, te pediría algo de dinero para ayudar a cubrir mi tiempo.",
+"Me sentiría honrado de enseñarte algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+"Te enseñaré solo si quieres aprender. Y págame por el tiempo que dedicaría. Unas pocas monedas estarían bien."
 			}
 		}
 #KEY "*carpent*" "*woodcarving*"  "*joining*" {

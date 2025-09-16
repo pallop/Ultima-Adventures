@@ -97,21 +97,21 @@
 "I fight to survive!  And then I fight some more!"
 }
 }
-#KEY "*skill*" "*fight*" "*kill*" "*maim*" {    
+#KEY "*skill*", "*fight*", "*kill*", "*maim*", "*habilidad*", "*pelear*", "*matar*", "*mutilar*", "*entrenar*", "*enseñar*" {
 	#Attitude Wicked {
-	"Dost thou need to improve thy parry? Sure, I can help even a $scruff/girlie$ like thee.",
-"Thou dost need some skill to live in these dangerous times. I might be able to teach thee a trick or two, but I can't promise that it would keep thee alive.",
-"Well, for a little compensation, I could show thee how to improve thy skills and keep from getting killed."
+	"¿Necesitas mejorar tu parada? Claro, puedo ayudar hasta a un $desaliñado/niña$ como tú.",
+"Necesitas algo de habilidad para vivir en estos tiempos peligrosos. Podría enseñarte un truco o dos, pero no puedo prometer que te mantendrá con vida.",
+"Bueno, por una pequeña compensación, podría mostrarte cómo mejorar tus habilidades y evitar que te maten."
 			}
 	#Attitude Neutral {
-	"I've been known to teach a select few how to improve their fighting, for a few coins.",
-"If thou dost need some help with thy fighting, just say the word. I shall try to help thee.",
-"I can give thee some fighting tips, thou just need ask.  And leave me a few coins."
+	"Se sabe que enseño a unos pocos elegidos a mejorar su lucha, por unas pocas monedas.",
+"Si necesitas ayuda con tu lucha, solo dilo. Intentaré ayudarte.",
+"Puedo darte algunos consejos de lucha, solo tienes que preguntar. Y déjame unas pocas monedas."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to help train thy fighting abilities. I need a few coins, though. Can't sell my abilities for free, thou knowest.",
-"Sure, I could be talked into teaching thee some of what I know.  'Twould be up to thyself, though, to practice it.",
-"I can teach thee only if thou art willing to learn. Thou also must pay me for my time. A few coins, no more."
+	"Estaría feliz de ayudar a entrenar tus habilidades de lucha. Sin embargo, necesito unas pocas monedas. No puedo vender mis habilidades gratis, ¿sabes?.",
+"Claro, podrían convencerme de que te enseñe algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+"Puedo enseñarte solo si estás dispuesto a aprender. También debes pagarme por mi tiempo. Unas pocas monedas, no más."
 			}
 		}
 #KEY "*what*do*do*", "*profession*", "*occupation*"  {

@@ -98,10 +98,10 @@
 		}
 		#Key "*skill*"
 		{
-			"I already have an apprentice, but I could take a few minutes to teach thee some tricks of the trade.",
-			"It takes years of practice to reach my level of skill, but thou could learn something in a short time.",
-			"It will take a steady hand and a sure eye to be a tinker. If thou art willing to learn, then I can help thee.",
-			"It would be a pleasure to teach thee, if thou art ready to learn."
+			"Ya tengo un aprendiz, pero podría tomarme unos minutos para enseñarte algunos trucos del oficio.",
+			"Se necesitan años de práctica para alcanzar mi nivel de habilidad, pero podrías aprender algo en poco tiempo.",
+			"Se necesitará una mano firme y un ojo seguro para ser un hojalatero. Si estás dispuesto a aprender, entonces puedo ayudarte.",
+			"Sería un placer enseñarte, si estás listo para aprender."
 		}
 		#Key "*trade*"
 		{
@@ -197,10 +197,10 @@
 			}
 			#Key "*skill*"
 			{
-				"I could take a few minutes to teach thee some tricks of the trade.",
-				"It takes years of practice to reach my level of skill, but perhaps something could be learned in a short time.",
-				"If thou art willing to learn, then I can help thee.",
-				"It would be a pleasure to teach thee, if thou art ready to learn."
+				"Podría tomarme unos minutos para enseñarte algunos trucos del oficio.",
+				"Se necesitan años de práctica para alcanzar mi nivel de habilidad, pero quizás se pueda aprender algo en poco tiempo.",
+				"Si estás dispuesto a aprender, entonces puedo ayudarte.",
+				"Sería un placer enseñarte, si estás listo para aprender."
 			}
 			#Key "*trade*"
 			{
@@ -295,10 +295,10 @@
 			}
 			#Key "*skill*"
 			{
-				"It'll be a bother, but I can help thee learn.",
-				"Maybe I could teach thee somethin' in a short time.",
-				"If thou'rt willing to learn, then I can help thee.",
-				"If thou'rt ready to learn, I can help."
+				"Será una molestia, pero puedo ayudarte a aprender.",
+				"Quizás podría enseñarte algo en poco tiempo.",
+				"Si estás dispuesto a aprender, entonces puedo ayudarte.",
+				"Si estás listo para aprender, puedo ayudarte."
 			}
 			#Key "*trade*"
 			{

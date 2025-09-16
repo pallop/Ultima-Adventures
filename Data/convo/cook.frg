@@ -75,19 +75,19 @@
 		}
 #KEY "*skill*" {    
 	#Attitude Wicked {
-	"What, dost thou find need to increase thy skills with the culinary arts? I'm not sure that thou dost have the nose for cooking.",
-"Thou dost need some skill to cook a dinner that a $man/woman$ can live through. I might be able to teach thee a trick or two, but I can't promise anything.",
-"Well, for a little compensation, I could show thee how to improve thy skills and keep from killing someone, but I doubt thou wouldst ever be a master chef."
+	"¿Qué, encuentras la necesidad de aumentar tus habilidades en las artes culinarias? No estoy seguro de que tengas la nariz para cocinar.",
+"Necesitas algo de habilidad para cocinar una cena que un $hombre/mujer$ pueda sobrevivir. Podría enseñarte un truco o dos, pero no puedo prometer nada.",
+"Bueno, por una pequeña compensación, podría mostrarte cómo mejorar tus habilidades y evitar matar a alguien, but dudo que alguna vez seas un maestro chef."
 			}
 	#Attitude Neutral {
-	"I've been known to teach a select few how to improve their cooking, for a few coins.",
-"If thou dost need some training in the art of the cooking, just say the word. I shall try to help thee.",
-"I can give thee some cooking tips, all thou dost need do is to ask.  And leave me a few coins."
+	"Se sabe que enseño a unos pocos elegidos a mejorar su cocina, por unas pocas monedas.",
+"Si necesitas algo de entrenamiento en el arte de la cocina, solo dilo. Intentaré ayudarte.",
+"Puedo darte algunos consejos de cocina, todo lo que tienes que hacer es pedirlo. Y déjame unas pocas monedas."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to help train thee in cooking techniques. I'd ask for a few coins, though, to help pay for my time.",
-"Sure, I could be convinced to teach thee some of what I know.  'Twould be up to thyself, though, to practice it.",
-"I can teach thee only if thou art willing to listen and learn. And pay me for the time I would invest. A few coins would suffice."
+	"Estaría feliz de ayudarte a entrenar en técnicas de cocina. Sin embargo, te pediría unas pocas monedas para ayudar a pagar mi tiempo.",
+"Claro, podrían convencerme de que te enseñe algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+"Puedo enseñarte solo si estás dispuesto a escuchar y aprender. Y pagarme por el tiempo que invertiría. Unas pocas monedas serían suficientes."
 			}
 		}
 
@@ -155,19 +155,19 @@
 		}
 #KEY "*skill*" {    
 	#Attitude Wicked {
-	"What, dost thou find need to increase thy skills with the culinary arts? I'm not sure that thou dost have the nose for cooking.",
-"Thou dost need some skill to cook a dinner that a $man/woman$ can live through. I might be able to teach thee a trick or two, but I can't promise anything.",
-"Well, for a little compensation, I could show thee how to improve thy skills and keep from killing someone, but I doubt thou wouldst ever be a master chef."
+	"¿Qué, encuentras la necesidad de aumentar tus habilidades en las artes culinarias? No estoy seguro de que tengas la nariz para cocinar.",
+"Necesitas algo de habilidad para cocinar una cena que un $hombre/mujer$ pueda sobrevivir. Podría enseñarte un truco o dos, pero no puedo prometer nada.",
+"Bueno, por una pequeña compensación, podría mostrarte cómo mejorar tus habilidades y evitar matar a alguien, but dudo que alguna vez seas un maestro chef."
 			}
 	#Attitude Neutral {
-	"I've been known to teach a select few how to improve their cooking, for a few coins.",
-"If thou dost need some training in the art of the cooking, just say the word. I shall try to help thee.",
-"I can give thee some cooking tips, all thou dost need do is to ask.  And leave me a few coins."
+	"Se sabe que enseño a unos pocos elegidos a mejorar su cocina, por unas pocas monedas.",
+"Si necesitas algo de entrenamiento en el arte de la cocina, solo dilo. Intentaré ayudarte.",
+"Puedo darte algunos consejos de cocina, todo lo que tienes que hacer es pedirlo. Y déjame unas pocas monedas."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to help train thee in cooking techniques. I'd ask for a few coins, though, to help pay for my time.",
-"Sure, I could be convinced to teach thee some of what I know.  'Twould be up to thyself, though, to practice it.",
-"I can teach thee only if thou art willing to listen and learn. And pay me for the time I would invest. A few coins would suffice."
+	"Estaría feliz de ayudarte a entrenar en técnicas de cocina. Sin embargo, te pediría unas pocas monedas para ayudar a pagar mi tiempo.",
+"Claro, podrían convencerme de que te enseñe algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+"Puedo enseñarte solo si estás dispuesto a escuchar y aprender. Y pagarme por el tiempo que invertiría. Unas pocas monedas serían suficientes."
 			}
 		}
 	}
@@ -233,19 +233,19 @@
 		}
 #KEY "*skill*" {    
 	#Attitude Wicked {
-	"What, thou wants to cook better? I ain't sure that thou got the nose for it.",
-"Thou needs some skill to cook a dinner that a $man/woman$ can live through. I might teach thee a trick or two, but I ain't promisin' nothin'.",
-"Well, for a little money, I could show thee how to cook better, but I doubt thou would ever be a master."
+	"¿Qué, quieres cocinar mejor? No estoy seguro de que tengas la nariz para eso.",
+"Necesitas algo de habilidad para cocinar una cena que un $hombre/mujer$ pueda sobrevivir. Podría enseñarte un truco o dos, pero no prometo nada.",
+"Bueno, por un poco de dinero, podría mostrarte cómo cocinar mejor, pero dudo que alguna vez seas un maestro."
 			}
 	#Attitude Neutral {
-	"I've been known to teach some how to improve their cookin', for a few coins.",
-"If thou needs some training in cookin', just say the word. I'll try to help.",
-"I can give some cookin' tips, just ask.  And give me a few coins."
+	"Se sabe que enseño a algunos a mejorar su cocina, por unas pocas monedas.",
+"Si necesitas algo de entrenamiento en cocina, solo dilo. Intentaré ayudarte.",
+"Puedo darte algunos consejos de cocina, solo pregunta. Y dame unas pocas monedas."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy to help thee with cookin' techniques. I'd ask for a few coins, though, to pay for my time.",
-"Sure, I could be convinced to teach some of what I know.  'Twould be up to thee, though, to practice it.",
-"I can teach thee only if thou'rt willin' to listen and learn. And pay me for my time. Just a few coins."
+	"Estaría feliz de ayudarte con las técnicas de cocina. Sin embargo, te pediría unas pocas monedas para pagar mi tiempo.",
+"Claro, podrían convencerme de que te enseñe algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+"Puedo enseñarte solo si estás dispuesto a escuchar y aprender. Y págame por mi tiempo. Solo unas pocas monedas."
 			}
 		}
 	}

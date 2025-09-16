@@ -250,244 +250,244 @@ namespace Server.Engines.Craft
 			*/
 
 			#region Chainmail
-			AddCraft( typeof( ChainCoif ), "Chain/Ring/Banded", 1025051, 14.5, 64.5, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( ChainLegs ), "Chain/Ring/Banded", 1025054, 36.7, 86.7, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( ChainChest ), "Chain/Ring/Banded", 1025055, 39.1, 89.1, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( ChainCoif ), "Cota de Malla/Anillos/Bandas", 1025051, 14.5, 64.5, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( ChainLegs ), "Cota de Malla/Anillos/Bandas", 1025054, 36.7, 86.7, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( ChainChest ), "Cota de Malla/Anillos/Bandas", 1025055, 39.1, 89.1, typeof( IronIngot ), 1044036, 20, 1044037 );
 			#endregion
 
 			#region Ringmail
-			AddCraft( typeof( RingmailGloves ), "Chain/Ring/Banded", 1025099, 12.0, 62.0, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( RingmailLegs ), "Chain/Ring/Banded", 1025104, 19.4, 69.4, typeof( IronIngot ), 1044036, 16, 1044037 );
-			AddCraft( typeof( RingmailArms ), "Chain/Ring/Banded", 1025103, 16.9, 66.9, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( RingmailChest ), "Chain/Ring/Banded", 1025100, 21.9, 71.9, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( RingmailGloves ), "Cota de Malla/Anillos/Bandas", 1025099, 12.0, 62.0, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( RingmailLegs ), "Cota de Malla/Anillos/Bandas", 1025104, 19.4, 69.4, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( RingmailArms ), "Cota de Malla/Anillos/Bandas", 1025103, 16.9, 66.9, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( RingmailChest ), "Cota de Malla/Anillos/Bandas", 1025100, 21.9, 71.9, typeof( IronIngot ), 1044036, 18, 1044037 );
 			#endregion
 
-			AddCraft( typeof( RingmailSkirt ), "Chain/Ring/Banded", "banded mail skirt", 19.4, 69.4, typeof( IronIngot ), 1044036, 16, 1044037 );
-			AddCraft( typeof( ChainSkirt ), "Chain/Ring/Banded", "metal skirt", 36.7, 86.7, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( RingmailSkirt ), "Cota de Malla/Anillos/Bandas", "falda de malla anillada", 19.4, 69.4, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( ChainSkirt ), "Cota de Malla/Anillos/Bandas", "falda de metal", 36.7, 86.7, typeof( IronIngot ), 1044036, 18, 1044037 );
 
 			int index = -1;
 
 			#region Platemail
-			AddCraft( typeof( PlateArms ), "Platemail", 1025136, 66.3, 116.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( PlateGloves ), "Platemail", 1025140, 58.9, 108.9, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( PlateGorget ), "Platemail", 1025139, 56.4, 106.4, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( PlateLegs ), "Platemail", 1025137, 68.8, 118.8, typeof( IronIngot ), 1044036, 20, 1044037 );
-			AddCraft( typeof( PlateSkirt ), "Platemail", "platemail skirt", 68.8, 118.8, typeof( IronIngot ), 1044036, 20, 1044037 );
-			AddCraft( typeof( PlateChest ), "Platemail", 1046431, 75.0, 125.0, typeof( IronIngot ), 1044036, 25, 1044037 );
-			AddCraft( typeof( FemalePlateChest ), "Platemail", 1046430, 44.1, 94.1, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( PlateArms ), "Armadura de Placas", 1025136, 66.3, 116.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( PlateGloves ), "Armadura de Placas", 1025140, 58.9, 108.9, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( PlateGorget ), "Armadura de Placas", 1025139, 56.4, 106.4, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( PlateLegs ), "Armadura de Placas", 1025137, 68.8, 118.8, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( PlateSkirt ), "Armadura de Placas", "falda de placas", 68.8, 118.8, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( PlateChest ), "Armadura de Placas", 1046431, 75.0, 125.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+			AddCraft( typeof( FemalePlateChest ), "Armadura de Placas", 1046430, 44.1, 94.1, typeof( IronIngot ), 1044036, 20, 1044037 );
 
 
-				AddCraft( typeof( DragonBardingDeed ), "Platemail", 1053012, 72.5, 122.5, typeof( IronIngot ), 1044036, 750, 1044037 );
-			AddCraft( typeof( HorseArmor ), "Platemail", "horse barding", 72.5, 122.5, typeof( IronIngot ), 1044036, 650, 1044037 );
+				AddCraft( typeof( DragonBardingDeed ), "Armadura de Placas", 1053012, 72.5, 122.5, typeof( IronIngot ), 1044036, 750, 1044037 );
+			AddCraft( typeof( HorseArmor ), "Armadura de Placas", "barda de caballo", 72.5, 122.5, typeof( IronIngot ), 1044036, 650, 1044037 );
 				
-				index = AddCraft( typeof( PlateMempo ), "Platemail", 1030180, 80.0, 130.0, typeof( IronIngot ), 1044036, 18, 1044037 );
+				index = AddCraft( typeof( PlateMempo ), "Armadura de Placas", 1030180, 80.0, 130.0, typeof( IronIngot ), 1044036, 18, 1044037 );
 				 
 
 
-			index = AddCraft( typeof( PlateDo ), "Platemail", 1030184, 80.0, 130.0, typeof( IronIngot ), 1044036, 28, 1044037 );
+			index = AddCraft( typeof( PlateDo ), "Armadura de Placas", 1030184, 80.0, 130.0, typeof( IronIngot ), 1044036, 28, 1044037 );
 				 
 
-				index = AddCraft( typeof( PlateHiroSode ), "Platemail", 1030187, 80.0, 130.0, typeof( IronIngot ), 1044036, 16, 1044037 );
+				index = AddCraft( typeof( PlateHiroSode ), "Armadura de Placas", 1030187, 80.0, 130.0, typeof( IronIngot ), 1044036, 16, 1044037 );
 				 
 
-				index = AddCraft( typeof( PlateSuneate ), "Platemail", 1030195, 65.0, 115.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+				index = AddCraft( typeof( PlateSuneate ), "Armadura de Placas", 1030195, 65.0, 115.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 				 
 
-				index = AddCraft( typeof( PlateHaidate ), "Platemail", 1030200, 65.0, 115.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+				index = AddCraft( typeof( PlateHaidate ), "Armadura de Placas", 1030200, 65.0, 115.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 				 
 				
 
 			#endregion
 
 			#region Royal
-			AddCraft( typeof( RoyalBoots ), "Royal Armor", "royal boots", 88.9, 118.9, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( RoyalGloves ), "Royal Armor", "royal bracers", 88.9, 118.9, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( RoyalGorget ), "Royal Armor", "royal gorget", 86.4, 116.4, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( RoyalHelm ), "Royal Armor", "royal helm", 92.6, 122.6, typeof( IronIngot ), 1044036, 15, 1044037 );
-			AddCraft( typeof( RoyalsLegs ), "Royal Armor", "royal leggings", 96.8, 125.0, typeof( IronIngot ), 1044036, 20, 1044037 );
-			AddCraft( typeof( RoyalArms ), "Royal Armor", "royal mantle", 96.3, 125.0, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( RoyalChest ), "Royal Armor", "royal tunic", 98.0, 125.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+			AddCraft( typeof( RoyalBoots ), "Armadura Real", "botas reales", 88.9, 118.9, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( RoyalGloves ), "Armadura Real", "guanteletes reales", 88.9, 118.9, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( RoyalGorget ), "Armadura Real", "gola real", 86.4, 116.4, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( RoyalHelm ), "Armadura Real", "yelmo real", 92.6, 122.6, typeof( IronIngot ), 1044036, 15, 1044037 );
+			AddCraft( typeof( RoyalsLegs ), "Armadura Real", "grebas reales", 96.8, 125.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( RoyalArms ), "Armadura Real", "manto real", 96.3, 125.0, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( RoyalChest ), "Armadura Real", "túnica real", 98.0, 125.0, typeof( IronIngot ), 1044036, 25, 1044037 );
 			#endregion
 
 			#region Dragon Scale Armor
-			index = AddCraft( typeof( DragonGloves ), "Scalemail", "scalemail gloves", 68.9, 118.9, typeof( RedScales ), "Reptile Scales", 16, 1042081 );
+			index = AddCraft( typeof( DragonGloves ), "Armadura de Escamas", "guantes de escamas", 68.9, 118.9, typeof( RedScales ), "Escamas de reptil", 16, 1042081 );
 			SetUseSubRes2( index, true );
 
-			index = AddCraft( typeof( DragonHelm ), "Scalemail", "scalemail helm", 72.6, 122.6, typeof( RedScales ), "Reptile Scales", 20, 1042081 );
+			index = AddCraft( typeof( DragonHelm ), "Armadura de Escamas", "yelmo de escamas", 72.6, 122.6, typeof( RedScales ), "Escamas de reptil", 20, 1042081 );
 			SetUseSubRes2( index, true );
 
-			index = AddCraft( typeof( DragonLegs ), "Scalemail", "scalemail leggings", 78.8, 128.8, typeof( RedScales ), "Reptile Scales", 28, 1042081 );
+			index = AddCraft( typeof( DragonLegs ), "Armadura de Escamas", "grebas de escamas", 78.8, 128.8, typeof( RedScales ), "Escamas de reptil", 28, 1042081 );
 			SetUseSubRes2( index, true );
 
-			index = AddCraft( typeof( DragonArms ), "Scalemail", "scalemail arms", 76.3, 126.3, typeof( RedScales ), "Reptile Scales", 24, 1042081 );
+			index = AddCraft( typeof( DragonArms ), "Armadura de Escamas", "brazales de escamas", 76.3, 126.3, typeof( RedScales ), "Escamas de reptil", 24, 1042081 );
 			SetUseSubRes2( index, true );
 
-			index = AddCraft( typeof( DragonChest ), "Scalemail", "scalemail tunic", 85.0, 135.0, typeof( RedScales ), "Reptile Scales", 36, 1042081 );
+			index = AddCraft( typeof( DragonChest ), "Armadura de Escamas", "túnica de escamas", 85.0, 135.0, typeof( RedScales ), "Escamas de reptil", 36, 1042081 );
 			SetUseSubRes2( index, true );
 			#endregion
 
 			#region Helmets
-			AddCraft( typeof( Bascinet ), "Helmets", 1025132, 8.3, 58.3, typeof( IronIngot ), 1044036, 15, 1044037 );
-			AddCraft( typeof( CloseHelm ), "Helmets", 1025128, 37.9, 87.9, typeof( IronIngot ), 1044036, 15, 1044037 );
-			AddCraft( typeof( Helmet ), "Helmets", 1025130, 37.9, 87.9, typeof( IronIngot ), 1044036, 15, 1044037 );
-			AddCraft( typeof( NorseHelm ), "Helmets", 1025134, 37.9, 87.9, typeof( IronIngot ), 1044036, 15, 1044037 );
-			AddCraft( typeof( PlateHelm ), "Helmets", 1025138, 62.6, 112.6, typeof( IronIngot ), 1044036, 15, 1044037 );
-			AddCraft( typeof( DreadHelm ), "Helmets", "dread helm", 62.6, 112.6, typeof( IronIngot ), 1044036, 15, 1044037 );
+			AddCraft( typeof( Bascinet ), "Yelmos", 1025132, 8.3, 58.3, typeof( IronIngot ), 1044036, 15, 1044037 );
+			AddCraft( typeof( CloseHelm ), "Yelmos", 1025128, 37.9, 87.9, typeof( IronIngot ), 1044036, 15, 1044037 );
+			AddCraft( typeof( Helmet ), "Yelmos", 1025130, 37.9, 87.9, typeof( IronIngot ), 1044036, 15, 1044037 );
+			AddCraft( typeof( NorseHelm ), "Yelmos", 1025134, 37.9, 87.9, typeof( IronIngot ), 1044036, 15, 1044037 );
+			AddCraft( typeof( PlateHelm ), "Yelmos", 1025138, 62.6, 112.6, typeof( IronIngot ), 1044036, 15, 1044037 );
+			AddCraft( typeof( DreadHelm ), "Yelmos", "yelmo de terror", 62.6, 112.6, typeof( IronIngot ), 1044036, 15, 1044037 );
 			
 			if( Core.SE )
 			{
-				index = AddCraft( typeof( ChainHatsuburi ), "Helmets", 1030175, 30.0, 80.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+				index = AddCraft( typeof( ChainHatsuburi ), "Yelmos", 1030175, 30.0, 80.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 				 
 
-				index = AddCraft( typeof( PlateHatsuburi ), "Helmets", 1030176, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+				index = AddCraft( typeof( PlateHatsuburi ), "Yelmos", 1030176, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 				 
 
-				index = AddCraft( typeof( HeavyPlateJingasa ), "Helmets", 1030178, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+				index = AddCraft( typeof( HeavyPlateJingasa ), "Yelmos", 1030178, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 				 
 				
-				index = AddCraft( typeof( LightPlateJingasa ), "Helmets", 1030188, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+				index = AddCraft( typeof( LightPlateJingasa ), "Yelmos", 1030188, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 				 
 				
-				index = AddCraft( typeof( SmallPlateJingasa ), "Helmets", 1030191, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+				index = AddCraft( typeof( SmallPlateJingasa ), "Yelmos", 1030191, 45.0, 95.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 				 
 
-				index = AddCraft( typeof( DecorativePlateKabuto ), "Helmets", 1030179, 90.0, 140.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+				index = AddCraft( typeof( DecorativePlateKabuto ), "Yelmos", 1030179, 90.0, 140.0, typeof( IronIngot ), 1044036, 25, 1044037 );
 				 
 				
-				index = AddCraft( typeof( PlateBattleKabuto ), "Helmets", 1030192, 90.0, 140.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+				index = AddCraft( typeof( PlateBattleKabuto ), "Yelmos", 1030192, 90.0, 140.0, typeof( IronIngot ), 1044036, 25, 1044037 );
 				 
 
-				index = AddCraft( typeof( StandardPlateKabuto ), "Helmets", 1030196, 90.0, 140.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+				index = AddCraft( typeof( StandardPlateKabuto ), "Yelmos", 1030196, 90.0, 140.0, typeof( IronIngot ), 1044036, 25, 1044037 );
 				 
 			}
 			#endregion
 
 			#region Shields
-			AddCraft( typeof( Buckler ), "Shields", 1027027, -25.0, 25.0, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( BronzeShield ), "Shields", "round shield", -15.2, 34.8, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( HeaterShield ), "Shields", 1027030, 24.3, 74.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( MetalShield ), "Shields", 1027035, -10.2, 39.8, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( MetalKiteShield ), "Shields", 1027028, 4.6, 54.6, typeof( IronIngot ), 1044036, 16, 1044037 );
-			AddCraft( typeof( WoodenKiteShield ), "Shields", 1027032, -15.2, 34.8, typeof( IronIngot ), 1044036, 8, 1044037 );
-			AddCraft( typeof( RoyalShield ), "Shields", "royal shield", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( GuardsmanShield ), "Shields", "guardsman shield", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( ElvenShield ), "Shields", "elven shield", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( DarkShield ), "Shields", "dark shield", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( CrestedShield ), "Shields", "crested shield", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			AddCraft( typeof( ChampionShield ), "Shields", "champion shield", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
-			index = AddCraft( typeof( JeweledShield ), "Shields", "jeweled shield", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( Buckler ), "Escudos", 1027027, -25.0, 25.0, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( BronzeShield ), "Escudos", "escudo redondo", -15.2, 34.8, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( HeaterShield ), "Escudos", 1027030, 24.3, 74.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( MetalShield ), "Escudos", 1027035, -10.2, 39.8, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( MetalKiteShield ), "Escudos", 1027028, 4.6, 54.6, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( WoodenKiteShield ), "Escudos", 1027032, -15.2, 34.8, typeof( IronIngot ), 1044036, 8, 1044037 );
+			AddCraft( typeof( RoyalShield ), "Escudos", "escudo real", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( GuardsmanShield ), "Escudos", "escudo de guardia", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( ElvenShield ), "Escudos", "escudo élfico", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( DarkShield ), "Escudos", "escudo oscuro", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( CrestedShield ), "Escudos", "escudo crestado", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( ChampionShield ), "Escudos", "escudo de campeón", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
+			index = AddCraft( typeof( JeweledShield ), "Escudos", "escudo enjoyado", 54.3, 84.3, typeof( IronIngot ), 1044036, 18, 1044037 );
 			AddRes( index, typeof( StarSapphire ), 1023855, 1, 1044037 );
 
 			if ( Core.AOS )
 			{
-				AddCraft( typeof( ChaosShield ), "Shields", "chaos shield", 85.0, 135.0, typeof( IronIngot ), 1044036, 25, 1044037 );
-				AddCraft( typeof( OrderShield ), "Shields", "order shield", 85.0, 135.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+				AddCraft( typeof( ChaosShield ), "Escudos", "escudo del caos", 85.0, 135.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+				AddCraft( typeof( OrderShield ), "Escudos", "escudo del orden", 85.0, 135.0, typeof( IronIngot ), 1044036, 25, 1044037 );
 			}
 			#endregion
 
 			#region Bladed
 
-			AddCraft( typeof( AssassinSpike ), "Bladed", "assassin dagger", 10.0, 49.6, typeof( IronIngot ), 1044036, 3, 1044037 );
-			AddCraft( typeof( ElvenSpellblade ), "Bladed", "assassin sword", 44.1, 94.1, typeof( IronIngot ), 1044036, 8, 1044037 );
-			AddCraft( typeof( VikingSword ), "Bladed", "barbarian sword (viking sword)", 24.3, 74.3, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( Broadsword ), "Bladed", 1023934, 35.4, 85.4, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( CrescentBlade ), "Bladed", 1029921, 45.0, 95.0, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( Cutlass ), "Bladed", 1025185, 24.3, 74.3, typeof( IronIngot ), 1044036, 8, 1044037 );
-			AddCraft( typeof( Dagger ), "Bladed", 1023921, -0.4, 49.6, typeof( IronIngot ), 1044036, 3, 1044037 );
-			AddCraft( typeof( RadiantScimitar ), "Bladed", "falchion", 35.4, 85.4, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( Katana ),"Bladed", 1025119, 44.1, 94.1, typeof( IronIngot ), 1044036, 8, 1044037 );
-			AddCraft( typeof( Kryss ), "Bladed", 1025121, 36.7, 86.7, typeof( IronIngot ), 1044036, 8, 1044037 );
-			AddCraft( typeof( Longsword ), "Bladed", 1023937, 28.0, 78.0, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( ElvenMachete ), "Bladed", "machete", 33.0, 83.0, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( RoyalSword ), "Bladed", "royal sword", 54.3, 84.3, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( BoneHarvester ), "Bladed", "sickle", 33.0, 83.0, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( Scimitar ), "Bladed", 1025046, 31.7, 81.7, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( RuneBlade ), "Bladed", "war blades", 28.0, 78.0, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( WarCleaver ), "Bladed", "war cleaver", 10.0, 49.6, typeof( IronIngot ), 1044036, 3, 1044037 );
-			AddCraft( typeof( Leafblade ), "Bladed", "war dagger", 20.0, 59.6, typeof( IronIngot ), 1044036, 5, 1044037 );
+			AddCraft( typeof( AssassinSpike ), "De Hojas", "daga de asesino", 10.0, 49.6, typeof( IronIngot ), 1044036, 3, 1044037 );
+			AddCraft( typeof( ElvenSpellblade ), "De Hojas", "espada de asesino", 44.1, 94.1, typeof( IronIngot ), 1044036, 8, 1044037 );
+			AddCraft( typeof( VikingSword ), "De Hojas", "espada bárbara (espada vikinga)", 24.3, 74.3, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( Broadsword ), "De Hojas", 1023934, 35.4, 85.4, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( CrescentBlade ), "De Hojas", 1029921, 45.0, 95.0, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( Cutlass ), "De Hojas", 1025185, 24.3, 74.3, typeof( IronIngot ), 1044036, 8, 1044037 );
+			AddCraft( typeof( Dagger ), "De Hojas", 1023921, -0.4, 49.6, typeof( IronIngot ), 1044036, 3, 1044037 );
+			AddCraft( typeof( RadiantScimitar ), "De Hojas", "bracamante", 35.4, 85.4, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( Katana ),"De Hojas", 1025119, 44.1, 94.1, typeof( IronIngot ), 1044036, 8, 1044037 );
+			AddCraft( typeof( Kryss ), "De Hojas", 1025121, 36.7, 86.7, typeof( IronIngot ), 1044036, 8, 1044037 );
+			AddCraft( typeof( Longsword ), "De Hojas", 1023937, 28.0, 78.0, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( ElvenMachete ), "De Hojas", "machete", 33.0, 83.0, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( RoyalSword ), "De Hojas", "espada real", 54.3, 84.3, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( BoneHarvester ), "De Hojas", "hoz", 33.0, 83.0, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( Scimitar ), "De Hojas", 1025046, 31.7, 81.7, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( RuneBlade ), "De Hojas", "hojas de guerra", 28.0, 78.0, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( WarCleaver ), "De Hojas", "cuchilla de guerra", 10.0, 49.6, typeof( IronIngot ), 1044036, 3, 1044037 );
+			AddCraft( typeof( Leafblade ), "De Hojas", "daga de guerra", 20.0, 59.6, typeof( IronIngot ), 1044036, 5, 1044037 );
 
 			if( Core.SE )
 			{
-				index = AddCraft( typeof( NoDachi ), "Bladed", 1030221, 75.0, 125.0, typeof( IronIngot ), 1044036, 18, 1044037 );
+				index = AddCraft( typeof( NoDachi ), "De Hojas", 1030221, 75.0, 125.0, typeof( IronIngot ), 1044036, 18, 1044037 );
 				 
-				index = AddCraft( typeof( Wakizashi ), "Bladed", 1030223, 50.0, 100.0, typeof( IronIngot ), 1044036, 8, 1044037 );
+				index = AddCraft( typeof( Wakizashi ), "De Hojas", 1030223, 50.0, 100.0, typeof( IronIngot ), 1044036, 8, 1044037 );
 				 
-				index = AddCraft( typeof( Lajatang ), "Bladed", 1030226, 80.0, 130.0, typeof( IronIngot ), 1044036, 25, 1044037 );
+				index = AddCraft( typeof( Lajatang ), "De Hojas", 1030226, 80.0, 130.0, typeof( IronIngot ), 1044036, 25, 1044037 );
 				 
-				index = AddCraft( typeof( Daisho ), "Bladed", 1030228, 60.0, 110.0, typeof( IronIngot ), 1044036, 15, 1044037 );
+				index = AddCraft( typeof( Daisho ), "De Hojas", 1030228, 60.0, 110.0, typeof( IronIngot ), 1044036, 15, 1044037 );
 				 
-				index = AddCraft( typeof( Tekagi ), "Bladed", 1030230, 55.0, 105.0, typeof( IronIngot ), 1044036, 12, 1044037 );
+				index = AddCraft( typeof( Tekagi ), "De Hojas", 1030230, 55.0, 105.0, typeof( IronIngot ), 1044036, 12, 1044037 );
 				 
-				index = AddCraft( typeof( Shuriken ), "Bladed", 1030231, 45.0, 95.0, typeof( IronIngot ), 1044036, 5, 1044037 );
+				index = AddCraft( typeof( Shuriken ), "De Hojas", 1030231, 45.0, 95.0, typeof( IronIngot ), 1044036, 5, 1044037 );
 				 
-				index = AddCraft( typeof( Kama ), "Bladed", 1030232, 40.0, 90.0, typeof( IronIngot ), 1044036, 14, 1044037 );
+				index = AddCraft( typeof( Kama ), "De Hojas", 1030232, 40.0, 90.0, typeof( IronIngot ), 1044036, 14, 1044037 );
 				 
-				index = AddCraft( typeof( Sai ), "Bladed", 1030234, 50.0, 100.0, typeof( IronIngot ), 1044036, 12, 1044037 );
+				index = AddCraft( typeof( Sai ), "De Hojas", 1030234, 50.0, 100.0, typeof( IronIngot ), 1044036, 12, 1044037 );
 				 
 			}
 			#endregion
 
 			#region Axes
 
-			AddCraft( typeof( Hatchet ), "Axes", 1029584, 24.2, 74.2, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( LumberAxe ), "Axes", "lumber axe", 24.2, 74.2, typeof( IronIngot ), 1044036, 10, 1044037 );
-			AddCraft( typeof( Axe ), "Axes", 1023913, 34.2, 84.2, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( BattleAxe ), "Axes", 1023911, 30.5, 80.5, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( DoubleAxe ), "Axes", 1023915, 29.3, 79.3, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( ExecutionersAxe ), "Axes", 1023909, 34.2, 84.2, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( LargeBattleAxe ), "Axes", 1025115, 28.0, 78.0, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( TwoHandedAxe ), "Axes", 1025187, 33.0, 83.0, typeof( IronIngot ), 1044036, 16, 1044037 );
-			AddCraft( typeof( WarAxe ), "Axes", 1025040, 39.1, 89.1, typeof( IronIngot ), 1044036, 16, 1044037 );
-			AddCraft( typeof( OrnateAxe ), "Axes", "barbarian axe", 39.1, 89.1, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( Hatchet ), "Hachas", 1029584, 24.2, 74.2, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( LumberAxe ), "Hachas", "hacha de leñador", 24.2, 74.2, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( Axe ), "Hachas", 1023913, 34.2, 84.2, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( BattleAxe ), "Hachas", 1023911, 30.5, 80.5, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( DoubleAxe ), "Hachas", 1023915, 29.3, 79.3, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( ExecutionersAxe ), "Hachas", 1023909, 34.2, 84.2, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( LargeBattleAxe ), "Hachas", 1025115, 28.0, 78.0, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( TwoHandedAxe ), "Hachas", 1025187, 33.0, 83.0, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( WarAxe ), "Hachas", 1025040, 39.1, 89.1, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( OrnateAxe ), "Hachas", "hacha bárbara", 39.1, 89.1, typeof( IronIngot ), 1044036, 16, 1044037 );
 
 			#endregion
 
 			#region Pole Arms
 
-			AddCraft( typeof( Bardiche ), "Polearms", 1023917, 31.7, 81.7, typeof( IronIngot ), 1044036, 18, 1044037 );
+			AddCraft( typeof( Bardiche ), "Armas de Asta", 1023917, 31.7, 81.7, typeof( IronIngot ), 1044036, 18, 1044037 );
 
 			if ( Core.AOS )
-				AddCraft( typeof( BladedStaff ), "Polearms", 1029917, 40.0, 90.0, typeof( IronIngot ), 1044036, 12, 1044037 );
+				AddCraft( typeof( BladedStaff ), "Armas de Asta", 1029917, 40.0, 90.0, typeof( IronIngot ), 1044036, 12, 1044037 );
 
 			if ( Core.AOS )
-				AddCraft( typeof( DoubleBladedStaff ), "Polearms", 1029919, 45.0, 95.0, typeof( IronIngot ), 1044036, 16, 1044037 );
+				AddCraft( typeof( DoubleBladedStaff ), "Armas de Asta", 1029919, 45.0, 95.0, typeof( IronIngot ), 1044036, 16, 1044037 );
 
-			AddCraft( typeof( Halberd ), "Polearms", 1025183, 39.1, 89.1, typeof( IronIngot ), 1044036, 20, 1044037 );
-			AddCraft( typeof( Harpoon ), "Polearms", "harpoon", 30.0, 70.0, typeof( IronIngot ), 1044036, 12, 1044351 ); 
-
-			if ( Core.AOS )
-				AddCraft( typeof( Lance ), "Polearms", 1029920, 48.0, 98.0, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( Halberd ), "Armas de Asta", 1025183, 39.1, 89.1, typeof( IronIngot ), 1044036, 20, 1044037 );
+			AddCraft( typeof( Harpoon ), "Armas de Asta", "arpón", 30.0, 70.0, typeof( IronIngot ), 1044036, 12, 1044351 );
 
 			if ( Core.AOS )
-				AddCraft( typeof( Pike ), "Polearms", 1029918, 47.0, 97.0, typeof( IronIngot ), 1044036, 12, 1044037 );
-
-			AddCraft( typeof( ShortSpear ), "Polearms", 1025123, 45.3, 95.3, typeof( IronIngot ), 1044036, 6, 1044037 );
+				AddCraft( typeof( Lance ), "Armas de Asta", 1029920, 48.0, 98.0, typeof( IronIngot ), 1044036, 20, 1044037 );
 
 			if ( Core.AOS )
-				AddCraft( typeof( Scythe ), "Polearms", 1029914, 39.0, 89.0, typeof( IronIngot ), 1044036, 14, 1044037 );
+				AddCraft( typeof( Pike ), "Armas de Asta", 1029918, 47.0, 97.0, typeof( IronIngot ), 1044036, 12, 1044037 );
 
-			AddCraft( typeof( Spear ), "Polearms", 1023938, 49.0, 99.0, typeof( IronIngot ), 1044036, 12, 1044037 );
-			AddCraft( typeof( WarFork ), "Polearms", 1025125, 42.9, 92.9, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( ShortSpear ), "Armas de Asta", 1025123, 45.3, 95.3, typeof( IronIngot ), 1044036, 6, 1044037 );
+
+			if ( Core.AOS )
+				AddCraft( typeof( Scythe ), "Armas de Asta", 1029914, 39.0, 89.0, typeof( IronIngot ), 1044036, 14, 1044037 );
+
+			AddCraft( typeof( Spear ), "Armas de Asta", 1023938, 49.0, 99.0, typeof( IronIngot ), 1044036, 12, 1044037 );
+			AddCraft( typeof( WarFork ), "Armas de Asta", 1025125, 42.9, 92.9, typeof( IronIngot ), 1044036, 12, 1044037 );
 			
 
 			// Not craftable (is this an AOS change ??)
-			//AddCraft( typeof( Pitchfork ), "Polearms", 1023720, 36.1, 86.1, typeof( IronIngot ), 1044036, 12, 1044037 );
+			//AddCraft( typeof( Pitchfork ), "Armas de Asta", 1023720, 36.1, 86.1, typeof( IronIngot ), 1044036, 12, 1044037 );
 			#endregion
 
 			#region Bashing
-			AddCraft( typeof( DiamondMace ), "Bashing", "battle mace", 28.0, 78.0, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( HammerPick ), "Bashing", 1025181, 34.2, 84.2, typeof( IronIngot ), 1044036, 16, 1044037 );
-			AddCraft( typeof( Mace ), "Bashing", 1023932, 14.5, 64.5, typeof( IronIngot ), 1044036, 6, 1044037 );
-			AddCraft( typeof( Maul ), "Bashing", 1025179, 19.4, 69.4, typeof( IronIngot ), 1044036, 10, 1044037 );
+			AddCraft( typeof( DiamondMace ), "Contundentes", "maza de batalla", 28.0, 78.0, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( HammerPick ), "Contundentes", 1025181, 34.2, 84.2, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( Mace ), "Contundentes", 1023932, 14.5, 64.5, typeof( IronIngot ), 1044036, 6, 1044037 );
+			AddCraft( typeof( Maul ), "Contundentes", 1025179, 19.4, 69.4, typeof( IronIngot ), 1044036, 10, 1044037 );
 
 
-				AddCraft( typeof( Scepter ), "Bashing", 1029916, 21.4, 71.4, typeof( IronIngot ), 1044036, 10, 1044037 );
+				AddCraft( typeof( Scepter ), "Contundentes", 1029916, 21.4, 71.4, typeof( IronIngot ), 1044036, 10, 1044037 );
 
-			AddCraft( typeof( WarMace ), "Bashing", 1025127, 28.0, 78.0, typeof( IronIngot ), 1044036, 14, 1044037 );
-			AddCraft( typeof( WarHammer ), "Bashing", 1025177, 34.2, 84.2, typeof( IronIngot ), 1044036, 16, 1044037 );
+			AddCraft( typeof( WarMace ), "Contundentes", 1025127, 28.0, 78.0, typeof( IronIngot ), 1044036, 14, 1044037 );
+			AddCraft( typeof( WarHammer ), "Contundentes", 1025177, 34.2, 84.2, typeof( IronIngot ), 1044036, 16, 1044037 );
 
 
-				index = AddCraft( typeof( Tessen ), "Bashing", 1030222, 85.0, 135.0, typeof( IronIngot ), 1044036, 16, 1044037 );
+				index = AddCraft( typeof( Tessen ), "Contundentes", 1030222, 85.0, 135.0, typeof( IronIngot ), 1044036, 16, 1044037 );
 				AddSkill( index, SkillName.Tailoring, 50.0, 55.0 );
 				AddRes( index, typeof( Cloth ), 1044286, 10, 1044287 );
 				 

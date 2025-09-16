@@ -24,20 +24,20 @@
 }
 #KEY "*skill*" "*mapmaking*" "*make maps*" "*map making*" {
 	#Attitude Wicked {
-	"I guess I can help thee learn to make thy own maps. I would prefer that thou didst leave me alone, but I can teach thee, if thou dost need it.",
-"My ardent desire is that thou dost LEAVE ME BE! Of course, I could teach thee to make thine own maps, and thou wouldst have less reason to come bother me.",
-"Please, just leave me alone. I have no time for thee."
+	"Supongo que puedo ayudarte a aprender a hacer tus propios mapas. Preferiría que me dejaras en paz, pero puedo enseñarte, si lo necesitas.",
+"¡Mi ardiente deseo es que ME DEJES EN PAZ! Por supuesto, podría enseñarte a hacer tus propios mapas, y tendrías menos razones para venir a molestarme.",
+"Por favor, déjame en paz. No tengo tiempo para ti."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be - um - persuaded to teach thee to make maps.",
-"Thou shouldst know something about the making of maps. Could be of use to thee.",
-"If thou dost need help with thy mapmaking, just ask me to teach thee and if I can, I will.",
-"I can teach thee to better make maps. Could be of use to thee in the future."
+	"Si quieres aprender, podría ser, um, persuadido para enseñarte a hacer mapas.",
+"Deberías saber algo sobre la creación de mapas. Podría serte de utilidad.",
+"Si necesitas ayuda con tu cartografía, solo pídeme que te enseñe y si puedo, lo haré.",
+"Puedo enseñarte a hacer mejores mapas. Podría serte de utilidad en el futuro."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy for thee to learn what I know about making maps. I could give thee lessons for a few coins.",
-"Thou can always learn new things, my friend. I could teach thee some things that could help thee map thy way. For some small amount of money, of course.",
-"If thou art willing to learn, then I could teach thee some better ways to make maps. I would need thee to pay me for my time, however."
+	"Me alegraría que aprendieras lo que sé sobre hacer mapas. Podría darte lecciones por unas pocas monedas.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría enseñarte algunas cosas que podrían ayudarte a trazar tu camino. Por una pequeña cantidad de dinero, por supuesto.",
+"Si estás dispuesto a aprender, entonces podría enseñarte algunas formas mejores de hacer mapas. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*blank*" "*empty*" "*new*" "*vellum*" {
@@ -105,20 +105,20 @@
 }
 #KEY "*skill*" "*mapmaking*" "*make maps*" "*map making*" {
 	#Attitude Wicked {
-	"I guess I can help thee learn to make thy own maps. I would prefer that thou didst leave me alone, but I can teach thee, if thou dost need it.",
-"My ardent desire is that thou dost LEAVE ME BE! Of course, I could teach thee to make thine own maps, and thou wouldst have less reason to come bother me.",
-"Please, just leave me alone. I have no time for thee."
+	"Supongo que puedo ayudarte a aprender a hacer tus propios mapas. Preferiría que me dejaras en paz, pero puedo enseñarte, si lo necesitas.",
+"¡Mi ardiente deseo es que ME DEJES EN PAZ! Por supuesto, podría enseñarte a hacer tus propios mapas, y tendrías menos razones para venir a molestarme.",
+"Por favor, déjame en paz. No tengo tiempo para ti."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be - um - persuaded to teach thee to make maps.",
-"Thou shouldst know something about the making of maps. Could be of use to thee.",
-"If thou dost need help with thy mapmaking, just ask me to teach thee and if I can, I will.",
-"I can teach thee to better make maps. Could be of use to thee in the future."
+	"Si quieres aprender, podría ser, um, persuadido para enseñarte a hacer mapas.",
+"Deberías saber algo sobre la creación de mapas. Podría serte de utilidad.",
+"Si necesitas ayuda con tu cartografía, solo pídeme que te enseñe y si puedo, lo haré.",
+"Puedo enseñarte a hacer mejores mapas. Podría serte de utilidad en el futuro."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy for thee to learn what I know about making maps. I could give thee lessons for a few coins.",
-"Thou can always learn new things, my friend. I could teach thee some things that could help thee map thy way. For some small amount of money, of course.",
-"If thou art willing to learn, then I could teach thee some better ways to make maps. I would need thee to pay me for my time, however."
+	"Me alegraría que aprendieras lo que sé sobre hacer mapas. Podría darte lecciones por unas pocas monedas.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría enseñarte algunas cosas que podrían ayudarte a trazar tu camino. Por una pequeña cantidad de dinero, por supuesto.",
+"Si estás dispuesto a aprender, entonces podría enseñarte algunas formas mejores de hacer mapas. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*blank*" "*empty*" "*new*" "*vellum*" {
@@ -189,19 +189,19 @@ to the spot thou would map, and maps it. Takes a bit of practice to get good, bu
 }
 #KEY "*skill*" "*mapmaking*" "*make maps*" "*map making*" {
 	#Attitude Wicked {
-	"Make thy own maps. I can teach thee, if it'd get thee out of my hair.",
-"I really want thee to LEAVE ME BE! If thou wants maps, learn to make 'em!",
-"Bugger off! I got no time for thee."
+	"Haz tus propios mapas. Puedo enseñarte, si eso te quita de mi pelo.",
+"¡Realmente quiero que ME DEJES EN PAZ! ¡Si quieres mapas, aprende a hacerlos!",
+"¡Lárgate! No tengo tiempo para ti."
 			}
 	#Attitude Neutral {
-	"I might could be - um - talked into teachin' thee to make maps.",
-"Learn to make thine own maps! Could be of use to thee.",
-"Need help making maps? Just ask me to teach thee an' if I can, I will."
+	"Podría ser, um, convencido de enseñarte a hacer mapas.",
+"¡Aprende a hacer tus propios mapas! Podría serte de utilidad.",
+"¿Necesitas ayuda para hacer mapas? Solo pídeme que te enseñe y si puedo, lo haré."
 			}
 	#Attitude Goodhearted {
-	"I know some things 'bout makin' maps. I could give thee lessons for a few coins.",
-"I could teach thee some things that could help with thy maps. I'd only ask for a little money in exchange.",
-"I could teach thee to make maps better. For a few coins."
+	"Sé algunas cosas sobre hacer mapas. Podría darte lecciones por unas pocas monedas.",
+"Podría enseñarte algunas cosas que podrían ayudarte con tus mapas. Solo pediría un poco de dinero a cambio.",
+"Podría enseñarte a hacer mejores mapas. Por unas pocas monedas."
 			}
 		}
 #KEY "*blank*" "*empty*" "*new*" "*vellum*" {

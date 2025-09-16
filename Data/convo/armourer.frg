@@ -152,21 +152,21 @@
 		{
 			#Attitude Wicked 
 			{
-				"Oh, don't tell me thou dost want to learn armor-making. I'd be hard-pressed to train someone like thee.",
-				"What, dost thou want practice in making armor?  Well I might be able to teach thee a thing or two.",
-				"Well, for a little compensation, I could show thee some things to practice to improve thy skill in metal work."
+				"Oh, no me digas que quieres aprender a hacer armaduras. Me costaría mucho entrenar a alguien como tú.",
+				"¿Qué, quieres practicar la fabricación de armaduras? Bueno, podría enseñarte una o dos cosas.",
+				"Bueno, por una pequeña compensación, podría mostrarte algunas cosas para practicar y mejorar tu habilidad en el trabajo del metal."
 			}
 			#Attitude Neutral 
 			{
-				"I've been known to teach some how to improve their skills, for a few coins.",
-				"If thou dost need some training in armor-making, just say so.",
-				"I can give thee some practice in armor-construction, all thou dost need do is to ask.  And give me a few coins for my time."
+				"Se sabe que enseño a algunos a mejorar sus habilidades, por unas pocas monedas.",
+				"Si necesitas algo de entrenamiento en la fabricación de armaduras, solo dilo.",
+				"Puedo darte algo de práctica en la construcción de armaduras, todo lo que tienes que hacer es pedirlo. Y darme unas pocas monedas por mi tiempo."
 			}
 			#Attitude Goodhearted 
 			{
-				"I'd be happy to help train thee in some armoring techniques. I would ask for a few coins, though, to help cover my time.",
-				"I'd be honored to teach thee some of what I know.  'Twould be up to thyself, though, to practice it.",
-				"I can teach thee only if thou art willing to learn. And pay me for the time I would invest. A few coins would suffice."
+				"Estaría feliz de ayudarte a entrenar en algunas técnicas de blindaje. Sin embargo, te pediría unas pocas monedas para ayudar a cubrir mi tiempo.",
+				"Me sentiría honrado de enseñarte algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+				"Puedo enseñarte solo si estás dispuesto a aprender. Y pagarme por el tiempo que invertiría. Unas pocas monedas serían suficientes."
 			}
 		}
 	}
@@ -313,21 +313,21 @@
 		{   
 			#Attitude Wicked 
 			{
-				"Oh, don't tell me thou dost want to learn armor-making. I'd be hard-pressed to train someone like thee.",
-				"What, dost thou want practice in making armor? Well I might be able to teach thee a thing or two.",
-				"Well, for a little compensation, I could show thee some things to practice to improve thy skill in metal work."
+				"Oh, no me digas que quieres aprender a hacer armaduras. Me costaría mucho entrenar a alguien como tú.",
+				"¿Qué, quieres practicar la fabricación de armaduras? Bueno, podría enseñarte una o dos cosas.",
+				"Bueno, por una pequeña compensación, podría mostrarte algunas cosas para practicar y mejorar tu habilidad en el trabajo del metal."
 			}
 			#Attitude Neutral 
 			{
-				"I've been known to teach some how to improve their skills, for a few coins.",
-				"If thou dost need some training in armor-making, just say so.",
-				"I can give thee some practice in armor-construction, all thou dost need do is to ask.  And give me a few coins for my time."
+				"Se sabe que enseño a algunos a mejorar sus habilidades, por unas pocas monedas.",
+				"Si necesitas algo de entrenamiento en la fabricación de armaduras, solo dilo.",
+				"Puedo darte algo de práctica en la construcción de armaduras, todo lo que tienes que hacer es pedirlo. Y darme unas pocas monedas por mi tiempo."
 			}
 			#Attitude Goodhearted 
 			{
-				"I'd be happy to help train thee in some armoring techniques. I'd ask for a few coins, though, to help cover my time.",
-				"I'd be honored to teach thee some of what I know. 'Twould be up to thyself, though, to practice it.",
-				"I can teach thee only if thou art willing to learn. And pay me for the time I would invest. A few coins would suffice."
+				"Estaría feliz de ayudarte a entrenar en algunas técnicas de blindaje. Sin embargo, te pediría unas pocas monedas para ayudar a cubrir mi tiempo.",
+				"Me sentiría honrado de enseñarte algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+				"Puedo enseñarte solo si estás dispuesto a aprender. Y pagarme por el tiempo que invertiría. Unas pocas monedas serían suficientes."
 			}
 		}
 	}
@@ -474,21 +474,21 @@
 		{
 			#Attitude Wicked 
 			{
-				"I don't got to teach thee nothin'. But, if thou leave me a few coins, I guess thou could practice a bit in my shop.",
-				"What, dost thou want practice in making armor?  Well, I might be able to teach thee a thing or two. Shouldn't be hard.",
-				"Well, for a little money, I could show thee some things thou could practice."
+				"No tengo que enseñarte nada. Pero, si me dejas unas pocas monedas, supongo que podrías practicar un poco en mi tienda.",
+				"¿Qué, quieres practicar la fabricación de armaduras? Bueno, podría enseñarte una o dos cosas. No debería ser difícil.",
+				"Bueno, por un poco de dinero, podría mostrarte algunas cosas que podrías practicar."
 			}
 			#Attitude Neutral 
 			{
-				"I've been known to teach some people, for a few coins.",
-				"If thou'rt needin' to be trained in armor-making, just say so.",
-				"I can let thee practice in armor-construction here, all thou need to do is ask. And give me a few coins for my time."
+				"Se sabe que enseño a algunas personas, por unas pocas monedas.",
+				"Si necesitas que te entrenen en la fabricación de armaduras, solo dilo.",
+				"Puedo dejarte practicar la construcción de armaduras aquí, todo lo que tienes que hacer es pedirlo. Y darme unas pocas monedas por mi tiempo."
 			}
 			#Attitude Goodhearted 
 			{
-				"Ain't that cute? I'd be happy to help thee practice some armorin'. I'd ask for a some money, though, to help cover my time.",
-				"I'd be honored to teach thee some of what I know.'Twould be up to thyself, though, to practice it.",
-				"I'll teach thee only if thou'rt wantin' to learn. And pay me for the time I'd put in. A few coins would be good."
+				"¿No es adorable? Estaría feliz de ayudarte a practicar un poco de blindaje. Sin embargo, te pediría algo de dinero para ayudar a cubrir mi tiempo.",
+				"Me sentiría honrado de enseñarte algo de lo que sé. Sin embargo, dependería de ti practicarlo.",
+				"Te enseñaré solo si quieres aprender. Y págame por el tiempo que dedicaría. Unas pocas monedas estarían bien."
 			}
 		}
 	}

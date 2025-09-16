@@ -27,20 +27,20 @@
 	}
 #KEY "*skill*" "*taste*" "*alchem*" "*poison*" {
 	#Attitude Wicked {
-	"I shouldn't teach thee anything! But for a few coins, I may be talked into it.",
-"Thou couldst learn some things from me, if I could be persuaded to teach thee.",
-"I know the taste of many things, poisons included.  I might be - um - persuaded to teach thee a thing or two."
+	"¡No debería enseñarte nada! Pero por unas pocas monedas, tal vez me convenzan.",
+"Podrías aprender algunas cosas de mí, si pudiera persuadirme para enseñarte.",
+"Conozco el sabor de muchas cosas, venenos incluidos. Podría ser, um, persuadido para enseñarte una o dos cosas."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee some alchemy skills. Thou wouldst need to pay me, of course.",
-"Some things I know could be of use to thee. I could help thee some, I think.",
-"If thou dost need help with something I might know, just ask me to teach thee and if I can, I will. For a small price.",
-"I can teach thee some things about taste. Maybe about mixtures and such also."
+	"Si quieres aprender, podría persuadirte para que te enseñe algunas habilidades de alquimia. Tendrías que pagarme, por supuesto.",
+"Algunas cosas que sé podrían serte de utilidad. Creo que podría ayudarte un poco.",
+"Si necesitas ayuda con algo que yo sepa, solo pídeme que te enseñe y si puedo, lo haré. Por un módico precio.",
+"Puedo enseñarte algunas cosas sobre el gusto. Quizás también sobre mezclas y cosas así."
 			}
 	#Attitude Goodhearted {
-	"Sure, I could teach thee a few things that would assist thee in the future. For a small cost to thy beltpouch.",
-"Thou can always learn new things, my friend. I could show thee some things, for instance, about alchemy that might help thee. For some small amount of money, of course.",
-"I can teach thee things. I would need thee to pay me for my time, however."
+	"Claro, podría enseñarte algunas cosas que te ayudarán en el futuro. Por un pequeño costo para tu bolsa.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre alquimia que podrían ayudarte. Por una pequeña cantidad de dinero, por supuesto.",
+"Puedo enseñarte cosas. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*herb*" "*flower*" "*onion*" {
@@ -72,20 +72,20 @@
 	}
 #KEY "*skill*" "*taste*" "*alchem*" "*poison*" {
 	#Attitude Wicked {
-	"I shouldn't teach thee anything! But for a few coins, I may be talked into it.",
-"Thou couldst learn some things from me, if I could be persuaded to teach thee.",
-"I know the taste of many things, poisons included.  I might be - um - persuaded to teach thee a thing or two."
+	"¡No debería enseñarte nada! Pero por unas pocas monedas, tal vez me convenzan.",
+"Podrías aprender algunas cosas de mí, si pudiera persuadirme para enseñarte.",
+"Conozco el sabor de muchas cosas, venenos incluidos. Podría ser, um, persuadido para enseñarte una o dos cosas."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee some alchemy skills. Thou wouldst need to pay me, of course.",
-"Some things I know could be of use to thee. I could help thee some, I think.",
-"If thou dost need help with something I might know, just ask me to teach thee and if I can, I will. For a small price.",
-"I can teach thee some things about taste. Maybe about mixtures and such also."
+	"Si quieres aprender, podría persuadirte para que te enseñe algunas habilidades de alquimia. Tendrías que pagarme, por supuesto.",
+"Algunas cosas que sé podrían serte de utilidad. Creo que podría ayudarte un poco.",
+"Si necesitas ayuda con algo que yo sepa, solo pídeme que te enseñe y si puedo, lo haré. Por un módico precio.",
+"Puedo enseñarte algunas cosas sobre el gusto. Quizás también sobre mezclas y cosas así."
 			}
 	#Attitude Goodhearted {
-	"Sure, I could teach thee a few things that would assist thee in the future. For a small cost to thy beltpouch.",
-"Thou can always learn new things, my friend. I could show thee some things, for instance, about alchemy that might help thee. For some small amount of money, of course.",
-"I can teach thee things. I would need thee to pay me for my time, however."
+	"Claro, podría enseñarte algunas cosas que te ayudarán en el futuro. Por un pequeño costo para tu bolsa.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre alquimia que podrían ayudarte. Por una pequeña cantidad de dinero, por supuesto.",
+"Puedo enseñarte cosas. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*herb*" "*flower*" "*onion*" {
@@ -117,20 +117,20 @@
 	}
 #KEY "*skill*" "*taste*" "*alchem*" "*poison*" {
 	#Attitude Wicked {
-	"I ain't wantin' to teach thee nothin'! But for a few coins, I may.",
-"Thou could learn some stuff from me, if I decide to teach thee.",
-"I know the taste of some poisons.  I might be - um - convinced to teach thee."
+	"¡No quiero enseñarte nada! Pero por unas pocas monedas, puede que sí.",
+"Podrías aprender algunas cosas de mí, si decido enseñarte.",
+"Conozco el sabor de algunos venenos. Podría ser, um, convencido de enseñarte."
 			}
 	#Attitude Neutral {
-	"If thou wants to learn, I could teach thee some alchemy. I'd need payment, o' course.",
-"Some things I know'd be of use. I could help thee some, I think.",
-"If thou needs my help learnin' somethin', just ask me - and if I can help, I will. For a small price.",
-"I can teach thee things 'bout taste. Maybe about mixtures and such, too."
+	"Si quieres aprender, podría enseñarte algo de alquimia. Necesitaría un pago, por supuesto.",
+"Algunas cosas que sé serían de utilidad. Creo que podría ayudarte un poco.",
+"Si necesitas mi ayuda para aprender algo, solo pídeme, y si puedo ayudar, lo haré. Por un módico precio.",
+"Puedo enseñarte cosas sobre el gusto. Quizás también sobre mezclas y cosas así."
 			}
 	#Attitude Goodhearted {
-	"Sure, I could teach a few things. For a small price.",
-"I could show thee some things, for instance, about alchemy, I could. For some money, of course.",
-"I can teach thee things. I would need some money for it, though."
+	"Claro, podría enseñar algunas cosas. Por un módico precio.",
+"Podría mostrarte algunas cosas, por ejemplo, sobre alquimia, podría. Por algo de dinero, por supuesto.",
+"Puedo enseñarte cosas. Sin embargo, necesitaría algo de dinero por ello."
 			}
 		}
 #KEY "*herb*" "*flower*" "*onion*" {

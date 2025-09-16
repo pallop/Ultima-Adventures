@@ -27,20 +27,20 @@
 	}
 #KEY "*skill*" "*lock*" "*appraise*" "*hide*" "*camp*"  {
 	#Attitude Wicked {
-	"Get thee away from me. I have no reason to show thee anything that could help, though I know quite a bit",
-"I don't need to show thee anything! Thou art no freeman!",
-"Oh yes, I know many things! Things that could help thee in thy journeys. Things I am loath to show thee."
+	"Aléjate de mí. No tengo ninguna razón para mostrarte nada que pueda ayudarte, aunque sé bastante",
+"¡No necesito mostrarte nada! ¡No eres un hombre libre!",
+"¡Oh sí, sé muchas cosas! Cosas que podrían ayudarte en tus viajes. Cosas que no me apetece mostrarte."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee about such things as camping in the wild. Or not being seen when thou dost not WANT to be seen. Thou wouldst need to pay me, thou knowest.",
-"Thou shouldst know something about the people that thou art likely to spend time with. Could be of use to thee. I could help thee some, I think.",
-"If thou dost need help with thy camping skills, just ask me to teach thee and if I can, I will. For a small price.",
-"I can teach thee how to observe things around thee better. Things like the people thou dost see every day."
+	"Si quieres aprender, podría persuadirte para que te enseñe cosas como acampar en la naturaleza. O a no ser visto cuando NO QUIERES ser visto. Tendrías que pagarme, ya sabes.",
+"Deberías saber algo sobre la gente con la que es probable que pases tiempo. Podría serte de utilidad. Creo que podría ayudarte un poco.",
+"Si necesitas ayuda con tus habilidades para acampar, solo pídeme que te enseñe y si puedo, lo haré. Por un módico precio.",
+"Puedo enseñarte a observar mejor las cosas que te rodean. Cosas como la gente que ves todos los días."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy for thee to learn what I know about surviving in towns. Just give me a few coins.",
-"Thou can always learn new things, my friend. I could show thee some things, for instance, about the observation of people that could help thee. For some small amount of money, of course.",
-"I can teach thee things that could help thee when thou dost make camp. I would need thee to pay me for my time, however."
+	"Me alegraría que aprendieras lo que sé sobre sobrevivir en las ciudades. Solo dame unas pocas monedas.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre la observación de la gente que podrían ayudarte. Por una pequeña cantidad de dinero, por supuesto.",
+"Puedo enseñarte cosas que podrían ayudarte cuando acampes. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*gypsy*" "*freeman*" "*gypsie*" {
@@ -89,20 +89,20 @@
 	}
 #KEY "*skill*" "*lock*" "*appraise*" "*hide*" "*camp*"  {
 	#Attitude Wicked {
-	"Get thee away from me. I have no reason to show thee anything that could help, though I know quite a bit",
-"I don't need to show thee anything! Thou art no freeman!",
-"Oh yes, I know many things! Things that could help thee in thy journeys. Things I am loath to show thee."
+	"Aléjate de mí. No tengo ninguna razón para mostrarte nada que pueda ayudarte, aunque sé bastante",
+"¡No necesito mostrarte nada! ¡No eres un hombre libre!",
+"¡Oh sí, sé muchas cosas! Cosas que podrían ayudarte en tus viajes. Cosas que no me apetece mostrarte."
 			}
 	#Attitude Neutral {
-	"If thou dost want to learn, I might be persuaded to teach thee about such things as camping in the wild. Or not being seen when thou dost not WANT to be seen. Thou wouldst need to pay me, thou knowest.",
-"Thou shouldst know something about the people that thou art likely to spend time with. Could be of use to thee. I could help thee some, I think.",
-"If thou dost need help with thy camping skills, just ask me to teach thee and if I can, I will. For a small price.",
-"I can teach thee how to observe things around thee better. Things like the people thou dost see every day."
+	"Si quieres aprender, podría persuadirte para que te enseñe cosas como acampar en la naturaleza. O a no ser visto cuando NO QUIERES ser visto. Tendrías que pagarme, ya sabes.",
+"Deberías saber algo sobre la gente con la que es probable que pases tiempo. Podría serte de utilidad. Creo que podría ayudarte un poco.",
+"Si necesitas ayuda con tus habilidades para acampar, solo pídeme que te enseñe y si puedo, lo haré. Por un módico precio.",
+"Puedo enseñarte a observar mejor las cosas que te rodean. Cosas como la gente que ves todos los días."
 			}
 	#Attitude Goodhearted {
-	"I'd be happy for thee to learn what I know about surviving in towns. Just give me a few coins.",
-"Thou can always learn new things, my friend. I could show thee some things, for instance, about the observation of people that could help thee. For some small amount of money, of course.",
-"I can teach thee things that could help thee when thou dost make camp. I would need thee to pay me for my time, however."
+	"Me alegraría que aprendieras lo que sé sobre sobrevivir en las ciudades. Solo dame unas pocas monedas.",
+"Siempre puedes aprender cosas nuevas, amigo mío. Podría mostrarte algunas cosas, por ejemplo, sobre la observación de la gente que podrían ayudarte. Por una pequeña cantidad de dinero, por supuesto.",
+"Puedo enseñarte cosas que podrían ayudarte cuando acampes. Sin embargo, necesitaría que me pagaras por mi tiempo."
 			}
 		}
 #KEY "*gypsy*" "*freeman*" "*gypsie*" {
@@ -151,20 +151,20 @@
 	}
 #KEY "*skill*" "*lock*" "*appraise*" "*hide*" "*camp*"  {
 	#Attitude Wicked {
-	"Get away! I won't waste the time to help thee!",
-"I ain't showin' thee nothin'! Thou'rt no freeman!",
-"I got many skills! Things that'd help thee, right enough. An' I won't show thee."
+	"¡Aléjate! ¡No perderé el tiempo en ayudarte!",
+"¡No te voy a enseñar nada! ¡No eres un hombre libre!",
+"¡Tengo muchas habilidades! Cosas que te ayudarían, la verdad. Y no te las voy a enseñar."
 			}
 	#Attitude Neutral {
-	"I could show thee some things. Helpful things, I bet. Gotta spend some money, though.",
-"I could teach thee to watch people better. Or make sure they can't see you real well.",
-"For a price I could teach thee some things 'bout campin'. For a price. ",
-"I can teach thee how to watch things better. Things like people and what they own."
+	"Podría mostrarte algunas cosas. Cosas útiles, apuesto. Sin embargo, tienes que gastar algo de dinero.",
+"Podría enseñarte a observar mejor a la gente. O a asegurarme de que no te vean muy bien.",
+"Por un precio podría enseñarte algunas cosas sobre acampar. Por un precio.",
+"Puedo enseñarte a observar mejor las cosas. Cosas como la gente y lo que poseen."
 			}
 	#Attitude Goodhearted {
-	"I could teach thee some things. Just give me a few coins.",
-"I got skills that could help thee. I could teach thee. It'll cost, though.",
-"If thou needs help campin', I could help thee for a small price."
+	"Podría enseñarte algunas cosas. Solo dame unas pocas monedas.",
+"Tengo habilidades que podrían ayudarte. Podría enseñarte. Sin embargo, costará.",
+"Si necesitas ayuda para acampar, podría ayudarte por un módico precio."
 			}
 		}
 #KEY "*gypsy*" "*freeman*" "*gypsie*" {
